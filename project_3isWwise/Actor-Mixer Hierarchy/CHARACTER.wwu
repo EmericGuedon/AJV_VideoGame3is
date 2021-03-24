@@ -8,6 +8,13 @@
 			</PropertyList>
 			<ChildrenList>
 				<BlendContainer Name="Character" ID="{DB4E8085-5D5D-4F55-82DF-10EFF4884826}" ShortID="214240970">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>3</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
