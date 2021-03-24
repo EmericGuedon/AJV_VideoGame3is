@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2908910416	Play_New_Sequence_Container			\Default Work Unit\Play_New_Sequence_Container	
+

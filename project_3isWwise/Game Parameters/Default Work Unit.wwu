@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D15516C3-7DD9-4D4C-B6CC-552696CBD959}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{D15516C3-7DD9-4D4C-B6CC-552696CBD959}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="RTPC_Bridge" ID="{634DFC54-F587-46A2-B709-3D2B42233E53}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{D5657254-4A74-42CE-87DF-457E95E39B25}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="AMBIANCE" ID="{D5657254-4A74-42CE-87DF-457E95E39B25}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="1"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<BlendContainer Name="Ambiance" ID="{917FAB82-39E1-42E5-A22D-AF5E1DEA097E}" ShortID="756306808">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="AMB_Dungeon" ID="{03639D82-5C61-4554-A5C4-3541544C95EE}" ShortID="496502318">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Amb_DungeonCalm" ID="{B32532F7-DBD9-40ED-860E-B24DECD4F50A}" ShortID="113273800">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>9</Value>
+											</ValueList>
+										</Property>
+										<Property Name="MakeUpGain" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{D02E829C-4E1E-4A75-A7CA-A102926C5452}" ShortID="1068014286">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}" WorkUnitID="{D15516C3-7DD9-4D4C-B6CC-552696CBD959}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{7B83064F-26D1-4EE0-A394-F428B95030D3}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0.5</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>0.759477124183007</XPos>
+																<YPos>-6.356272329602</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>-192</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Amb_DungeonCalm" ID="{4AE49144-20A7-4199-B884-4D98AC4DD505}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="3368.421"/>
+												<Property Name="LoopBegin" Type="Real64" Value="15.1232876712329"/>
+												<Property Name="LoopEnd" Type="Real64" Value="122.739726027397"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Amb_DungeonCalm.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="56846168"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Amb_DungeonCalm" ID="{4AE49144-20A7-4199-B884-4D98AC4DD505}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="AMB_DungeonFight" ID="{FED2F6BF-2E9B-4A80-9AF9-9E897A68EF5F}" ShortID="634131469">
+									<PropertyList>
+										<Property Name="MakeUpGain" Type="Real64">
+											<RTPCList>
+												<RTPC Name="" ID="{18CB7A49-225C-4526-9C93-59B80616980D}" ShortID="149794680">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}" WorkUnitID="{D15516C3-7DD9-4D4C-B6CC-552696CBD959}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{C3447D14-9BD9-438F-9851-FC856529A3BF}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>0.5</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_DungeonFight" ID="{C79E3EA2-FDF2-41BD-9BAE-4C03973F6E2A}">
+											<Language>SFX</Language>
+											<AudioFile>AMB_DungeonFight.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="527330393"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_DungeonFight" ID="{C79E3EA2-FDF2-41BD-9BAE-4C03973F6E2A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<Sound Name="Amb_Cave" ID="{63085CC8-DBAC-4911-8111-D4483D1F2AB3}" ShortID="940765290">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Amb_Cave" ID="{0AC7F1DC-1DF3-4D8D-ACF4-BBDB6CB5D515}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="4074.28"/>
+										<Property Name="LoopBegin" Type="Real64" Value="10.0151625998858"/>
+										<Property Name="LoopEnd" Type="Real64" Value="156.413274721747"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Amb_Cave.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="367435944"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Amb_Cave" ID="{0AC7F1DC-1DF3-4D8D-ACF4-BBDB6CB5D515}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Amb_Blizzard" ID="{F50F917A-588B-4BAD-B187-C9B0AEFD843F}" ShortID="882996234">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>25</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Amb_Blizzard" ID="{356F5D63-E4FD-4814-93A9-6BF689DF77AF}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="1136.842"/>
+										<Property Name="LoopBegin" Type="Real64" Value="6.28767123287671"/>
+										<Property Name="LoopEnd" Type="Real64" Value="58.5616438356164"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Amb_Blizzard.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="152844334"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Amb_Blizzard" ID="{356F5D63-E4FD-4814-93A9-6BF689DF77AF}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</BlendContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
