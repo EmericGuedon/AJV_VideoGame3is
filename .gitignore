@@ -63,9 +63,8 @@ crashlytics-build.properties
 
 # Project specific
 */ProjectSettings/**
-*/.cache
-*/.unsaved
-*/.user
-*/.validationcache
-*/.wsettings
-
+*.cache
+*.unsaved
+*.user
+*.validationcache
+*.wsettings
