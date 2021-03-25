@@ -91,11 +91,11 @@
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Switches\Default Work Unit.wwu" DateLow="1616580481" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\States\Default Work Unit.wwu" DateLow="1616580481" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1616580481" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\SoundBanks\Default Work Unit.wwu" DateLow="1616580481" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\SoundBanks\Default Work Unit.wwu" DateLow="1616668484" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Queries\Factory Queries.wwu" DateLow="1616580481" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Queries\Default Work Unit.wwu" DateLow="1616580481" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\project_3isWwise.wproj" DateLow="1616580481" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\project_3isWwise.etudiant.wsettings" DateLow="1616582884" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\project_3isWwise.wproj" DateLow="1616668496" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\project_3isWwise.etudiant.wsettings" DateLow="1616668496" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Presets\Factory Spatial Audio.wwu" DateLow="1616580481" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Presets\Default Work Unit.wwu" DateLow="1616580481" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Modulators\Default Work Unit.wwu" DateLow="1616580480" DateHigh="0"/>
@@ -103,7 +103,7 @@
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1616580480" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1616580480" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Game Parameters\Default Work Unit.wwu" DateLow="1616580480" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Events\Default Work Unit.wwu" DateLow="1616580480" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Events\Default Work Unit.wwu" DateLow="1616668484" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Effects\Factory Effects.wwu" DateLow="1616580480" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Effects\Default Work Unit.wwu" DateLow="1616580480" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1616580480" DateHigh="0"/>
@@ -112,8 +112,13 @@
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Control Surface Sessions\Default Work Unit.wwu" DateLow="1616580480" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Audio Devices\Default Work Unit.wwu" DateLow="1616580480" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Attenuations\Default Work Unit.wwu" DateLow="1616580480" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Actor-Mixer Hierarchy\RFX.wwu" DateLow="1616580480" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1616580480" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Actor-Mixer Hierarchy\CHARACTER.wwu" DateLow="1616580480" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Actor-Mixer Hierarchy\AMBIANCE.wwu" DateLow="1616582835" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Actor-Mixer Hierarchy\WP.wwu" DateLow="1616668496" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Actor-Mixer Hierarchy\RFX.wwu" DateLow="1616668496" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Actor-Mixer Hierarchy\Outdoor.wwu" DateLow="1616668496" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Actor-Mixer Hierarchy\Mob.wwu" DateLow="1616668496" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Actor-Mixer Hierarchy\Indoor.wwu" DateLow="1616668496" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1616668496" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Actor-Mixer Hierarchy\CrowM.wwu" DateLow="1616668496" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Actor-Mixer Hierarchy\CHARACTER.wwu" DateLow="1616668496" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\Actor-Mixer Hierarchy\AMBIANCE.wwu" DateLow="1616668496" DateHigh="0"/>
 </ValidationCache>

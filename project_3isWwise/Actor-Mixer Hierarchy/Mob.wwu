@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}" SchemaVersion="97" RootDocumentID="{3F718F07-86BF-45AA-9CF2-FBE66C973C6C}">
 	<AudioObjects>
-		<WorkUnit Name="Mob" ID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}" OwnerID="{B32F5193-1056-4B08-ABBA-D68C0A0E704B}" PersistMode="Nested"/>
+		<WorkUnit Name="Mob" ID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}" OwnerID="{B32F5193-1056-4B08-ABBA-D68C0A0E704B}" PersistMode="Nested">
+			<ChildrenList>
+				<BlendContainer Name="Mob_Footstep" ID="{8E63F46C-FA42-4B99-80CA-A83F315394BB}" ShortID="402568258">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SwitchContainer Name="Mob_Footstep_Materials" ID="{14FAD1FF-0A66-46E5-B6FA-1C15719A33D2}" ShortID="76830005">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<GroupingInfo/>
+						</SwitchContainer>
+					</ChildrenList>
+				</BlendContainer>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>
