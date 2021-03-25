@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{A32F4D49-79B3-40BC-84DA-F1EA1A691BE7}" SchemaVersion="97">
 	<Switches>
-		<WorkUnit Name="Default Work Unit" ID="{A32F4D49-79B3-40BC-84DA-F1EA1A691BE7}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{A32F4D49-79B3-40BC-84DA-F1EA1A691BE7}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="CrowM_Mooving" ID="{D107B2AA-22A3-4F6C-96F0-A6B503250A71}">
+					<ChildrenList>
+						<Switch Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
+						<Switch Name="WALK" ID="{CFC5BDF7-9EF6-491C-A14B-DA62EBDB7589}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</Switches>
 </WwiseDocument>

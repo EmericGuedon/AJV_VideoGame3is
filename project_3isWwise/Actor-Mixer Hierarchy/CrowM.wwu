@@ -13,10 +13,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<RandomSequenceContainer Name="CrowM_Footstep" ID="{9F15FFCF-04B6-4F81-BC92-8D9FE8D98FB6}" ShortID="261736391">
-							<PropertyList>
-								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-							</PropertyList>
+						<BlendContainer Name="CrowM_Général_test" ID="{473EBC68-B68E-4087-8FBB-D00FCBEB59D0}" ShortID="678915020">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -26,39 +23,12 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<RandomSequenceContainer Name="CrowM_FootstepImpact_Heavy" ID="{7F120085-F073-4B7A-8D6E-7797FBF1F23E}" ShortID="524190537">
+								<BlendContainer Name="CrowM_Gear" ID="{873C92D9-401B-4689-9B2E-F85E27DBCED6}" ShortID="176973557">
 									<PropertyList>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>19</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{33ECE2E1-8B59-4691-9368-BB84C7C39985}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="177"/>
-															<Property Name="Min" Type="Real64" Value="-101"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 										<Property Name="Volume" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{193D38F5-6EE7-4F47-9E83-ECE020AE3FB8}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="2"/>
-															<Property Name="Min" Type="Real64" Value="-3"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -70,7 +40,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-001" ID="{F1F82EED-EA2F-4FE6-B4D2-F60C7087E78A}" ShortID="192289469">
+										<RandomSequenceContainer Name="CrowM_Jewels" ID="{2EEC8521-76FB-417F-BB3E-8924B7355F80}" ShortID="83444591">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.18</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-17</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -80,24 +63,247 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-001" ID="{E38BB358-4B70-4AF7-8A46-30CCEA1E9C97}">
+												<Sound Name="CHAR_CrowM_jewels-001" ID="{49202737-ED4F-4AD9-88E9-C945F15553C8}" ShortID="199207213">
 													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.073048872716895"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.47251148687215"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-001.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="645484814"/>
-													</MediaIDList>
-												</AudioFileSource>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_jewels-001" ID="{52D0F553-D6F8-4FAE-8595-5E8D55EDF947}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_jewels-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="462531177"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_jewels-001" ID="{52D0F553-D6F8-4FAE-8595-5E8D55EDF947}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_jewels-002" ID="{4A70C668-F238-4497-9682-4C8CD58F61C3}" ShortID="1009098270">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_jewels-002" ID="{502ABC1D-876B-4C35-BA73-188C0C5CAF49}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_jewels-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1003736908"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_jewels-002" ID="{502ABC1D-876B-4C35-BA73-188C0C5CAF49}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_jewels-003" ID="{0069A136-BB21-4406-8EF8-59E642911EBF}" ShortID="505328514">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_jewels-003" ID="{E781532A-CADE-4A12-A498-97477E571849}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_jewels-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="243958198"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_jewels-003" ID="{E781532A-CADE-4A12-A498-97477E571849}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_jewels-004" ID="{CFC2267B-FB41-4283-9EE5-8B4C2DA15B21}" ShortID="756341528">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_jewels-004" ID="{CCB1149D-EACE-42A0-95C1-5296910009C4}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_jewels-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="666884426"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_jewels-004" ID="{CCB1149D-EACE-42A0-95C1-5296910009C4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_jewels-005" ID="{FDFE2C92-9770-4F6D-B101-18D8848D4E64}" ShortID="676332842">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_jewels-005" ID="{FD59E227-A4A3-4A23-A208-04BD74AD5133}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_jewels-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="527306008"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_jewels-005" ID="{FD59E227-A4A3-4A23-A208-04BD74AD5133}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_jewels-006" ID="{E1A834E6-7BC9-4610-989F-34FA2D3CC6F6}" ShortID="502037797">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_jewels-006" ID="{7AC48EA8-7D84-401B-BE60-A7169D9F2D2F}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_jewels-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="73811381"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_jewels-006" ID="{7AC48EA8-7D84-401B-BE60-A7169D9F2D2F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_jewels-007" ID="{3BC9FCD6-90A9-432A-9490-8B1E13A59E64}" ShortID="223058702">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_jewels-007" ID="{160C9062-2FFB-460F-BD0B-63FFE64A8C53}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_jewels-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="28156667"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_jewels-007" ID="{160C9062-2FFB-460F-BD0B-63FFE64A8C53}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_jewels-008" ID="{60D7C113-2117-4A1F-9415-E5938E364F8B}" ShortID="793238470">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-2</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_jewels-008" ID="{CD9F0C22-8404-41D7-BB53-45442639A896}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_jewels-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="150469387"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_jewels-008" ID="{CD9F0C22-8404-41D7-BB53-45442639A896}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-001" ID="{E38BB358-4B70-4AF7-8A46-30CCEA1E9C97}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-002" ID="{7B14E87A-B01D-43FE-BD4A-31B935722544}" ShortID="161308664">
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="CrowM_Bones" ID="{BC7EA5DB-AF52-4103-A4C0-D7F633494579}" ShortID="453702210">
+											<PropertyList>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>0.15</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -107,24 +313,230 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-002" ID="{2B2D03F1-C24B-401C-A5D6-1664C5A4F72C}">
+												<Sound Name="CHAR_CrowM_Gear_Bones-001" ID="{8DF875AF-E350-4B9B-91CD-D7643D651DD9}" ShortID="754607242">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.40265346746575"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-002.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="221929987"/>
-													</MediaIDList>
-												</AudioFileSource>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Gear_Bones-001" ID="{1B263169-E0F7-40AF-B06B-5DE5F9188B33}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Gear_Bones-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="895393105"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Gear_Bones-001" ID="{1B263169-E0F7-40AF-B06B-5DE5F9188B33}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Gear_Bones-002" ID="{29477EA0-BF8A-49DE-87CB-993DA5224697}" ShortID="824608307">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Gear_Bones-002" ID="{47E58E9D-4A50-4D04-9347-9C854B47824E}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Gear_Bones-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="593025213"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Gear_Bones-002" ID="{47E58E9D-4A50-4D04-9347-9C854B47824E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Gear_Bones-003" ID="{93BDD221-3B12-405B-89BB-4B0DBB702597}" ShortID="1028521203">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Gear_Bones-003" ID="{1B63DB56-E540-42BC-866D-E87DE3F275CE}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Gear_Bones-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="862302955"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Gear_Bones-003" ID="{1B63DB56-E540-42BC-866D-E87DE3F275CE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Gear_Bones-004" ID="{7CE1BC10-4CA1-41C5-8360-6C2AA1E43DFA}" ShortID="384987001">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Gear_Bones-004" ID="{11CA72C8-AD2E-4FF6-BD9E-C5E90C6473CF}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Gear_Bones-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="847201397"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Gear_Bones-004" ID="{11CA72C8-AD2E-4FF6-BD9E-C5E90C6473CF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Gear_Bones-005" ID="{005F1B94-814F-4BB1-94A6-588C704405CC}" ShortID="962305517">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Gear_Bones-005" ID="{DE198D55-0931-427F-8F0D-04DB94441058}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Gear_Bones-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="406235804"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Gear_Bones-005" ID="{DE198D55-0931-427F-8F0D-04DB94441058}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Gear_Bones-006" ID="{2D7145C0-98FE-4C29-9B4E-229B0D68AC60}" ShortID="392518874">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Gear_Bones-006" ID="{70CCB6FE-97C1-4D72-8B19-0513595ABDC8}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Gear_Bones-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="206800123"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Gear_Bones-006" ID="{70CCB6FE-97C1-4D72-8B19-0513595ABDC8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Gear_Bones-007" ID="{F9376C01-2608-4DFA-98C5-97BA794E9639}" ShortID="62494805">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Gear_Bones-007" ID="{100F630A-764A-4F60-A704-2DE7A8D4358A}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Gear_Bones-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="718387965"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Gear_Bones-007" ID="{100F630A-764A-4F60-A704-2DE7A8D4358A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-002" ID="{2B2D03F1-C24B-401C-A5D6-1664C5A4F72C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-003" ID="{8CE2308C-6E79-4AF0-BD69-945BE5137FCE}" ShortID="656279707">
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="CrowM_Armor" ID="{8ABCE148-34F3-4402-A865-E7455DF29C11}" ShortID="274115496">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>25</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -134,24 +546,154 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-003" ID="{A93CF07D-E225-4FEB-8EC6-B7C602A19238}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.18519773829909"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-003.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="422760239"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<Sound Name="CHAR_CrowM_armor-001" ID="{1E7A3F90-41E4-4D9E-9B63-72706D48089D}" ShortID="914883249">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_armor-001" ID="{7703F747-908B-43EA-8918-C848FAD5511E}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_armor-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="720977885"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_armor-001" ID="{7703F747-908B-43EA-8918-C848FAD5511E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_armor-002" ID="{BE2CA54B-7464-42A5-ABD0-8DC443622D82}" ShortID="852863885">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_armor-002" ID="{753B55D4-8CFC-49A0-9362-103C86D37563}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_armor-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="466021729"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_armor-002" ID="{753B55D4-8CFC-49A0-9362-103C86D37563}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_armor-003" ID="{37ABD881-D468-467A-AF72-0849A938A5EE}" ShortID="741136296">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_armor-003" ID="{FAC75459-4909-4290-9A93-D404E2E91262}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_armor-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="350005420"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_armor-003" ID="{FAC75459-4909-4290-9A93-D404E2E91262}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_armor-004" ID="{451D44BD-25E3-400E-AE58-CA98F0FA6F0C}" ShortID="151704669">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_armor-004" ID="{67DA9595-6BC0-4996-828B-BE3FC392907F}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_armor-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="23122068"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_armor-004" ID="{67DA9595-6BC0-4996-828B-BE3FC392907F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_armor-005" ID="{5D9D2FBB-8DEF-42C4-B74C-AFFE6827F845}" ShortID="361153662">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_armor-005" ID="{F1184B78-1488-4EB3-B6A6-E7D03735F9BD}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_armor-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="805895434"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_armor-005" ID="{F1184B78-1488-4EB3-B6A6-E7D03735F9BD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_armor-006" ID="{631A4F33-C43C-4B86-9480-DC4C4DB6E03E}" ShortID="325552082">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_armor-006" ID="{FB06C7DE-5403-4064-969F-28DB28F26FB1}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_armor-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="426752581"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_armor-006" ID="{FB06C7DE-5403-4064-969F-28DB28F26FB1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-003" ID="{A93CF07D-E225-4FEB-8EC6-B7C602A19238}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-005" ID="{29DDC4A2-FA4C-4574-96AF-806E74C5FD40}" ShortID="552196364">
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="CrowM_Plates" ID="{3BACD191-6121-4C9F-A551-33DB6E361C70}" ShortID="349687347">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -161,345 +703,181 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-005" ID="{C9213A5E-320A-4743-AEEB-43683EE2CC76}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.974221960616439"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-005.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="871655085"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<Sound Name="CHAR_CrowM_Gear_Plates-001" ID="{EA7FA946-93A7-4B1B-9594-163DEB5BC6B0}" ShortID="328286597">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Gear_Plates-001" ID="{4CC3B904-17DC-49B3-A787-3EC1734A060F}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Gear_Plates-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="873485"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Gear_Plates-001" ID="{4CC3B904-17DC-49B3-A787-3EC1734A060F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Gear_Plates-002" ID="{550980EB-C5F1-452C-BF83-4148DB0B50B3}" ShortID="174224015">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Gear_Plates-002" ID="{8E203B09-ED0A-412B-9E82-52FC1E2CAD8B}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Gear_Plates-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="151681601"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Gear_Plates-002" ID="{8E203B09-ED0A-412B-9E82-52FC1E2CAD8B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Gear_Plates-003" ID="{2BD5D5E9-FEBC-44AC-B175-9ABD9014FD07}" ShortID="159158611">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Gear_Plates-003" ID="{3AB688BA-59EB-48A2-967D-B4F375D6E0E0}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Gear_Plates-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="169590198"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Gear_Plates-003" ID="{3AB688BA-59EB-48A2-967D-B4F375D6E0E0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Gear_Plates-004" ID="{D47C19B8-7749-41BB-8CCF-06B10572B0CD}" ShortID="338745054">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Gear_Plates-004" ID="{663B36E8-BC5B-45BA-9A02-A7CB11457037}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Gear_Plates-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1031720614"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Gear_Plates-004" ID="{663B36E8-BC5B-45BA-9A02-A7CB11457037}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Gear_Plates-005" ID="{93BEFDCB-7F8A-4CCB-A35E-86116C953D01}" ShortID="741174507">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Gear_Plates-005" ID="{89661949-926E-4245-B5D7-FD4D2A7FC94E}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Gear_Plates-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="350060949"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Gear_Plates-005" ID="{89661949-926E-4245-B5D7-FD4D2A7FC94E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Gear_Plates-006" ID="{12BA89A5-6C0F-4630-9927-ED44AEF17DDC}" ShortID="863360172">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Gear_Plates-006" ID="{5FC83EC9-85CD-44C2-BB52-0B8FC4E99E73}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Gear_Plates-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="840191868"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Gear_Plates-006" ID="{5FC83EC9-85CD-44C2-BB52-0B8FC4E99E73}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Gear_Plates-007" ID="{E2EE79E9-3465-4E9F-9BBE-04EB45556C94}" ShortID="580659505">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Gear_Plates-007" ID="{FC1E7DDC-D4A1-4147-8EF9-A5D9890F3337}">
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Gear_Plates-007.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="772024785"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Gear_Plates-007" ID="{FC1E7DDC-D4A1-4147-8EF9-A5D9890F3337}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-005" ID="{C9213A5E-320A-4743-AEEB-43683EE2CC76}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-006" ID="{389DB8AA-C408-4AE4-8994-A2B06B7CC73B}" ShortID="465888771">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-006" ID="{88AE7A08-079F-4BF9-BAA7-A054B859850C}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.12485559360731"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-006.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="407380200"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-006" ID="{88AE7A08-079F-4BF9-BAA7-A054B859850C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-007" ID="{C8D2FA51-A50F-4416-90DA-5C32D7F93FDA}" ShortID="416057120">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-007" ID="{33D1622F-450E-4BEE-BDE2-3CD7752FD6EB}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.989348744292238"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-007.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="456838679"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-007" ID="{33D1622F-450E-4BEE-BDE2-3CD7752FD6EB}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-009" ID="{02B93008-8C7E-451A-BC24-075829C99BBD}" ShortID="1013334666">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-009" ID="{57DA45E9-992C-4068-A805-B8955B0C03AF}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.70635388127854"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-009.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="229922927"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-009" ID="{57DA45E9-992C-4068-A805-B8955B0C03AF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-010" ID="{F7A4F061-AF97-46B6-82A5-4F1578C4E678}" ShortID="647265402">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-010" ID="{9A767C46-28D4-4DB9-AF0F-5FE9426F24A8}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.210616438356164"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2.10616438356165"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-010.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="874187728"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-010" ID="{9A767C46-28D4-4DB9-AF0F-5FE9426F24A8}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</RandomSequenceContainer>
 									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="CrowM_FootstepImpact_Medium" ID="{7945FFFC-1E34-476B-A8E4-A3CD35F1E85A}" ShortID="663975794">
-									<PropertyList>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>15</Value>
-											</ValueList>
-										</Property>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
-										<Property Name="Volume" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{383279A1-AFD4-4DB7-B83B-9B85194C7CEF}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="2"/>
-															<Property Name="Min" Type="Real64" Value="-3"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
+								</BlendContainer>
+								<SwitchContainer Name="CrowM_Run_Walk" ID="{5E9188A4-0C59-48C9-B8F9-B1356D786D04}" ShortID="247243569">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="Char_CrowM_Footsteps_Impact_Soft_Medium-002" ID="{E8036FD1-99BC-42B2-BA15-D2FF7244F0C1}" ShortID="736003291">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-002" ID="{57D0EE3F-D06D-4428-83FF-6260D400C8B9}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.302734874429224"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.970725956050228"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Char_CrowM_Footsteps_Impact_Soft_Medium-002.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="979149679"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-002" ID="{57D0EE3F-D06D-4428-83FF-6260D400C8B9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Char_CrowM_Footsteps_Impact_Soft_Medium-003" ID="{018DD28E-0577-4A6A-8B2F-DB93E4349088}" ShortID="443166382">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-003" ID="{77C04FD9-378D-4717-B0C7-2882079FD861}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.255012628424658"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.954742401541097"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Char_CrowM_Footsteps_Impact_Soft_Medium-003.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="785384750"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-003" ID="{77C04FD9-378D-4717-B0C7-2882079FD861}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Char_CrowM_Footsteps_Impact_Soft_Medium-005" ID="{FB5CE2BA-C294-4D08-8364-1715736BFDC4}" ShortID="954939424">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-005" ID="{31C944CC-84AA-4238-AF32-0056A35D2BC1}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.315500142694064"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.88971040239726"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Char_CrowM_Footsteps_Impact_Soft_Medium-005.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="579521583"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-005" ID="{31C944CC-84AA-4238-AF32-0056A35D2BC1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Char_CrowM_Footsteps_Impact_Soft_Medium-006" ID="{DC130B03-9B8B-4776-BC6F-CAFD151D14B8}" ShortID="922850031">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-006" ID="{9C27D90B-43B9-431A-9D51-B54F05B78313}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.445205479452055"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.05479452054795"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Char_CrowM_Footsteps_Impact_Soft_Medium-006.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="319119894"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-006" ID="{9C27D90B-43B9-431A-9D51-B54F05B78313}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="Char_CrowM_Footsteps_Impact_Soft_Medium-007" ID="{30D35ACE-E3C7-4230-A0E2-EBCF1A95F403}" ShortID="800714808">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-007" ID="{4D4D5A28-824E-4217-93A7-1D3DFBC0F5BF}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.445205479452055"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.02739726027397"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Char_CrowM_Footsteps_Impact_Soft_Medium-007.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="948496585"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-007" ID="{4D4D5A28-824E-4217-93A7-1D3DFBC0F5BF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="CrowM_FootstepMetal" ID="{087BA8D5-7A40-401E-9726-3FDD98095581}" ShortID="491442835">
-									<PropertyList>
-										<Property Name="InitialDelay" Type="Real64">
-											<ValueList>
-												<Value>0.2</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{75407225-0A85-412F-87DE-7CC45A751BD2}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="152"/>
-															<Property Name="Min" Type="Real64" Value="-202"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
-										<Property Name="Volume" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{11BE83C7-691C-4B7A-862F-F81D067ADDD1}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Min" Type="Real64" Value="-2"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="WALK" ID="{CFC5BDF7-9EF6-491C-A14B-DA62EBDB7589}" WorkUnitID="{A32F4D49-79B3-40BC-84DA-F1EA1A691BE7}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="CrowM_Mooving" ID="{D107B2AA-22A3-4F6C-96F0-A6B503250A71}" WorkUnitID="{A32F4D49-79B3-40BC-84DA-F1EA1A691BE7}"/>
+										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="CHAR_CrowM_Footsteps_Metal_Fast-001" ID="{A4813F08-3DC8-4C87-AFF2-926D1A5A505A}" ShortID="921632905">
+										<BlendContainer Name="CrowM_Footsteps_Run" ID="{763E157A-C5AF-49B7-90D2-B2727E453777}" ShortID="247110055">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -509,24 +887,642 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-001" ID="{B1A603DA-E909-430B-A46B-C72DAE590D74}">
+												<RandomSequenceContainer Name="CrowM_FootstepImpact_Medium" ID="{7945FFFC-1E34-476B-A8E4-A3CD35F1E85A}" ShortID="663975794">
 													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0676489726027397"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.08614183789954"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>250</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{5FC8AF36-B93D-498B-BD7E-3A6E04B5D92D}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{383279A1-AFD4-4DB7-B83B-9B85194C7CEF}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="2"/>
+																			<Property Name="Min" Type="Real64" Value="-3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-001.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="513382808"/>
-													</MediaIDList>
-												</AudioFileSource>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Char_CrowM_Footsteps_Impact_Soft_Medium-002" ID="{E8036FD1-99BC-42B2-BA15-D2FF7244F0C1}" ShortID="736003291">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-002" ID="{57D0EE3F-D06D-4428-83FF-6260D400C8B9}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.302734874429224"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.970725956050228"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Char_CrowM_Footsteps_Impact_Soft_Medium-002.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="979149679"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-002" ID="{57D0EE3F-D06D-4428-83FF-6260D400C8B9}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Char_CrowM_Footsteps_Impact_Soft_Medium-003" ID="{018DD28E-0577-4A6A-8B2F-DB93E4349088}" ShortID="443166382">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-003" ID="{77C04FD9-378D-4717-B0C7-2882079FD861}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.255012628424658"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.954742401541097"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Char_CrowM_Footsteps_Impact_Soft_Medium-003.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="785384750"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-003" ID="{77C04FD9-378D-4717-B0C7-2882079FD861}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Char_CrowM_Footsteps_Impact_Soft_Medium-005" ID="{FB5CE2BA-C294-4D08-8364-1715736BFDC4}" ShortID="954939424">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-005" ID="{31C944CC-84AA-4238-AF32-0056A35D2BC1}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.315500142694064"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.88971040239726"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Char_CrowM_Footsteps_Impact_Soft_Medium-005.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="579521583"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-005" ID="{31C944CC-84AA-4238-AF32-0056A35D2BC1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Char_CrowM_Footsteps_Impact_Soft_Medium-006" ID="{DC130B03-9B8B-4776-BC6F-CAFD151D14B8}" ShortID="922850031">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-006" ID="{9C27D90B-43B9-431A-9D51-B54F05B78313}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.445205479452055"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.05479452054795"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Char_CrowM_Footsteps_Impact_Soft_Medium-006.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="319119894"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-006" ID="{9C27D90B-43B9-431A-9D51-B54F05B78313}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Char_CrowM_Footsteps_Impact_Soft_Medium-007" ID="{30D35ACE-E3C7-4230-A0E2-EBCF1A95F403}" ShortID="800714808">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-007" ID="{4D4D5A28-824E-4217-93A7-1D3DFBC0F5BF}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.445205479452055"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.02739726027397"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Char_CrowM_Footsteps_Impact_Soft_Medium-007.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="948496585"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-007" ID="{4D4D5A28-824E-4217-93A7-1D3DFBC0F5BF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="CrowM_FootstepMetal" ID="{087BA8D5-7A40-401E-9726-3FDD98095581}" ShortID="491442835">
+													<PropertyList>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.05</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-100</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{75407225-0A85-412F-87DE-7CC45A751BD2}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="152"/>
+																			<Property Name="Min" Type="Real64" Value="-202"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{11BE83C7-691C-4B7A-862F-F81D067ADDD1}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="CHAR_CrowM_Footsteps_Metal_Fast-001" ID="{A4813F08-3DC8-4C87-AFF2-926D1A5A505A}" ShortID="921632905">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-001" ID="{B1A603DA-E909-430B-A46B-C72DAE590D74}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0676489726027397"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.08614183789954"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-001.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="513382808"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Metal_Fast-001" ID="{B1A603DA-E909-430B-A46B-C72DAE590D74}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Metal_Fast-002" ID="{D385DCE5-DAE7-498E-B983-D5F01CCE2510}" ShortID="504033732">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-002" ID="{647A239B-7945-4AE1-9249-2CEB150FFC05}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0375827625570776"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.977151826484018"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-002.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="904909175"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Metal_Fast-002" ID="{647A239B-7945-4AE1-9249-2CEB150FFC05}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Metal_Fast-003" ID="{F6FCC792-2506-4E8F-9B30-11CD670166F9}" ShortID="281476879">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-003" ID="{3C4B5301-72CA-4362-8F09-1A98C197E462}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0826820776255708"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.02225114155251"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-003.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="399809754"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Metal_Fast-003" ID="{3C4B5301-72CA-4362-8F09-1A98C197E462}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Metal_Fast-004" ID="{0D117424-C3FB-4759-B2D2-942E1F82486F}" ShortID="805680942">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-004" ID="{1986D411-1758-44D7-88A8-B842E413A1E6}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0826820776255708"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.04480079908676"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-004.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="171528945"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Metal_Fast-004" ID="{1986D411-1758-44D7-88A8-B842E413A1E6}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Metal_Fast-005" ID="{00FDA183-71D8-4F48-A99A-FBEAF6252313}" ShortID="496763142">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-005" ID="{1E4D6A9F-4E68-4E32-A9D4-A200EB332B45}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.04855907534247"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-005.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="138116994"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Metal_Fast-005" ID="{1E4D6A9F-4E68-4E32-A9D4-A200EB332B45}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="CrowM_FootstepImpact_Heavy" ID="{7F120085-F073-4B7A-8D6E-7797FBF1F23E}" ShortID="524190537">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>13</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{33ECE2E1-8B59-4691-9368-BB84C7C39985}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="177"/>
+																			<Property Name="Min" Type="Real64" Value="-101"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-7</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{193D38F5-6EE7-4F47-9E83-ECE020AE3FB8}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="2"/>
+																			<Property Name="Min" Type="Real64" Value="-3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-001" ID="{F1F82EED-EA2F-4FE6-B4D2-F60C7087E78A}" ShortID="192289469">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-001" ID="{E38BB358-4B70-4AF7-8A46-30CCEA1E9C97}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.073048872716895"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.47251148687215"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-001.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="645484814"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-001" ID="{E38BB358-4B70-4AF7-8A46-30CCEA1E9C97}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-002" ID="{7B14E87A-B01D-43FE-BD4A-31B935722544}" ShortID="161308664">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-002" ID="{2B2D03F1-C24B-401C-A5D6-1664C5A4F72C}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.40265346746575"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-002.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="221929987"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-002" ID="{2B2D03F1-C24B-401C-A5D6-1664C5A4F72C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-003" ID="{8CE2308C-6E79-4AF0-BD69-945BE5137FCE}" ShortID="656279707">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-003" ID="{A93CF07D-E225-4FEB-8EC6-B7C602A19238}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.18519773829909"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-003.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="422760239"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-003" ID="{A93CF07D-E225-4FEB-8EC6-B7C602A19238}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-005" ID="{29DDC4A2-FA4C-4574-96AF-806E74C5FD40}" ShortID="552196364">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-005" ID="{C9213A5E-320A-4743-AEEB-43683EE2CC76}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.974221960616439"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-005.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="871655085"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-005" ID="{C9213A5E-320A-4743-AEEB-43683EE2CC76}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-006" ID="{389DB8AA-C408-4AE4-8994-A2B06B7CC73B}" ShortID="465888771">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-006" ID="{88AE7A08-079F-4BF9-BAA7-A054B859850C}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.12485559360731"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-006.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="407380200"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-006" ID="{88AE7A08-079F-4BF9-BAA7-A054B859850C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-007" ID="{C8D2FA51-A50F-4416-90DA-5C32D7F93FDA}" ShortID="416057120">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-007" ID="{33D1622F-450E-4BEE-BDE2-3CD7752FD6EB}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.989348744292238"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-007.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="456838679"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-007" ID="{33D1622F-450E-4BEE-BDE2-3CD7752FD6EB}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-009" ID="{02B93008-8C7E-451A-BC24-075829C99BBD}" ShortID="1013334666">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-009" ID="{57DA45E9-992C-4068-A805-B8955B0C03AF}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.70635388127854"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-009.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="229922927"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-009" ID="{57DA45E9-992C-4068-A805-B8955B0C03AF}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-010" ID="{F7A4F061-AF97-46B6-82A5-4F1578C4E678}" ShortID="647265402">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-010" ID="{9A767C46-28D4-4DB9-AF0F-5FE9426F24A8}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.210616438356164"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="2.10616438356165"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-010.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="874187728"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-010" ID="{9A767C46-28D4-4DB9-AF0F-5FE9426F24A8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Footsteps_Metal_Fast-001" ID="{B1A603DA-E909-430B-A46B-C72DAE590D74}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_CrowM_Footsteps_Metal_Fast-002" ID="{D385DCE5-DAE7-498E-B983-D5F01CCE2510}" ShortID="504033732">
+										</BlendContainer>
+										<BlendContainer Name="CrowM_Footsteps_Walk" ID="{BA0C8131-1431-41BF-8237-9073FCBDC622}" ShortID="792081499">
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -536,108 +1532,660 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-002" ID="{647A239B-7945-4AE1-9249-2CEB150FFC05}">
+												<RandomSequenceContainer Name="CrowM_FootstepImpact_Heavy" ID="{D11B567B-0129-42F9-A245-EEB69F81AC63}" ShortID="829464948">
 													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0375827625570776"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.977151826484018"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>10</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{6057E029-0C0B-4A96-9345-DD166A2A8769}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="177"/>
+																			<Property Name="Min" Type="Real64" Value="-101"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{824BF2C8-EC55-48E4-AA6B-2228850D02C5}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="2"/>
+																			<Property Name="Min" Type="Real64" Value="-3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-002.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="904909175"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Footsteps_Metal_Fast-002" ID="{647A239B-7945-4AE1-9249-2CEB150FFC05}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_CrowM_Footsteps_Metal_Fast-003" ID="{F6FCC792-2506-4E8F-9B30-11CD670166F9}" ShortID="281476879">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-003" ID="{3C4B5301-72CA-4362-8F09-1A98C197E462}">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-001" ID="{37BF1317-0D0E-4A0E-A010-77298AA3EF0B}" ShortID="10242649">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-001" ID="{81B9B0C5-9871-4A22-843A-4612F650D4B8}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.073048872716895"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.47251148687215"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-001.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="645484814"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-001" ID="{81B9B0C5-9871-4A22-843A-4612F650D4B8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-002" ID="{0122FB9E-9D6D-403B-BFE9-6C98F2D069B5}" ShortID="92489995">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-002" ID="{41D2B60A-4094-4310-ADFF-3E7CA74D7C7A}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.40265346746575"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-002.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="221929987"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-002" ID="{41D2B60A-4094-4310-ADFF-3E7CA74D7C7A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-003" ID="{94EEAB10-35C2-473E-BFFA-4315DE057DD6}" ShortID="65535067">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-003" ID="{C4884FA8-6122-488B-A27F-9D49CD390593}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.18519773829909"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-003.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="422760239"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-003" ID="{C4884FA8-6122-488B-A27F-9D49CD390593}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-005" ID="{0FD85372-6F92-42C5-BAD6-BF8B5A11B1BE}" ShortID="98078730">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-005" ID="{0BB927B4-3ACF-42F7-9E1F-2EA2125B3B9E}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.974221960616439"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-005.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="871655085"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-005" ID="{0BB927B4-3ACF-42F7-9E1F-2EA2125B3B9E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-006" ID="{5CEF8B76-B878-4827-9CCC-367951C68A1E}" ShortID="957178529">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-006" ID="{7749B69F-D2C6-43DF-B95F-743F29B63018}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.12485559360731"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-006.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="407380200"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-006" ID="{7749B69F-D2C6-43DF-B95F-743F29B63018}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-007" ID="{A8C0ADF4-0FF7-4476-B062-D7517CF3D8F6}" ShortID="45427416">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-007" ID="{C77BF156-D5F2-4C07-B8C6-E2263EE6F357}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.989348744292238"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-007.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="456838679"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-007" ID="{C77BF156-D5F2-4C07-B8C6-E2263EE6F357}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-009" ID="{DCF370DD-DA10-4064-99EA-EAEE789F7E85}" ShortID="513083297">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-009" ID="{305E216A-55F6-4DA5-9D96-EEAB1E34797A}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.70635388127854"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-009.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="229922927"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-009" ID="{305E216A-55F6-4DA5-9D96-EEAB1E34797A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Impact_Heavy-010" ID="{D3F3BC43-CCB3-47A1-8E36-F65D12D988B0}" ShortID="124985130">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-010" ID="{BF302529-C98C-40C1-81AD-ACF4F85DBF86}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.210616438356164"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="2.10616438356165"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Impact_Heavy-010.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="874187728"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Impact_Heavy-010" ID="{BF302529-C98C-40C1-81AD-ACF4F85DBF86}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="CrowM_FootstepImpact_Medium" ID="{06B7B750-B9FB-468C-B413-B5071CDDA6A5}" ShortID="836397976">
 													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0826820776255708"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.02225114155251"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>15</Value>
+															</ValueList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{5A590EF4-F4F6-4A45-8FF9-989E24D86099}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="2"/>
+																			<Property Name="Min" Type="Real64" Value="-3"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-003.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="399809754"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Footsteps_Metal_Fast-003" ID="{3C4B5301-72CA-4362-8F09-1A98C197E462}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_CrowM_Footsteps_Metal_Fast-004" ID="{0D117424-C3FB-4759-B2D2-942E1F82486F}" ShortID="805680942">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-004" ID="{1986D411-1758-44D7-88A8-B842E413A1E6}">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Char_CrowM_Footsteps_Impact_Soft_Medium-002" ID="{65228DA1-6732-46A7-9BE0-D50A5BDD448E}" ShortID="644708387">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-002" ID="{48533890-30EC-421C-A121-70D082AB4462}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.302734874429224"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.970725956050228"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Char_CrowM_Footsteps_Impact_Soft_Medium-002.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="979149679"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-002" ID="{48533890-30EC-421C-A121-70D082AB4462}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Char_CrowM_Footsteps_Impact_Soft_Medium-003" ID="{D76C7EE2-1260-4874-8D7B-81D4B7432793}" ShortID="17087235">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-003" ID="{8F563A2B-5613-47DD-A56D-302C36935F2F}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.255012628424658"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.954742401541097"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Char_CrowM_Footsteps_Impact_Soft_Medium-003.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="785384750"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-003" ID="{8F563A2B-5613-47DD-A56D-302C36935F2F}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Char_CrowM_Footsteps_Impact_Soft_Medium-005" ID="{8E48BACC-E878-4BF4-A43A-6C1A6B6CD465}" ShortID="313167682">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-005" ID="{434AEE3F-BD96-47A3-9683-B27ADC2D6DB1}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.315500142694064"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.88971040239726"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Char_CrowM_Footsteps_Impact_Soft_Medium-005.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="579521583"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-005" ID="{434AEE3F-BD96-47A3-9683-B27ADC2D6DB1}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Char_CrowM_Footsteps_Impact_Soft_Medium-006" ID="{80D16E5E-D6FE-4C39-9E96-1A22265F9962}" ShortID="393803959">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-006" ID="{5EB44F37-A467-46D0-8192-D09FDBB47604}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.445205479452055"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.05479452054795"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Char_CrowM_Footsteps_Impact_Soft_Medium-006.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="319119894"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-006" ID="{5EB44F37-A467-46D0-8192-D09FDBB47604}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Char_CrowM_Footsteps_Impact_Soft_Medium-007" ID="{F9987C08-28DB-4FDF-B13F-8A623FD87B69}" ShortID="861313608">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-007" ID="{B8D8F5A9-3D1F-49B3-91A0-80C25CDCC4F3}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.445205479452055"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.02739726027397"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Char_CrowM_Footsteps_Impact_Soft_Medium-007.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="948496585"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Char_CrowM_Footsteps_Impact_Soft_Medium-007" ID="{B8D8F5A9-3D1F-49B3-91A0-80C25CDCC4F3}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="CrowM_FootstepMetal" ID="{A734FEB7-6A8C-4826-B8D5-823F046D7B3D}" ShortID="217079550">
 													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0826820776255708"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.04480079908676"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>25</Value>
+															</ValueList>
+														</Property>
+														<Property Name="InitialDelay" Type="Real64">
+															<ValueList>
+																<Value>0.15</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>-100</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{30B06FC1-E939-4A5F-AA85-94A710D837C7}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="152"/>
+																			<Property Name="Min" Type="Real64" Value="-202"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-6</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{464E0723-0D9B-4FDF-98AB-A0A16D52EC24}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-004.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="171528945"/>
-													</MediaIDList>
-												</AudioFileSource>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="CHAR_CrowM_Footsteps_Metal_Fast-001" ID="{301E15B2-FD4C-4560-A0BC-47F42E33C9B4}" ShortID="452712297">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-001" ID="{206420FA-8A6D-4006-A84C-A68EF8FD579C}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0676489726027397"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.08614183789954"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-001.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="513382808"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Metal_Fast-001" ID="{206420FA-8A6D-4006-A84C-A68EF8FD579C}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Metal_Fast-002" ID="{9B3663D5-60A5-4167-9009-06B5890B3EED}" ShortID="301217910">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-002" ID="{D3F7D008-7B51-4584-9AC7-A9AC76062F74}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0375827625570776"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.977151826484018"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-002.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="904909175"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Metal_Fast-002" ID="{D3F7D008-7B51-4584-9AC7-A9AC76062F74}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Metal_Fast-003" ID="{343A7ED4-5C49-41D5-8AE0-6A99F0784DC2}" ShortID="228100921">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-003" ID="{9772F9EE-9CBE-455D-BEB3-4716EC09FC48}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0826820776255708"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.02225114155251"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-003.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="399809754"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Metal_Fast-003" ID="{9772F9EE-9CBE-455D-BEB3-4716EC09FC48}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Metal_Fast-004" ID="{2C6BDC04-AB86-474C-B0B5-A2F58A3CE958}" ShortID="570503454">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-004" ID="{E631980F-9096-4717-8386-324E73C4BDA2}">
+																	<PropertyList>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0826820776255708"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.04480079908676"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-004.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="171528945"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Metal_Fast-004" ID="{E631980F-9096-4717-8386-324E73C4BDA2}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="CHAR_CrowM_Footsteps_Metal_Fast-005" ID="{1E829D20-542F-49E0-8B2E-E95C73312B1A}" ShortID="412342737">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-005" ID="{119EEE5A-7CF6-4EF0-B65A-281BEB310D7A}">
+																	<PropertyList>
+																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="1.04855907534247"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-005.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="138116994"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="CHAR_CrowM_Footsteps_Metal_Fast-005" ID="{119EEE5A-7CF6-4EF0-B65A-281BEB310D7A}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Footsteps_Metal_Fast-004" ID="{1986D411-1758-44D7-88A8-B842E413A1E6}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_CrowM_Footsteps_Metal_Fast-005" ID="{00FDA183-71D8-4F48-A99A-FBEAF6252313}" ShortID="496763142">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-005" ID="{1E4D6A9F-4E68-4E32-A9D4-A200EB332B45}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.04855907534247"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-005.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="138116994"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Footsteps_Metal_Fast-005" ID="{1E4D6A9F-4E68-4E32-A9D4-A200EB332B45}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										</BlendContainer>
 									</ChildrenList>
-								</RandomSequenceContainer>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="CrowM_Footsteps_Walk" ID="{BA0C8131-1431-41BF-8237-9073FCBDC622}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="CrowM_Footsteps_Run" ID="{763E157A-C5AF-49B7-90D2-B2727E453777}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
+												<ItemList>
+													<ItemRef Name="CrowM_Footsteps_Run" ID="{763E157A-C5AF-49B7-90D2-B2727E453777}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="WALK" ID="{CFC5BDF7-9EF6-491C-A14B-DA62EBDB7589}"/>
+												<ItemList>
+													<ItemRef Name="CrowM_Footsteps_Walk" ID="{BA0C8131-1431-41BF-8237-9073FCBDC622}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
 							</ChildrenList>
-						</RandomSequenceContainer>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
