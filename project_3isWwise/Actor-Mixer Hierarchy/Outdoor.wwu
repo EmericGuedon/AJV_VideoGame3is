@@ -218,6 +218,150 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
+						<BlendContainer Name="RFX_Cave" ID="{7475B756-6906-41ED-8A04-21618119F423}" ShortID="656484439">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="RFX_DustIce" ID="{CDC7851E-714F-4212-BA4C-72BD2FD957F0}" ShortID="791496116">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AMB_Out_Cave_RFX_DustIce_1" ID="{4CCE7F57-01B9-469E-88DC-C7E22D35201F}" ShortID="800461067">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Out_Cave_RFX_DustIce_1" ID="{7937B1D5-73F9-4B50-A482-93F84607B258}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_Out_Cave_RFX_DustIce_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="22046155"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Out_Cave_RFX_DustIce_1" ID="{7937B1D5-73F9-4B50-A482-93F84607B258}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Out_Cave_RFX_DustIce_2" ID="{EB96DC71-297A-431B-9533-7CD8E6D83FDF}" ShortID="497316906">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Out_Cave_RFX_DustIce_2" ID="{4722E7AE-40E7-4601-A320-AD23FDBE61E4}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_Out_Cave_RFX_DustIce_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="134457288"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Out_Cave_RFX_DustIce_2" ID="{4722E7AE-40E7-4601-A320-AD23FDBE61E4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Out_Cave_RFX_DustIce_3" ID="{5FC14B8C-5FE4-42A0-B388-CD9068A8CEB0}" ShortID="348945835">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Out_Cave_RFX_DustIce_3" ID="{FA4D8558-A75C-4CBA-83B9-3CC158530536}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_Out_Cave_RFX_DustIce_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="409800255"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Out_Cave_RFX_DustIce_3" ID="{FA4D8558-A75C-4CBA-83B9-3CC158530536}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Out_Cave_RFX_DustIce_4" ID="{79A8DBFD-2AB0-4862-8A0D-E8BF08F5C068}" ShortID="519917074">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Out_Cave_RFX_DustIce_4" ID="{A249645C-C1A9-4808-905E-EE113CED1430}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_Out_Cave_RFX_DustIce_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="684400074"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Out_Cave_RFX_DustIce_4" ID="{A249645C-C1A9-4808-905E-EE113CED1430}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Out_Cave_RFX_DustIce_5" ID="{A059047A-E75C-4632-8B75-A8F55CD48B86}" ShortID="265942842">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Out_Cave_RFX_DustIce_5" ID="{105A000C-3AFF-489A-9E27-BD27EEF0C2DF}">
+													<Language>SFX</Language>
+													<AudioFile>AMB_Out_Cave_RFX_DustIce_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="934219291"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Out_Cave_RFX_DustIce_5" ID="{105A000C-3AFF-489A-9E27-BD27EEF0C2DF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RFX_Icestress" ID="{B27A8CFE-2BD4-44E9-B563-041CCC8E857A}" ShortID="295403218">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Blizzard" ID="{8EAFF2DD-7432-4189-A648-DDAECC3B7886}" ShortID="548989943">
