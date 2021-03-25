@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{7D2688DC-677C-42AF-A175-436C8BF35476}" SchemaVersion="97" RootDocumentID="{3F718F07-86BF-45AA-9CF2-FBE66C973C6C}">
+	<AudioObjects>
+		<WorkUnit Name="Indoor" ID="{7D2688DC-677C-42AF-A175-436C8BF35476}" OwnerID="{D5657254-4A74-42CE-87DF-457E95E39B25}" PersistMode="Nested">
+			<ChildrenList>
+				<ActorMixer Name="Dungeon" ID="{8E1ACCC4-9A94-49E4-8436-16E8E608C41F}" ShortID="557302633">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<BlendContainer Name="RFX_WaterDrip" ID="{053D3708-7169-40C4-912F-5512E5CD1F99}" ShortID="589005997">
+							<PropertyList>
+								<Property Name="UserAuxSendVolume0" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Cave" ID="{D7F90C21-3D50-4D9F-AECB-CB73FEB22D44}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="RFX_WaterDrip-001" ID="{2CA8E119-914E-4D10-9111-170CD7F1D2DB}" ShortID="758189339">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RFX_WaterDrip-001" ID="{5863C827-231A-4A36-87FA-9977D32FF9B8}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="636.781"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.947071917808219"/>
+												<Property Name="LoopEnd" Type="Real64" Value="31.8452932363014"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>RFX_WaterDrip-001.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="898920206"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RFX_WaterDrip-001" ID="{5863C827-231A-4A36-87FA-9977D32FF9B8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="RFX_WaterDrip-002" ID="{B378DB3B-3D67-44AB-AB8A-87A0E9E7C3FD}" ShortID="278589831">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RFX_WaterDrip-002" ID="{4D3E0705-DD9C-4685-B0C2-4147B0386953}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="509.682"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.608011344178082"/>
+												<Property Name="LoopEnd" Type="Real64" Value="30.0136508989726"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>RFX_WaterDrip-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="120009047"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RFX_WaterDrip-002" ID="{4D3E0705-DD9C-4685-B0C2-4147B0386953}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
