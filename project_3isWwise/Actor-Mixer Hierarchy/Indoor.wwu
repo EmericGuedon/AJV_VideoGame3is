@@ -149,7 +149,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{A7C69997-7715-4512-8E93-E23B7C161F6C}"/>
+											<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -504,13 +504,13 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{A7C69997-7715-4512-8E93-E23B7C161F6C}"/>
+											<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -834,7 +834,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{A7C69997-7715-4512-8E93-E23B7C161F6C}"/>
+											<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1223,7 +1223,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{A7C69997-7715-4512-8E93-E23B7C161F6C}"/>
+											<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1644,7 +1644,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{A7C69997-7715-4512-8E93-E23B7C161F6C}"/>
+											<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1999,7 +1999,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="PROPS Dungeon" ID="{6D9AC303-288F-4281-A8CB-5C23221AA986}" WorkUnitID="{A7C69997-7715-4512-8E93-E23B7C161F6C}"/>
+									<ObjectRef Name="PROPS_Dungeon" ID="{6D9AC303-288F-4281-A8CB-5C23221AA986}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
 								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
