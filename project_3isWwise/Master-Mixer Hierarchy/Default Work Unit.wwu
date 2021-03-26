@@ -17,7 +17,20 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
-						<AuxBus Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}"/>
+						<AuxBus Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Hall_Large_Dark" ID="{0F6A7D6D-131C-4650-9561-FC05F5C7A37B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>
