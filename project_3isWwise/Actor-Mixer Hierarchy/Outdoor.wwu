@@ -13,8 +13,718 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<BlendContainer Name="RFX_WaterDrip" ID="{C7C9086F-F4DD-4335-832E-158093CBCCFE}" ShortID="89936256">
+						<BlendContainer Name="RFX_Cave" ID="{7475B756-6906-41ED-8A04-21618119F423}" ShortID="656484439">
 							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="RFX_DustIce" ID="{CDC7851E-714F-4212-BA4C-72BD2FD957F0}" ShortID="791496116">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="13">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6F3192C1-6702-4892-9212-C3CE841E06A7}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="RFX_Cave" ID="{D3A9E312-E197-4C87-9A66-DE435221134F}" WorkUnitID="{EBBBC9B0-AA40-4C36-9EE2-13BBC2E52546}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AMB_Out_Cave_RFX_DustIce_1" ID="{4CCE7F57-01B9-469E-88DC-C7E22D35201F}" ShortID="800461067">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Out_Cave_RFX_DustIce_1" ID="{7937B1D5-73F9-4B50-A482-93F84607B258}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.436643835616438"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.385273972602739"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.616438356164384"/>
+														<Property Name="TrimEnd" Type="Real64" Value="12.2003424657534"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AMB_Out_Cave_RFX_DustIce_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="22046155"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Out_Cave_RFX_DustIce_1" ID="{7937B1D5-73F9-4B50-A482-93F84607B258}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Out_Cave_RFX_DustIce_2" ID="{EB96DC71-297A-431B-9533-7CD8E6D83FDF}" ShortID="497316906">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Out_Cave_RFX_DustIce_2" ID="{4722E7AE-40E7-4601-A320-AD23FDBE61E4}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.295376712328767"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.452910958904109"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.137842465753425"/>
+														<Property Name="TrimEnd" Type="Real64" Value="9.19606164383561"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AMB_Out_Cave_RFX_DustIce_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="134457288"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Out_Cave_RFX_DustIce_2" ID="{4722E7AE-40E7-4601-A320-AD23FDBE61E4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Out_Cave_RFX_DustIce_3" ID="{5FC14B8C-5FE4-42A0-B388-CD9068A8CEB0}" ShortID="348945835">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Out_Cave_RFX_DustIce_3" ID="{FA4D8558-A75C-4CBA-83B9-3CC158530536}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.169520547945205"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.446917808219178"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.169520547945206"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.14897260273974"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AMB_Out_Cave_RFX_DustIce_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="409800255"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Out_Cave_RFX_DustIce_3" ID="{FA4D8558-A75C-4CBA-83B9-3CC158530536}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Out_Cave_RFX_DustIce_4" ID="{79A8DBFD-2AB0-4862-8A0D-E8BF08F5C068}" ShortID="519917074">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Out_Cave_RFX_DustIce_4" ID="{A249645C-C1A9-4808-905E-EE113CED1430}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.849315068493151"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.547945205479451"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.3972602739726"/>
+														<Property Name="TrimEnd" Type="Real64" Value="12.4931506849315"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AMB_Out_Cave_RFX_DustIce_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="684400074"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Out_Cave_RFX_DustIce_4" ID="{A249645C-C1A9-4808-905E-EE113CED1430}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Out_Cave_RFX_DustIce_5" ID="{A059047A-E75C-4632-8B75-A8F55CD48B86}" ShortID="265942842">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Out_Cave_RFX_DustIce_5" ID="{105A000C-3AFF-489A-9E27-BD27EEF0C2DF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.471746575342466"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.918664383561644"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="10.9494863013699"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AMB_Out_Cave_RFX_DustIce_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="934219291"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Out_Cave_RFX_DustIce_5" ID="{105A000C-3AFF-489A-9E27-BD27EEF0C2DF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{F268D1AA-666E-475B-B703-22089576F5F8}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="RFX_DustIce_Path" ID="{4F48BE0D-133C-4478-B58B-3A2A51CAAE17}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="10000"/>
+														<Property Name="RandomX" Type="Real64" Value="15"/>
+														<Property Name="RandomY" Type="Real64" Value="20"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>23.41771</XPos>
+															<YPos>57.00637</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_DustIce_Path_01" ID="{5CA09343-61B0-4F03-9735-D2A56A716FDF}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="10000"/>
+														<Property Name="RandomX" Type="Real64" Value="10"/>
+														<Property Name="RandomY" Type="Real64" Value="20"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-36.70888</XPos>
+															<YPos>37.8981</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_DustIce_Path_02" ID="{2761FF85-8F21-4192-A5E9-6AE02CAF390B}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="10000"/>
+														<Property Name="RandomX" Type="Real64" Value="10"/>
+														<Property Name="RandomY" Type="Real64" Value="20"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-56.96204</XPos>
+															<YPos>-13.05733</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_DustIce_Path_03" ID="{92D74AF0-2944-4F9B-8693-A8C820ED50CA}">
+													<PropertyList>
+														<Property Name="Duration" Type="Uint32" Value="10000"/>
+														<Property Name="LinearTime" Type="bool" Value="False"/>
+														<Property Name="RandomX" Type="Real64" Value="10"/>
+														<Property Name="RandomY" Type="Real64" Value="15"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>47.46835</XPos>
+															<YPos>20.06368</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RFX_Icestress" ID="{B27A8CFE-2BD4-44E9-B563-041CCC8E857A}" ShortID="295403218">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>35</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{B87B83D3-4A7E-4789-9869-297858530858}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-15"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{71ECDA69-6468-4EBC-9B94-C7B6D44D42EC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="13">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{996D0EED-F078-4905-95F2-10CA5C53185E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-20</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="RFX_Cave" ID="{D3A9E312-E197-4C87-9A66-DE435221134F}" WorkUnitID="{EBBBC9B0-AA40-4C36-9EE2-13BBC2E52546}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="AMB_Out_Cave_RFX_IceStress_DRY_1" ID="{9039C7D4-69F4-4F8E-924E-9C44E8F88451}" ShortID="621401691">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Out_Cave_RFX_IceStress_DRY_1" ID="{683AD0DA-7236-45BD-A753-D1E5B2D56FC1}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.644291095890411"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.32210637842466"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AMB_Out_Cave_RFX_IceStress_DRY_1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="574513948"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Out_Cave_RFX_IceStress_DRY_1" ID="{683AD0DA-7236-45BD-A753-D1E5B2D56FC1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Out_Cave_RFX_IceStress_DRY_2" ID="{4ED8C28B-1C03-401A-A4A9-04A2E182398D}" ShortID="353929445">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Out_Cave_RFX_IceStress_DRY_2" ID="{DCB704F5-9367-4BC3-BF0B-34DF9F14066A}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.345177832477169"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.71025706335616"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AMB_Out_Cave_RFX_IceStress_DRY_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="665013383"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Out_Cave_RFX_IceStress_DRY_2" ID="{DCB704F5-9367-4BC3-BF0B-34DF9F14066A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Out_Cave_RFX_IceStress_DRY_3" ID="{4ED46A80-B370-479C-9837-989316BF7D14}" ShortID="746674371">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Out_Cave_RFX_IceStress_DRY_3" ID="{87B4840B-6AE2-4865-92D2-DB97CB90D829}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.342465753424658"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.462328767123288"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.428082191780822"/>
+														<Property Name="TrimEnd" Type="Real64" Value="8.42465753424659"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AMB_Out_Cave_RFX_IceStress_DRY_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="973502875"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Out_Cave_RFX_IceStress_DRY_3" ID="{87B4840B-6AE2-4865-92D2-DB97CB90D829}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Out_Cave_RFX_IceStress_DRY_4" ID="{AEFA24E2-8846-4020-A2B8-0D0A7070B5F7}" ShortID="801554499">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Out_Cave_RFX_IceStress_DRY_4" ID="{4201828E-9313-4BA1-AC2F-8DDBBF48453C}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.184931506849315"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.36986301369863"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.164383561643836"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.35616438356165"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AMB_Out_Cave_RFX_IceStress_DRY_4.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="117444903"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Out_Cave_RFX_IceStress_DRY_4" ID="{4201828E-9313-4BA1-AC2F-8DDBBF48453C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="AMB_Out_Cave_RFX_IceStress_DRY_5" ID="{988E9139-990C-46FE-929A-FE1AB09084A6}" ShortID="1013572074">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="AMB_Out_Cave_RFX_IceStress_DRY_5" ID="{FECDEEEA-DA91-4449-A5F7-4180C6AA609B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.171232876712329"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.29109589041096"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="8.76712328767124"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>AMB_Out_Cave_RFX_IceStress_DRY_5.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="62492842"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="AMB_Out_Cave_RFX_IceStress_DRY_5" ID="{FECDEEEA-DA91-4449-A5F7-4180C6AA609B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{8F3ABBBC-D306-422B-8AB0-9F633DD66F64}">
+											<PropertyList>
+												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+											</PropertyList>
+											<ChildrenList>
+												<Path2D Name="RFX_Icestress_Path" ID="{919CB8F3-DE64-4B5E-AD4D-548FE657C7E4}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="15"/>
+														<Property Name="RandomY" Type="Real64" Value="15"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-36.07595</XPos>
+															<YPos>39.17198</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_Icestress_Path_01" ID="{B7B4708A-D134-494B-B216-CD4DA0A79E94}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="20"/>
+														<Property Name="RandomY" Type="Real64" Value="5"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>27.21519</XPos>
+															<YPos>56.36943</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_Icestress_Path_02" ID="{C7BD7C9F-9EA8-4584-97F2-3ED3EA0480E3}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="15"/>
+														<Property Name="RandomY" Type="Real64" Value="15"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>34.17721</XPos>
+															<YPos>33.4395</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_Icestress_Path_03" ID="{A534FC16-7DF6-4E2A-BFF7-A47111AAE939}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="15"/>
+														<Property Name="RandomY" Type="Real64" Value="15"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-6.32911</XPos>
+															<YPos>50.63695</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_Icestress_Path_04" ID="{C36E487A-ACC6-47E6-B94C-920ECFC3716E}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="15"/>
+														<Property Name="RandomY" Type="Real64" Value="15"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-39.24051</XPos>
+															<YPos>-4.14012</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_Icestress_Path_05" ID="{766B88B4-EAAB-42B0-92A0-A84BEFC5E4B6}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="15"/>
+														<Property Name="RandomY" Type="Real64" Value="15"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>65.18987</XPos>
+															<YPos>-7.96178</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="RFX_IceImpact" ID="{45DD3812-5632-493B-8805-89E46FCC2F25}" ShortID="61432816">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{83769975-D299-49EE-8AB4-0F508FA3DF63}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="4"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{824CBDEB-0BE3-42AE-8FEF-8A8874276675}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="253"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="12">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4A60A52D-ECD7-4EE6-8A12-0B76613369BC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Cave" ID="{D7F90C21-3D50-4D9F-AECB-CB73FEB22D44}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="RFX_IceImpact-001" ID="{3A751977-F352-41B5-BDE5-3A10CFF47446}" ShortID="116656315">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_IceImpact-001" ID="{02E48167-0690-41FA-9163-204751002973}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_IceImpact-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="797533131"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_IceImpact-001" ID="{02E48167-0690-41FA-9163-204751002973}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_IceImpact-002" ID="{D0A6A37A-023D-4D24-A66E-B3C4B2BC94C4}" ShortID="762117926">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_IceImpact-002" ID="{1607653D-34E9-4404-93DE-6C855C1D98B8}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_IceImpact-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="730588240"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_IceImpact-002" ID="{1607653D-34E9-4404-93DE-6C855C1D98B8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_IceImpact-003" ID="{F461E9DB-1047-485C-AFFE-58D0B6E086CD}" ShortID="53180682">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_IceImpact-003" ID="{CE3FF9CD-267E-4115-8B76-8D01F460553B}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_IceImpact-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="861372152"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_IceImpact-003" ID="{CE3FF9CD-267E-4115-8B76-8D01F460553B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="PROPS_WaterDrip" ID="{C7C9086F-F4DD-4335-832E-158093CBCCFE}" ShortID="89936256">
+							<PropertyList>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="PROPS_Cave" ID="{9FD9D8FC-A803-4843-9FB2-7FEA8AB11B4D}" WorkUnitID="{EBBBC9B0-AA40-4C36-9EE2-13BBC2E52546}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 								</Reference>
@@ -90,51 +800,17 @@
 								</Sound>
 							</ChildrenList>
 						</BlendContainer>
-						<RandomSequenceContainer Name="RFX_IceImpact" ID="{45DD3812-5632-493B-8805-89E46FCC2F25}" ShortID="61432816">
+						<Sound Name="Roomtone_Cave" ID="{78175763-1106-4CB5-B8C5-7F6568704E1B}" ShortID="141874265">
 							<PropertyList>
-								<Property Name="InitialDelay" Type="Real64">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{83769975-D299-49EE-8AB4-0F508FA3DF63}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="4"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="Pitch" Type="int32">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{824CBDEB-0BE3-42AE-8FEF-8A8874276675}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="253"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
-									<ModifierList>
-										<ModifierInfo>
-											<Modifier Name="" ID="{4A60A52D-ECD7-4EE6-8A12-0B76613369BC}">
-												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Max" Type="Real64" Value="5"/>
-												</PropertyList>
-											</Modifier>
-										</ModifierInfo>
-									</ModifierList>
-								</Property>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="UserAuxSendVolume0" Type="Real64">
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>25</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-22</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -145,223 +821,28 @@
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Reverb_Cave" ID="{D7F90C21-3D50-4D9F-AECB-CB73FEB22D44}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="RFX_IceImpact-001" ID="{3A751977-F352-41B5-BDE5-3A10CFF47446}" ShortID="116656315">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="RFX_IceImpact-001" ID="{02E48167-0690-41FA-9163-204751002973}">
-											<Language>SFX</Language>
-											<AudioFile>RFX_IceImpact-001.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="797533131"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="RFX_IceImpact-001" ID="{02E48167-0690-41FA-9163-204751002973}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="RFX_IceImpact-002" ID="{D0A6A37A-023D-4D24-A66E-B3C4B2BC94C4}" ShortID="762117926">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="RFX_IceImpact-002" ID="{1607653D-34E9-4404-93DE-6C855C1D98B8}">
-											<Language>SFX</Language>
-											<AudioFile>RFX_IceImpact-002.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="730588240"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="RFX_IceImpact-002" ID="{1607653D-34E9-4404-93DE-6C855C1D98B8}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="RFX_IceImpact-003" ID="{F461E9DB-1047-485C-AFFE-58D0B6E086CD}" ShortID="53180682">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="RFX_IceImpact-003" ID="{CE3FF9CD-267E-4115-8B76-8D01F460553B}">
-											<Language>SFX</Language>
-											<AudioFile>RFX_IceImpact-003.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="861372152"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="RFX_IceImpact-003" ID="{CE3FF9CD-267E-4115-8B76-8D01F460553B}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								<AudioFileSource Name="AMB_Out_Cave_Roomtone" ID="{C093236F-411E-44DD-9C57-0F189A8F298C}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="4552.632"/>
+										<Property Name="LoopBegin" Type="Real64" Value="4.44349315068493"/>
+										<Property Name="LoopEnd" Type="Real64" Value="167.075342465753"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="1.77739726027397"/>
+										<Property Name="TrimEnd" Type="Real64" Value="170.333904109589"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>AMB_Out_Cave_Roomtone.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="687909997"/>
+									</MediaIDList>
+								</AudioFileSource>
 							</ChildrenList>
-						</RandomSequenceContainer>
-						<BlendContainer Name="RFX_Cave" ID="{7475B756-6906-41ED-8A04-21618119F423}" ShortID="656484439">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="RFX_DustIce" ID="{CDC7851E-714F-4212-BA4C-72BD2FD957F0}" ShortID="791496116">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="AMB_Out_Cave_RFX_DustIce_1" ID="{4CCE7F57-01B9-469E-88DC-C7E22D35201F}" ShortID="800461067">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_Out_Cave_RFX_DustIce_1" ID="{7937B1D5-73F9-4B50-A482-93F84607B258}">
-													<Language>SFX</Language>
-													<AudioFile>AMB_Out_Cave_RFX_DustIce_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="22046155"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_Out_Cave_RFX_DustIce_1" ID="{7937B1D5-73F9-4B50-A482-93F84607B258}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_Out_Cave_RFX_DustIce_2" ID="{EB96DC71-297A-431B-9533-7CD8E6D83FDF}" ShortID="497316906">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_Out_Cave_RFX_DustIce_2" ID="{4722E7AE-40E7-4601-A320-AD23FDBE61E4}">
-													<Language>SFX</Language>
-													<AudioFile>AMB_Out_Cave_RFX_DustIce_2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="134457288"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_Out_Cave_RFX_DustIce_2" ID="{4722E7AE-40E7-4601-A320-AD23FDBE61E4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_Out_Cave_RFX_DustIce_3" ID="{5FC14B8C-5FE4-42A0-B388-CD9068A8CEB0}" ShortID="348945835">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_Out_Cave_RFX_DustIce_3" ID="{FA4D8558-A75C-4CBA-83B9-3CC158530536}">
-													<Language>SFX</Language>
-													<AudioFile>AMB_Out_Cave_RFX_DustIce_3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="409800255"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_Out_Cave_RFX_DustIce_3" ID="{FA4D8558-A75C-4CBA-83B9-3CC158530536}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_Out_Cave_RFX_DustIce_4" ID="{79A8DBFD-2AB0-4862-8A0D-E8BF08F5C068}" ShortID="519917074">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_Out_Cave_RFX_DustIce_4" ID="{A249645C-C1A9-4808-905E-EE113CED1430}">
-													<Language>SFX</Language>
-													<AudioFile>AMB_Out_Cave_RFX_DustIce_4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="684400074"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_Out_Cave_RFX_DustIce_4" ID="{A249645C-C1A9-4808-905E-EE113CED1430}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_Out_Cave_RFX_DustIce_5" ID="{A059047A-E75C-4632-8B75-A8F55CD48B86}" ShortID="265942842">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_Out_Cave_RFX_DustIce_5" ID="{105A000C-3AFF-489A-9E27-BD27EEF0C2DF}">
-													<Language>SFX</Language>
-													<AudioFile>AMB_Out_Cave_RFX_DustIce_5.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="934219291"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_Out_Cave_RFX_DustIce_5" ID="{105A000C-3AFF-489A-9E27-BD27EEF0C2DF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="RFX_Icestress" ID="{B27A8CFE-2BD4-44E9-B563-041CCC8E857A}" ShortID="295403218">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-						</BlendContainer>
+							<ActiveSourceList>
+								<ActiveSource Name="AMB_Out_Cave_Roomtone" ID="{C093236F-411E-44DD-9C57-0F189A8F298C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Blizzard" ID="{8EAFF2DD-7432-4189-A648-DDAECC3B7886}" ShortID="548989943">
