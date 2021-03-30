@@ -3,7 +3,62 @@
 	<AudioObjects>
 		<WorkUnit Name="Mob" ID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}" OwnerID="{B32F5193-1056-4B08-ABBA-D68C0A0E704B}" PersistMode="Nested">
 			<ChildrenList>
-				<BlendContainer Name="Mob_Footstep" ID="{8E63F46C-FA42-4B99-80CA-A83F315394BB}" ShortID="402568258">
+				<RandomSequenceContainer Name="Mob_Krawl" ID="{B68D8BBC-0F27-4967-A096-6BAC4B11AEE6}" ShortID="512426235">
+					<PropertyList>
+						<Property Name="InitialDelay" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{845FDAA4-A14F-4920-9AB3-F43DF941B15B}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="4"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{39A69EDE-4390-4D5A-A96B-CD78011762F7}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-480"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+						<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+						<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{6D53F42F-2271-4919-95AC-5E31E06EDBC9}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="5"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+						<Property Name="Volume" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{6C5B889A-39FC-42BB-A045-EBE9310672C6}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Min" Type="Real64" Value="-8"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -13,7 +68,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<SwitchContainer Name="Mob_Footstep_Materials" ID="{14FAD1FF-0A66-46E5-B6FA-1C15719A33D2}" ShortID="76830005">
+						<Sound Name="CHAR_MOB_KRAWL_LOW_Seal_Low-001" ID="{28C934B9-25D5-4003-BC4E-9CD7904759B5}" ShortID="509642587">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -22,10 +77,131 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 								</Reference>
 							</ReferenceList>
-							<GroupingInfo/>
-						</SwitchContainer>
+							<ChildrenList>
+								<AudioFileSource Name="CHAR_MOB_KRAWL_LOW_Seal_Low-001" ID="{A78E224F-1936-4768-B7B0-5FF10A4A299E}">
+									<Language>SFX</Language>
+									<AudioFile>CHAR_MOB_KRAWL_LOW_Seal_Low-001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="404647794"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CHAR_MOB_KRAWL_LOW_Seal_Low-001" ID="{A78E224F-1936-4768-B7B0-5FF10A4A299E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CHAR_MOB_KRAWL_LOW_Seal_Low-002" ID="{80170EDC-4708-4A5B-94DE-610886AD281B}" ShortID="849820697">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CHAR_MOB_KRAWL_LOW_Seal_Low-002" ID="{6713B4F8-4136-4945-B85A-D2B7870A8118}">
+									<Language>SFX</Language>
+									<AudioFile>CHAR_MOB_KRAWL_LOW_Seal_Low-002.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="949889053"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CHAR_MOB_KRAWL_LOW_Seal_Low-002" ID="{6713B4F8-4136-4945-B85A-D2B7870A8118}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CHAR_MOB_KRAWL_LOW_Seal_Low-003" ID="{E00CE19B-69F9-4EE4-B1C4-2C7596BA21F6}" ShortID="181140790">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CHAR_MOB_KRAWL_LOW_Seal_Low-003" ID="{101D3312-09FD-4F5C-9DC6-D0233A5A3E27}">
+									<Language>SFX</Language>
+									<AudioFile>CHAR_MOB_KRAWL_LOW_Seal_Low-003.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="238048512"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CHAR_MOB_KRAWL_LOW_Seal_Low-003" ID="{101D3312-09FD-4F5C-9DC6-D0233A5A3E27}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CHAR_MOB_KRAWL_BirdSynth-001" ID="{8A090013-5994-4236-9A91-8D5890DAB2CA}" ShortID="1006190382">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CHAR_MOB_KRAWL_BirdSynth-001" ID="{AD5413EB-9757-41EF-9D67-3BAB3AF94070}">
+									<Language>SFX</Language>
+									<AudioFile>CHAR_MOB_KRAWL_BirdSynth-001.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="788599331"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CHAR_MOB_KRAWL_BirdSynth-001" ID="{AD5413EB-9757-41EF-9D67-3BAB3AF94070}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CHAR_MOB_KRAWL_BirdSynth-002" ID="{6C1E128A-E0DE-43EA-A31E-3DBB359C4A88}" ShortID="362537508">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CHAR_MOB_KRAWL_BirdSynth-002" ID="{33353ACB-EC43-4CA2-8CF8-4DA44EE8065E}">
+									<Language>SFX</Language>
+									<AudioFile>CHAR_MOB_KRAWL_BirdSynth-002.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1047458316"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CHAR_MOB_KRAWL_BirdSynth-002" ID="{33353ACB-EC43-4CA2-8CF8-4DA44EE8065E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="CHAR_MOB_KRAWL_BirdSynth-003" ID="{9A725732-B8EA-48CD-831F-320B9886A79B}" ShortID="441611166">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="CHAR_MOB_KRAWL_BirdSynth-003" ID="{4891B37A-B729-4E9E-AC9F-39BE054F3451}">
+									<Language>SFX</Language>
+									<AudioFile>CHAR_MOB_KRAWL_BirdSynth-003.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="565536590"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="CHAR_MOB_KRAWL_BirdSynth-003" ID="{4891B37A-B729-4E9E-AC9F-39BE054F3451}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
-				</BlendContainer>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
