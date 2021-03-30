@@ -6,6 +6,95 @@
 				<Property Name="Color" Type="int16" Value="4"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="Footstep_CrowM" ID="{4E95F54F-E9E9-41C6-A055-9C5115E7F17F}">
+					<ChildrenList>
+						<Action Name="" ID="{DE0DC6F8-F68C-406A-A643-85B5021E7A6E}" ShortID="823561542">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CrowM_Run_Walk" ID="{5E9188A4-0C59-48C9-B8F9-B1356D786D04}" WorkUnitID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6884FDAF-0356-4E06-9CE7-030021F3262E}" ShortID="964312213">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CrowM_Gear" ID="{873C92D9-401B-4689-9B2E-F85E27DBCED6}" WorkUnitID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Footstep_WP" ID="{C436D326-7B8E-49D6-B4DA-E299868282B7}">
+					<ChildrenList>
+						<Action Name="" ID="{6DA5BB1B-D934-403D-A6CD-66F388A79514}" ShortID="860445062">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WP_Footstep" ID="{8E63F46C-FA42-4B99-80CA-A83F315394BB}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{76C848AC-2368-4EBD-9462-04FFF748AA0C}" ShortID="272385339">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WP_Gear" ID="{7A76FA09-70EC-4FF2-9EEA-22411559B72D}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Footstep_Mob" ID="{9CFAFFD3-23E5-4916-84EF-80BFDC1CC2B4}">
+					<ChildrenList>
+						<Action Name="" ID="{1E0BEA9E-A2A3-4D4E-923A-A549BAA0CB89}" ShortID="987067924">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mob_Footstep_Materials" ID="{14FAD1FF-0A66-46E5-B6FA-1C15719A33D2}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{60293C57-9BB2-41A4-BF12-927E3BE4BAF8}" ShortID="770435534">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WP_Gear_Cloth" ID="{C10AA835-1266-4216-8318-9075EF9CE32F}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Sword_Main" ID="{48016EFC-5E25-452C-B939-B5324AE640A9}">
+					<ChildrenList>
+						<Action Name="" ID="{540E3388-1C03-4C6A-A049-803C0B2D1D81}" ShortID="647450710">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WP_Weapon_Sword" ID="{256BB137-5347-4133-AA65-A7EB596B04BF}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Shield_Main" ID="{52632D14-B7F7-4246-AD30-0845DF5B49AB}">
+					<ChildrenList>
+						<Action Name="" ID="{C71EE9C6-4B9E-4FC2-BE99-7587B1AF0BDA}" ShortID="936782882">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WP_Weapon_Shield" ID="{78EE7BBF-E35B-4913-A6FD-789AB4B71382}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Voice_Mob" ID="{48DC80BD-8764-4E83-8FEC-69273D3FB193}">
+					<ChildrenList>
+						<Action Name="" ID="{9A627559-99F7-4F71-BD47-EA993CAC8987}" ShortID="940094108">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mob_Krawl" ID="{B68D8BBC-0F27-4967-A096-6BAC4B11AEE6}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>
