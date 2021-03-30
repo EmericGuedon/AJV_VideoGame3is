@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}" SchemaVersion="97">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}" PersistMode="Standalone">
+			<ChildrenList>
+				<WorkUnit Name="AMBIANCE_Event" ID="{48258AF7-02D1-4B74-8845-47E57A587A9D}" PersistMode="Reference"/>
+				<WorkUnit Name="CHARACTER_Event" ID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}" PersistMode="Reference"/>
+				<WorkUnit Name="RFX_Event" ID="{B82A4C42-0790-4B38-965D-84E1AC2F3384}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{48258AF7-02D1-4B74-8845-47E57A587A9D}" SchemaVersion="97" RootDocumentID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}">
+	<Events>
+		<WorkUnit Name="AMBIANCE_Event" ID="{48258AF7-02D1-4B74-8845-47E57A587A9D}" OwnerID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
