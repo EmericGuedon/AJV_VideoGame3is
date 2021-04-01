@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{6D63105E-50F0-45CA-A1DF-954BCBD3B8E2}" SchemaVersion="97">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{6D63105E-50F0-45CA-A1DF-954BCBD3B8E2}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6D63105E-50F0-45CA-A1DF-954BCBD3B8E2}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Soundbank" ID="{D55DE6C2-4A84-4F2E-B42F-822E24E4976E}">
+					<ObjectInclusionList>
+						<ObjectRef Name="CHARACTER_Event" ID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="RFX_Event" ID="{B82A4C42-0790-4B38-965D-84E1AC2F3384}" WorkUnitID="{B82A4C42-0790-4B38-965D-84E1AC2F3384}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="AMBIANCE_Event" ID="{48258AF7-02D1-4B74-8845-47E57A587A9D}" WorkUnitID="{48258AF7-02D1-4B74-8845-47E57A587A9D}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

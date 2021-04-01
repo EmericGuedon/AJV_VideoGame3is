@@ -1,28 +1,967 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Guedon Emeric\Documents\ProjectWwise_3is\project_3isWwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Guedon Emeric\Documents\ProjectWwise_3is\project_3isWwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Guedon Emeric\Documents\ProjectWwise_3is\project_3isWwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Guedon Emeric\Documents\ProjectWwise_3is\project_3isWwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4204904655">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4281705651">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="323187407" Name="Reverb_Cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Cave"/>
+				<AuxBus Id="892458534" Name="reverb_dungeon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\reverb_dungeon"/>
+			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="4072029455" Language="SFX" Hash="1497235432">
-			<ObjectPath>\SoundBanks\Default Work Unit\New_SoundBank</ObjectPath>
-			<ShortName>New_SoundBank</ShortName>
-			<Path>New_SoundBank.bnk</Path>
+		<SoundBank Id="1661994096" Language="SFX" Hash="3563655433">
+			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
+			<ShortName>Soundbank</ShortName>
+			<Path>Soundbank.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2908910416" Name="Play_New_Sequence_Container" ObjectPath="\Events\Default Work Unit\Play_New_Sequence_Container" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3276437528" Name="Footstep_CrowM" ObjectPath="\Events\Default Work Unit\CHARACTER_Event\Footstep_CrowM" DurationType="OneShot" DurationMin="2.733349" DurationMax="3.440629">
+					<IncludedMemoryFiles>
+						<File Id="873485" Language="SFX">
+							<ShortName>CHAR_CrowM_Gear_Plates-001.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Gear_Plates-001_10C4C929.wem</Path>
+						</File>
+						<File Id="23122068" Language="SFX">
+							<ShortName>CHAR_CrowM_armor-004.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_armor-004_10C4C929.wem</Path>
+						</File>
+						<File Id="28156667" Language="SFX">
+							<ShortName>CHAR_CrowM_jewels-007.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_jewels-007_10C4C929.wem</Path>
+						</File>
+						<File Id="73811381" Language="SFX">
+							<ShortName>CHAR_CrowM_jewels-006.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_jewels-006_10C4C929.wem</Path>
+						</File>
+						<File Id="138116994" Language="SFX">
+							<ShortName>CHAR_CrowM_Footsteps_Metal_Fast-005.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Footsteps_Metal_Fast-005_17570719.wem</Path>
+						</File>
+						<File Id="150469387" Language="SFX">
+							<ShortName>CHAR_CrowM_jewels-008.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_jewels-008_10C4C929.wem</Path>
+						</File>
+						<File Id="151681601" Language="SFX">
+							<ShortName>CHAR_CrowM_Gear_Plates-002.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Gear_Plates-002_10C4C929.wem</Path>
+						</File>
+						<File Id="169590198" Language="SFX">
+							<ShortName>CHAR_CrowM_Gear_Plates-003.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Gear_Plates-003_10C4C929.wem</Path>
+						</File>
+						<File Id="171528945" Language="SFX">
+							<ShortName>CHAR_CrowM_Footsteps_Metal_Fast-004.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Footsteps_Metal_Fast-004_66505013.wem</Path>
+						</File>
+						<File Id="206800123" Language="SFX">
+							<ShortName>CHAR_CrowM_Gear_Bones-006.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Gear_Bones-006_10C4C929.wem</Path>
+						</File>
+						<File Id="221929987" Language="SFX">
+							<ShortName>CHAR_CrowM_Footsteps_Impact_Heavy-002.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Footsteps_Impact_Heavy-002_D8498782.wem</Path>
+						</File>
+						<File Id="229922927" Language="SFX">
+							<ShortName>CHAR_CrowM_Footsteps_Impact_Heavy-009.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Footsteps_Impact_Heavy-009_3B864843.wem</Path>
+						</File>
+						<File Id="243958198" Language="SFX">
+							<ShortName>CHAR_CrowM_jewels-003.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_jewels-003_10C4C929.wem</Path>
+						</File>
+						<File Id="319119894" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Medium-006.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Medium-006_941DE012.wem</Path>
+						</File>
+						<File Id="350005420" Language="SFX">
+							<ShortName>CHAR_CrowM_armor-003.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_armor-003_10C4C929.wem</Path>
+						</File>
+						<File Id="350060949" Language="SFX">
+							<ShortName>CHAR_CrowM_Gear_Plates-005.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Gear_Plates-005_10C4C929.wem</Path>
+						</File>
+						<File Id="399809754" Language="SFX">
+							<ShortName>CHAR_CrowM_Footsteps_Metal_Fast-003.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Footsteps_Metal_Fast-003_A6DCCF14.wem</Path>
+						</File>
+						<File Id="406235804" Language="SFX">
+							<ShortName>CHAR_CrowM_Gear_Bones-005.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Gear_Bones-005_10C4C929.wem</Path>
+						</File>
+						<File Id="407380200" Language="SFX">
+							<ShortName>CHAR_CrowM_Footsteps_Impact_Heavy-006.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Footsteps_Impact_Heavy-006_E860E544.wem</Path>
+						</File>
+						<File Id="422760239" Language="SFX">
+							<ShortName>CHAR_CrowM_Footsteps_Impact_Heavy-003.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Footsteps_Impact_Heavy-003_58862406.wem</Path>
+						</File>
+						<File Id="426752581" Language="SFX">
+							<ShortName>CHAR_CrowM_armor-006.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_armor-006_10C4C929.wem</Path>
+						</File>
+						<File Id="456838679" Language="SFX">
+							<ShortName>CHAR_CrowM_Footsteps_Impact_Heavy-007.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Footsteps_Impact_Heavy-007_A7423BA1.wem</Path>
+						</File>
+						<File Id="462531177" Language="SFX">
+							<ShortName>CHAR_CrowM_jewels-001.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_jewels-001_10C4C929.wem</Path>
+						</File>
+						<File Id="466021729" Language="SFX">
+							<ShortName>CHAR_CrowM_armor-002.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_armor-002_10C4C929.wem</Path>
+						</File>
+						<File Id="513382808" Language="SFX">
+							<ShortName>CHAR_CrowM_Footsteps_Metal_Fast-001.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Footsteps_Metal_Fast-001_5A2ACCF7.wem</Path>
+						</File>
+						<File Id="527306008" Language="SFX">
+							<ShortName>CHAR_CrowM_jewels-005.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_jewels-005_10C4C929.wem</Path>
+						</File>
+						<File Id="579521583" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Medium-005.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Medium-005_F1539F43.wem</Path>
+						</File>
+						<File Id="593025213" Language="SFX">
+							<ShortName>CHAR_CrowM_Gear_Bones-002.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Gear_Bones-002_10C4C929.wem</Path>
+						</File>
+						<File Id="645484814" Language="SFX">
+							<ShortName>CHAR_CrowM_Footsteps_Impact_Heavy-001.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Footsteps_Impact_Heavy-001_65FF97BB.wem</Path>
+						</File>
+						<File Id="666884426" Language="SFX">
+							<ShortName>CHAR_CrowM_jewels-004.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_jewels-004_10C4C929.wem</Path>
+						</File>
+						<File Id="718387965" Language="SFX">
+							<ShortName>CHAR_CrowM_Gear_Bones-007.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Gear_Bones-007_10C4C929.wem</Path>
+						</File>
+						<File Id="720977885" Language="SFX">
+							<ShortName>CHAR_CrowM_armor-001.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_armor-001_10C4C929.wem</Path>
+						</File>
+						<File Id="772024785" Language="SFX">
+							<ShortName>CHAR_CrowM_Gear_Plates-007.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Gear_Plates-007_10C4C929.wem</Path>
+						</File>
+						<File Id="785384750" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Medium-003.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Medium-003_6994B767.wem</Path>
+						</File>
+						<File Id="805895434" Language="SFX">
+							<ShortName>CHAR_CrowM_armor-005.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_armor-005_10C4C929.wem</Path>
+						</File>
+						<File Id="840191868" Language="SFX">
+							<ShortName>CHAR_CrowM_Gear_Plates-006.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Gear_Plates-006_10C4C929.wem</Path>
+						</File>
+						<File Id="847201397" Language="SFX">
+							<ShortName>CHAR_CrowM_Gear_Bones-004.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Gear_Bones-004_10C4C929.wem</Path>
+						</File>
+						<File Id="862302955" Language="SFX">
+							<ShortName>CHAR_CrowM_Gear_Bones-003.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Gear_Bones-003_10C4C929.wem</Path>
+						</File>
+						<File Id="871655085" Language="SFX">
+							<ShortName>CHAR_CrowM_Footsteps_Impact_Heavy-005.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Footsteps_Impact_Heavy-005_84D0C693.wem</Path>
+						</File>
+						<File Id="874187728" Language="SFX">
+							<ShortName>CHAR_CrowM_Footsteps_Impact_Heavy-010.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Footsteps_Impact_Heavy-010_64228855.wem</Path>
+						</File>
+						<File Id="895393105" Language="SFX">
+							<ShortName>CHAR_CrowM_Gear_Bones-001.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Gear_Bones-001_10C4C929.wem</Path>
+						</File>
+						<File Id="904909175" Language="SFX">
+							<ShortName>CHAR_CrowM_Footsteps_Metal_Fast-002.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Footsteps_Metal_Fast-002_400A8163.wem</Path>
+						</File>
+						<File Id="948496585" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Medium-007.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Medium-007_EF0C5417.wem</Path>
+						</File>
+						<File Id="979149679" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Medium-002.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Medium-002_C4126E58.wem</Path>
+						</File>
+						<File Id="1003736908" Language="SFX">
+							<ShortName>CHAR_CrowM_jewels-002.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_jewels-002_10C4C929.wem</Path>
+						</File>
+						<File Id="1031720614" Language="SFX">
+							<ShortName>CHAR_CrowM_Gear_Plates-004.wav</ShortName>
+							<Path>SFX\CHAR_CrowM_Gear_Plates-004_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{CFC5BDF7-9EF6-491C-A14B-DA62EBDB7589}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}">
+							<Media>
+								<File Id="979149679"/>
+								<File Id="785384750"/>
+								<File Id="579521583"/>
+								<File Id="319119894"/>
+								<File Id="948496585"/>
+								<File Id="513382808"/>
+								<File Id="904909175"/>
+								<File Id="399809754"/>
+								<File Id="171528945"/>
+								<File Id="138116994"/>
+								<File Id="645484814"/>
+								<File Id="221929987"/>
+								<File Id="422760239"/>
+								<File Id="871655085"/>
+								<File Id="407380200"/>
+								<File Id="456838679"/>
+								<File Id="229922927"/>
+								<File Id="874187728"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{CFC5BDF7-9EF6-491C-A14B-DA62EBDB7589}">
+							<Media>
+								<File Id="645484814"/>
+								<File Id="221929987"/>
+								<File Id="422760239"/>
+								<File Id="871655085"/>
+								<File Id="407380200"/>
+								<File Id="456838679"/>
+								<File Id="229922927"/>
+								<File Id="874187728"/>
+								<File Id="979149679"/>
+								<File Id="785384750"/>
+								<File Id="579521583"/>
+								<File Id="319119894"/>
+								<File Id="948496585"/>
+								<File Id="513382808"/>
+								<File Id="904909175"/>
+								<File Id="399809754"/>
+								<File Id="171528945"/>
+								<File Id="138116994"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="1920073040" Name="Footstep_Mob" ObjectPath="\Events\Default Work Unit\CHARACTER_Event\Footstep_Mob" DurationType="OneShot" DurationMin="1.222785" DurationMax="1.500000">
+					<IncludedMemoryFiles>
+						<File Id="56960613" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-003.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-003_5CFD9794.wem</Path>
+						</File>
+						<File Id="65796857" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Stone-001.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Stone-001_2EB3077A.wem</Path>
+						</File>
+						<File Id="113160131" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_cloth-005.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_cloth-005_10C4C929.wem</Path>
+						</File>
+						<File Id="294607794" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Snow-004.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Snow-004_10C4C929.wem</Path>
+						</File>
+						<File Id="323197515" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_cloth-003.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_cloth-003_10C4C929.wem</Path>
+						</File>
+						<File Id="402794327" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-004.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-004_6EBA7FDD.wem</Path>
+						</File>
+						<File Id="480069027" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Stone-003.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Stone-003_17821FB4.wem</Path>
+						</File>
+						<File Id="500965891" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-006.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-006_10C4C929.wem</Path>
+						</File>
+						<File Id="524260570" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Snow-003.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Snow-003_10C4C929.wem</Path>
+						</File>
+						<File Id="600504674" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Snow-002.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Snow-002_10C4C929.wem</Path>
+						</File>
+						<File Id="635586989" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Stone-002.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Stone-002_6334DEF7.wem</Path>
+						</File>
+						<File Id="652065234" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-001.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-001_E84FE610.wem</Path>
+						</File>
+						<File Id="727750019" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_cloth-004.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_cloth-004_10C4C929.wem</Path>
+						</File>
+						<File Id="765319452" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_cloth-001.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_cloth-001_2D53B711.wem</Path>
+						</File>
+						<File Id="769433774" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Snow-001.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Snow-001_10C4C929.wem</Path>
+						</File>
+						<File Id="782557671" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-005.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-005_652A041B.wem</Path>
+						</File>
+						<File Id="814949445" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-002.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-002_06C47A23.wem</Path>
+						</File>
+						<File Id="941491327" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Snow-005.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Snow-005_10C4C929.wem</Path>
+						</File>
+						<File Id="1024665167" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Stone-005.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Stone-005_77A4FD51.wem</Path>
+						</File>
+						<File Id="1027809218" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-007.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-007_DA20AA02.wem</Path>
+						</File>
+						<File Id="1044551512" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_cloth-002.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_cloth-002_42105040.wem</Path>
+						</File>
+						<File Id="1071256575" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Stone-004.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Stone-004_31A1B0B1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}">
+							<Media>
+								<File Id="769433774"/>
+								<File Id="600504674"/>
+								<File Id="524260570"/>
+								<File Id="294607794"/>
+								<File Id="941491327"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{BA7BE688-E22A-4D67-B9E5-E8CB54B5BDB3}">
+							<Media>
+								<File Id="65796857"/>
+								<File Id="635586989"/>
+								<File Id="480069027"/>
+								<File Id="1071256575"/>
+								<File Id="1024665167"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{29C275A9-1195-4AD2-A2DA-7AF118049731}">
+							<Media>
+								<File Id="652065234"/>
+								<File Id="814949445"/>
+								<File Id="56960613"/>
+								<File Id="402794327"/>
+								<File Id="782557671"/>
+								<File Id="500965891"/>
+								<File Id="1027809218"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="750617883" Name="Footstep_WP" ObjectPath="\Events\Default Work Unit\CHARACTER_Event\Footstep_WP" DurationType="OneShot" DurationMin="1.222785" DurationMax="2.916034">
+					<IncludedMemoryFiles>
+						<File Id="2789067" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Medium-005.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Medium-005_3DB5D4CD.wem</Path>
+						</File>
+						<File Id="15120042" Language="SFX">
+							<ShortName>CHAR_WhiteP_Gear_Purse004.wav</ShortName>
+							<Path>SFX\CHAR_WhiteP_Gear_Purse004_46F02CEE.wem</Path>
+						</File>
+						<File Id="38428009" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Low-001.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Low-001_68FCE32C.wem</Path>
+						</File>
+						<File Id="56960613" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-003.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-003_5CFD9794.wem</Path>
+						</File>
+						<File Id="61620728" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_ Chain_Low-003.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_ Chain_Low-003_10C4C929.wem</Path>
+						</File>
+						<File Id="65796857" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Stone-001.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Stone-001_2EB3077A.wem</Path>
+						</File>
+						<File Id="100377542" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Low-004.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Low-004_1740C7D1.wem</Path>
+						</File>
+						<File Id="113160131" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_cloth-005.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_cloth-005_10C4C929.wem</Path>
+						</File>
+						<File Id="124560990" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_ Chain_Low-004.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_ Chain_Low-004_10C4C929.wem</Path>
+						</File>
+						<File Id="141998845" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Medium-006.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Medium-006_E3BD46A1.wem</Path>
+						</File>
+						<File Id="152519488" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_ Chain_Low-001.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_ Chain_Low-001_10C4C929.wem</Path>
+						</File>
+						<File Id="157461299" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Low-007.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Low-007_C3935FE8.wem</Path>
+						</File>
+						<File Id="179112598" Language="SFX">
+							<ShortName>CHAR_WhiteP_Gear_Purse003.wav</ShortName>
+							<Path>SFX\CHAR_WhiteP_Gear_Purse003_7FDD8D6B.wem</Path>
+						</File>
+						<File Id="200966250" Language="SFX">
+							<ShortName>CHAR_WhiteP_Gear_Purse005.wav</ShortName>
+							<Path>SFX\CHAR_WhiteP_Gear_Purse005_1E95C885.wem</Path>
+						</File>
+						<File Id="224414948" Language="SFX">
+							<ShortName>CHAR_WhiteP_Gear_Purse002.wav</ShortName>
+							<Path>SFX\CHAR_WhiteP_Gear_Purse002_3402BCEF.wem</Path>
+						</File>
+						<File Id="265483360" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Medium-003.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Medium-003_A1F01E52.wem</Path>
+						</File>
+						<File Id="275166912" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_Stuff-002.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_Stuff-002_10C4C929.wem</Path>
+						</File>
+						<File Id="294607794" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Snow-004.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Snow-004_10C4C929.wem</Path>
+						</File>
+						<File Id="316467109" Language="SFX">
+							<ShortName>CHAR_WhiteP_Gear_Purse001.wav</ShortName>
+							<Path>SFX\CHAR_WhiteP_Gear_Purse001_EE8F0192.wem</Path>
+						</File>
+						<File Id="323197515" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_cloth-003.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_cloth-003_10C4C929.wem</Path>
+						</File>
+						<File Id="402794327" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-004.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-004_6EBA7FDD.wem</Path>
+						</File>
+						<File Id="477756572" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_ Chain_Low-005.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_ Chain_Low-005_10C4C929.wem</Path>
+						</File>
+						<File Id="480069027" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Stone-003.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Stone-003_17821FB4.wem</Path>
+						</File>
+						<File Id="492661314" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_Stuff-004.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_Stuff-004_10C4C929.wem</Path>
+						</File>
+						<File Id="500965891" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-006.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-006_10C4C929.wem</Path>
+						</File>
+						<File Id="507051874" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Low-006.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Low-006_89DEAC5A.wem</Path>
+						</File>
+						<File Id="524260570" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Snow-003.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Snow-003_10C4C929.wem</Path>
+						</File>
+						<File Id="600504674" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Snow-002.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Snow-002_10C4C929.wem</Path>
+						</File>
+						<File Id="635586989" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Stone-002.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Stone-002_6334DEF7.wem</Path>
+						</File>
+						<File Id="652065234" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-001.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-001_E84FE610.wem</Path>
+						</File>
+						<File Id="659949253" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_Stuff-001.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_Stuff-001_10C4C929.wem</Path>
+						</File>
+						<File Id="727750019" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_cloth-004.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_cloth-004_10C4C929.wem</Path>
+						</File>
+						<File Id="746733290" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_ Chain_Low-002.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_ Chain_Low-002_10C4C929.wem</Path>
+						</File>
+						<File Id="765319452" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_cloth-001.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_cloth-001_2D53B711.wem</Path>
+						</File>
+						<File Id="769433774" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Snow-001.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Snow-001_10C4C929.wem</Path>
+						</File>
+						<File Id="773454306" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Low-002.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Low-002_AE8FD051.wem</Path>
+						</File>
+						<File Id="782557671" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-005.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-005_652A041B.wem</Path>
+						</File>
+						<File Id="786842801" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_Stuff-005.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_Stuff-005_10C4C929.wem</Path>
+						</File>
+						<File Id="814949445" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-002.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-002_06C47A23.wem</Path>
+						</File>
+						<File Id="826012632" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Medium-002.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Medium-002_463023F2.wem</Path>
+						</File>
+						<File Id="829548366" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Low-005.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Low-005_AE42D4AB.wem</Path>
+						</File>
+						<File Id="905460174" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Low-003.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Low-003_2F20DBA9.wem</Path>
+						</File>
+						<File Id="941491327" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Snow-005.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Snow-005_10C4C929.wem</Path>
+						</File>
+						<File Id="997110712" Language="SFX">
+							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Medium-007.wav</ShortName>
+							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Medium-007_F7893393.wem</Path>
+						</File>
+						<File Id="1024665167" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Stone-005.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Stone-005_77A4FD51.wem</Path>
+						</File>
+						<File Id="1027809218" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-007.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-007_DA20AA02.wem</Path>
+						</File>
+						<File Id="1044551512" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_cloth-002.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_cloth-002_42105040.wem</Path>
+						</File>
+						<File Id="1047326198" Language="SFX">
+							<ShortName>CHAR_MOB_GEAR_Stuff-003.wav</ShortName>
+							<Path>SFX\CHAR_MOB_GEAR_Stuff-003_10C4C929.wem</Path>
+						</File>
+						<File Id="1071256575" Language="SFX">
+							<ShortName>CHAR_MOB_Footsteps_MAT_Stone-004.wav</ShortName>
+							<Path>SFX\CHAR_MOB_Footsteps_MAT_Stone-004_31A1B0B1.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{989D954C-D9ED-4FB6-8E34-F92980A30EFB}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}">
+							<Media>
+								<File Id="769433774"/>
+								<File Id="600504674"/>
+								<File Id="524260570"/>
+								<File Id="294607794"/>
+								<File Id="941491327"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{BA7BE688-E22A-4D67-B9E5-E8CB54B5BDB3}">
+							<Media>
+								<File Id="65796857"/>
+								<File Id="635586989"/>
+								<File Id="480069027"/>
+								<File Id="1071256575"/>
+								<File Id="1024665167"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{29C275A9-1195-4AD2-A2DA-7AF118049731}">
+							<Media>
+								<File Id="652065234"/>
+								<File Id="814949445"/>
+								<File Id="56960613"/>
+								<File Id="402794327"/>
+								<File Id="782557671"/>
+								<File Id="500965891"/>
+								<File Id="1027809218"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{989D954C-D9ED-4FB6-8E34-F92980A30EFB}">
+							<Media>
+								<File Id="826012632"/>
+								<File Id="265483360"/>
+								<File Id="2789067"/>
+								<File Id="141998845"/>
+								<File Id="997110712"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{27D4B2BD-628B-46BD-8452-6351AB298B87}">
+							<Media>
+								<File Id="38428009"/>
+								<File Id="773454306"/>
+								<File Id="905460174"/>
+								<File Id="100377542"/>
+								<File Id="829548366"/>
+								<File Id="507051874"/>
+								<File Id="157461299"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="761535791" Name="Play_Amb_Blizzard" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\Play_Amb_Blizzard" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="962117574" Language="SFX">
+							<ShortName>Amb_Out_Blizzard.wav</ShortName>
+							<Path>SFX\Amb_Out_Blizzard_3C2CAA84.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2314402090" Name="Play_Amb_Cave" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\Play_Amb_Cave" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="687909997" Language="SFX">
+							<ShortName>AMB_Out_Cave_Roomtone.wav</ShortName>
+							<Path>SFX\AMB_Out_Cave_Roomtone_C10D3F15.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3040107861" Name="PlayStart_Amb_Blizzard" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\PlayStart_Amb_Blizzard" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="962117574" Language="SFX">
+							<ShortName>Amb_Out_Blizzard.wav</ShortName>
+							<Path>SFX\Amb_Out_Blizzard_3C2CAA84.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3398993223" Name="PlayStart_Cave" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\PlayStart_Cave" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="687909997" Language="SFX">
+							<ShortName>AMB_Out_Cave_Roomtone.wav</ShortName>
+							<Path>SFX\AMB_Out_Cave_Roomtone_C10D3F15.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2958646009" Name="RFX_Bridge" ObjectPath="\Events\Default Work Unit\RFX_Event\RFX_Bridge" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="150434721" Language="SFX">
+							<ShortName>RFX_PlankSqueak_002.wav</ShortName>
+							<Path>SFX\RFX_PlankSqueak_002_672BD2D2.wem</Path>
+						</File>
+						<File Id="166407821" Language="SFX">
+							<ShortName>RFX_PlankSqueak.wav</ShortName>
+							<Path>SFX\RFX_PlankSqueak_CB96656C.wem</Path>
+						</File>
+						<File Id="229620362" Language="SFX">
+							<ShortName>RFX_WoodCrack.wav</ShortName>
+							<Path>SFX\RFX_WoodCrack_63816941.wem</Path>
+						</File>
+						<File Id="970532345" Language="SFX">
+							<ShortName>RFX_ChainBridge.wav</ShortName>
+							<Path>SFX\RFX_ChainBridge_810B8789.wem</Path>
+						</File>
+						<File Id="1023645411" Language="SFX">
+							<ShortName>RFX_Bridge.wav</ShortName>
+							<Path>SFX\RFX_Bridge_DF59C846.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3905897693" Name="RFX_CampFire" ObjectPath="\Events\Default Work Unit\RFX_Event\RFX_CampFire" MaxAttenuation="100.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="287252065" Language="SFX">
+							<ShortName>RFX_CampFire.wav</ShortName>
+							<Path>SFX\RFX_CampFire_2E8D0C26.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1013147606" Name="Shield_Main" ObjectPath="\Events\Default Work Unit\CHARACTER_Event\Shield_Main" DurationType="OneShot" DurationMin="1.849203" DurationMax="2.629073">
+					<IncludedMemoryFiles>
+						<File Id="13614335" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Wood-004.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Wood-004_B4FB67BC.wem</Path>
+						</File>
+						<File Id="140211487" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Wood-009.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Wood-009_8C3EE7DF.wem</Path>
+						</File>
+						<File Id="175577784" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Metal-008.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Metal-008_A1A8510C.wem</Path>
+						</File>
+						<File Id="282200585" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Wood-008.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Wood-008_FDFDCA04.wem</Path>
+						</File>
+						<File Id="309677809" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Metal-006.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Metal-006_095FB95A.wem</Path>
+						</File>
+						<File Id="318171132" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Wood-001.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Wood-001_10C4C929.wem</Path>
+						</File>
+						<File Id="362127407" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Wood-007.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Wood-007_10C4C929.wem</Path>
+						</File>
+						<File Id="374060856" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Wood-006.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Wood-006_1C6A24B1.wem</Path>
+						</File>
+						<File Id="420375851" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Metal-007.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Metal-007_21DC07F8.wem</Path>
+						</File>
+						<File Id="456343775" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Wood-003.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Wood-003_533401FE.wem</Path>
+						</File>
+						<File Id="514580300" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Metal-001.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Metal-001_10C4C929.wem</Path>
+						</File>
+						<File Id="539124665" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Metal-003.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Metal-003_A25457E1.wem</Path>
+						</File>
+						<File Id="788504167" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Metal-004.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Metal-004_1BCE85C1.wem</Path>
+						</File>
+						<File Id="837612354" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Wood-005.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Wood-005_8D11888F.wem</Path>
+						</File>
+						<File Id="846123213" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Wood-002.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Wood-002_22FDECF9.wem</Path>
+						</File>
+						<File Id="918205937" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Metal-005.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Metal-005_622305B3.wem</Path>
+						</File>
+						<File Id="943226565" Language="SFX">
+							<ShortName>CHAR_Weapon_Shield_Metal-002.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Shield_Metal-002_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1610211621" Name="Stop_Amb_Blizzard" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\Stop_Amb_Blizzard" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1551221296" Name="Stop_Amb_Cave" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\Stop_Amb_Cave" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1101775796" Name="Sword_Main" ObjectPath="\Events\Default Work Unit\CHARACTER_Event\Sword_Main" DurationType="OneShot" DurationMin="0.503828" DurationMax="1.542645">
+					<IncludedMemoryFiles>
+						<File Id="54184917" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Dry-004.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Dry-004_AB39CE08.wem</Path>
+						</File>
+						<File Id="140867875" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Blood_Hard-005.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Blood_Hard-005_AFE4CFDF.wem</Path>
+						</File>
+						<File Id="154508326" Language="SFX">
+							<ShortName>CHAR_Sword_Whoosh-002.wav</ShortName>
+							<Path>SFX\CHAR_Sword_Whoosh-002_CD7D4402.wem</Path>
+						</File>
+						<File Id="224498148" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Dry-003.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Dry-003_E0CB3703.wem</Path>
+						</File>
+						<File Id="246973735" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Dry-002.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Dry-002_28510603.wem</Path>
+						</File>
+						<File Id="368883417" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Blood_Hard-002.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Blood_Hard-002_7D8CB2D7.wem</Path>
+						</File>
+						<File Id="603034516" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Blood_Soft-005.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Blood_Soft-005_BE0AE30C.wem</Path>
+						</File>
+						<File Id="612866988" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Blood_Hard-001.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Blood_Hard-001_F4D7ADC9.wem</Path>
+						</File>
+						<File Id="659107968" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Blood_Hard-006.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Blood_Hard-006_E8B7D5EF.wem</Path>
+						</File>
+						<File Id="716160252" Language="SFX">
+							<ShortName>CHAR_Sword_Whoosh-004.wav</ShortName>
+							<Path>SFX\CHAR_Sword_Whoosh-004_690DEC5D.wem</Path>
+						</File>
+						<File Id="753191400" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Blood_Soft-002.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Blood_Soft-002_EFF86885.wem</Path>
+						</File>
+						<File Id="798918979" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Blood_Hard-003.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Blood_Hard-003_5CFBC587.wem</Path>
+						</File>
+						<File Id="800431890" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Blood_Soft-003.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Blood_Soft-003_87EB147E.wem</Path>
+						</File>
+						<File Id="803178818" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Dry-005.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Dry-005_8CC93B10.wem</Path>
+						</File>
+						<File Id="809443356" Language="SFX">
+							<ShortName>CHAR_Sword_Whoosh-005.wav</ShortName>
+							<Path>SFX\CHAR_Sword_Whoosh-005_781CB376.wem</Path>
+						</File>
+						<File Id="838565379" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Blood_Soft-006.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Blood_Soft-006_AD231E80.wem</Path>
+						</File>
+						<File Id="871447747" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Dry-001.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Dry-001_92724CEB.wem</Path>
+						</File>
+						<File Id="883979082" Language="SFX">
+							<ShortName>CHAR_Sword_Whoosh-001.wav</ShortName>
+							<Path>SFX\CHAR_Sword_Whoosh-001_665D61A3.wem</Path>
+						</File>
+						<File Id="1001571240" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Blood_Hard-004.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Blood_Hard-004_E8B7D5EF.wem</Path>
+						</File>
+						<File Id="1020558999" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Blood_Soft-004.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Blood_Soft-004_1E168FEF.wem</Path>
+						</File>
+						<File Id="1055313706" Language="SFX">
+							<ShortName>CHAR_Weapon_Sword_Hit_Blood_Soft-001.wav</ShortName>
+							<Path>SFX\CHAR_Weapon_Sword_Hit_Blood_Soft-001_F45156FB.wem</Path>
+						</File>
+						<File Id="1072964109" Language="SFX">
+							<ShortName>CHAR_Sword_Whoosh-003.wav</ShortName>
+							<Path>SFX\CHAR_Sword_Whoosh-003_EB92F4FA.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{7B06EE73-6C48-4201-8697-C266B1BEDDDE}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{7B06EE73-6C48-4201-8697-C266B1BEDDDE}">
+							<Media>
+								<File Id="871447747"/>
+								<File Id="246973735"/>
+								<File Id="224498148"/>
+								<File Id="54184917"/>
+								<File Id="803178818"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{2D0C6174-2835-4378-AD9E-93D861F6CA41}">
+							<Media>
+								<File Id="612866988"/>
+								<File Id="368883417"/>
+								<File Id="798918979"/>
+								<File Id="1001571240"/>
+								<File Id="140867875"/>
+								<File Id="659107968"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{EF1F9BF9-72FF-4A60-9D19-B06E9913C323}">
+							<Media>
+								<File Id="1055313706"/>
+								<File Id="753191400"/>
+								<File Id="800431890"/>
+								<File Id="1020558999"/>
+								<File Id="603034516"/>
+								<File Id="838565379"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="656988382" Name="Voice_Mob" ObjectPath="\Events\Default Work Unit\CHARACTER_Event\Voice_Mob" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="238048512" Language="SFX">
+							<ShortName>CHAR_MOB_KRAWL_LOW_Seal_Low-003.wav</ShortName>
+							<Path>SFX\CHAR_MOB_KRAWL_LOW_Seal_Low-003_10C4C929.wem</Path>
+						</File>
+						<File Id="404647794" Language="SFX">
+							<ShortName>CHAR_MOB_KRAWL_LOW_Seal_Low-001.wav</ShortName>
+							<Path>SFX\CHAR_MOB_KRAWL_LOW_Seal_Low-001_10C4C929.wem</Path>
+						</File>
+						<File Id="565536590" Language="SFX">
+							<ShortName>CHAR_MOB_KRAWL_BirdSynth-003.wav</ShortName>
+							<Path>SFX\CHAR_MOB_KRAWL_BirdSynth-003_10C4C929.wem</Path>
+						</File>
+						<File Id="788599331" Language="SFX">
+							<ShortName>CHAR_MOB_KRAWL_BirdSynth-001.wav</ShortName>
+							<Path>SFX\CHAR_MOB_KRAWL_BirdSynth-001_10C4C929.wem</Path>
+						</File>
+						<File Id="949889053" Language="SFX">
+							<ShortName>CHAR_MOB_KRAWL_LOW_Seal_Low-002.wav</ShortName>
+							<Path>SFX\CHAR_MOB_KRAWL_LOW_Seal_Low-002_10C4C929.wem</Path>
+						</File>
+						<File Id="1047458316" Language="SFX">
+							<ShortName>CHAR_MOB_KRAWL_BirdSynth-002.wav</ShortName>
+							<Path>SFX\CHAR_MOB_KRAWL_BirdSynth-002_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1903539408" Name="RTPC_Bridge" ObjectPath="\Game Parameters\Default Work Unit\RTPC_Bridge"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="3722118999" Name="Sword_Materials" ObjectPath="\States\Default Work Unit\Sword_Materials">
+					<States>
+						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Sword_Materials\None"/>
+						<State Id="630539344" Name="Dry" ObjectPath="\States\Default Work Unit\Sword_Materials\Dry"/>
+						<State Id="2593438961" Name="Blood_Hard" ObjectPath="\States\Default Work Unit\Sword_Materials\Blood_Hard"/>
+						<State Id="2473969246" Name="Metal" ObjectPath="\States\Default Work Unit\Sword_Materials\Metal"/>
+						<State Id="2090617658" Name="Blood_Soft" ObjectPath="\States\Default Work Unit\Sword_Materials\Blood_Soft"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="215506544" Name="Footstep_Materials" ObjectPath="\Switches\Default Work Unit\Footstep_Materials">
+					<Switches>
+						<Switch Id="787898836" Name="Snow" ObjectPath="\Switches\Default Work Unit\Footstep_Materials\Snow"/>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\Footstep_Materials\Stone"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\Footstep_Materials\Wood"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="486177989" Name="CrowM_Mooving" ObjectPath="\Switches\Default Work Unit\CrowM_Mooving">
+					<Switches>
+						<Switch Id="712161704" Name="RUN" ObjectPath="\Switches\Default Work Unit\CrowM_Mooving\RUN"/>
+						<Switch Id="2108779966" Name="WALK" ObjectPath="\Switches\Default Work Unit\CrowM_Mooving\WALK"/>
+					</Switches>
+				</SwitchGroup>
+				<SwitchGroup Id="1728246464" Name="WP_Mooving" ObjectPath="\Switches\Default Work Unit\WP_Mooving">
+					<Switches>
+						<Switch Id="712161704" Name="RUN" ObjectPath="\Switches\Default Work Unit\WP_Mooving\RUN"/>
+						<Switch Id="2108779966" Name="WALK" ObjectPath="\Switches\Default Work Unit\WP_Mooving\WALK"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

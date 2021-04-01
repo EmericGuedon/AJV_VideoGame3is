@@ -854,6 +854,44 @@
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Amb_Out_Blizzard" ID="{C7FE0197-98E9-4B49-869C-092D9870787B}" ShortID="586986139">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Amb_Out_Blizzard" ID="{2CFEE70F-FCE4-41DD-A822-7A5903C7840E}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="2055.263"/>
+										<Property Name="LoopBegin" Type="Real64" Value="1.58047945205479"/>
+										<Property Name="LoopEnd" Type="Real64" Value="61.638698630137"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Amb_Out_Blizzard.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="962117574"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Amb_Out_Blizzard" ID="{2CFEE70F-FCE4-41DD-A822-7A5903C7840E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>

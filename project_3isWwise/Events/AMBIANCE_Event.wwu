@@ -6,6 +6,88 @@
 				<Property Name="Color" Type="int16" Value="2"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
+			<ChildrenList>
+				<Event Name="PlayStart_Amb_Blizzard" ID="{1A02CC42-9434-405D-9DB6-300C36FCE7F9}">
+					<ChildrenList>
+						<Action Name="" ID="{CBEC6245-148D-4169-9D6C-580DF0B51D82}" ShortID="36938052">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Amb_Out_Blizzard" ID="{C7FE0197-98E9-4B49-869C-092D9870787B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Amb_Blizzard" ID="{D3FCF7CC-16C9-4B02-95E3-C12103B2FF8D}">
+					<ChildrenList>
+						<Action Name="" ID="{D5D799FF-8FCB-4EDB-B445-8E57F9C0EDC2}" ShortID="963063352">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Amb_Out_Blizzard" ID="{C7FE0197-98E9-4B49-869C-092D9870787B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Amb_Blizzard" ID="{9AE91943-AA29-4554-8855-8CE2363EAC64}">
+					<ChildrenList>
+						<Action Name="" ID="{8EEE98A1-0796-481E-AF0B-35A02A01F98E}" ShortID="339049477">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Amb_Out_Blizzard" ID="{C7FE0197-98E9-4B49-869C-092D9870787B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="PlayStart_Cave" ID="{31022CAA-33E2-4028-B8C8-6274F1F138CB}">
+					<ChildrenList>
+						<Action Name="" ID="{7904989B-F0A9-43A2-9F69-9D824DFFF29F}" ShortID="918273050">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Roomtone_Cave" ID="{78175763-1106-4CB5-B8C5-7F6568704E1B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Amb_Cave" ID="{E09D7DE3-D876-4B83-AF66-1F23B43A564F}">
+					<ChildrenList>
+						<Action Name="" ID="{1B24399D-033A-4FB3-A272-E1B362ACBA83}" ShortID="902084302">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Roomtone_Cave" ID="{78175763-1106-4CB5-B8C5-7F6568704E1B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Amb_Cave" ID="{6B19DFA8-8420-4770-A0A6-14BC3ADDB48A}">
+					<ChildrenList>
+						<Action Name="" ID="{ACECA559-BC16-4AAC-9836-D731F8782C5D}" ShortID="172399874">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Roomtone_Cave" ID="{78175763-1106-4CB5-B8C5-7F6568704E1B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

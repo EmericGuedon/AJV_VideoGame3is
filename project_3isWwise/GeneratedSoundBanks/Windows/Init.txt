@@ -1,5 +1,23 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3722118999	Sword_Materials			\Default Work Unit\Sword_Materials	
+
+State	ID	Name	State Group			Notes
+	630539344	Dry	Sword_Materials			
+	748895195	None	Sword_Materials			
+	2090617658	Blood_Soft	Sword_Materials			
+	2473969246	Metal	Sword_Materials			
+	2593438961	Blood_Hard	Sword_Materials			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	323187407	Reverb_Cave			\Default Work Unit\Master Audio Bus\Reverb_Cave	
+	892458534	reverb_dungeon			\Default Work Unit\Master Audio Bus\reverb_dungeon	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2849147824	Medium	Wwise RoomVerb			
+	3442768367	Hall_Large_Dark	Wwise RoomVerb			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
