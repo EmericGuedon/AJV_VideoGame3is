@@ -4,6 +4,13 @@
 		<WorkUnit Name="Indoor" ID="{7D2688DC-677C-42AF-A175-436C8BF35476}" OwnerID="{D5657254-4A74-42CE-87DF-457E95E39B25}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="Dungeon" ID="{8E1ACCC4-9A94-49E4-8436-16E8E608C41F}" ShortID="557302633">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -21,7 +28,7 @@
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-29</Value>
+										<Value>-24</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -132,7 +139,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-10</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -504,7 +511,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-11</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1068,26 +1075,26 @@
 													</PropertyList>
 													<PointList>
 														<Point>
-															<XPos>32.27848</XPos>
-															<YPos>38.53504</YPos>
+															<XPos>19.62025</XPos>
+															<YPos>35.98727</YPos>
 															<Flags>12</Flags>
 															<Time>0</Time>
 														</Point>
 														<Point>
-															<XPos>48.73418</XPos>
-															<YPos>21.65606</YPos>
+															<XPos>49.36709</XPos>
+															<YPos>-19.74522</YPos>
 															<Flags>0</Flags>
 															<Time>733</Time>
 														</Point>
 														<Point>
-															<XPos>70.88608</XPos>
-															<YPos>28.66242</YPos>
+															<XPos>71.51899</XPos>
+															<YPos>21.65605</YPos>
 															<Flags>0</Flags>
 															<Time>1605</Time>
 														</Point>
 														<Point>
-															<XPos>92.40506</XPos>
-															<YPos>17.19745</YPos>
+															<XPos>84.17721</XPos>
+															<YPos>6.36942</YPos>
 															<Flags>0</Flags>
 															<Time>2468</Time>
 														</Point>
@@ -1217,7 +1224,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1574,6 +1581,11 @@
 								<RandomSequenceContainer Name="RFX_WoodenCreak" ID="{FE50EC72-5885-47B6-8C4C-3809FA85E443}" ShortID="894406030">
 									<PropertyList>
 										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>14</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
 												<Value>65</Value>
@@ -1627,7 +1639,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-20</Value>
+												<Value>-15</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>

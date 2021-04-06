@@ -674,6 +674,14 @@
 								</Effect>
 							</ChildrenList>
 						</Folder>
+						<Effect Name="New_Wwise_Parametric_EQ" ID="{C8EC6DFA-12FE-4EB3-ADC2-85DDEACA3EF6}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+							<PropertyList>
+								<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+								<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+								<Property Name="FrequencyBand1" Type="Real32" Value="250"/>
+								<Property Name="FrequencyBand3" Type="Real32" Value="8500"/>
+							</PropertyList>
+						</Effect>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Wwise Matrix Reverb" ID="{15437578-D8BA-4E3F-B5DA-E03465545132}" ShortID="292445827">
