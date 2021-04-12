@@ -45,20 +45,10 @@
 				</Event>
 				<Event Name="Play_Amb_Cave" ID="{E09D7DE3-D876-4B83-AF66-1F23B43A564F}">
 					<ChildrenList>
-						<Action Name="" ID="{1B24399D-033A-4FB3-A272-E1B362ACBA83}" ShortID="902084302">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
-							</PropertyList>
+						<Action Name="" ID="{2C086A7B-F693-4CEA-859E-6DB751980939}" ShortID="60839704">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Roomtone_Cave" ID="{78175763-1106-4CB5-B8C5-7F6568704E1B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{4457E68E-E731-4B71-B265-ACEBD8FCEAE3}" ShortID="757571933">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="RFX_Cave" ID="{7475B756-6906-41ED-8A04-21618119F423}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+									<ObjectRef Name="Cave" ID="{FDA60D38-304B-453C-823C-85910DA509E0}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -66,14 +56,13 @@
 				</Event>
 				<Event Name="Stop_Amb_Cave" ID="{6B19DFA8-8420-4770-A0A6-14BC3ADDB48A}">
 					<ChildrenList>
-						<Action Name="" ID="{ACECA559-BC16-4AAC-9836-D731F8782C5D}" ShortID="172399874">
+						<Action Name="" ID="{6A1E3694-6924-4FAC-BA2B-9D0FD5145621}" ShortID="367174075">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Roomtone_Cave" ID="{78175763-1106-4CB5-B8C5-7F6568704E1B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+									<ObjectRef Name="Cave" ID="{FDA60D38-304B-453C-823C-85910DA509E0}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -89,6 +78,30 @@
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{6FE12786-C191-46E1-9341-BDED7790AC94}" ShortID="211845683">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Roomton_Castle" ID="{9E3C5383-CC70-452C-9C9E-C081AEFDE9D5}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Amb_Dungeon" ID="{E1D9A6B7-CD2F-4921-A09C-E1A99DF41DFF}">
+					<ChildrenList>
+						<Action Name="" ID="{20ACBA59-9546-425C-AA3A-27D84C5071EE}" ShortID="426335139">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RFX_Dungeon" ID="{816341C2-9717-4BCE-8FD6-7D27D9DE981B}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{3DF0E121-DAA5-469A-A781-08CB1F5DFDE7}" ShortID="875289560">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Roomton_Castle" ID="{9E3C5383-CC70-452C-9C9E-C081AEFDE9D5}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>

@@ -1,0 +1,15 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2958646009	RFX_Bridge			\Default Work Unit\RFX_Event\RFX_Bridge	
+	3905897693	RFX_CampFire			\Default Work Unit\RFX_Event\RFX_CampFire	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1903539408	RTPC_Bridge			\Default Work Unit\RTPC_Bridge	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	150434721	RFX_PlankSqueak_002	D:\GitHub\AJV_VideoGame3is\project_3isWwise\.cache\Windows\SFX\RFX_PlankSqueak_002_672BD2D2.wem		\Actor-Mixer Hierarchy\Default Work Unit\RFX\RFX\RFX_Bridge\RFX_PlankSqueak_002		1817508
+	166407821	RFX_PlankSqueak	D:\GitHub\AJV_VideoGame3is\project_3isWwise\.cache\Windows\SFX\RFX_PlankSqueak_CB96656C.wem		\Actor-Mixer Hierarchy\Default Work Unit\RFX\RFX\RFX_Bridge\RFX_PlankSqueak		1504286
+	229620362	RFX_WoodCrack	D:\GitHub\AJV_VideoGame3is\project_3isWwise\.cache\Windows\SFX\RFX_WoodCrack_63816941.wem		\Actor-Mixer Hierarchy\Default Work Unit\RFX\RFX\RFX_Bridge\RFX_WoodCrack		1501610
+	287252065	RFX_CampFire	D:\GitHub\AJV_VideoGame3is\project_3isWwise\.cache\Windows\SFX\RFX_CampFire_2E8D0C26.wem		\Actor-Mixer Hierarchy\Default Work Unit\RFX\RFX\RFX_CampFire		6952388
+	970532345	RFX_ChainBridge	D:\GitHub\AJV_VideoGame3is\project_3isWwise\.cache\Windows\SFX\RFX_ChainBridge_810B8789.wem		\Actor-Mixer Hierarchy\Default Work Unit\RFX\RFX\RFX_Bridge\RFX_ChainBridge		2239634
+	1023645411	RFX_Bridge	D:\GitHub\AJV_VideoGame3is\project_3isWwise\.cache\Windows\SFX\RFX_Bridge_DF59C846.wem		\Actor-Mixer Hierarchy\Default Work Unit\RFX\RFX\RFX_Bridge\RFX_Bridge		1644868
+

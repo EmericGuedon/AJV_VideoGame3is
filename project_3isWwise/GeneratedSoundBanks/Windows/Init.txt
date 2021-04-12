@@ -9,7 +9,21 @@ State	ID	Name	State Group			Notes
 	2593438961	Blood_Hard	Sword_Materials			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	144697359	Outdoor			\Default Work Unit\Master Audio Bus\PROPS\Outdoor	
+	340398852	Indoor			\Default Work Unit\Master Audio Bus\PROPS\Indoor	
+	646625284	HUD			\Default Work Unit\Master Audio Bus\HUD	
+	963825947	RFX			\Default Work Unit\Master Audio Bus\RFX	
+	968010305	PROPS			\Default Work Unit\Master Audio Bus\PROPS	
+	1082004793	MOB			\Default Work Unit\Master Audio Bus\CHAR\MOB	
+	1117531639	AMB			\Default Work Unit\Master Audio Bus\AMB	
+	1517750984	WP			\Default Work Unit\Master Audio Bus\CHAR\WP	
+	1551306167	UI			\Default Work Unit\Master Audio Bus\UI	
+	2756369268	AMB_Dungeon			\Default Work Unit\Master Audio Bus\AMB\AMB_Dungeon	
+	2848349021	CrowM			\Default Work Unit\Master Audio Bus\CHAR\CrowM	
+	3755979049	AMB_Cave			\Default Work Unit\Master Audio Bus\AMB\AMB_Cave	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3830630616	AMB_Blizzard			\Default Work Unit\Master Audio Bus\AMB\AMB_Blizzard	
+	4140304029	CHAR			\Default Work Unit\Master Audio Bus\CHAR	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 	323187407	Reverb_Cave			\Default Work Unit\Master Audio Bus\Reverb_Cave	
@@ -18,6 +32,7 @@ Auxiliary Bus	ID	Name			Wwise Object Path	Notes
 Effect plug-ins	ID	Name	Type				Notes
 	2849147824	Medium	Wwise RoomVerb			
 	3442768367	Hall_Large_Dark	Wwise RoomVerb			
+	4180247629	New_Wwise_Parametric_EQ	Wwise Parametric EQ			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

@@ -18,13 +18,14 @@ namespace AK
         static const AkUniqueID FOOTSTEP_WP = 750617883U;
         static const AkUniqueID PLAY_AMB_BLIZZARD = 761535791U;
         static const AkUniqueID PLAY_AMB_CAVE = 2314402090U;
-        static const AkUniqueID PLAYSTART_AMB_BLIZZARD = 3040107861U;
-        static const AkUniqueID PLAYSTART_CAVE = 3398993223U;
+        static const AkUniqueID PLAY_AMB_DUNGEON = 1673307701U;
+        static const AkUniqueID PLAY_WATERDRIP = 693384378U;
         static const AkUniqueID RFX_BRIDGE = 2958646009U;
         static const AkUniqueID RFX_CAMPFIRE = 3905897693U;
         static const AkUniqueID SHIELD_MAIN = 1013147606U;
         static const AkUniqueID STOP_AMB_BLIZZARD = 1610211621U;
         static const AkUniqueID STOP_AMB_CAVE = 1551221296U;
+        static const AkUniqueID STOP_AMB_DUNGEON = 506473607U;
         static const AkUniqueID SWORD_MAIN = 1101775796U;
         static const AkUniqueID VOICE_MOB = 656988382U;
     } // namespace EVENTS
@@ -94,12 +95,30 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
+        static const AkUniqueID CHARACTER = 436743010U;
+        static const AkUniqueID EVENT = 3161415855U;
+        static const AkUniqueID PROPS = 968010305U;
+        static const AkUniqueID RFX = 963825947U;
         static const AkUniqueID SOUNDBANK = 1661994096U;
     } // namespace BANKS
 
     namespace BUSSES
     {
+        static const AkUniqueID AMB = 1117531639U;
+        static const AkUniqueID AMB_BLIZZARD = 3830630616U;
+        static const AkUniqueID AMB_CAVE = 3755979049U;
+        static const AkUniqueID AMB_DUNGEON = 2756369268U;
+        static const AkUniqueID CHAR = 4140304029U;
+        static const AkUniqueID CROWM = 2848349021U;
+        static const AkUniqueID HUD = 646625284U;
+        static const AkUniqueID INDOOR = 340398852U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MOB = 1082004793U;
+        static const AkUniqueID OUTDOOR = 144697359U;
+        static const AkUniqueID PROPS = 968010305U;
+        static const AkUniqueID RFX = 963825947U;
+        static const AkUniqueID UI = 1551306167U;
+        static const AkUniqueID WP = 1517750984U;
     } // namespace BUSSES
 
     namespace AUX_BUSSES

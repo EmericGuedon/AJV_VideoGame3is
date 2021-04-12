@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
-		<ProjectRoot>C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>D:\GitHub\AJV_VideoGame3is\project_3isWwise\</ProjectRoot>
+		<SourceFilesRoot>D:\GitHub\AJV_VideoGame3is\project_3isWwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\GitHub\AJV_VideoGame3is\project_3isWwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\etudiant\AJV_VideoGame3is\project_3isWwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>D:\GitHub\AJV_VideoGame3is\project_3isWwise\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4281705651">
-			<ObjectPath>Init</ObjectPath>
-			<ShortName>Init</ShortName>
-			<Path>Init.bnk</Path>
-			<IncludedAuxBusses>
-				<AuxBus Id="323187407" Name="Reverb_Cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Cave"/>
-				<AuxBus Id="892458534" Name="reverb_dungeon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\reverb_dungeon"/>
-			</IncludedAuxBusses>
-		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="3563655433">
-			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
-			<ShortName>Soundbank</ShortName>
-			<Path>Soundbank.bnk</Path>
+		<SoundBank Id="436743010" Language="SFX" Hash="4096636487">
+			<ObjectPath>\SoundBanks\Default Work Unit\CHARACTER</ObjectPath>
+			<ShortName>CHARACTER</ShortName>
+			<Path>CHARACTER.bnk</Path>
 			<IncludedEvents>
 				<Event Id="3276437528" Name="Footstep_CrowM" ObjectPath="\Events\Default Work Unit\CHARACTER_Event\Footstep_CrowM" DurationType="OneShot" DurationMin="2.733349" DurationMax="3.440629">
 					<IncludedMemoryFiles>
@@ -35,21 +26,9 @@
 							<ShortName>CHAR_CrowM_armor-004.wav</ShortName>
 							<Path>SFX\CHAR_CrowM_armor-004_10C4C929.wem</Path>
 						</File>
-						<File Id="28156667" Language="SFX">
-							<ShortName>CHAR_CrowM_jewels-007.wav</ShortName>
-							<Path>SFX\CHAR_CrowM_jewels-007_10C4C929.wem</Path>
-						</File>
-						<File Id="73811381" Language="SFX">
-							<ShortName>CHAR_CrowM_jewels-006.wav</ShortName>
-							<Path>SFX\CHAR_CrowM_jewels-006_10C4C929.wem</Path>
-						</File>
 						<File Id="138116994" Language="SFX">
 							<ShortName>CHAR_CrowM_Footsteps_Metal_Fast-005.wav</ShortName>
 							<Path>SFX\CHAR_CrowM_Footsteps_Metal_Fast-005_17570719.wem</Path>
-						</File>
-						<File Id="150469387" Language="SFX">
-							<ShortName>CHAR_CrowM_jewels-008.wav</ShortName>
-							<Path>SFX\CHAR_CrowM_jewels-008_10C4C929.wem</Path>
 						</File>
 						<File Id="151681601" Language="SFX">
 							<ShortName>CHAR_CrowM_Gear_Plates-002.wav</ShortName>
@@ -155,10 +134,6 @@
 							<ShortName>CHAR_CrowM_armor-001.wav</ShortName>
 							<Path>SFX\CHAR_CrowM_armor-001_10C4C929.wem</Path>
 						</File>
-						<File Id="772024785" Language="SFX">
-							<ShortName>CHAR_CrowM_Gear_Plates-007.wav</ShortName>
-							<Path>SFX\CHAR_CrowM_Gear_Plates-007_10C4C929.wem</Path>
-						</File>
 						<File Id="785384750" Language="SFX">
 							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Medium-003.wav</ShortName>
 							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Medium-003_6994B767.wem</Path>
@@ -166,10 +141,6 @@
 						<File Id="805895434" Language="SFX">
 							<ShortName>CHAR_CrowM_armor-005.wav</ShortName>
 							<Path>SFX\CHAR_CrowM_armor-005_10C4C929.wem</Path>
-						</File>
-						<File Id="840191868" Language="SFX">
-							<ShortName>CHAR_CrowM_Gear_Plates-006.wav</ShortName>
-							<Path>SFX\CHAR_CrowM_Gear_Plates-006_10C4C929.wem</Path>
 						</File>
 						<File Id="847201397" Language="SFX">
 							<ShortName>CHAR_CrowM_Gear_Bones-004.wav</ShortName>
@@ -290,10 +261,6 @@
 							<ShortName>CHAR_MOB_Footsteps_MAT_Stone-003.wav</ShortName>
 							<Path>SFX\CHAR_MOB_Footsteps_MAT_Stone-003_17821FB4.wem</Path>
 						</File>
-						<File Id="500965891" Language="SFX">
-							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-006.wav</ShortName>
-							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-006_10C4C929.wem</Path>
-						</File>
 						<File Id="524260570" Language="SFX">
 							<ShortName>CHAR_MOB_Footsteps_MAT_Snow-003.wav</ShortName>
 							<Path>SFX\CHAR_MOB_Footsteps_MAT_Snow-003_10C4C929.wem</Path>
@@ -338,10 +305,6 @@
 							<ShortName>CHAR_MOB_Footsteps_MAT_Stone-005.wav</ShortName>
 							<Path>SFX\CHAR_MOB_Footsteps_MAT_Stone-005_77A4FD51.wem</Path>
 						</File>
-						<File Id="1027809218" Language="SFX">
-							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-007.wav</ShortName>
-							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-007_DA20AA02.wem</Path>
-						</File>
 						<File Id="1044551512" Language="SFX">
 							<ShortName>CHAR_MOB_GEAR_cloth-002.wav</ShortName>
 							<Path>SFX\CHAR_MOB_GEAR_cloth-002_42105040.wem</Path>
@@ -378,8 +341,6 @@
 								<File Id="56960613"/>
 								<File Id="402794327"/>
 								<File Id="782557671"/>
-								<File Id="500965891"/>
-								<File Id="1027809218"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -430,10 +391,6 @@
 							<ShortName>CHAR_MOB_GEAR_ Chain_Low-001.wav</ShortName>
 							<Path>SFX\CHAR_MOB_GEAR_ Chain_Low-001_10C4C929.wem</Path>
 						</File>
-						<File Id="157461299" Language="SFX">
-							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Low-007.wav</ShortName>
-							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Low-007_C3935FE8.wem</Path>
-						</File>
 						<File Id="179112598" Language="SFX">
 							<ShortName>CHAR_WhiteP_Gear_Purse003.wav</ShortName>
 							<Path>SFX\CHAR_WhiteP_Gear_Purse003_7FDD8D6B.wem</Path>
@@ -481,14 +438,6 @@
 						<File Id="492661314" Language="SFX">
 							<ShortName>CHAR_MOB_GEAR_Stuff-004.wav</ShortName>
 							<Path>SFX\CHAR_MOB_GEAR_Stuff-004_10C4C929.wem</Path>
-						</File>
-						<File Id="500965891" Language="SFX">
-							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-006.wav</ShortName>
-							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-006_10C4C929.wem</Path>
-						</File>
-						<File Id="507051874" Language="SFX">
-							<ShortName>Char_CrowM_Footsteps_Impact_Soft_Low-006.wav</ShortName>
-							<Path>SFX\Char_CrowM_Footsteps_Impact_Soft_Low-006_89DEAC5A.wem</Path>
 						</File>
 						<File Id="524260570" Language="SFX">
 							<ShortName>CHAR_MOB_Footsteps_MAT_Snow-003.wav</ShortName>
@@ -566,10 +515,6 @@
 							<ShortName>CHAR_MOB_Footsteps_MAT_Stone-005.wav</ShortName>
 							<Path>SFX\CHAR_MOB_Footsteps_MAT_Stone-005_77A4FD51.wem</Path>
 						</File>
-						<File Id="1027809218" Language="SFX">
-							<ShortName>CHAR_MOB_Footsteps_MAT_Wood-007.wav</ShortName>
-							<Path>SFX\CHAR_MOB_Footsteps_MAT_Wood-007_DA20AA02.wem</Path>
-						</File>
 						<File Id="1044551512" Language="SFX">
 							<ShortName>CHAR_MOB_GEAR_cloth-002.wav</ShortName>
 							<Path>SFX\CHAR_MOB_GEAR_cloth-002_42105040.wem</Path>
@@ -610,8 +555,6 @@
 								<File Id="56960613"/>
 								<File Id="402794327"/>
 								<File Id="782557671"/>
-								<File Id="500965891"/>
-								<File Id="1027809218"/>
 							</Media>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{989D954C-D9ED-4FB6-8E34-F92980A30EFB}">
@@ -630,75 +573,9 @@
 								<File Id="905460174"/>
 								<File Id="100377542"/>
 								<File Id="829548366"/>
-								<File Id="507051874"/>
-								<File Id="157461299"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
-				</Event>
-				<Event Id="761535791" Name="Play_Amb_Blizzard" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\Play_Amb_Blizzard" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="962117574" Language="SFX">
-							<ShortName>Amb_Out_Blizzard.wav</ShortName>
-							<Path>SFX\Amb_Out_Blizzard_3C2CAA84.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2314402090" Name="Play_Amb_Cave" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\Play_Amb_Cave" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="687909997" Language="SFX">
-							<ShortName>AMB_Out_Cave_Roomtone.wav</ShortName>
-							<Path>SFX\AMB_Out_Cave_Roomtone_C10D3F15.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3040107861" Name="PlayStart_Amb_Blizzard" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\PlayStart_Amb_Blizzard" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="962117574" Language="SFX">
-							<ShortName>Amb_Out_Blizzard.wav</ShortName>
-							<Path>SFX\Amb_Out_Blizzard_3C2CAA84.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3398993223" Name="PlayStart_Cave" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\PlayStart_Cave" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="687909997" Language="SFX">
-							<ShortName>AMB_Out_Cave_Roomtone.wav</ShortName>
-							<Path>SFX\AMB_Out_Cave_Roomtone_C10D3F15.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="2958646009" Name="RFX_Bridge" ObjectPath="\Events\Default Work Unit\RFX_Event\RFX_Bridge" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="150434721" Language="SFX">
-							<ShortName>RFX_PlankSqueak_002.wav</ShortName>
-							<Path>SFX\RFX_PlankSqueak_002_672BD2D2.wem</Path>
-						</File>
-						<File Id="166407821" Language="SFX">
-							<ShortName>RFX_PlankSqueak.wav</ShortName>
-							<Path>SFX\RFX_PlankSqueak_CB96656C.wem</Path>
-						</File>
-						<File Id="229620362" Language="SFX">
-							<ShortName>RFX_WoodCrack.wav</ShortName>
-							<Path>SFX\RFX_WoodCrack_63816941.wem</Path>
-						</File>
-						<File Id="970532345" Language="SFX">
-							<ShortName>RFX_ChainBridge.wav</ShortName>
-							<Path>SFX\RFX_ChainBridge_810B8789.wem</Path>
-						</File>
-						<File Id="1023645411" Language="SFX">
-							<ShortName>RFX_Bridge.wav</ShortName>
-							<Path>SFX\RFX_Bridge_DF59C846.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="3905897693" Name="RFX_CampFire" ObjectPath="\Events\Default Work Unit\RFX_Event\RFX_CampFire" MaxAttenuation="100.000000" DurationType="Infinite">
-					<IncludedMemoryFiles>
-						<File Id="287252065" Language="SFX">
-							<ShortName>RFX_CampFire.wav</ShortName>
-							<Path>SFX\RFX_CampFire_2E8D0C26.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1013147606" Name="Shield_Main" ObjectPath="\Events\Default Work Unit\CHARACTER_Event\Shield_Main" DurationType="OneShot" DurationMin="1.849203" DurationMax="2.629073">
 					<IncludedMemoryFiles>
@@ -772,8 +649,6 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1610211621" Name="Stop_Amb_Blizzard" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\Stop_Amb_Blizzard" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="1551221296" Name="Stop_Amb_Cave" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\Stop_Amb_Cave" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1101775796" Name="Sword_Main" ObjectPath="\Events\Default Work Unit\CHARACTER_Event\Sword_Main" DurationType="OneShot" DurationMin="0.503828" DurationMax="1.542645">
 					<IncludedMemoryFiles>
 						<File Id="54184917" Language="SFX">
@@ -927,9 +802,6 @@
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
-			<GameParameters>
-				<GameParameter Id="1903539408" Name="RTPC_Bridge" ObjectPath="\Game Parameters\Default Work Unit\RTPC_Bridge"/>
-			</GameParameters>
 			<StateGroups>
 				<StateGroup Id="3722118999" Name="Sword_Materials" ObjectPath="\States\Default Work Unit\Sword_Materials">
 					<States>
@@ -962,6 +834,342 @@
 					</Switches>
 				</SwitchGroup>
 			</SwitchGroups>
+		</SoundBank>
+		<SoundBank Id="963825947" Language="SFX" Hash="2830922785">
+			<ObjectPath>\SoundBanks\Default Work Unit\RFX</ObjectPath>
+			<ShortName>RFX</ShortName>
+			<Path>RFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2958646009" Name="RFX_Bridge" ObjectPath="\Events\Default Work Unit\RFX_Event\RFX_Bridge" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="150434721" Language="SFX">
+							<ShortName>RFX_PlankSqueak_002.wav</ShortName>
+							<Path>SFX\RFX_PlankSqueak_002_672BD2D2.wem</Path>
+						</File>
+						<File Id="166407821" Language="SFX">
+							<ShortName>RFX_PlankSqueak.wav</ShortName>
+							<Path>SFX\RFX_PlankSqueak_CB96656C.wem</Path>
+						</File>
+						<File Id="229620362" Language="SFX">
+							<ShortName>RFX_WoodCrack.wav</ShortName>
+							<Path>SFX\RFX_WoodCrack_63816941.wem</Path>
+						</File>
+						<File Id="970532345" Language="SFX">
+							<ShortName>RFX_ChainBridge.wav</ShortName>
+							<Path>SFX\RFX_ChainBridge_810B8789.wem</Path>
+						</File>
+						<File Id="1023645411" Language="SFX">
+							<ShortName>RFX_Bridge.wav</ShortName>
+							<Path>SFX\RFX_Bridge_DF59C846.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3905897693" Name="RFX_CampFire" ObjectPath="\Events\Default Work Unit\RFX_Event\RFX_CampFire" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="287252065" Language="SFX">
+							<ShortName>RFX_CampFire.wav</ShortName>
+							<Path>SFX\RFX_CampFire_2E8D0C26.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1903539408" Name="RTPC_Bridge" ObjectPath="\Game Parameters\Default Work Unit\RTPC_Bridge"/>
+			</GameParameters>
+		</SoundBank>
+		<SoundBank Id="968010305" Language="SFX" Hash="3179511911">
+			<ObjectPath>\SoundBanks\Default Work Unit\PROPS</ObjectPath>
+			<ShortName>PROPS</ShortName>
+			<Path>PROPS.bnk</Path>
+			<IncludedEvents>
+				<Event Id="693384378" Name="Play_Waterdrip" ObjectPath="\Events\Default Work Unit\PROPS\Play_Waterdrip" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX" Hash="1028290395">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="323187407" Name="Reverb_Cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Cave"/>
+				<AuxBus Id="892458534" Name="reverb_dungeon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\reverb_dungeon"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+		<SoundBank Id="1661994096" Language="SFX" Hash="3048357012">
+			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
+			<ShortName>Soundbank</ShortName>
+			<Path>Soundbank.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161415855" Language="SFX" Hash="755853837">
+			<ObjectPath>\SoundBanks\Default Work Unit\Event</ObjectPath>
+			<ShortName>Event</ShortName>
+			<Path>Event.bnk</Path>
+			<IncludedEvents>
+				<Event Id="761535791" Name="Play_Amb_Blizzard" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\Play_Amb_Blizzard" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="17001860" Language="SFX">
+							<ShortName>RFX_Blizzard_Rock-003.wav</ShortName>
+							<Path>SFX\RFX_Blizzard_Rock-003_10C4C929.wem</Path>
+						</File>
+						<File Id="183592446" Language="SFX">
+							<ShortName>RFX_Blizzard_Snow-002.wav</ShortName>
+							<Path>SFX\RFX_Blizzard_Snow-002_10C4C929.wem</Path>
+						</File>
+						<File Id="278620022" Language="SFX">
+							<ShortName>RFX_Blizzard_Snow-004.wav</ShortName>
+							<Path>SFX\RFX_Blizzard_Snow-004_10C4C929.wem</Path>
+						</File>
+						<File Id="282197173" Language="SFX">
+							<ShortName>RFX_Blizzard_Rock-001.wav</ShortName>
+							<Path>SFX\RFX_Blizzard_Rock-001_10C4C929.wem</Path>
+						</File>
+						<File Id="291228112" Language="SFX">
+							<ShortName>RFX_Blizzard_Wind-001.wav</ShortName>
+							<Path>SFX\RFX_Blizzard_Wind-001_10C4C929.wem</Path>
+						</File>
+						<File Id="302110965" Language="SFX">
+							<ShortName>RFX_Blizzard_Snow-005.wav</ShortName>
+							<Path>SFX\RFX_Blizzard_Snow-005_10C4C929.wem</Path>
+						</File>
+						<File Id="322672660" Language="SFX">
+							<ShortName>RFX_Blizzard_Snow-003.wav</ShortName>
+							<Path>SFX\RFX_Blizzard_Snow-003_10C4C929.wem</Path>
+						</File>
+						<File Id="706624072" Language="SFX">
+							<ShortName>RFX_Blizzard_Wind-003.wav</ShortName>
+							<Path>SFX\RFX_Blizzard_Wind-003_10C4C929.wem</Path>
+						</File>
+						<File Id="716221502" Language="SFX">
+							<ShortName>RFX_Blizzard_Wind-004.wav</ShortName>
+							<Path>SFX\RFX_Blizzard_Wind-004_10C4C929.wem</Path>
+						</File>
+						<File Id="727496022" Language="SFX">
+							<ShortName>RFX_Blizzard_Rock-005.wav</ShortName>
+							<Path>SFX\RFX_Blizzard_Rock-005_10C4C929.wem</Path>
+						</File>
+						<File Id="737466167" Language="SFX">
+							<ShortName>RFX_Blizzard_Wind-002.wav</ShortName>
+							<Path>SFX\RFX_Blizzard_Wind-002_10C4C929.wem</Path>
+						</File>
+						<File Id="877322273" Language="SFX">
+							<ShortName>RFX_Blizzard_Wind-005.wav</ShortName>
+							<Path>SFX\RFX_Blizzard_Wind-005_10C4C929.wem</Path>
+						</File>
+						<File Id="911551136" Language="SFX">
+							<ShortName>RFX_Blizzard_Rock-004.wav</ShortName>
+							<Path>SFX\RFX_Blizzard_Rock-004_10C4C929.wem</Path>
+						</File>
+						<File Id="920467685" Language="SFX">
+							<ShortName>RFX_Blizzard_Snow-001.wav</ShortName>
+							<Path>SFX\RFX_Blizzard_Snow-001_10C4C929.wem</Path>
+						</File>
+						<File Id="962117574" Language="SFX">
+							<ShortName>Amb_Out_Blizzard.wav</ShortName>
+							<Path>SFX\Amb_Out_Blizzard_26EE261F.wem</Path>
+						</File>
+						<File Id="1030237946" Language="SFX">
+							<ShortName>RFX_Blizzard_Rock-002.wav</ShortName>
+							<Path>SFX\RFX_Blizzard_Rock-002_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2314402090" Name="Play_Amb_Cave" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\Play_Amb_Cave" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="22046155" Language="SFX">
+							<ShortName>AMB_Out_Cave_RFX_DustIce_1.wav</ShortName>
+							<Path>SFX\AMB_Out_Cave_RFX_DustIce_1_B8059BC8.wem</Path>
+						</File>
+						<File Id="62492842" Language="SFX">
+							<ShortName>AMB_Out_Cave_RFX_IceStress_DRY_5.wav</ShortName>
+							<Path>SFX\AMB_Out_Cave_RFX_IceStress_DRY_5_5B65F4B6.wem</Path>
+						</File>
+						<File Id="117444903" Language="SFX">
+							<ShortName>AMB_Out_Cave_RFX_IceStress_DRY_4.wav</ShortName>
+							<Path>SFX\AMB_Out_Cave_RFX_IceStress_DRY_4_1708F952.wem</Path>
+						</File>
+						<File Id="134457288" Language="SFX">
+							<ShortName>AMB_Out_Cave_RFX_DustIce_2.wav</ShortName>
+							<Path>SFX\AMB_Out_Cave_RFX_DustIce_2_02D7C25B.wem</Path>
+						</File>
+						<File Id="409800255" Language="SFX">
+							<ShortName>AMB_Out_Cave_RFX_DustIce_3.wav</ShortName>
+							<Path>SFX\AMB_Out_Cave_RFX_DustIce_3_7AE0FD6E.wem</Path>
+						</File>
+						<File Id="574513948" Language="SFX">
+							<ShortName>AMB_Out_Cave_RFX_IceStress_DRY_1.wav</ShortName>
+							<Path>SFX\AMB_Out_Cave_RFX_IceStress_DRY_1_DADBDDC7.wem</Path>
+						</File>
+						<File Id="665013383" Language="SFX">
+							<ShortName>AMB_Out_Cave_RFX_IceStress_DRY_2.wav</ShortName>
+							<Path>SFX\AMB_Out_Cave_RFX_IceStress_DRY_2_C30124CC.wem</Path>
+						</File>
+						<File Id="684400074" Language="SFX">
+							<ShortName>AMB_Out_Cave_RFX_DustIce_4.wav</ShortName>
+							<Path>SFX\AMB_Out_Cave_RFX_DustIce_4_79D8B05B.wem</Path>
+						</File>
+						<File Id="687909997" Language="SFX">
+							<ShortName>AMB_Out_Cave_Roomtone.wav</ShortName>
+							<Path>SFX\AMB_Out_Cave_Roomtone_C10D3F15.wem</Path>
+						</File>
+						<File Id="730588240" Language="SFX">
+							<ShortName>RFX_IceImpact-002.wav</ShortName>
+							<Path>SFX\RFX_IceImpact-002_10C4C929.wem</Path>
+						</File>
+						<File Id="797533131" Language="SFX">
+							<ShortName>RFX_IceImpact-001.wav</ShortName>
+							<Path>SFX\RFX_IceImpact-001_10C4C929.wem</Path>
+						</File>
+						<File Id="861372152" Language="SFX">
+							<ShortName>RFX_IceImpact-003.wav</ShortName>
+							<Path>SFX\RFX_IceImpact-003_10C4C929.wem</Path>
+						</File>
+						<File Id="934219291" Language="SFX">
+							<ShortName>AMB_Out_Cave_RFX_DustIce_5.wav</ShortName>
+							<Path>SFX\AMB_Out_Cave_RFX_DustIce_5_16C1DA4F.wem</Path>
+						</File>
+						<File Id="973502875" Language="SFX">
+							<ShortName>AMB_Out_Cave_RFX_IceStress_DRY_3.wav</ShortName>
+							<Path>SFX\AMB_Out_Cave_RFX_IceStress_DRY_3_C1F32558.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="323187407" Name="Reverb_Cave" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Reverb_Cave"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1673307701" Name="Play_Amb_Dungeon" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\Play_Amb_Dungeon" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="58045828" Language="SFX">
+							<ShortName>AMB_In_RFX_WoodenCreak_2.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_WoodenCreak_2_746ACA08.wem</Path>
+						</File>
+						<File Id="59310520" Language="SFX">
+							<ShortName>AMB_In_RFX_WoodenCreak_3.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_WoodenCreak_3_BD21644A.wem</Path>
+						</File>
+						<File Id="84491838" Language="SFX">
+							<ShortName>AMB_In_RFX_MetalSqueak_4.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_MetalSqueak_4_E5D39B00.wem</Path>
+						</File>
+						<File Id="97629492" Language="SFX">
+							<ShortName>AMB_In_RFX_MetalCreak_4.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_MetalCreak_4_9164BDCF.wem</Path>
+						</File>
+						<File Id="189026729" Language="SFX">
+							<ShortName>AMB_In_RFX_Rats_1.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_Rats_1_10A797B3.wem</Path>
+						</File>
+						<File Id="300926878" Language="SFX">
+							<ShortName>AMB_In_RFX_MetalCreak_5.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_MetalCreak_5_983E0F9F.wem</Path>
+						</File>
+						<File Id="323054948" Language="SFX">
+							<ShortName>AMB_In_RFX_WoodenCreak_5.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_WoodenCreak_5_B13F85C8.wem</Path>
+						</File>
+						<File Id="337067221" Language="SFX">
+							<ShortName>AMB_In_RFX_MetalSqueak_2.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_MetalSqueak_2_5AB6AAD1.wem</Path>
+						</File>
+						<File Id="369210972" Language="SFX">
+							<ShortName>AMB_In_RFX_MetalCreak_1.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_MetalCreak_1_C39B5E73.wem</Path>
+						</File>
+						<File Id="373557189" Language="SFX">
+							<ShortName>AMB_In_RFX_WoodenCreak_7.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_WoodenCreak_7_A163E5CD.wem</Path>
+						</File>
+						<File Id="390479983" Language="SFX">
+							<ShortName>AMB_In_RFX_WoodenCreak_1.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_WoodenCreak_1_5CAF6F87.wem</Path>
+						</File>
+						<File Id="410199459" Language="SFX">
+							<ShortName>AMB_In_RFX_Cage_6.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_Cage_6_5859CEC8.wem</Path>
+						</File>
+						<File Id="427661397" Language="SFX">
+							<ShortName>AMB_In_RFX_MetalSqueak_1.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_MetalSqueak_1_10C4C929.wem</Path>
+						</File>
+						<File Id="427696587" Language="SFX">
+							<ShortName>AMB_In_RFX_MetalCreak_6.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_MetalCreak_6_558FFDE8.wem</Path>
+						</File>
+						<File Id="487094529" Language="SFX">
+							<ShortName>AMB_In_Roomtone_Castle.wav</ShortName>
+							<Path>SFX\AMB_In_Roomtone_Castle_71EC604D.wem</Path>
+						</File>
+						<File Id="488505412" Language="SFX">
+							<ShortName>AMB_In_RFX_Cage_5.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_Cage_5_F796A4E3.wem</Path>
+						</File>
+						<File Id="518621572" Language="SFX">
+							<ShortName>AMB_In_RFX_MetalSqueak_5.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_MetalSqueak_5_5EB1656A.wem</Path>
+						</File>
+						<File Id="541533438" Language="SFX">
+							<ShortName>AMB_In_RFX_MetalSqueak_6.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_MetalSqueak_6_FBFFB4AF.wem</Path>
+						</File>
+						<File Id="565149604" Language="SFX">
+							<ShortName>AMB_In_RFX_WoodenCreak_6.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_WoodenCreak_6_514904D3.wem</Path>
+						</File>
+						<File Id="582726549" Language="SFX">
+							<ShortName>AMB_In_RFX_WoodenCreak_4.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_WoodenCreak_4_47EEF963.wem</Path>
+						</File>
+						<File Id="684501554" Language="SFX">
+							<ShortName>AMB_In_RFX_MetalCreak_3.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_MetalCreak_3_228EF9D8.wem</Path>
+						</File>
+						<File Id="723790004" Language="SFX">
+							<ShortName>AMB_In_RFX_Rats_2.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_Rats_2_F68FA038.wem</Path>
+						</File>
+						<File Id="761642837" Language="SFX">
+							<ShortName>AMB_In_RFX_Rats_4.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_Rats_4_EDC4F0F5.wem</Path>
+						</File>
+						<File Id="808807052" Language="SFX">
+							<ShortName>AMB_In_RFX_Cage_1.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_Cage_1_E8BE5504.wem</Path>
+						</File>
+						<File Id="872846438" Language="SFX">
+							<ShortName>AMB_In_RFX_Rats_5.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_Rats_5_7D1F3BB8.wem</Path>
+						</File>
+						<File Id="889532459" Language="SFX">
+							<ShortName>AMB_In_RFX_Cage_3.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_Cage_3_28B11DF6.wem</Path>
+						</File>
+						<File Id="903163063" Language="SFX">
+							<ShortName>AMB_In_RFX_Cage_4.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_Cage_4_2E029A79.wem</Path>
+						</File>
+						<File Id="963177718" Language="SFX">
+							<ShortName>AMB_In_RFX_MetalCreak_2.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_MetalCreak_2_8D6AC3BC.wem</Path>
+						</File>
+						<File Id="965092901" Language="SFX">
+							<ShortName>AMB_In_RFX_Cage_2.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_Cage_2_BB763864.wem</Path>
+						</File>
+						<File Id="1004013221" Language="SFX">
+							<ShortName>AMB_In_RFX_MetalSqueak_3.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_MetalSqueak_3_B9A77623.wem</Path>
+						</File>
+						<File Id="1009085031" Language="SFX">
+							<ShortName>AMB_In_RFX_Rats_3.wav</ShortName>
+							<Path>SFX\AMB_In_RFX_Rats_3_7FC647ED.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="892458534" Name="reverb_dungeon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\reverb_dungeon"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="1610211621" Name="Stop_Amb_Blizzard" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\Stop_Amb_Blizzard" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="1551221296" Name="Stop_Amb_Cave" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\Stop_Amb_Cave" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="506473607" Name="Stop_Amb_Dungeon" ObjectPath="\Events\Default Work Unit\AMBIANCE_Event\Stop_Amb_Dungeon" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

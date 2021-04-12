@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	693384378	Play_Waterdrip			\Default Work Unit\PROPS\Play_Waterdrip	
+

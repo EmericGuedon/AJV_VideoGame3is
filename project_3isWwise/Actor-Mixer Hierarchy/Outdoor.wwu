@@ -291,8 +291,8 @@
 															</PropertyList>
 															<PointList>
 																<Point>
-																	<XPos>47.46835</XPos>
-																	<YPos>20.06368</YPos>
+																	<XPos>43.67088</XPos>
+																	<YPos>18.7898</YPos>
 																	<Flags>12</Flags>
 																	<Time>0</Time>
 																</Point>
@@ -1384,6 +1384,16 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Blizz" ID="{BB76F821-CB53-426D-9042-B7700C9524C7}" ShortID="394422524">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
 						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
