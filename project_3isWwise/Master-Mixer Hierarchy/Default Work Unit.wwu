@@ -41,6 +41,29 @@
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
+						<Bus Name="AMB" ID="{E5CBB7CA-EEC8-446B-82CE-691FDA6F7EF2}">
+							<ChildrenList>
+								<Bus Name="AMB_Blizzard" ID="{D7CF2697-423E-4E07-964F-A157FA5FCB45}"/>
+								<Bus Name="AMB_Cave" ID="{2BAC5C46-7480-47BD-95B3-8E1366B5DA4D}"/>
+								<Bus Name="AMB_Dungeon" ID="{C9ED5C17-5B3E-4380-B26F-79F6C282B2F1}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="CHAR" ID="{338DAE42-702C-4CFB-B030-6BD91AF5904B}">
+							<ChildrenList>
+								<Bus Name="CrowM" ID="{9CB9EEA2-C920-4CA5-BE12-BAD7DEB0278F}"/>
+								<Bus Name="WP" ID="{473D245B-475D-4C23-91A1-B74C5694FE58}"/>
+								<Bus Name="MOB" ID="{366D7D27-DC67-4FDD-A8F6-72AC99C23201}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="PROPS" ID="{E53638DA-1B9C-41C1-9536-BCB61B14E3C3}">
+							<ChildrenList>
+								<Bus Name="Indoor" ID="{E367DFD4-3824-4C11-8A14-C65037EC3182}"/>
+								<Bus Name="Outdoor" ID="{DFAB7B18-B62E-41B3-9B28-22262EAF0C75}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="UI" ID="{125F3244-D990-464B-8BEE-FA51E6A47CA4}"/>
+						<Bus Name="HUD" ID="{9E4D3E6D-459C-4693-963B-44F474E6D244}"/>
+						<Bus Name="RFX" ID="{A0EF48FD-F12D-48C5-BCC2-E104939CC924}"/>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

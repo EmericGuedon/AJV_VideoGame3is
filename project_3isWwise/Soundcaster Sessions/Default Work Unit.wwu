@@ -6,10 +6,6 @@
 				<SoundcasterSession Name="AMB_DUNGEON" ID="{D607A957-077E-43EE-8BFF-77A4D7579D31}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="PROPS_WaterDrip" ID="{053D3708-7169-40C4-912F-5512E5CD1F99}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
 							<ObjectRef Name="RFX_WoodenCreak" ID="{FE50EC72-5885-47B6-8C4C-3809FA85E443}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
 							<Position X="0" Y="1"/>
 						</Module>
@@ -100,6 +96,24 @@
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Bridge" ID="{634DFC54-F587-46A2-B709-3D2B42233E53}"/>
 							<Value>-0.775210084033613</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Snow" ID="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}"/>
+						<CurrentSwitchRef Name="RUN" ID="{27D4B2BD-628B-46BD-8452-6351AB298B87}"/>
+						<CurrentSwitchRef Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="AMB_BLIZZARD" ID="{52F6A7CD-C0CA-4346-8347-430515B6BA87}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Bridge" ID="{634DFC54-F587-46A2-B709-3D2B42233E53}"/>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>

@@ -7,17 +7,6 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Event Name="PlayStart_Amb_Blizzard" ID="{1A02CC42-9434-405D-9DB6-300C36FCE7F9}">
-					<ChildrenList>
-						<Action Name="" ID="{CBEC6245-148D-4169-9D6C-580DF0B51D82}" ShortID="36938052">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Amb_Out_Blizzard" ID="{C7FE0197-98E9-4B49-869C-092D9870787B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Play_Amb_Blizzard" ID="{D3FCF7CC-16C9-4B02-95E3-C12103B2FF8D}">
 					<ChildrenList>
 						<Action Name="" ID="{D5D799FF-8FCB-4EDB-B445-8E57F9C0EDC2}" ShortID="963063352">
@@ -26,7 +15,14 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Amb_Out_Blizzard" ID="{C7FE0197-98E9-4B49-869C-092D9870787B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+									<ObjectRef Name="Amb_Out_Blizzard_Loop" ID="{C7FE0197-98E9-4B49-869C-092D9870787B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B64F53D4-1A84-477E-8C58-B96E25F25FFA}" ShortID="894314763">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RFX_Blizzard" ID="{6EB0E918-72E7-4843-9331-53CF4AC4D283}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -41,18 +37,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Amb_Out_Blizzard" ID="{C7FE0197-98E9-4B49-869C-092D9870787B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="PlayStart_Cave" ID="{31022CAA-33E2-4028-B8C8-6274F1F138CB}">
-					<ChildrenList>
-						<Action Name="" ID="{7904989B-F0A9-43A2-9F69-9D824DFFF29F}" ShortID="918273050">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Roomtone_Cave" ID="{78175763-1106-4CB5-B8C5-7F6568704E1B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+									<ObjectRef Name="Amb_Out_Blizzard_Loop" ID="{C7FE0197-98E9-4B49-869C-092D9870787B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -70,6 +55,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{4457E68E-E731-4B71-B265-ACEBD8FCEAE3}" ShortID="757571933">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RFX_Cave" ID="{7475B756-6906-41ED-8A04-21618119F423}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Stop_Amb_Cave" ID="{6B19DFA8-8420-4770-A0A6-14BC3ADDB48A}">
@@ -82,6 +74,24 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Roomtone_Cave" ID="{78175763-1106-4CB5-B8C5-7F6568704E1B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Amb_Dungeon" ID="{B5B29CE3-51BE-45B8-B982-D7AABB4FF55C}">
+					<ChildrenList>
+						<Action Name="" ID="{FD82A972-8517-42F3-8B48-AA384904F723}" ShortID="1009284544">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RFX_Dungeon" ID="{816341C2-9717-4BCE-8FD6-7D27D9DE981B}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{6FE12786-C191-46E1-9341-BDED7790AC94}" ShortID="211845683">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Roomton_Castle" ID="{9E3C5383-CC70-452C-9C9E-C081AEFDE9D5}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

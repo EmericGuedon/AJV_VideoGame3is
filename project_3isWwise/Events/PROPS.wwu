@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{22E1028C-2FAC-40C2-860F-A99353AB343B}" SchemaVersion="97" RootDocumentID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}">
+	<Events>
+		<WorkUnit Name="PROPS" ID="{22E1028C-2FAC-40C2-860F-A99353AB343B}" OwnerID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="12"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_Waterdrip" ID="{B99AA7A8-CFDE-4548-9B69-E4443A15F129}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

@@ -6,6 +6,7 @@
 				<WorkUnit Name="AMBIANCE_Event" ID="{48258AF7-02D1-4B74-8845-47E57A587A9D}" PersistMode="Reference"/>
 				<WorkUnit Name="CHARACTER_Event" ID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}" PersistMode="Reference"/>
 				<WorkUnit Name="RFX_Event" ID="{B82A4C42-0790-4B38-965D-84E1AC2F3384}" PersistMode="Reference"/>
+				<WorkUnit Name="PROPS" ID="{22E1028C-2FAC-40C2-860F-A99353AB343B}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

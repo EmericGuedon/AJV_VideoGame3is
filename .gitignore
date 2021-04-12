@@ -70,3 +70,4 @@ crashlytics-build.properties
 *.wsettings
 *.validationcache
 *.wsettings
+*.prof
