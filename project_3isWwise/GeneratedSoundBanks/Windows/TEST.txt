@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	678554439	Stop_SINE			\Default Work Unit\Stop_SINE	
+	4010112737	Play_SINE			\Default Work Unit\Play_SINE	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	370260484	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\TEST\Sine\Wwise Sine	
+

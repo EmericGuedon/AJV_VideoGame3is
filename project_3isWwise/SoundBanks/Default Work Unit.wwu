@@ -3,18 +3,6 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{6D63105E-50F0-45CA-A1DF-954BCBD3B8E2}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Soundbank" ID="{D55DE6C2-4A84-4F2E-B42F-822E24E4976E}">
-					<ObjectInclusionList/>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="Event" ID="{A84199F7-648E-4CCA-A5B6-64A1BCA3997B}">
-					<ObjectInclusionList>
-						<ObjectRef Name="AMBIANCE_Event" ID="{48258AF7-02D1-4B74-8845-47E57A587A9D}" WorkUnitID="{48258AF7-02D1-4B74-8845-47E57A587A9D}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
 				<SoundBank Name="CHARACTER" ID="{ED228412-EAAB-4A76-A762-8A4022D6DEE0}">
 					<ObjectInclusionList>
 						<ObjectRef Name="CHARACTER_Event" ID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}" Origin="Manual" Filter="7"/>
@@ -32,6 +20,21 @@
 				<SoundBank Name="PROPS" ID="{DD90946E-5508-4BE2-9844-9F46E14C9BF3}">
 					<ObjectInclusionList>
 						<ObjectRef Name="PROPS" ID="{22E1028C-2FAC-40C2-860F-A99353AB343B}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="TEST" ID="{E8226287-12BC-4FAE-813A-CCBD5CA4A49F}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_SINE" ID="{4DD41C80-AD95-4050-A035-1231DEA280BF}" WorkUnitID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_SINE" ID="{8D6245FA-1D54-4CA6-A68A-8FC0C5BEE03F}" WorkUnitID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="AMBIANCE" ID="{A54FEA39-5089-41FE-AA93-D99A14B8E9AE}">
+					<ObjectInclusionList>
+						<ObjectRef Name="AMBIANCE_Event" ID="{48258AF7-02D1-4B74-8845-47E57A587A9D}" WorkUnitID="{48258AF7-02D1-4B74-8845-47E57A587A9D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -19,6 +19,7 @@ namespace AK
         static const AkUniqueID PLAY_AMB_BLIZZARD = 761535791U;
         static const AkUniqueID PLAY_AMB_CAVE = 2314402090U;
         static const AkUniqueID PLAY_AMB_DUNGEON = 1673307701U;
+        static const AkUniqueID PLAY_SINE = 4010112737U;
         static const AkUniqueID PLAY_WATERDRIP = 693384378U;
         static const AkUniqueID RFX_BRIDGE = 2958646009U;
         static const AkUniqueID RFX_CAMPFIRE = 3905897693U;
@@ -26,6 +27,7 @@ namespace AK
         static const AkUniqueID STOP_AMB_BLIZZARD = 1610211621U;
         static const AkUniqueID STOP_AMB_CAVE = 1551221296U;
         static const AkUniqueID STOP_AMB_DUNGEON = 506473607U;
+        static const AkUniqueID STOP_SINE = 678554439U;
         static const AkUniqueID SWORD_MAIN = 1101775796U;
         static const AkUniqueID VOICE_MOB = 656988382U;
     } // namespace EVENTS
@@ -99,7 +101,7 @@ namespace AK
         static const AkUniqueID EVENT = 3161415855U;
         static const AkUniqueID PROPS = 968010305U;
         static const AkUniqueID RFX = 963825947U;
-        static const AkUniqueID SOUNDBANK = 1661994096U;
+        static const AkUniqueID TEST = 3157003241U;
     } // namespace BANKS
 
     namespace BUSSES

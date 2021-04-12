@@ -885,7 +885,7 @@
 				<Event Id="693384378" Name="Play_Waterdrip" ObjectPath="\Events\Default Work Unit\PROPS\Play_Waterdrip" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1028290395">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2882814360">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -894,10 +894,14 @@
 				<AuxBus Id="892458534" Name="reverb_dungeon" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\reverb_dungeon"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="3048357012">
-			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
-			<ShortName>Soundbank</ShortName>
-			<Path>Soundbank.bnk</Path>
+		<SoundBank Id="3157003241" Language="SFX" Hash="488072887">
+			<ObjectPath>\SoundBanks\Default Work Unit\TEST</ObjectPath>
+			<ShortName>TEST</ShortName>
+			<Path>TEST.bnk</Path>
+			<IncludedEvents>
+				<Event Id="4010112737" Name="Play_SINE" ObjectPath="\Events\Default Work Unit\Play_SINE" DurationType="OneShot" DurationMin="6.000000" DurationMax="6.000000"/>
+				<Event Id="678554439" Name="Stop_SINE" ObjectPath="\Events\Default Work Unit\Stop_SINE" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="3161415855" Language="SFX" Hash="755853837">
 			<ObjectPath>\SoundBanks\Default Work Unit\Event</ObjectPath>
