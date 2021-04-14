@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6B8990F3-F27E-4469-833C-465E08B96186}" SchemaVersion="97" RootDocumentID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}">
+	<Events>
+		<WorkUnit Name="UI" ID="{6B8990F3-F27E-4469-833C-465E08B96186}" OwnerID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="22"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="UI_Scroll" ID="{5E420E69-D57F-49FB-84A9-D883ABA1D0A3}">
+					<ChildrenList>
+						<Action Name="" ID="{8AECAE87-6AAE-43A4-87C4-B73DEFC36F11}" ShortID="1614088">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Sroll" ID="{80DFEF23-D818-4626-B157-A43722A1B043}" WorkUnitID="{570F564F-602A-4945-B7E7-693E006A4BF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Valid" ID="{4B4DDA1C-5F8A-44E1-B06F-CF4A3B098744}">
+					<ChildrenList>
+						<Action Name="" ID="{CF0997C5-4383-471C-B1C4-0E7F12573F61}" ShortID="69718085">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Validation" ID="{7BE3A825-0A81-45B7-B7F8-E20F997C0785}" WorkUnitID="{570F564F-602A-4945-B7E7-693E006A4BF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Start" ID="{9C3833A2-C018-457A-8BD5-26061D4E478C}">
+					<ChildrenList>
+						<Action Name="" ID="{06165D6B-4A9A-4D77-9778-0E8EE151A6FE}" ShortID="213756205">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Start" ID="{6C399812-3F6A-4677-B290-C5542C86C4D1}" WorkUnitID="{570F564F-602A-4945-B7E7-693E006A4BF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

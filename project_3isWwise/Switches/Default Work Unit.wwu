@@ -3,25 +3,7 @@
 	<Switches>
 		<WorkUnit Name="Default Work Unit" ID="{A32F4D49-79B3-40BC-84DA-F1EA1A691BE7}" PersistMode="Standalone">
 			<ChildrenList>
-				<SwitchGroup Name="CrowM_Mooving" ID="{D107B2AA-22A3-4F6C-96F0-A6B503250A71}">
-					<ChildrenList>
-						<Switch Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
-						<Switch Name="WALK" ID="{CFC5BDF7-9EF6-491C-A14B-DA62EBDB7589}"/>
-					</ChildrenList>
-				</SwitchGroup>
-				<SwitchGroup Name="WP_Mooving" ID="{97B26E32-75CF-4C5C-BEBE-0C800D50DA64}">
-					<ChildrenList>
-						<Switch Name="RUN" ID="{27D4B2BD-628B-46BD-8452-6351AB298B87}"/>
-						<Switch Name="WALK" ID="{989D954C-D9ED-4FB6-8E34-F92980A30EFB}"/>
-					</ChildrenList>
-				</SwitchGroup>
-				<SwitchGroup Name="Footstep_Materials" ID="{36A67F29-5B45-47C9-A717-E5F6C6BC522E}">
-					<ChildrenList>
-						<Switch Name="Snow" ID="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}"/>
-						<Switch Name="Stone" ID="{BA7BE688-E22A-4D67-B9E5-E8CB54B5BDB3}"/>
-						<Switch Name="Wood" ID="{29C275A9-1195-4AD2-A2DA-7AF118049731}"/>
-					</ChildrenList>
-				</SwitchGroup>
+				<WorkUnit Name="CHAR" ID="{4F98B7B6-81C4-4184-84B1-E51E49D1E92C}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

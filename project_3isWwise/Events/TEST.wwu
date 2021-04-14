@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F0F12306-F337-49B9-B360-4B8AB7385682}" SchemaVersion="97" RootDocumentID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}">
+	<Events>
+		<WorkUnit Name="TEST" ID="{F0F12306-F337-49B9-B360-4B8AB7385682}" OwnerID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="9"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Play_SINE" ID="{4DD41C80-AD95-4050-A035-1231DEA280BF}">
+					<ChildrenList>
+						<Action Name="" ID="{51DCB73F-057E-4227-BCD9-D7854D797131}" ShortID="285135793">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sine" ID="{032899B6-7A3D-44E3-9E04-2ACF05978423}" WorkUnitID="{B7DF8193-1C64-4EE4-A00D-2C2356EB80C7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_SINE" ID="{8D6245FA-1D54-4CA6-A68A-8FC0C5BEE03F}">
+					<ChildrenList>
+						<Action Name="" ID="{35D9F057-DDEC-480A-97FB-41058DB3E510}" ShortID="186445380">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sine" ID="{032899B6-7A3D-44E3-9E04-2ACF05978423}" WorkUnitID="{B7DF8193-1C64-4EE4-A00D-2C2356EB80C7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

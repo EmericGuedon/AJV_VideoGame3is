@@ -27,6 +27,7 @@
 						<Value Platform="Windows">256</Value>
 					</ValueList>
 				</Property>
+				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjEwMzM5IiBtYXNrPSJYVExUNTk0NyIgZW5jPSIwIj48bGlj ZW5zZSBpZD0iMSIgbmFtZT0iV3dpc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwz LDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMjEtMDctMzEiICAvPjxsaWNlbnNlIGlk PSIyMiIgbmFtZT0iTGV2ZWwgQSBMaWNlbnNlIiB0eXBlPSIzIiBwbGF0Zm9ybXM9 IjIsMyw0LDEwLDEzLDE0IiBleHBpcmVzPSIyMDIxLTA3LTMxIiAgLz48bGljZW5z ZSBpZD0iMjEiIG5hbWU9Ik1haW50ZW5hbmNlIiB0eXBlPSIzIiBwbGF0Zm9ybXM9 IjIsMyw0LDEwLDEzLDE0IiBleHBpcmVzPSIyMDIxLTA3LTMxIiAgLz48bGljZW5z ZSBpZD0iMjUiIG5hbWU9IkFsbCBXd2lzZSBQbHVnLUlucyIgdHlwZT0iMyIgIGV4 cGlyZXM9IjIwMjEtMDctMzEiICAvPjwvcHJvamVjdD4=|hvnVVjcgxPxn008s3hM cHZt+/BayUqC1EGhndrPPyszvEfBigoIgIJMW+mAi/cb93ixUUj59pNHRkR87AkV kR5e6dUMdxSPb5Ka/1/LDhNwLpvQa90ek7WVIDXRR1aSwoYT/wG53q5PubS/u6lf 9GVAc5/7bd5VfumQ4n4nmh4ISNYsy6ekZULp/3acYrFbXpxG6ReneQH+Z4IblEPT TNOJb9USeRc8p70zcjGMwIUNlXO0gGgbWs6nK2wAsPw/6NLzrTAHtRmA/r1keJhx y3mC91zU0VBMTJYyYcVZzkFa5kTzo/uzQ7ABFUclyZ8ud0Hu3ttHSi+rweSJd59D VRg== "/>
 				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
@@ -62,23 +63,6 @@
 					</ValueList>
 				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2019.2|Build=7459|VersionName=v2019.2.9|Config=Release"/>
-			
-				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjEwMzM5IiBtYXNrPSJYVExUNTk0NyIgZW5jPSIwIj48bGlj
-ZW5zZSBpZD0iMSIgbmFtZT0iV3dpc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iMiwz
-LDQsMTAsMTMsMTQiIGV4cGlyZXM9IjIwMjEtMDctMzEiICAvPjxsaWNlbnNlIGlk
-PSIyMiIgbmFtZT0iTGV2ZWwgQSBMaWNlbnNlIiB0eXBlPSIzIiBwbGF0Zm9ybXM9
-IjIsMyw0LDEwLDEzLDE0IiBleHBpcmVzPSIyMDIxLTA3LTMxIiAgLz48bGljZW5z
-ZSBpZD0iMjEiIG5hbWU9Ik1haW50ZW5hbmNlIiB0eXBlPSIzIiBwbGF0Zm9ybXM9
-IjIsMyw0LDEwLDEzLDE0IiBleHBpcmVzPSIyMDIxLTA3LTMxIiAgLz48bGljZW5z
-ZSBpZD0iMjUiIG5hbWU9IkFsbCBXd2lzZSBQbHVnLUlucyIgdHlwZT0iMyIgIGV4
-cGlyZXM9IjIwMjEtMDctMzEiICAvPjwvcHJvamVjdD4=|hvnVVjcgxPxn008s3hM
-cHZt+/BayUqC1EGhndrPPyszvEfBigoIgIJMW+mAi/cb93ixUUj59pNHRkR87AkV
-kR5e6dUMdxSPb5Ka/1/LDhNwLpvQa90ek7WVIDXRR1aSwoYT/wG53q5PubS/u6lf
-9GVAc5/7bd5VfumQ4n4nmh4ISNYsy6ekZULp/3acYrFbXpxG6ReneQH+Z4IblEPT
-TNOJb9USeRc8p70zcjGMwIUNlXO0gGgbWs6nK2wAsPw/6NLzrTAHtRmA/r1keJhx
-y3mC91zU0VBMTJYyYcVZzkFa5kTzo/uzQ7ABFUclyZ8ud0Hu3ttHSi+rweSJd59D
-VRg==
-"/>
 			</PropertyList>
 			<MiscSettings>
 				<MiscSettingEntry Name="Cache"><![CDATA[.cache]]></MiscSettingEntry>
@@ -7839,7 +7823,7 @@ VRg==
 					</PropertyList>
 				</SharedPropertyList>
 				<SharedPropertyList ClassName="CustomState" PluginType="0" CompanyID="1" PluginID="79"/>
-				<SharedPropertyList ClassName="Igniter Live" PluginType="2" CompanyID="269" PluginID="81">
+				<SharedPropertyList ClassName="" PluginType="2" CompanyID="269" PluginID="81">
 					<PropertyList>
 						<Property Name="Brake" Type="Real32">
 							<ValueList>
@@ -8008,7 +7992,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Igniter Live Synth" PluginType="2" CompanyID="269" PluginID="82">
+				<SharedPropertyList ClassName="" PluginType="2" CompanyID="269" PluginID="82">
 					<PropertyList>
 						<Property Name="osc1AmFreq" Type="Real32">
 							<ValueList>
@@ -8396,7 +8380,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Resonance Audio Renderer" PluginType="3" CompanyID="272" PluginID="100">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="272" PluginID="100">
 					<PropertyList>
 						<Property Name="Color" Type="int16">
 							<ValueList>
@@ -8415,7 +8399,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="MSA Room Preset Properties" PluginType="3" CompanyID="292" PluginID="100">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="292" PluginID="100">
 					<PropertyList>
 						<Property Name="Color" Type="int16">
 							<ValueList>
@@ -10291,7 +10275,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Wwise Convolution Reverb" PluginType="3" CompanyID="0" PluginID="127">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="0" PluginID="127">
 					<PropertyList>
 						<Property Name="AlgoTypeSelect" Type="int32">
 							<ValueList>
@@ -11141,7 +11125,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="ASIO Output" PluginType="7" CompanyID="0" PluginID="168">
+				<SharedPropertyList ClassName="" PluginType="7" CompanyID="0" PluginID="168">
 					<PropertyList>
 						<Property Name="BaseChannel" Type="int32">
 							<ValueList>
@@ -11170,7 +11154,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Microsoft Spatial Sound Platform Output" PluginType="7" CompanyID="275" PluginID="170">
+				<SharedPropertyList ClassName="" PluginType="7" CompanyID="275" PluginID="170">
 					<PropertyList>
 						<Property Name="Color" Type="int16">
 							<ValueList>
@@ -11283,7 +11267,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Wwise Channel Router" PluginType="6" CompanyID="0" PluginID="172">
+				<SharedPropertyList ClassName="" PluginType="6" CompanyID="0" PluginID="172">
 					<PropertyList>
 						<Property Name="Color" Type="int16">
 							<ValueList>
@@ -11302,7 +11286,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="AttachableMixerInput" PluginType="3" CompanyID="0" PluginID="173">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="0" PluginID="173">
 					<PropertyList>
 						<Property Name="Channel" Type="Real32">
 							<ValueList>
@@ -11449,7 +11433,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="SoundSeed Grain" PluginType="2" CompanyID="0" PluginID="183">
+				<SharedPropertyList ClassName="" PluginType="2" CompanyID="0" PluginID="183">
 					<PropertyList>
 						<Property Name="Amplitude" Type="Real32">
 							<ValueList>
@@ -12333,7 +12317,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="ParameterModulatorAssociation" PluginType="0" CompanyID="0" PluginID="185">
+				<SharedPropertyList ClassName="" PluginType="0" CompanyID="0" PluginID="185">
 					<PropertyList>
 						<Property Name="ModDisplayName" Type="string">
 							<ValueList>
@@ -12835,7 +12819,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Resonance Audio Room Effects" PluginType="6" CompanyID="272" PluginID="200">
+				<SharedPropertyList ClassName="" PluginType="6" CompanyID="272" PluginID="200">
 					<PropertyList>
 						<Property Name="Color" Type="int16">
 							<ValueList>
@@ -12854,7 +12838,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="MSA Source Mixer Properties" PluginType="6" CompanyID="292" PluginID="200">
+				<SharedPropertyList ClassName="" PluginType="6" CompanyID="292" PluginID="200">
 					<PropertyList>
 						<Property Name="Color" Type="int16">
 							<ValueList>
@@ -12873,7 +12857,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="AttachableMixerInput" PluginType="3" CompanyID="272" PluginID="201">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="272" PluginID="201">
 					<PropertyList>
 						<Property Name="Bypass" Type="bool">
 							<ValueList>
@@ -12882,7 +12866,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="AttachableMixerInput" PluginType="3" CompanyID="292" PluginID="201">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="292" PluginID="201">
 					<PropertyList>
 						<Property Name="directGain" Type="Real32">
 							<ValueList>
@@ -12986,7 +12970,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="ASIO Input" PluginType="2" CompanyID="0" PluginID="204">
+				<SharedPropertyList ClassName="" PluginType="2" CompanyID="0" PluginID="204">
 					<PropertyList>
 						<Property Name="BaseChannel" Type="int32">
 							<ValueList>
@@ -13148,7 +13132,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="CrankcaseAudio REV" PluginType="2" CompanyID="261" PluginID="416">
+				<SharedPropertyList ClassName="" PluginType="2" CompanyID="261" PluginID="416">
 					<PropertyList>
 						<Property Name="EnableShifting" Type="int32">
 							<ValueList>
@@ -13187,7 +13171,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="EngineSimulationControlData" PluginType="0" CompanyID="261" PluginID="417">
+				<SharedPropertyList ClassName="" PluginType="0" CompanyID="261" PluginID="417">
 					<PropertyList>
 						<Property Name="ClutchRPMMergeTime" Type="Real32">
 							<ValueList>
@@ -13266,7 +13250,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="AccelDecelModelControlData" PluginType="0" CompanyID="261" PluginID="418">
+				<SharedPropertyList ClassName="" PluginType="0" CompanyID="261" PluginID="418">
 					<PropertyList>
 						<Property Name="CrossfadeDuration" Type="int32">
 							<ValueList>
@@ -13325,7 +13309,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="GranularModelControlData" PluginType="0" CompanyID="261" PluginID="419">
+				<SharedPropertyList ClassName="" PluginType="0" CompanyID="261" PluginID="419">
 					<PropertyList>
 						<Property Name="GrainWidth" Type="int32">
 							<ValueList>
@@ -13605,7 +13589,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Tencent GME" PluginType="7" CompanyID="289" PluginID="9000">
+				<SharedPropertyList ClassName="" PluginType="7" CompanyID="289" PluginID="9000">
 					<PropertyList>
 						<Property Name="Color" Type="int16">
 							<ValueList>
@@ -13639,9 +13623,7 @@ VRg==
 						</Property>
 					</PropertyList>
 				</SharedPropertyList>
-				<SharedPropertyList ClassName="Tencent GME Source" PluginType="2" CompanyID="289" PluginID="9001"/>
-				<SharedPropertyList ClassName="Tencent GME Receive" PluginType="2" CompanyID="289" PluginID="9003"/>
-				<SharedPropertyList ClassName="Tencent GME Send" PluginType="3" CompanyID="289" PluginID="9004">
+				<SharedPropertyList ClassName="" PluginType="3" CompanyID="289" PluginID="9004">
 					<PropertyList>
 						<Property Name="Color" Type="int16">
 							<ValueList>

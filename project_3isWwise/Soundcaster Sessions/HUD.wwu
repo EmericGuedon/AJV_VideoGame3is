@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6F71BEED-2798-4F16-8319-CF38101005B7}" SchemaVersion="97" RootDocumentID="{BE95830D-1A78-40F9-991D-1DAA2DEBEFA1}">
+	<SoundcasterSessions>
+		<WorkUnit Name="HUD" ID="{6F71BEED-2798-4F16-8319-CF38101005B7}" OwnerID="{BE95830D-1A78-40F9-991D-1DAA2DEBEFA1}" PersistMode="Nested"/>
+	</SoundcasterSessions>
+</WwiseDocument>

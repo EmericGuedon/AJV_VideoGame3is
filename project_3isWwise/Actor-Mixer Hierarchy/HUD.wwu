@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DC2BCF3F-1819-468E-A4AE-9AD2071DAD32}" SchemaVersion="97" RootDocumentID="{3F718F07-86BF-45AA-9CF2-FBE66C973C6C}">
+	<AudioObjects>
+		<WorkUnit Name="HUD" ID="{DC2BCF3F-1819-468E-A4AE-9AD2071DAD32}" OwnerID="{3F718F07-86BF-45AA-9CF2-FBE66C973C6C}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="15"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<ActorMixer Name="HUD" ID="{EDEC4591-CFAA-4F92-8FE1-515F885D15EC}" ShortID="154541980">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="HUD_Health Repair" ID="{3DB65D02-C2EA-4AD6-896E-E7B58353EA0C}" ShortID="792678539">
+							<PropertyList>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="HUD_HealthRepair_Whoosh" ID="{0CD389DD-752E-4F16-823F-7552C2E31204}" ShortID="1073678811">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="HUD_HealthRepair_003" ID="{E23853C1-C2F2-4153-8603-643249693130}" ShortID="276892464">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HUD_HealthRepair_003" ID="{BFE67B53-DAC2-45DD-8333-BC7F23FD85B0}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0650911815068493"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.104540382420091"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.16963156392694"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.755452197488585"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HUD_HealthRepair_003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="578228545"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HUD_HealthRepair_003" ID="{BFE67B53-DAC2-45DD-8333-BC7F23FD85B0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HUD_HealthRepair_002" ID="{F74EEAB4-66E4-4E4A-9E71-B6933A839B58}" ShortID="461974526">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HUD_HealthRepair_002" ID="{C21A2401-FB96-4CC1-BF17-2C9A9A23A0E7}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0507367294520548"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0351254280821918"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0682994434931507"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.733731164383562"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HUD_HealthRepair_002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="736142192"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HUD_HealthRepair_002" ID="{C21A2401-FB96-4CC1-BF17-2C9A9A23A0E7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HUD_HealthRepair_001" ID="{4505CA57-4FCE-4123-81C4-B405561B864A}" ShortID="407258869">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HUD_HealthRepair_001" ID="{B0F49AF1-B9F3-461D-92CA-17FB5E4343C4}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0655776255707762"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0143451055936074"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0245916095890411"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.788980807648402"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HUD_HealthRepair_001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="467084153"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HUD_HealthRepair_001" ID="{B0F49AF1-B9F3-461D-92CA-17FB5E4343C4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="HUD_HealthRepair_Bop" ID="{501F6165-D420-4FE8-99AC-187193432D34}" ShortID="914778318">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="HUD_HealthRepair_001" ID="{D8FB4E6C-B433-40AA-BCC8-E528958A2EFF}" ShortID="1017591639">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HUD_HealthRepair_001" ID="{0BA2686E-9291-4383-8E62-8A1A9F8F8964}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0184437071917807"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0245916095890412"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.772586401255707"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.10047452910959"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HUD_HealthRepair_001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="436991381"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HUD_HealthRepair_001" ID="{0BA2686E-9291-4383-8E62-8A1A9F8F8964}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HUD_HealthRepair_002" ID="{7CEBB190-18CD-4B06-AC5F-E3EFA423E61D}" ShortID="48627033">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HUD_HealthRepair_002" ID="{1530D9B0-35CC-4D7C-AAAC-FE51C8C1F19E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0234169520547945"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0175627140410959"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.712265625"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.07522838184932"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HUD_HealthRepair_002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="447044467"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HUD_HealthRepair_002" ID="{1530D9B0-35CC-4D7C-AAAC-FE51C8C1F19E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="HUD_HealthRepair_003" ID="{BADB5204-D62F-4109-8F93-F78F8FA9ABDA}" ShortID="380478091">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="HUD_HealthRepair_003" ID="{A0F0A277-CAB4-41EF-88E5-D0142B2AA033}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0256419805936073"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0374767408675799"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.729810216894977"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.11641238584475"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>HUD_HealthRepair_003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="355768936"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="HUD_HealthRepair_003" ID="{A0F0A277-CAB4-41EF-88E5-D0142B2AA033}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+							<Playlist>
+								<ItemRef Name="HUD_HealthRepair_Whoosh" ID="{0CD389DD-752E-4F16-823F-7552C2E31204}"/>
+								<ItemRef Name="HUD_HealthRepair_Bop" ID="{501F6165-D420-4FE8-99AC-187193432D34}"/>
+							</Playlist>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

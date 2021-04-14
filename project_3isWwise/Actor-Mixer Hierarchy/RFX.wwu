@@ -25,7 +25,7 @@
 										<RTPC Name="" ID="{B8F838A8-EFBE-494E-A058-337032DF61E1}" ShortID="879088696">
 											<ReferenceList>
 												<Reference Name="ControlInput">
-													<ObjectRef Name="RTPC_Bridge" ID="{634DFC54-F587-46A2-B709-3D2B42233E53}" WorkUnitID="{D15516C3-7DD9-4D4C-B6CC-552696CBD959}"/>
+													<ObjectRef Name="RTPC_Bridge" ID="{634DFC54-F587-46A2-B709-3D2B42233E53}" WorkUnitID="{F96E4292-F729-45B2-BFE7-65F7F1B172B8}"/>
 												</Reference>
 											</ReferenceList>
 											<Curve Name="" ID="{F94917D8-B728-457C-8433-48B0A51D2B2E}">
@@ -227,37 +227,6 @@
 								</Sound>
 							</ChildrenList>
 						</BlendContainer>
-						<Sound Name="RFX_CampFire" ID="{79395D65-DE83-4EC4-80B4-6C24F34522D9}" ShortID="144828834">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Outdoor" ID="{DFAB7B18-B62E-41B3-9B28-22262EAF0C75}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="RFX_CampFire" ID="{65E9A5D3-7523-477D-8A8F-7AA8E726249E}">
-									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="667.021"/>
-										<Property Name="LoopBegin" Type="Real64" Value="1.24005779109589"/>
-										<Property Name="LoopEnd" Type="Real64" Value="32.7995285744863"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>RFX_CampFire.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="287252065"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="RFX_CampFire" ID="{65E9A5D3-7523-477D-8A8F-7AA8E726249E}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

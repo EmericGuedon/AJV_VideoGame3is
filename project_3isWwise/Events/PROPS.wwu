@@ -7,7 +7,39 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Event Name="Play_Waterdrip" ID="{B99AA7A8-CFDE-4548-9B69-E4443A15F129}"/>
+				<Event Name="Props_Waterdrip" ID="{B99AA7A8-CFDE-4548-9B69-E4443A15F129}">
+					<ChildrenList>
+						<Action Name="" ID="{E38303B2-CB0A-48C0-B11C-757EAB9DF755}" ShortID="757067680">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="PROPS_WaterDrip" ID="{C7C9086F-F4DD-4335-832E-158093CBCCFE}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Props_In_Out_Cave" ID="{A0A2925A-A456-4598-BF5F-2E8C8A46A86A}">
+					<ChildrenList>
+						<Action Name="" ID="{60C32ADC-2B73-40BA-8A70-28BF132DEEC0}" ShortID="641091097">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="In_Out_Loop" ID="{78190936-7C45-4236-9507-415634221714}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Props_Campfire" ID="{F0AAA3A6-2EA6-48BC-845B-5BC72AEAB040}">
+					<ChildrenList>
+						<Action Name="" ID="{193FB532-BF12-4DC7-85D1-9ED16EDECBA4}" ShortID="639889834">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CampFire" ID="{79395D65-DE83-4EC4-80B4-6C24F34522D9}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

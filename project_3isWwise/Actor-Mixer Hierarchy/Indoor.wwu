@@ -23,15 +23,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Roomton_Castle" ID="{9E3C5383-CC70-452C-9C9E-C081AEFDE9D5}" ShortID="799165509">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-24</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
+						<BlendContainer Name="IN_Dungeon" ID="{FA440F02-2FE3-4BB6-8DEE-94CDB25EEB9A}" ShortID="544894071">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -41,1952 +33,1988 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="AMB_In_Roomtone_Castle" ID="{25C944E5-FD1A-4A81-AB68-F492D4BBA993}">
-									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="2021.053"/>
-										<Property Name="LoopBegin" Type="Real64" Value="2.84931506849315"/>
-										<Property Name="LoopEnd" Type="Real64" Value="125.58904109589"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="127.123287671233"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>AMB_In_Roomtone_Castle.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="487094529"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="AMB_In_Roomtone_Castle" ID="{25C944E5-FD1A-4A81-AB68-F492D4BBA993}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<BlendContainer Name="RFX_Dungeon" ID="{816341C2-9717-4BCE-8FD6-7D27D9DE981B}" ShortID="68448586">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="RFX_MetalSqueak" ID="{048BF9AA-6DF4-4C93-9605-1DCC15971AAC}" ShortID="164363817">
-									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="Highpass" Type="int16">
-											<ValueList>
-												<Value>55</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{9B44BE5F-C5AF-4970-9C0C-F4C7A04D3C1A}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="10"/>
-															<Property Name="Min" Type="Real64" Value="-10"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="InitialDelay" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{EEC4951D-9D2A-4853-86DD-C91B930F8CAB}">
-														<PropertyList>
-															<Property Name="Max" Type="Real64" Value="20"/>
-															<Property Name="Min" Type="Real64" Value="-5"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-300</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{8ECC5BD9-28DC-430D-A30F-78D190F1CB29}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="400"/>
-															<Property Name="Min" Type="Real64" Value="-200"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="25">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{BEF684C6-C750-49D7-8700-42EDB57789E9}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="15"/>
-															<Property Name="Min" Type="Real64" Value="-5"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-10</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{0752D9C6-BD03-4740-9C91-25D091086793}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="2"/>
-															<Property Name="Min" Type="Real64" Value="-5"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
+								<BlendContainer Name="RFX_Dungeon" ID="{816341C2-9717-4BCE-8FD6-7D27D9DE981B}" ShortID="68448586">
 									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
-										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+											<ObjectRef Name="AMB_Dungeon" ID="{C9ED5C17-5B3E-4380-B26F-79F6C282B2F1}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="AMB_In_RFX_MetalSqueak_1" ID="{FA2918B7-66D7-438A-AB3B-5025EE1357D6}" ShortID="134758703">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_MetalSqueak_1" ID="{7EC14D23-0803-4A0E-B4E5-846DC5238843}">
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_MetalSqueak_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="427661397"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_MetalSqueak_1" ID="{7EC14D23-0803-4A0E-B4E5-846DC5238843}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_MetalSqueak_2" ID="{8A1C7988-24A4-4079-A4E4-408B540C6B02}" ShortID="211872600">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_MetalSqueak_2" ID="{4D74F165-2FC3-49AC-B973-FC270A54F06B}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.134442636986301"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.138396832191781"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.2890676369863"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_MetalSqueak_2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="337067221"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_MetalSqueak_2" ID="{4D74F165-2FC3-49AC-B973-FC270A54F06B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_MetalSqueak_3" ID="{5A0F67FF-EDFD-429E-AAEE-0B40F1CA1657}" ShortID="295629045">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_MetalSqueak_3" ID="{F6ABECBD-7910-49B6-8021-F702B7FF2529}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0792439355022831"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.150146404109589"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.4263908390411"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_MetalSqueak_3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1004013221"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_MetalSqueak_3" ID="{F6ABECBD-7910-49B6-8021-F702B7FF2529}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_MetalSqueak_4" ID="{3DDACB34-D3AF-41A3-A500-DFD3C8F86DCF}" ShortID="464679079">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_MetalSqueak_4" ID="{43DC1B44-29A0-4DE7-A945-AF9CE569A556}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.119357341609589"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.100260166952055"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0716144049657534"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.78081153681507"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_MetalSqueak_4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="84491838"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_MetalSqueak_4" ID="{43DC1B44-29A0-4DE7-A945-AF9CE569A556}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_MetalSqueak_5" ID="{4DECFC40-7BE9-4257-90FA-9D518276B011}" ShortID="571892728">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_MetalSqueak_5" ID="{011D6F3C-F8A5-4DC2-A6C4-A7D553F8FEF1}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0880607163242009"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.155799728881279"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.04656774400685"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_MetalSqueak_5.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="518621572"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_MetalSqueak_5" ID="{011D6F3C-F8A5-4DC2-A6C4-A7D553F8FEF1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_MetalSqueak_6" ID="{F4AD3751-FC81-4324-90EF-E087BED4C756}" ShortID="883498672">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_MetalSqueak_6" ID="{6C814996-CBB3-490C-BF42-6ED8A2BDD18B}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0433172089041096"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.0758051155821918"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.11541812928082"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_MetalSqueak_6.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="541533438"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_MetalSqueak_6" ID="{6C814996-CBB3-490C-BF42-6ED8A2BDD18B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{95C7F932-603D-4E10-B380-2A1F3C28D77D}">
+										<RandomSequenceContainer Name="RFX_MetalSqueak" ID="{048BF9AA-6DF4-4C93-9605-1DCC15971AAC}" ShortID="164363817">
 											<PropertyList>
-												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>55</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{9B44BE5F-C5AF-4970-9C0C-F4C7A04D3C1A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Min" Type="Real64" Value="-10"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{EEC4951D-9D2A-4853-86DD-C91B930F8CAB}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="20"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-300</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{8ECC5BD9-28DC-430D-A30F-78D190F1CB29}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="400"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="25">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{BEF684C6-C750-49D7-8700-42EDB57789E9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="15"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{0752D9C6-BD03-4740-9C91-25D091086793}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
 											<ChildrenList>
-												<Path2D Name="RFX_MetalSqueak_Path" ID="{77694CA2-C56F-4361-BD63-10A3B4A72EB0}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="20"/>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>24.68355</XPos>
-															<YPos>57.00637</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalSqueak_Path_01" ID="{08FDD1E5-6686-4208-AFD6-EA765C765942}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="12"/>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-														<Property Name="RandomZ" Type="Real64" Value="20"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>41.77215</XPos>
-															<YPos>54.4586</YPos>
-															<ZPos>40</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalSqueak_Path_02" ID="{4EC3405A-2C64-4E08-A142-D7FD033134C2}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="20"/>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-39.87341</XPos>
-															<YPos>51.91083</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalSqueak_Path_03" ID="{D0A78FBE-159C-428B-8B39-10A40A2E3D8D}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="15"/>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-														<Property Name="RandomZ" Type="Real64" Value="20"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-46.83544</XPos>
-															<YPos>48.72612</YPos>
-															<ZPos>40</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalSqueak_Path_04" ID="{900085C8-246A-419B-B2D5-305AF4F5F0E7}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="20"/>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-47.46835</XPos>
-															<YPos>0.95542</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalSqueak_Path_05" ID="{56DC9F91-1380-42A5-B95F-06FAC9B0BC24}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="15"/>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-														<Property Name="RandomZ" Type="Real64" Value="20"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-60.12658</XPos>
-															<YPos>10.50956</YPos>
-															<ZPos>40</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalSqueak_Path_06" ID="{68BEED3A-0C21-4D9D-B5FF-D677708583FD}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="20"/>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>51.89874</XPos>
-															<YPos>4.14013</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalSqueak_Path_07" ID="{89EF9905-594B-4EAC-ADBB-1368FBF4DF9A}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="15"/>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-														<Property Name="RandomZ" Type="Real64" Value="20"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>58.22785</XPos>
-															<YPos>-33.43948</YPos>
-															<ZPos>40</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
+												<Sound Name="AMB_In_RFX_MetalSqueak_1" ID="{FA2918B7-66D7-438A-AB3B-5025EE1357D6}" ShortID="134758703">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalSqueak_1" ID="{7EC14D23-0803-4A0E-B4E5-846DC5238843}">
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalSqueak_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="427661397"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalSqueak_1" ID="{7EC14D23-0803-4A0E-B4E5-846DC5238843}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalSqueak_2" ID="{8A1C7988-24A4-4079-A4E4-408B540C6B02}" ShortID="211872600">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalSqueak_2" ID="{4D74F165-2FC3-49AC-B973-FC270A54F06B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.134442636986301"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.138396832191781"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.2890676369863"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalSqueak_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="337067221"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalSqueak_2" ID="{4D74F165-2FC3-49AC-B973-FC270A54F06B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalSqueak_3" ID="{5A0F67FF-EDFD-429E-AAEE-0B40F1CA1657}" ShortID="295629045">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalSqueak_3" ID="{F6ABECBD-7910-49B6-8021-F702B7FF2529}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0792439355022831"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.150146404109589"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.4263908390411"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalSqueak_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1004013221"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalSqueak_3" ID="{F6ABECBD-7910-49B6-8021-F702B7FF2529}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalSqueak_4" ID="{3DDACB34-D3AF-41A3-A500-DFD3C8F86DCF}" ShortID="464679079">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalSqueak_4" ID="{43DC1B44-29A0-4DE7-A945-AF9CE569A556}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.119357341609589"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.100260166952055"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0716144049657534"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.78081153681507"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalSqueak_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="84491838"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalSqueak_4" ID="{43DC1B44-29A0-4DE7-A945-AF9CE569A556}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalSqueak_5" ID="{4DECFC40-7BE9-4257-90FA-9D518276B011}" ShortID="571892728">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalSqueak_5" ID="{011D6F3C-F8A5-4DC2-A6C4-A7D553F8FEF1}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0880607163242009"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.155799728881279"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.04656774400685"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalSqueak_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="518621572"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalSqueak_5" ID="{011D6F3C-F8A5-4DC2-A6C4-A7D553F8FEF1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalSqueak_6" ID="{F4AD3751-FC81-4324-90EF-E087BED4C756}" ShortID="883498672">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalSqueak_6" ID="{6C814996-CBB3-490C-BF42-6ED8A2BDD18B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0433172089041096"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0758051155821918"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.11541812928082"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalSqueak_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="541533438"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalSqueak_6" ID="{6C814996-CBB3-490C-BF42-6ED8A2BDD18B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="RFX_Cage" ID="{BD8C806C-0013-400A-BFF7-8E9DC6C14990}" ShortID="500456698">
+											<PositioningInfo>
+												<Position Name="" ID="{95C7F932-603D-4E10-B380-2A1F3C28D77D}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="RFX_MetalSqueak_Path" ID="{77694CA2-C56F-4361-BD63-10A3B4A72EB0}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>24.68355</XPos>
+																	<YPos>57.00637</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalSqueak_Path_01" ID="{08FDD1E5-6686-4208-AFD6-EA765C765942}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="12"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+																<Property Name="RandomZ" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>41.77215</XPos>
+																	<YPos>54.4586</YPos>
+																	<ZPos>40</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalSqueak_Path_02" ID="{4EC3405A-2C64-4E08-A142-D7FD033134C2}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-39.87341</XPos>
+																	<YPos>51.91083</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalSqueak_Path_03" ID="{D0A78FBE-159C-428B-8B39-10A40A2E3D8D}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+																<Property Name="RandomZ" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-46.83544</XPos>
+																	<YPos>48.72612</YPos>
+																	<ZPos>40</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalSqueak_Path_04" ID="{900085C8-246A-419B-B2D5-305AF4F5F0E7}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-47.46835</XPos>
+																	<YPos>0.95542</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalSqueak_Path_05" ID="{56DC9F91-1380-42A5-B95F-06FAC9B0BC24}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+																<Property Name="RandomZ" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-60.12658</XPos>
+																	<YPos>10.50956</YPos>
+																	<ZPos>40</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalSqueak_Path_06" ID="{68BEED3A-0C21-4D9D-B5FF-D677708583FD}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>51.89874</XPos>
+																	<YPos>4.14013</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalSqueak_Path_07" ID="{89EF9905-594B-4EAC-ADBB-1368FBF4DF9A}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+																<Property Name="RandomZ" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>58.22785</XPos>
+																	<YPos>-33.43948</YPos>
+																	<ZPos>40</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RFX_Cage" ID="{BD8C806C-0013-400A-BFF7-8E9DC6C14990}" ShortID="500456698">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6E1DF6EC-282D-44C9-8661-2123F572BE6F}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{47D98E86-8134-4DA0-AAAA-F5E11F3106C8}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="250"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="20">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5F9BFAA4-3A91-46CD-8CB9-FC8A38B5E6C4}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-16</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{0A281CB8-66CD-49D9-BD6F-40A7DC852458}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AMB_In_RFX_Cage_1" ID="{73AEB9F9-5C8C-46D6-9DF1-D1F848F10F43}" ShortID="759017890">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Cage_1" ID="{930B2AD7-8AF8-4E6A-8E66-3C913D176F41}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.162671232876712"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.470890410958904"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.57876712328767"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Cage_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="808807052"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Cage_1" ID="{930B2AD7-8AF8-4E6A-8E66-3C913D176F41}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_Cage_2" ID="{81F0D43D-FCB6-4E44-99FD-F16513E91F19}" ShortID="471626667">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Cage_2" ID="{85814BB0-5506-4A8A-8A41-D6E90AA6736C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0924657534246575"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.133561643835616"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.82191780821918"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Cage_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="965092901"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Cage_2" ID="{85814BB0-5506-4A8A-8A41-D6E90AA6736C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_Cage_3" ID="{4E0CE2D4-DF1B-4E5C-B2C1-53C2E5CEE143}" ShortID="324694461">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Cage_3" ID="{5D6D621E-5005-4F35-BAD3-D09ECDF25D97}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.102739726027397"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.188356164383562"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.31335616438356"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Cage_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="889532459"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Cage_3" ID="{5D6D621E-5005-4F35-BAD3-D09ECDF25D97}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_Cage_4" ID="{1830AA9E-EEAE-473C-9ECC-BAAC0B1E3000}" ShortID="338493708">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Cage_4" ID="{0AE5C2AD-90BA-4066-9F37-4DABB90EC156}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0924657534246576"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.184931506849315"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.4486301369863"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Cage_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="903163063"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Cage_4" ID="{0AE5C2AD-90BA-4066-9F37-4DABB90EC156}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_Cage_5" ID="{A551EB4D-1A3E-4B65-87A3-BFEE6E765736}" ShortID="803010957">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Cage_5" ID="{0C97B1E9-C238-47DE-AAEB-6CF2CD0D7BAD}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.071917808219178"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.311643835616438"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="5.14212328767123"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Cage_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="488505412"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Cage_5" ID="{0C97B1E9-C238-47DE-AAEB-6CF2CD0D7BAD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_Cage_6" ID="{1A8CE154-D7FC-471D-8905-4C4D5504ECBB}" ShortID="770433105">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Cage_6" ID="{CA287A3F-24BC-46D8-8ACE-E4CC6C17BA4C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0856164383561644"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.179794520547945"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.10102739726028"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Cage_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="410199459"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Cage_6" ID="{CA287A3F-24BC-46D8-8ACE-E4CC6C17BA4C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{A5823B41-AF83-4F4B-B5E9-F54393ADB1D0}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="RFX_Cage_Path" ID="{F3D6EB52-CD42-4D4A-9833-99DEDFFC4A2A}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>64.55696</XPos>
+																	<YPos>15.60509</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Cage_Path_01" ID="{13A6CD19-D839-4A23-A3E8-80BF01AD4AED}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-20.88607</XPos>
+																	<YPos>57.6433</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Cage_Path_02" ID="{CBF7619B-6FEE-4A3A-BE9C-AC2AB6BB5B3F}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-48.73417</XPos>
+																	<YPos>19.42674</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Cage_Path_03" ID="{124B58D9-AF8F-4FF9-A0F7-8745BCFFF50E}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>64.55697</XPos>
+																	<YPos>-19.42676</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Cage_Path_04" ID="{3BBC1810-8A19-4A6A-BA43-64661267781C}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-54.43037</XPos>
+																	<YPos>-32.80256</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Cage_Path_05" ID="{3904C2E2-5FCC-4645-816B-6A0D02BCA832}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>70.25317</XPos>
+																	<YPos>30.25477</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RFX_Rats" ID="{AB281C3D-D9C2-49A2-A464-FCF1324A2FEC}" ShortID="979719015">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F1D0D3B1-9822-425C-A1F6-0FF11B177243}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="25">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A66D34E2-3180-4BE7-B179-BD6FEA31835A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="12"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-22</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AMB_In_RFX_Rats_1" ID="{E23452B1-87EE-43A0-BE94-426AF1D55E6B}" ShortID="951668120">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Rats_1" ID="{50ABC7F5-987F-46FC-AE35-CD8FB58F5271}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.167824058219178"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.128336044520548"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.00401669520548"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Rats_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="189026729"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Rats_1" ID="{50ABC7F5-987F-46FC-AE35-CD8FB58F5271}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_Rats_2" ID="{11803116-5AFD-47B5-A0AC-924AEB2675EA}" ShortID="968527936">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Rats_2" ID="{771FAEF5-6B5B-4190-B717-1D867E019DF0}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0730704195205479"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.131526755136986"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.43218022260274"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Rats_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="723790004"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Rats_2" ID="{771FAEF5-6B5B-4190-B717-1D867E019DF0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_Rats_3" ID="{0E5AF554-2AD0-4247-A68B-ADAC9C9541F1}" ShortID="855969325">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Rats_3" ID="{5F50C893-2A05-42F1-8672-DC980BFF5B4D}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.146649043949772"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0707960901826485"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.45637671232877"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Rats_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1009085031"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Rats_3" ID="{5F50C893-2A05-42F1-8672-DC980BFF5B4D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_Rats_4" ID="{C15348C6-828C-4C6E-BA2C-80D9994CA24B}" ShortID="918310096">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Rats_4" ID="{B4DCB9DD-7CED-41AE-8EA4-9F7C5C7EBD0B}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.101443279109589"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.157800656392694"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.236700984589041"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.85415771261416"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Rats_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="761642837"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Rats_4" ID="{B4DCB9DD-7CED-41AE-8EA4-9F7C5C7EBD0B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_Rats_5" ID="{BF2DF939-75FD-4E2B-8562-867851F0E92D}" ShortID="817552991">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Rats_5" ID="{15072B9B-A72E-4BEF-A246-0BD5B32399CE}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0532564212328767"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0976367722602739"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0843226669520548"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.34472463613014"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Rats_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="872846438"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Rats_5" ID="{15072B9B-A72E-4BEF-A246-0BD5B32399CE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{EA8A48ED-741C-4EB2-BE07-5067B82A7207}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="RFX_Rats_Path" ID="{4571848F-131D-42EF-B346-9AC316E49E35}">
+															<PropertyList>
+																<Property Name="LinearTime" Type="bool" Value="False"/>
+																<Property Name="RandomX" Type="Real64" Value="10"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>32.91139</XPos>
+																	<YPos>57.00637</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>56.96202</XPos>
+																	<YPos>34.3949</YPos>
+																	<Flags>0</Flags>
+																	<Time>980</Time>
+																</Point>
+																<Point>
+																	<XPos>69.62026</XPos>
+																	<YPos>3.82165</YPos>
+																	<Flags>0</Flags>
+																	<Time>1505</Time>
+																</Point>
+																<Point>
+																	<XPos>91.77215</XPos>
+																	<YPos>-5.73248</YPos>
+																	<Flags>0</Flags>
+																	<Time>2011</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Rats_Path_01" ID="{F95700AC-B87B-45C3-BAA3-3409588591A6}">
+															<PropertyList>
+																<Property Name="LinearTime" Type="bool" Value="False"/>
+																<Property Name="RandomX" Type="Real64" Value="10"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-26.58228</XPos>
+																	<YPos>60.19109</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-43.67088</XPos>
+																	<YPos>28.66242</YPos>
+																	<Flags>0</Flags>
+																	<Time>1108</Time>
+																</Point>
+																<Point>
+																	<XPos>-74.68354</XPos>
+																	<YPos>8.9172</YPos>
+																	<Flags>0</Flags>
+																	<Time>2026</Time>
+																</Point>
+																<Point>
+																	<XPos>-73.41772</XPos>
+																	<YPos>-38.21656</YPos>
+																	<Flags>0</Flags>
+																	<Time>3026</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Rats_Path_02" ID="{97E36429-10BA-4E90-9FA7-912C487A8C40}">
+															<PropertyList>
+																<Property Name="LinearTime" Type="bool" Value="False"/>
+																<Property Name="RandomX" Type="Real64" Value="10"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>19.62025</XPos>
+																	<YPos>35.98727</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>49.36709</XPos>
+																	<YPos>-19.74522</YPos>
+																	<Flags>0</Flags>
+																	<Time>733</Time>
+																</Point>
+																<Point>
+																	<XPos>71.51899</XPos>
+																	<YPos>21.65605</YPos>
+																	<Flags>0</Flags>
+																	<Time>1605</Time>
+																</Point>
+																<Point>
+																	<XPos>84.17721</XPos>
+																	<YPos>6.36942</YPos>
+																	<Flags>0</Flags>
+																	<Time>2468</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Rats_Path_03" ID="{65298E0E-B76D-4893-8696-8CB0C237FC64}">
+															<PropertyList>
+																<Property Name="LinearTime" Type="bool" Value="False"/>
+																<Property Name="RandomX" Type="Real64" Value="10"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-21.51899</XPos>
+																	<YPos>37.89809</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-34.1772151898734</XPos>
+																	<YPos>23.5668789808917</YPos>
+																	<Flags>0</Flags>
+																	<Time>834</Time>
+																</Point>
+																<Point>
+																	<XPos>-49.3670886075949</XPos>
+																	<YPos>-2.54777070063695</YPos>
+																	<Flags>0</Flags>
+																	<Time>1496</Time>
+																</Point>
+																<Point>
+																	<XPos>-39.87341</XPos>
+																	<YPos>-36.94267</YPos>
+																	<Flags>0</Flags>
+																	<Time>2267</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Rats_Path_04" ID="{6E27A2BA-2786-482D-9D3F-BEABE329F0B7}">
+															<PropertyList>
+																<Property Name="LinearTime" Type="bool" Value="False"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-51.89873</XPos>
+																	<YPos>17.51592</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-36.07595</XPos>
+																	<YPos>-10.82803</YPos>
+																	<Flags>0</Flags>
+																	<Time>537</Time>
+																</Point>
+																<Point>
+																	<XPos>-1.89873417721519</XPos>
+																	<YPos>-23.5668789808917</YPos>
+																	<Flags>0</Flags>
+																	<Time>1165</Time>
+																</Point>
+																<Point>
+																	<XPos>53.7974683544304</XPos>
+																	<YPos>-14.0127388535032</YPos>
+																	<Flags>0</Flags>
+																	<Time>1648</Time>
+																</Point>
+																<Point>
+																	<XPos>81.6455696202532</XPos>
+																	<YPos>8.9171974522293</YPos>
+																	<Flags>0</Flags>
+																	<Time>2011</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RFX_MetalCreak" ID="{83675808-F3E4-4E12-9719-6F1740A1B3D0}" ShortID="362142303">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{186D4983-F2F5-4860-BAB0-939E249A3864}">
+																<PropertyList>
+																	<Property Name="Max" Type="Real64" Value="15"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{483AAA88-FE28-47BB-A77B-A4AEF6220DFA}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																	<Property Name="Min" Type="Real64" Value="-700"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="20">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{EBAFA2F8-13FE-41FB-BEE2-B9B9489EEE33}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-15</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AMB_In_RFX_MetalCreak_1" ID="{1B206E95-70D5-4AA7-AEE5-1123D2DC1F15}" ShortID="43077302">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalCreak_1" ID="{4E237FEB-1D81-4913-B0A7-5C3E972EC627}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0165753424657534"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.182328767123288"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.185643835616438"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.182328767123288"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.931534246575343"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalCreak_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="369210972"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalCreak_1" ID="{4E237FEB-1D81-4913-B0A7-5C3E972EC627}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalCreak_2" ID="{B75E86DA-B2AC-4DC2-A38C-2531973411BD}" ShortID="236799086">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalCreak_2" ID="{3789F0AA-EC8B-489C-9D17-EBE86848782A}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0487893835616438"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.138236586757991"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.20347146118721"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalCreak_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="963177718"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalCreak_2" ID="{3789F0AA-EC8B-489C-9D17-EBE86848782A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalCreak_3" ID="{6CD26DAA-522B-40C8-9272-AD02B6FD2427}" ShortID="683105915">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalCreak_3" ID="{3A7AA27E-FAE5-4830-8BDA-1729130C7F30}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0478635131278539"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.224958511700913"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.59385498715753"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalCreak_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="684501554"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalCreak_3" ID="{3A7AA27E-FAE5-4830-8BDA-1729130C7F30}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalCreak_4" ID="{6BD4FC7B-0063-4420-9A55-9D83122CC5DA}" ShortID="156123789">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalCreak_4" ID="{B36A1186-3928-4BDE-98F5-FEBE432E7B19}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0618531678082192"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.195868364726027"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.113397474315069"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.10304815924658"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalCreak_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="97629492"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalCreak_4" ID="{B36A1186-3928-4BDE-98F5-FEBE432E7B19}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalCreak_5" ID="{0F6819E8-6BA4-4362-8C9A-0FF87D32B8E8}" ShortID="182158557">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalCreak_5" ID="{F8452BD9-A6A9-47FE-8F8E-A7E23910852A}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0371501141552511"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.151977739726027"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.148600456621005"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.959148401826484"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalCreak_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="300926878"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalCreak_5" ID="{F8452BD9-A6A9-47FE-8F8E-A7E23910852A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalCreak_6" ID="{965E5F67-EF09-4FDA-97BF-E8FF0EAABD5A}" ShortID="872254167">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalCreak_6" ID="{A69803FB-6FFF-4EF7-A7B1-50FC0A5F4C92}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0394217679794521"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.236530607876712"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.09305811215754"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalCreak_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="427696587"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalCreak_6" ID="{A69803FB-6FFF-4EF7-A7B1-50FC0A5F4C92}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{AC687427-17FD-4850-9DC5-678D05F41E03}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="RFX_MetalCreak_Path" ID="{C72EFDFD-BB15-4A1E-86AF-2DDD5FF8D4CE}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="8"/>
+																<Property Name="RandomZ" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-55.0633</XPos>
+																	<YPos>52.54776</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_01" ID="{3CA48CE1-C8C4-44B7-8AAB-06305EDBD61F}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="10"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-39.87343</XPos>
+																	<YPos>34.71337</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_02" ID="{C7AB8EFF-721E-48B0-8AEB-9325B20D8341}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="8"/>
+																<Property Name="RandomZ" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>37.97467</XPos>
+																	<YPos>57.00636</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_03" ID="{6E2874D3-9935-4F1E-A67B-005F00902945}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>25.94935</XPos>
+																	<YPos>43.63057</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_04" ID="{9984955F-EB4A-4761-8D5A-00D10D6491C0}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="8"/>
+																<Property Name="RandomZ" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>68.98733</XPos>
+																	<YPos>21.97451</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_05" ID="{FD8A2CD6-671C-4BF9-814A-5D997BFBF457}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="8"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>50.63289</XPos>
+																	<YPos>15.60509</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_06" ID="{9A8D1C41-DD70-42EF-8F9B-36ACDBCCEDA6}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="8"/>
+																<Property Name="RandomZ" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>41.13923</XPos>
+																	<YPos>-30.89173</YPos>
+																	<ZPos>15</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_07" ID="{1A620157-EDCA-480C-860A-59D5A54A5D60}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+																<Property Name="RandomZ" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>65.82277</XPos>
+																	<YPos>-33.4395</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_08" ID="{9060CAF6-350F-430F-AEBB-8BBFF4A8997B}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="8"/>
+																<Property Name="RandomZ" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-55.0633</XPos>
+																	<YPos>-53.18472</YPos>
+																	<ZPos>15</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_09" ID="{3046084F-4F8A-487D-8A98-6535137CFBCE}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+																<Property Name="RandomZ" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-31.01267</XPos>
+																	<YPos>-34.07644</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RFX_WoodenCreak" ID="{FE50EC72-5885-47B6-8C4C-3809FA85E443}" ShortID="894406030">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>14</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>65</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{FB5325FE-112E-44E6-8F77-300F1E51DBB3}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="5"/>
+																	<Property Name="Min" Type="Real64" Value="-10"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-200</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{11FAD355-42B7-4FF6-A7A4-D69B4E63F25E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="25">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6C235092-5319-474D-AC11-3680BE549FB4}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="15"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-16</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F386B152-8719-4899-ABD9-3912A47A2A63}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AMB_In_RFX_WoodenCreak_1" ID="{92D0C2C3-7970-49B1-8FEA-56A750801965}" ShortID="735826847">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_WoodenCreak_1" ID="{4538CF97-B704-4D66-9722-EA4DC713AF1F}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0892947345890411"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.291696132990868"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.6728890553653"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_WoodenCreak_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="390479983"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_WoodenCreak_1" ID="{4538CF97-B704-4D66-9722-EA4DC713AF1F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_WoodenCreak_2" ID="{B65B050F-49FD-4BE3-8A5B-3F9E03071C7F}" ShortID="760615319">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_WoodenCreak_2" ID="{DA70155C-F82B-4558-91DF-80664FE3D38D}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.163804437785388"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.170926369863014"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.405950128424658"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.88438249143836"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_WoodenCreak_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="58045828"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_WoodenCreak_2" ID="{DA70155C-F82B-4558-91DF-80664FE3D38D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_WoodenCreak_3" ID="{E81B51C2-957F-4DE0-8630-49F7E584573E}" ShortID="558538296">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_WoodenCreak_3" ID="{5899E53C-A754-4630-905B-CC64E4DD2F05}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0980315353881278"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.088228381849315"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.93612282391553"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_WoodenCreak_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="59310520"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_WoodenCreak_3" ID="{5899E53C-A754-4630-905B-CC64E4DD2F05}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_WoodenCreak_4" ID="{FED54990-9627-4A95-9907-3591DB91D15C}" ShortID="160408284">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_WoodenCreak_4" ID="{B22DF4AC-3217-4953-884E-D12AE8EFCD50}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0813960830479452"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.25044948630137"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.219143300513699"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.47944991438356"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_WoodenCreak_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="582726549"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_WoodenCreak_4" ID="{B22DF4AC-3217-4953-884E-D12AE8EFCD50}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_WoodenCreak_5" ID="{80F4C717-F784-4638-A8AC-46AC82418A6D}" ShortID="488665044">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_WoodenCreak_5" ID="{01A9A5F3-7098-454B-ACBD-914C5ED242E4}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0667443992579909"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.145624143835617"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.200233197773973"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.05087335901826"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_WoodenCreak_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="323054948"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_WoodenCreak_5" ID="{01A9A5F3-7098-454B-ACBD-914C5ED242E4}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_WoodenCreak_6" ID="{49998323-520B-472F-A3F4-041053E49C4C}" ShortID="670949111">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_WoodenCreak_6" ID="{FAC02C09-7A93-4B5E-BFA4-7F848D3CB1BF}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0753468535958904"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.092734589041096"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.121714148116438"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.07493642979452"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_WoodenCreak_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="565149604"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_WoodenCreak_6" ID="{FAC02C09-7A93-4B5E-BFA4-7F848D3CB1BF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_WoodenCreak_7" ID="{81CE7F58-95FC-4DB1-B346-58EB7D7549B0}" ShortID="704584459">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_WoodenCreak_7" ID="{2EF7979E-6362-445C-B781-D7CA6E093238}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.105532962328767"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.211065924657534"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.147746147260274"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.36393835616438"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_WoodenCreak_7.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="373557189"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_WoodenCreak_7" ID="{2EF7979E-6362-445C-B781-D7CA6E093238}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{6A7EDC48-218F-42D1-94FB-77F099179E92}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="RFX_WoodenCreak_Path" ID="{EC9DA246-02E3-4DD4-BA23-D63E6B92C686}">
+															<PropertyList>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-63.92405</XPos>
+																	<YPos>51.91083</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_WoodenCreak_Path_01" ID="{05A2F34C-BC3A-4E73-A197-89EA1E74BD75}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-41.77216</XPos>
+																	<YPos>20.70065</YPos>
+																	<ZPos>-20</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_WoodenCreak_Path_02" ID="{1B2EBD16-F27B-4EAC-99CF-04E4D3F157C3}">
+															<PropertyList>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>41.77215</XPos>
+																	<YPos>57.64331</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_WoodenCreak_Path_03" ID="{0E31FE85-A00B-4B48-9A7C-39B0410B7610}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>39.87341</XPos>
+																	<YPos>35.35032</YPos>
+																	<ZPos>-20</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_WoodenCreak_Path_04" ID="{93B60311-31C1-45A3-81B4-88214DCF32C9}">
+															<PropertyList>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>59.49367</XPos>
+																	<YPos>0.95541</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_WoodenCreak_Path_05" ID="{5E6A5CCF-E6EF-4B64-A971-BBB15B07419E}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>52.53164</XPos>
+																	<YPos>-13.05732</YPos>
+																	<ZPos>-20</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_WoodenCreak_Path_06" ID="{C8F312E6-DDD7-4FFA-8428-58A8C4536D4D}">
+															<PropertyList>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-58.86076</XPos>
+																	<YPos>-28.34395</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_WoodenCreak_Path_07" ID="{810B4948-6291-416B-85FE-A3BAC16B3C23}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-32.9114</XPos>
+																	<YPos>-24.5223</YPos>
+																	<ZPos>-20</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<Sound Name="Roomton_Castle" ID="{9E3C5383-CC70-452C-9C9E-C081AEFDE9D5}" ShortID="799165509">
 									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="InitialDelay" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{6E1DF6EC-282D-44C9-8661-2123F572BE6F}">
-														<PropertyList>
-															<Property Name="Max" Type="Real64" Value="10"/>
-															<Property Name="Min" Type="Real64" Value="-3"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{47D98E86-8134-4DA0-AAAA-F5E11F3106C8}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="250"/>
-															<Property Name="Min" Type="Real64" Value="-300"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="20">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{5F9BFAA4-3A91-46CD-8CB9-FC8A38B5E6C4}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="10"/>
-															<Property Name="Min" Type="Real64" Value="-5"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-24</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
-										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 										</Reference>
 										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+											<ObjectRef Name="AMB_Dungeon" ID="{C9ED5C17-5B3E-4380-B26F-79F6C282B2F1}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="AMB_In_RFX_Cage_1" ID="{73AEB9F9-5C8C-46D6-9DF1-D1F848F10F43}" ShortID="759017890">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_Cage_1" ID="{930B2AD7-8AF8-4E6A-8E66-3C913D176F41}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.162671232876712"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.470890410958904"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="3.57876712328767"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_Cage_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="808807052"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_Cage_1" ID="{930B2AD7-8AF8-4E6A-8E66-3C913D176F41}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_Cage_2" ID="{81F0D43D-FCB6-4E44-99FD-F16513E91F19}" ShortID="471626667">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_Cage_2" ID="{85814BB0-5506-4A8A-8A41-D6E90AA6736C}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0924657534246575"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.133561643835616"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="3.82191780821918"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_Cage_2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="965092901"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_Cage_2" ID="{85814BB0-5506-4A8A-8A41-D6E90AA6736C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_Cage_3" ID="{4E0CE2D4-DF1B-4E5C-B2C1-53C2E5CEE143}" ShortID="324694461">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_Cage_3" ID="{5D6D621E-5005-4F35-BAD3-D09ECDF25D97}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.102739726027397"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.188356164383562"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="3.31335616438356"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_Cage_3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="889532459"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_Cage_3" ID="{5D6D621E-5005-4F35-BAD3-D09ECDF25D97}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_Cage_4" ID="{1830AA9E-EEAE-473C-9ECC-BAAC0B1E3000}" ShortID="338493708">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_Cage_4" ID="{0AE5C2AD-90BA-4066-9F37-4DABB90EC156}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0924657534246576"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.184931506849315"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="4.4486301369863"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_Cage_4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="903163063"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_Cage_4" ID="{0AE5C2AD-90BA-4066-9F37-4DABB90EC156}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_Cage_5" ID="{A551EB4D-1A3E-4B65-87A3-BFEE6E765736}" ShortID="803010957">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_Cage_5" ID="{0C97B1E9-C238-47DE-AAEB-6CF2CD0D7BAD}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.071917808219178"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.311643835616438"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="5.14212328767123"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_Cage_5.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="488505412"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_Cage_5" ID="{0C97B1E9-C238-47DE-AAEB-6CF2CD0D7BAD}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_Cage_6" ID="{1A8CE154-D7FC-471D-8905-4C4D5504ECBB}" ShortID="770433105">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_Cage_6" ID="{CA287A3F-24BC-46D8-8ACE-E4CC6C17BA4C}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0856164383561644"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.179794520547945"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="4.10102739726028"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_Cage_6.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="410199459"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_Cage_6" ID="{CA287A3F-24BC-46D8-8ACE-E4CC6C17BA4C}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{A5823B41-AF83-4F4B-B5E9-F54393ADB1D0}">
+										<AudioFileSource Name="AMB_In_Roomtone_Castle" ID="{25C944E5-FD1A-4A81-AB68-F492D4BBA993}">
 											<PropertyList>
-												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="2021.053"/>
+												<Property Name="LoopBegin" Type="Real64" Value="2.84931506849315"/>
+												<Property Name="LoopEnd" Type="Real64" Value="125.58904109589"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="127.123287671233"/>
 											</PropertyList>
-											<ChildrenList>
-												<Path2D Name="RFX_Cage_Path" ID="{F3D6EB52-CD42-4D4A-9833-99DEDFFC4A2A}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="35"/>
-														<Property Name="RandomY" Type="Real64" Value="15"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>64.55696</XPos>
-															<YPos>15.60509</YPos>
-															<ZPos>10</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_Cage_Path_01" ID="{13A6CD19-D839-4A23-A3E8-80BF01AD4AED}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="35"/>
-														<Property Name="RandomY" Type="Real64" Value="15"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-20.88607</XPos>
-															<YPos>57.6433</YPos>
-															<ZPos>10</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_Cage_Path_02" ID="{CBF7619B-6FEE-4A3A-BE9C-AC2AB6BB5B3F}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="35"/>
-														<Property Name="RandomY" Type="Real64" Value="15"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-48.73417</XPos>
-															<YPos>19.42674</YPos>
-															<ZPos>10</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_Cage_Path_03" ID="{124B58D9-AF8F-4FF9-A0F7-8745BCFFF50E}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="35"/>
-														<Property Name="RandomY" Type="Real64" Value="15"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>64.55697</XPos>
-															<YPos>-19.42676</YPos>
-															<ZPos>10</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_Cage_Path_04" ID="{3BBC1810-8A19-4A6A-BA43-64661267781C}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="35"/>
-														<Property Name="RandomY" Type="Real64" Value="15"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-54.43037</XPos>
-															<YPos>-32.80256</YPos>
-															<ZPos>10</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_Cage_Path_05" ID="{3904C2E2-5FCC-4645-816B-6A0D02BCA832}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="35"/>
-														<Property Name="RandomY" Type="Real64" Value="15"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>70.25317</XPos>
-															<YPos>30.25477</YPos>
-															<ZPos>10</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="RFX_Rats" ID="{AB281C3D-D9C2-49A2-A464-FCF1324A2FEC}" ShortID="979719015">
-									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{F1D0D3B1-9822-425C-A1F6-0FF11B177243}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="200"/>
-															<Property Name="Min" Type="Real64" Value="-200"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="25">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{A66D34E2-3180-4BE7-B179-BD6FEA31835A}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="12"/>
-															<Property Name="Min" Type="Real64" Value="-5"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-23</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="AMB_In_RFX_Rats_1" ID="{E23452B1-87EE-43A0-BE94-426AF1D55E6B}" ShortID="951668120">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_Rats_1" ID="{50ABC7F5-987F-46FC-AE35-CD8FB58F5271}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.167824058219178"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.128336044520548"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2.00401669520548"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_Rats_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="189026729"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_Rats_1" ID="{50ABC7F5-987F-46FC-AE35-CD8FB58F5271}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_Rats_2" ID="{11803116-5AFD-47B5-A0AC-924AEB2675EA}" ShortID="968527936">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_Rats_2" ID="{771FAEF5-6B5B-4190-B717-1D867E019DF0}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0730704195205479"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.131526755136986"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.43218022260274"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_Rats_2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="723790004"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_Rats_2" ID="{771FAEF5-6B5B-4190-B717-1D867E019DF0}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_Rats_3" ID="{0E5AF554-2AD0-4247-A68B-ADAC9C9541F1}" ShortID="855969325">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_Rats_3" ID="{5F50C893-2A05-42F1-8672-DC980BFF5B4D}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.146649043949772"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.0707960901826485"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.45637671232877"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_Rats_3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1009085031"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_Rats_3" ID="{5F50C893-2A05-42F1-8672-DC980BFF5B4D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_Rats_4" ID="{C15348C6-828C-4C6E-BA2C-80D9994CA24B}" ShortID="918310096">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_Rats_4" ID="{B4DCB9DD-7CED-41AE-8EA4-9F7C5C7EBD0B}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.101443279109589"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.157800656392694"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.236700984589041"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.85415771261416"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_Rats_4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="761642837"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_Rats_4" ID="{B4DCB9DD-7CED-41AE-8EA4-9F7C5C7EBD0B}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_Rats_5" ID="{BF2DF939-75FD-4E2B-8562-867851F0E92D}" ShortID="817552991">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_Rats_5" ID="{15072B9B-A72E-4BEF-A246-0BD5B32399CE}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0532564212328767"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.0976367722602739"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0843226669520548"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.34472463613014"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_Rats_5.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="872846438"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_Rats_5" ID="{15072B9B-A72E-4BEF-A246-0BD5B32399CE}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+											<Language>SFX</Language>
+											<AudioFile>AMB_In_Roomtone_Castle.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="487094529"/>
+											</MediaIDList>
+										</AudioFileSource>
 									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{EA8A48ED-741C-4EB2-BE07-5067B82A7207}">
-											<PropertyList>
-												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-											</PropertyList>
-											<ChildrenList>
-												<Path2D Name="RFX_Rats_Path" ID="{4571848F-131D-42EF-B346-9AC316E49E35}">
-													<PropertyList>
-														<Property Name="LinearTime" Type="bool" Value="False"/>
-														<Property Name="RandomX" Type="Real64" Value="10"/>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>32.91139</XPos>
-															<YPos>57.00637</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>56.96202</XPos>
-															<YPos>34.3949</YPos>
-															<Flags>0</Flags>
-															<Time>980</Time>
-														</Point>
-														<Point>
-															<XPos>69.62026</XPos>
-															<YPos>3.82165</YPos>
-															<Flags>0</Flags>
-															<Time>1505</Time>
-														</Point>
-														<Point>
-															<XPos>91.77215</XPos>
-															<YPos>-5.73248</YPos>
-															<Flags>0</Flags>
-															<Time>2011</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_Rats_Path_01" ID="{F95700AC-B87B-45C3-BAA3-3409588591A6}">
-													<PropertyList>
-														<Property Name="LinearTime" Type="bool" Value="False"/>
-														<Property Name="RandomX" Type="Real64" Value="10"/>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-26.58228</XPos>
-															<YPos>60.19109</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>-43.67088</XPos>
-															<YPos>28.66242</YPos>
-															<Flags>0</Flags>
-															<Time>1108</Time>
-														</Point>
-														<Point>
-															<XPos>-74.68354</XPos>
-															<YPos>8.9172</YPos>
-															<Flags>0</Flags>
-															<Time>2026</Time>
-														</Point>
-														<Point>
-															<XPos>-73.41772</XPos>
-															<YPos>-38.21656</YPos>
-															<Flags>0</Flags>
-															<Time>3026</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_Rats_Path_02" ID="{97E36429-10BA-4E90-9FA7-912C487A8C40}">
-													<PropertyList>
-														<Property Name="LinearTime" Type="bool" Value="False"/>
-														<Property Name="RandomX" Type="Real64" Value="10"/>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>19.62025</XPos>
-															<YPos>35.98727</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>49.36709</XPos>
-															<YPos>-19.74522</YPos>
-															<Flags>0</Flags>
-															<Time>733</Time>
-														</Point>
-														<Point>
-															<XPos>71.51899</XPos>
-															<YPos>21.65605</YPos>
-															<Flags>0</Flags>
-															<Time>1605</Time>
-														</Point>
-														<Point>
-															<XPos>84.17721</XPos>
-															<YPos>6.36942</YPos>
-															<Flags>0</Flags>
-															<Time>2468</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_Rats_Path_03" ID="{65298E0E-B76D-4893-8696-8CB0C237FC64}">
-													<PropertyList>
-														<Property Name="LinearTime" Type="bool" Value="False"/>
-														<Property Name="RandomX" Type="Real64" Value="10"/>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-21.51899</XPos>
-															<YPos>37.89809</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>-34.1772151898734</XPos>
-															<YPos>23.5668789808917</YPos>
-															<Flags>0</Flags>
-															<Time>834</Time>
-														</Point>
-														<Point>
-															<XPos>-49.3670886075949</XPos>
-															<YPos>-2.54777070063695</YPos>
-															<Flags>0</Flags>
-															<Time>1496</Time>
-														</Point>
-														<Point>
-															<XPos>-39.87341</XPos>
-															<YPos>-36.94267</YPos>
-															<Flags>0</Flags>
-															<Time>2267</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_Rats_Path_04" ID="{6E27A2BA-2786-482D-9D3F-BEABE329F0B7}">
-													<PropertyList>
-														<Property Name="LinearTime" Type="bool" Value="False"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-51.89873</XPos>
-															<YPos>17.51592</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-														<Point>
-															<XPos>-36.07595</XPos>
-															<YPos>-10.82803</YPos>
-															<Flags>0</Flags>
-															<Time>537</Time>
-														</Point>
-														<Point>
-															<XPos>-1.89873417721519</XPos>
-															<YPos>-23.5668789808917</YPos>
-															<Flags>0</Flags>
-															<Time>1165</Time>
-														</Point>
-														<Point>
-															<XPos>53.7974683544304</XPos>
-															<YPos>-14.0127388535032</YPos>
-															<Flags>0</Flags>
-															<Time>1648</Time>
-														</Point>
-														<Point>
-															<XPos>81.6455696202532</XPos>
-															<YPos>8.9171974522293</YPos>
-															<Flags>0</Flags>
-															<Time>2011</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="RFX_MetalCreak" ID="{83675808-F3E4-4E12-9719-6F1740A1B3D0}" ShortID="362142303">
-									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="InitialDelay" Type="Real64">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{186D4983-F2F5-4860-BAB0-939E249A3864}">
-														<PropertyList>
-															<Property Name="Max" Type="Real64" Value="15"/>
-															<Property Name="Min" Type="Real64" Value="-5"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{483AAA88-FE28-47BB-A77B-A4AEF6220DFA}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="300"/>
-															<Property Name="Min" Type="Real64" Value="-700"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="20">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{EBAFA2F8-13FE-41FB-BEE2-B9B9489EEE33}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="10"/>
-															<Property Name="Min" Type="Real64" Value="-5"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-15</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="AMB_In_RFX_MetalCreak_1" ID="{1B206E95-70D5-4AA7-AEE5-1123D2DC1F15}" ShortID="43077302">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_MetalCreak_1" ID="{4E237FEB-1D81-4913-B0A7-5C3E972EC627}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0165753424657534"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.182328767123288"/>
-														<Property Name="LoopBegin" Type="Real64" Value="0.185643835616438"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.182328767123288"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.931534246575343"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_MetalCreak_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="369210972"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_MetalCreak_1" ID="{4E237FEB-1D81-4913-B0A7-5C3E972EC627}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_MetalCreak_2" ID="{B75E86DA-B2AC-4DC2-A38C-2531973411BD}" ShortID="236799086">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_MetalCreak_2" ID="{3789F0AA-EC8B-489C-9D17-EBE86848782A}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0487893835616438"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.138236586757991"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.20347146118721"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_MetalCreak_2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="963177718"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_MetalCreak_2" ID="{3789F0AA-EC8B-489C-9D17-EBE86848782A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_MetalCreak_3" ID="{6CD26DAA-522B-40C8-9272-AD02B6FD2427}" ShortID="683105915">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_MetalCreak_3" ID="{3A7AA27E-FAE5-4830-8BDA-1729130C7F30}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0478635131278539"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.224958511700913"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.59385498715753"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_MetalCreak_3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="684501554"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_MetalCreak_3" ID="{3A7AA27E-FAE5-4830-8BDA-1729130C7F30}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_MetalCreak_4" ID="{6BD4FC7B-0063-4420-9A55-9D83122CC5DA}" ShortID="156123789">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_MetalCreak_4" ID="{B36A1186-3928-4BDE-98F5-FEBE432E7B19}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0618531678082192"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.195868364726027"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.113397474315069"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.10304815924658"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_MetalCreak_4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="97629492"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_MetalCreak_4" ID="{B36A1186-3928-4BDE-98F5-FEBE432E7B19}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_MetalCreak_5" ID="{0F6819E8-6BA4-4362-8C9A-0FF87D32B8E8}" ShortID="182158557">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_MetalCreak_5" ID="{F8452BD9-A6A9-47FE-8F8E-A7E23910852A}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0371501141552511"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.151977739726027"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.148600456621005"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.959148401826484"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_MetalCreak_5.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="300926878"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_MetalCreak_5" ID="{F8452BD9-A6A9-47FE-8F8E-A7E23910852A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_MetalCreak_6" ID="{965E5F67-EF09-4FDA-97BF-E8FF0EAABD5A}" ShortID="872254167">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_MetalCreak_6" ID="{A69803FB-6FFF-4EF7-A7B1-50FC0A5F4C92}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0394217679794521"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.236530607876712"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.09305811215754"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_MetalCreak_6.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="427696587"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_MetalCreak_6" ID="{A69803FB-6FFF-4EF7-A7B1-50FC0A5F4C92}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{AC687427-17FD-4850-9DC5-678D05F41E03}">
-											<PropertyList>
-												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-											</PropertyList>
-											<ChildrenList>
-												<Path2D Name="RFX_MetalCreak_Path" ID="{C72EFDFD-BB15-4A1E-86AF-2DDD5FF8D4CE}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="20"/>
-														<Property Name="RandomY" Type="Real64" Value="8"/>
-														<Property Name="RandomZ" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-55.0633</XPos>
-															<YPos>52.54776</YPos>
-															<ZPos>10</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalCreak_Path_01" ID="{3CA48CE1-C8C4-44B7-8AAB-06305EDBD61F}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="10"/>
-														<Property Name="RandomY" Type="Real64" Value="5"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-39.87343</XPos>
-															<YPos>34.71337</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalCreak_Path_02" ID="{C7AB8EFF-721E-48B0-8AEB-9325B20D8341}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="20"/>
-														<Property Name="RandomY" Type="Real64" Value="8"/>
-														<Property Name="RandomZ" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>37.97467</XPos>
-															<YPos>57.00636</YPos>
-															<ZPos>10</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalCreak_Path_03" ID="{6E2874D3-9935-4F1E-A67B-005F00902945}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="15"/>
-														<Property Name="RandomY" Type="Real64" Value="5"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>25.94935</XPos>
-															<YPos>43.63057</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalCreak_Path_04" ID="{9984955F-EB4A-4761-8D5A-00D10D6491C0}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="20"/>
-														<Property Name="RandomY" Type="Real64" Value="8"/>
-														<Property Name="RandomZ" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>68.98733</XPos>
-															<YPos>21.97451</YPos>
-															<ZPos>10</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalCreak_Path_05" ID="{FD8A2CD6-671C-4BF9-814A-5D997BFBF457}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="8"/>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>50.63289</XPos>
-															<YPos>15.60509</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalCreak_Path_06" ID="{9A8D1C41-DD70-42EF-8F9B-36ACDBCCEDA6}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="20"/>
-														<Property Name="RandomY" Type="Real64" Value="8"/>
-														<Property Name="RandomZ" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>41.13923</XPos>
-															<YPos>-30.89173</YPos>
-															<ZPos>15</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalCreak_Path_07" ID="{1A620157-EDCA-480C-860A-59D5A54A5D60}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="15"/>
-														<Property Name="RandomY" Type="Real64" Value="15"/>
-														<Property Name="RandomZ" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>65.82277</XPos>
-															<YPos>-33.4395</YPos>
-															<ZPos>10</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalCreak_Path_08" ID="{9060CAF6-350F-430F-AEBB-8BBFF4A8997B}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="20"/>
-														<Property Name="RandomY" Type="Real64" Value="8"/>
-														<Property Name="RandomZ" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-55.0633</XPos>
-															<YPos>-53.18472</YPos>
-															<ZPos>15</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_MetalCreak_Path_09" ID="{3046084F-4F8A-487D-8A98-6535137CFBCE}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="15"/>
-														<Property Name="RandomY" Type="Real64" Value="15"/>
-														<Property Name="RandomZ" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-31.01267</XPos>
-															<YPos>-34.07644</YPos>
-															<ZPos>10</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="RFX_WoodenCreak" ID="{FE50EC72-5885-47B6-8C4C-3809FA85E443}" ShortID="894406030">
-									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="Highpass" Type="int16">
-											<ValueList>
-												<Value>14</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>65</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{FB5325FE-112E-44E6-8F77-300F1E51DBB3}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="5"/>
-															<Property Name="Min" Type="Real64" Value="-10"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-200</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{11FAD355-42B7-4FF6-A7A4-D69B4E63F25E}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="200"/>
-															<Property Name="Min" Type="Real64" Value="-300"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="25">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{6C235092-5319-474D-AC11-3680BE549FB4}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="15"/>
-															<Property Name="Min" Type="Real64" Value="-5"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-15</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{F386B152-8719-4899-ABD9-3912A47A2A63}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="2"/>
-															<Property Name="Min" Type="Real64" Value="-5"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="AMB_In_RFX_WoodenCreak_1" ID="{92D0C2C3-7970-49B1-8FEA-56A750801965}" ShortID="735826847">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_WoodenCreak_1" ID="{4538CF97-B704-4D66-9722-EA4DC713AF1F}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0892947345890411"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.291696132990868"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2.6728890553653"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_WoodenCreak_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="390479983"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_WoodenCreak_1" ID="{4538CF97-B704-4D66-9722-EA4DC713AF1F}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_WoodenCreak_2" ID="{B65B050F-49FD-4BE3-8A5B-3F9E03071C7F}" ShortID="760615319">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_WoodenCreak_2" ID="{DA70155C-F82B-4558-91DF-80664FE3D38D}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.163804437785388"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.170926369863014"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.405950128424658"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2.88438249143836"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_WoodenCreak_2.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="58045828"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_WoodenCreak_2" ID="{DA70155C-F82B-4558-91DF-80664FE3D38D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_WoodenCreak_3" ID="{E81B51C2-957F-4DE0-8630-49F7E584573E}" ShortID="558538296">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_WoodenCreak_3" ID="{5899E53C-A754-4630-905B-CC64E4DD2F05}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0980315353881278"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.088228381849315"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.93612282391553"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_WoodenCreak_3.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="59310520"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_WoodenCreak_3" ID="{5899E53C-A754-4630-905B-CC64E4DD2F05}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_WoodenCreak_4" ID="{FED54990-9627-4A95-9907-3591DB91D15C}" ShortID="160408284">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_WoodenCreak_4" ID="{B22DF4AC-3217-4953-884E-D12AE8EFCD50}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0813960830479452"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.25044948630137"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.219143300513699"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2.47944991438356"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_WoodenCreak_4.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="582726549"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_WoodenCreak_4" ID="{B22DF4AC-3217-4953-884E-D12AE8EFCD50}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_WoodenCreak_5" ID="{80F4C717-F784-4638-A8AC-46AC82418A6D}" ShortID="488665044">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_WoodenCreak_5" ID="{01A9A5F3-7098-454B-ACBD-914C5ED242E4}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0667443992579909"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.145624143835617"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.200233197773973"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2.05087335901826"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_WoodenCreak_5.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="323054948"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_WoodenCreak_5" ID="{01A9A5F3-7098-454B-ACBD-914C5ED242E4}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_WoodenCreak_6" ID="{49998323-520B-472F-A3F4-041053E49C4C}" ShortID="670949111">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_WoodenCreak_6" ID="{FAC02C09-7A93-4B5E-BFA4-7F848D3CB1BF}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0753468535958904"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.092734589041096"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.121714148116438"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2.07493642979452"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_WoodenCreak_6.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="565149604"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_WoodenCreak_6" ID="{FAC02C09-7A93-4B5E-BFA4-7F848D3CB1BF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="AMB_In_RFX_WoodenCreak_7" ID="{81CE7F58-95FC-4DB1-B346-58EB7D7549B0}" ShortID="704584459">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="AMB_In_RFX_WoodenCreak_7" ID="{2EF7979E-6362-445C-B781-D7CA6E093238}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.105532962328767"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.211065924657534"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.147746147260274"/>
-														<Property Name="TrimEnd" Type="Real64" Value="2.36393835616438"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>AMB_In_RFX_WoodenCreak_7.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="373557189"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="AMB_In_RFX_WoodenCreak_7" ID="{2EF7979E-6362-445C-B781-D7CA6E093238}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-									<PositioningInfo>
-										<Position Name="" ID="{6A7EDC48-218F-42D1-94FB-77F099179E92}">
-											<PropertyList>
-												<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-											</PropertyList>
-											<ChildrenList>
-												<Path2D Name="RFX_WoodenCreak_Path" ID="{EC9DA246-02E3-4DD4-BA23-D63E6B92C686}">
-													<PropertyList>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-63.92405</XPos>
-															<YPos>51.91083</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_WoodenCreak_Path_01" ID="{05A2F34C-BC3A-4E73-A197-89EA1E74BD75}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="20"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-41.77216</XPos>
-															<YPos>20.70065</YPos>
-															<ZPos>-20</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_WoodenCreak_Path_02" ID="{1B2EBD16-F27B-4EAC-99CF-04E4D3F157C3}">
-													<PropertyList>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>41.77215</XPos>
-															<YPos>57.64331</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_WoodenCreak_Path_03" ID="{0E31FE85-A00B-4B48-9A7C-39B0410B7610}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="20"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>39.87341</XPos>
-															<YPos>35.35032</YPos>
-															<ZPos>-20</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_WoodenCreak_Path_04" ID="{93B60311-31C1-45A3-81B4-88214DCF32C9}">
-													<PropertyList>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>59.49367</XPos>
-															<YPos>0.95541</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_WoodenCreak_Path_05" ID="{5E6A5CCF-E6EF-4B64-A971-BBB15B07419E}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="20"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>52.53164</XPos>
-															<YPos>-13.05732</YPos>
-															<ZPos>-20</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_WoodenCreak_Path_06" ID="{C8F312E6-DDD7-4FFA-8428-58A8C4536D4D}">
-													<PropertyList>
-														<Property Name="RandomY" Type="Real64" Value="10"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-58.86076</XPos>
-															<YPos>-28.34395</YPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-												<Path2D Name="RFX_WoodenCreak_Path_07" ID="{810B4948-6291-416B-85FE-A3BAC16B3C23}">
-													<PropertyList>
-														<Property Name="RandomX" Type="Real64" Value="20"/>
-													</PropertyList>
-													<PointList>
-														<Point>
-															<XPos>-32.9114</XPos>
-															<YPos>-24.5223</YPos>
-															<ZPos>-20</ZPos>
-															<Flags>12</Flags>
-															<Time>0</Time>
-														</Point>
-													</PointList>
-												</Path2D>
-											</ChildrenList>
-										</Position>
-									</PositioningInfo>
-								</RandomSequenceContainer>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_In_Roomtone_Castle" ID="{25C944E5-FD1A-4A81-AB68-F492D4BBA993}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>

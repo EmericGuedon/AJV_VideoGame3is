@@ -7,17 +7,6 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Event Name="RFX_CampFire" ID="{24200F61-F6E3-4889-9743-50EFB567F862}">
-					<ChildrenList>
-						<Action Name="" ID="{184EB6A9-F518-4A3A-9871-AAD1244CE441}" ShortID="923687595">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="RFX_CampFire" ID="{79395D65-DE83-4EC4-80B4-6C24F34522D9}" WorkUnitID="{F55B8CDF-B6DE-454A-BADA-D4AAB3D4B752}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="RFX_Bridge" ID="{FE798F09-D918-4832-9237-FBF4C1B9D06C}">
 					<ChildrenList>
 						<Action Name="" ID="{BA245962-3857-4FFE-8F1E-5DD937DF94D9}" ShortID="648603405">

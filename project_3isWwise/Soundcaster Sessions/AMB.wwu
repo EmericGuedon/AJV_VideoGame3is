@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5FFAD657-A5A6-4017-8E2A-B9CB6C20ACDB}" SchemaVersion="97" RootDocumentID="{BE95830D-1A78-40F9-991D-1DAA2DEBEFA1}">
+	<SoundcasterSessions>
+		<WorkUnit Name="AMB" ID="{5FFAD657-A5A6-4017-8E2A-B9CB6C20ACDB}" OwnerID="{BE95830D-1A78-40F9-991D-1DAA2DEBEFA1}" PersistMode="Nested"/>
+	</SoundcasterSessions>
+</WwiseDocument>

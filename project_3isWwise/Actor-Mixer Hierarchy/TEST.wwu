@@ -2,6 +2,10 @@
 <WwiseDocument Type="WorkUnit" ID="{B7DF8193-1C64-4EE4-A00D-2C2356EB80C7}" SchemaVersion="97" RootDocumentID="{3F718F07-86BF-45AA-9CF2-FBE66C973C6C}">
 	<AudioObjects>
 		<WorkUnit Name="TEST" ID="{B7DF8193-1C64-4EE4-A00D-2C2356EB80C7}" OwnerID="{3F718F07-86BF-45AA-9CF2-FBE66C973C6C}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="8"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
 			<ChildrenList>
 				<Sound Name="Sine" ID="{032899B6-7A3D-44E3-9E04-2ACF05978423}" ShortID="922747690">
 					<ReferenceList>

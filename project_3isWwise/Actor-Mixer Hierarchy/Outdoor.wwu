@@ -16,7 +16,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<BlendContainer Name="Cave" ID="{FDA60D38-304B-453C-823C-85910DA509E0}" ShortID="671729129">
+						<BlendContainer Name="OUT_Cave" ID="{FDA60D38-304B-453C-823C-85910DA509E0}" ShortID="671729129">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -935,15 +935,7 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<Sound Name="Amb_Out_Blizzard_Loop" ID="{C7FE0197-98E9-4B49-869C-092D9870787B}" ShortID="586986139">
-							<PropertyList>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-22</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
+						<BlendContainer Name="OUT_Blizz" ID="{21227C1E-CD75-4313-AACF-8C77CFA028D0}" ShortID="380995227">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -953,447 +945,956 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<AudioFileSource Name="Amb_Out_Blizzard" ID="{2CFEE70F-FCE4-41DD-A822-7A5903C7840E}">
+								<BlendContainer Name="RFX_Blizzard" ID="{6EB0E918-72E7-4843-9331-53CF4AC4D283}" ShortID="647515393">
 									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="2055.263"/>
-										<Property Name="LoopBegin" Type="Real64" Value="1.58047945205479"/>
-										<Property Name="LoopEnd" Type="Real64" Value="61.638698630137"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-										<Property Name="TrimEnd" Type="Real64" Value="66.9811320754717"/>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2607D5D5-70E0-4E34-9AE3-10C4893E82CE}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
 									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>Amb_Out_Blizzard.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="962117574"/>
-									</MediaIDList>
-								</AudioFileSource>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="AMB_Blizzard" ID="{D7CF2697-423E-4E07-964F-A157FA5FCB45}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="RFX_Blizz_Rock" ID="{B309E588-7269-48EF-88F2-EA129D5DC071}" ShortID="1056142388">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>41</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{275AF940-763B-48C1-BCEA-EA53E6871A3A}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-200</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{E7A4D97B-0FA0-4D27-BE30-470FDA705A94}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{DABFC195-614D-4912-A2A7-9A953F78BA76}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="15"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-29</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RFX_Outdoor" ID="{64932D91-9191-4F24-9E96-63FFBCF90F39}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="RFX_Blizzard_Rock-001" ID="{85BA2B6A-8687-4968-A00E-C86B11E82538}" ShortID="893134009">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RFX_Blizzard_Rock-001" ID="{812DD844-520A-4617-8A08-B4F16F1277E7}">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>24</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>RFX_Blizzard_Rock-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="282197173"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RFX_Blizzard_Rock-001" ID="{812DD844-520A-4617-8A08-B4F16F1277E7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RFX_Blizzard_Rock-002" ID="{237460FA-F513-41E2-962A-990BFCA580DF}" ShortID="231061120">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RFX_Blizzard_Rock-002" ID="{235B8855-6B95-47DC-91EE-61A4E2251342}">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>24</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>RFX_Blizzard_Rock-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1030237946"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RFX_Blizzard_Rock-002" ID="{235B8855-6B95-47DC-91EE-61A4E2251342}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RFX_Blizzard_Rock-003" ID="{DFA234CF-4967-419D-8B9D-9187F5D43D3E}" ShortID="673326261">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RFX_Blizzard_Rock-003" ID="{4F7D9EC9-2BCA-4A3D-BC53-DFD73C3A4772}">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>24</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>RFX_Blizzard_Rock-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="17001860"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RFX_Blizzard_Rock-003" ID="{4F7D9EC9-2BCA-4A3D-BC53-DFD73C3A4772}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RFX_Blizzard_Rock-004" ID="{C53D5A8E-F9C2-468A-9D7D-B12A58C3C4EC}" ShortID="81535234">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RFX_Blizzard_Rock-004" ID="{0E3377AF-48EB-41E2-8B2B-B0F8BB6F78CF}">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>24</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>RFX_Blizzard_Rock-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="911551136"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RFX_Blizzard_Rock-004" ID="{0E3377AF-48EB-41E2-8B2B-B0F8BB6F78CF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RFX_Blizzard_Rock-005" ID="{885BD879-D9C5-4213-A727-C4F29F251261}" ShortID="684018363">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RFX_Blizzard_Rock-005" ID="{87220E34-8812-45EF-8503-4AEEE8F744F7}">
+															<PropertyList>
+																<Property Name="VolumeOffset" Type="Real64">
+																	<ValueList>
+																		<Value>24</Value>
+																	</ValueList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>RFX_Blizzard_Rock-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="727496022"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RFX_Blizzard_Rock-005" ID="{87220E34-8812-45EF-8503-4AEEE8F744F7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{1F5865F3-781C-42FD-9946-27B13278969C}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="RFX_Blizz_Rock_Path" ID="{F7FD8D51-1D18-43FC-AA0B-A653565957D0}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>34.17722</XPos>
+																	<YPos>6.6879</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Blizz_Rock_Path_01" ID="{B79E334E-6A76-4301-B570-641B6825564D}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="25"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-48.10127</XPos>
+																	<YPos>25.15924</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Blizz_Rock_Path_02" ID="{D6BDC73D-E7B1-4C44-A43A-E2506376AAC1}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="30"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>25.94936</XPos>
+																	<YPos>49.36306</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Blizz_Rock_Path_03" ID="{BA12C2F1-1C93-4FE8-9C5F-F94F9371A92C}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="30"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>39.87342</XPos>
+																	<YPos>38.53503</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Blizz_Rock_Path_04" ID="{BF773E63-99FE-46D2-8F30-509CFBB7CF60}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="25"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-56.32911</XPos>
+																	<YPos>37.26115</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Blizz_Rock_Path_05" ID="{2C06D8A9-1793-47A2-8BA2-4FF656189A9F}">
+															<PointList>
+																<Point>
+																	<XPos>27.21519</XPos>
+																	<YPos>50</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RFX_Blizz_Wind" ID="{FFC74739-F82D-446E-87A4-AC391F71FEC5}" ShortID="653724256">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RFX_Outdoor" ID="{64932D91-9191-4F24-9E96-63FFBCF90F39}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="RFX_Blizzard_Wind-001" ID="{E4CBC1E2-EAF9-4149-9E83-07F8D036834F}" ShortID="241044280">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RFX_Blizzard_Wind-001" ID="{7F75227A-87BC-4F39-BA21-E39668DDE0FD}">
+															<Language>SFX</Language>
+															<AudioFile>RFX_Blizzard_Wind-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="291228112"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RFX_Blizzard_Wind-001" ID="{7F75227A-87BC-4F39-BA21-E39668DDE0FD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RFX_Blizzard_Wind-002" ID="{141CCA5A-0EE6-4F53-97E3-79DD74174A9C}" ShortID="843624410">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RFX_Blizzard_Wind-002" ID="{B75EE391-46DC-42AB-A8AE-EC447DB81295}">
+															<Language>SFX</Language>
+															<AudioFile>RFX_Blizzard_Wind-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="737466167"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RFX_Blizzard_Wind-002" ID="{B75EE391-46DC-42AB-A8AE-EC447DB81295}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RFX_Blizzard_Wind-003" ID="{2D9A03D6-D859-4260-818D-4B7675AF9DFE}" ShortID="285474518">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RFX_Blizzard_Wind-003" ID="{360A6A20-533F-4534-9D4B-13B92B797228}">
+															<Language>SFX</Language>
+															<AudioFile>RFX_Blizzard_Wind-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="706624072"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RFX_Blizzard_Wind-003" ID="{360A6A20-533F-4534-9D4B-13B92B797228}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RFX_Blizzard_Wind-004" ID="{D4C1D4E4-E23E-4017-A52E-1B0688AC0A37}" ShortID="244717013">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RFX_Blizzard_Wind-004" ID="{1C645B1F-E454-43EF-9E0A-312A001D25B1}">
+															<Language>SFX</Language>
+															<AudioFile>RFX_Blizzard_Wind-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="716221502"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RFX_Blizzard_Wind-004" ID="{1C645B1F-E454-43EF-9E0A-312A001D25B1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RFX_Blizzard_Wind-005" ID="{0340FC1A-368D-4F20-B03F-2A1292E94C1F}" ShortID="107765873">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RFX_Blizzard_Wind-005" ID="{E538B8B7-B693-47C2-9F57-E69656C5D63D}">
+															<Language>SFX</Language>
+															<AudioFile>RFX_Blizzard_Wind-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="877322273"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RFX_Blizzard_Wind-005" ID="{E538B8B7-B693-47C2-9F57-E69656C5D63D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{17B6B60E-6D26-4C50-9EC5-D7D561FE2874}">
+													<ChildrenList>
+														<Path2D Name="RFX_Blizz_Wind_Path" ID="{895F9812-D8E1-489E-B75A-22E6F11A6A27}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="12"/>
+																<Property Name="RandomY" Type="Real64" Value="6"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-55.06329</XPos>
+																	<YPos>25.15924</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Blizz_Wind_Path_01" ID="{522DB185-E254-4578-8218-3894D398988F}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="10"/>
+																<Property Name="RandomY" Type="Real64" Value="9"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>39.87342</XPos>
+																	<YPos>30.25477</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Blizz_Wind_Path_02" ID="{8104D336-8DDB-491B-8F1C-0B71D258BCA6}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="9"/>
+																<Property Name="RandomY" Type="Real64" Value="11"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-45.56962</XPos>
+																	<YPos>55.09554</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Blizz_Wind_Path_03" ID="{EF946547-10D2-49B4-AA4E-547F8679312A}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="6"/>
+																<Property Name="RandomY" Type="Real64" Value="11"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>22.1519</XPos>
+																	<YPos>50.63694</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Blizz_Wind_Path_04" ID="{924681F4-A7BD-4E04-9FA3-F487235CA0F0}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="17"/>
+																<Property Name="RandomY" Type="Real64" Value="22"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-31.01266</XPos>
+																	<YPos>37.89809</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RFX_Blizz_Snow" ID="{DD4E78F1-ADA3-4A87-9548-699EF2AB5F6E}" ShortID="210179872">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Lowpass" Type="int16">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{AEA733F6-8E82-4D6B-B73E-F40233F3B4D8}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>700</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{B5B03E1D-51E6-4BD7-8C8A-CF1A5001C833}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-13</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RFX_Outdoor" ID="{64932D91-9191-4F24-9E96-63FFBCF90F39}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="RFX_Blizzard_Snow-001" ID="{8EC13319-6E5C-4403-9FA9-120CDFC418C3}" ShortID="763094614">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RFX_Blizzard_Snow-001" ID="{442DC95E-A102-4916-B004-56C35AFD11C9}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.774828767123288"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>RFX_Blizzard_Snow-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="920467685"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RFX_Blizzard_Snow-001" ID="{442DC95E-A102-4916-B004-56C35AFD11C9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RFX_Blizzard_Snow-002" ID="{EC07A8F6-1CFD-4D76-9D9C-E97939D2E275}" ShortID="278970747">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RFX_Blizzard_Snow-002" ID="{6B482DD8-D5C5-408F-9F44-FC7A0400AF31}">
+															<Language>SFX</Language>
+															<AudioFile>RFX_Blizzard_Snow-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="183592446"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RFX_Blizzard_Snow-002" ID="{6B482DD8-D5C5-408F-9F44-FC7A0400AF31}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RFX_Blizzard_Snow-003" ID="{736D50C8-42B3-4512-B67C-788C20377C0B}" ShortID="646708891">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RFX_Blizzard_Snow-003" ID="{6FF2BF67-ECEE-4004-9660-F5A4BC06C770}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.667808219178082"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>RFX_Blizzard_Snow-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="322672660"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RFX_Blizzard_Snow-003" ID="{6FF2BF67-ECEE-4004-9660-F5A4BC06C770}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RFX_Blizzard_Snow-004" ID="{4BE4AAA6-416B-46D6-BF45-CB6D665FAB8D}" ShortID="713933271">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>6</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RFX_Blizzard_Snow-004" ID="{1880AF50-0508-4739-BCC0-8CDB6ED35574}">
+															<Language>SFX</Language>
+															<AudioFile>RFX_Blizzard_Snow-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="278620022"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RFX_Blizzard_Snow-004" ID="{1880AF50-0508-4739-BCC0-8CDB6ED35574}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="RFX_Blizzard_Snow-005" ID="{1A7E0BB2-779F-4A6E-BB53-65FE73A588B6}" ShortID="457721483">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>61</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{7476D350-66C9-4B77-B6DD-9D61D695AA68}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{A79887C9-D34C-4F84-BD59-561C3AFA7550}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ValueList>
+																<Value>200</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{7D19A192-E9D1-46B1-B0AC-94BB610E8CC0}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>12</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="RFX_Blizzard_Snow-005" ID="{C9F43099-F05B-4658-A528-7255ADA57B06}">
+															<Language>SFX</Language>
+															<AudioFile>RFX_Blizzard_Snow-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="302110965"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="RFX_Blizzard_Snow-005" ID="{C9F43099-F05B-4658-A528-7255ADA57B06}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{12A5A584-D498-4963-A9E6-2E0ED888C673}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="RFX_Blizz_Snow_Path" ID="{7C9B4095-C8A5-4229-8CC7-C229CA17629B}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="10"/>
+																<Property Name="RandomY" Type="Real64" Value="16"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-18.98734</XPos>
+																	<YPos>41.71974</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Blizz_Snow_Path_01" ID="{0073E1F7-1EE2-41C5-AA0C-9EEAE72BAF17}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>31.64557</XPos>
+																	<YPos>32.80255</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Blizz_Snow_Path_02" ID="{EB4D12EA-1331-4E52-AEE5-7DD44AFE7C74}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="6"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>50</XPos>
+																	<YPos>8.59873</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Blizz_Snow_Path_03" ID="{ABC7B52C-2B66-42CC-9B75-AE9912E134D2}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="4"/>
+																<Property Name="RandomY" Type="Real64" Value="8"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-53.79747</XPos>
+																	<YPos>13.69427</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Blizz_Snow_Path_04" ID="{64925762-4929-4281-B0EF-E93A47692272}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="17"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-67.08861</XPos>
+																	<YPos>39.80892</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Blizz_Snow_Path_05" ID="{F29FA969-21A4-4C8D-9691-009C5D5E8C5F}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>53.16456</XPos>
+																	<YPos>46.17834</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<Sound Name="Amb_Out_Blizzard_Loop" ID="{C7FE0197-98E9-4B49-869C-092D9870787B}" ShortID="586986139">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-22</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="AMB_Blizzard" ID="{D7CF2697-423E-4E07-964F-A157FA5FCB45}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Amb_Out_Blizzard" ID="{2CFEE70F-FCE4-41DD-A822-7A5903C7840E}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="2055.263"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.58047945205479"/>
+												<Property Name="LoopEnd" Type="Real64" Value="61.638698630137"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="66.9811320754717"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Amb_Out_Blizzard.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="962117574"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Amb_Out_Blizzard" ID="{2CFEE70F-FCE4-41DD-A822-7A5903C7840E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="Amb_Out_Blizzard" ID="{2CFEE70F-FCE4-41DD-A822-7A5903C7840E}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<BlendContainer Name="RFX_Blizzard" ID="{6EB0E918-72E7-4843-9331-53CF4AC4D283}" ShortID="647515393">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<RandomSequenceContainer Name="RFX_Blizz_Rock" ID="{B309E588-7269-48EF-88F2-EA129D5DC071}" ShortID="1056142388">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="RFX_Blizzard_Rock-001" ID="{85BA2B6A-8687-4968-A00E-C86B11E82538}" ShortID="893134009">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RFX_Blizzard_Rock-001" ID="{812DD844-520A-4617-8A08-B4F16F1277E7}">
-													<PropertyList>
-														<Property Name="VolumeOffset" Type="Real64">
-															<ValueList>
-																<Value>24</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>RFX_Blizzard_Rock-001.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="282197173"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="RFX_Blizzard_Rock-001" ID="{812DD844-520A-4617-8A08-B4F16F1277E7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RFX_Blizzard_Rock-002" ID="{237460FA-F513-41E2-962A-990BFCA580DF}" ShortID="231061120">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RFX_Blizzard_Rock-002" ID="{235B8855-6B95-47DC-91EE-61A4E2251342}">
-													<PropertyList>
-														<Property Name="VolumeOffset" Type="Real64">
-															<ValueList>
-																<Value>24</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>RFX_Blizzard_Rock-002.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="1030237946"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="RFX_Blizzard_Rock-002" ID="{235B8855-6B95-47DC-91EE-61A4E2251342}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RFX_Blizzard_Rock-003" ID="{DFA234CF-4967-419D-8B9D-9187F5D43D3E}" ShortID="673326261">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RFX_Blizzard_Rock-003" ID="{4F7D9EC9-2BCA-4A3D-BC53-DFD73C3A4772}">
-													<PropertyList>
-														<Property Name="VolumeOffset" Type="Real64">
-															<ValueList>
-																<Value>24</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>RFX_Blizzard_Rock-003.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="17001860"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="RFX_Blizzard_Rock-003" ID="{4F7D9EC9-2BCA-4A3D-BC53-DFD73C3A4772}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RFX_Blizzard_Rock-004" ID="{C53D5A8E-F9C2-468A-9D7D-B12A58C3C4EC}" ShortID="81535234">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RFX_Blizzard_Rock-004" ID="{0E3377AF-48EB-41E2-8B2B-B0F8BB6F78CF}">
-													<PropertyList>
-														<Property Name="VolumeOffset" Type="Real64">
-															<ValueList>
-																<Value>24</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>RFX_Blizzard_Rock-004.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="911551136"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="RFX_Blizzard_Rock-004" ID="{0E3377AF-48EB-41E2-8B2B-B0F8BB6F78CF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RFX_Blizzard_Rock-005" ID="{885BD879-D9C5-4213-A727-C4F29F251261}" ShortID="684018363">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RFX_Blizzard_Rock-005" ID="{87220E34-8812-45EF-8503-4AEEE8F744F7}">
-													<PropertyList>
-														<Property Name="VolumeOffset" Type="Real64">
-															<ValueList>
-																<Value>24</Value>
-															</ValueList>
-														</Property>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>RFX_Blizzard_Rock-005.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="727496022"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="RFX_Blizzard_Rock-005" ID="{87220E34-8812-45EF-8503-4AEEE8F744F7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="RFX_Blizz_Wind" ID="{FFC74739-F82D-446E-87A4-AC391F71FEC5}" ShortID="653724256">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="RFX_Blizzard_Wind-001" ID="{E4CBC1E2-EAF9-4149-9E83-07F8D036834F}" ShortID="241044280">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RFX_Blizzard_Wind-001" ID="{7F75227A-87BC-4F39-BA21-E39668DDE0FD}">
-													<Language>SFX</Language>
-													<AudioFile>RFX_Blizzard_Wind-001.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="291228112"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="RFX_Blizzard_Wind-001" ID="{7F75227A-87BC-4F39-BA21-E39668DDE0FD}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RFX_Blizzard_Wind-002" ID="{141CCA5A-0EE6-4F53-97E3-79DD74174A9C}" ShortID="843624410">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RFX_Blizzard_Wind-002" ID="{B75EE391-46DC-42AB-A8AE-EC447DB81295}">
-													<Language>SFX</Language>
-													<AudioFile>RFX_Blizzard_Wind-002.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="737466167"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="RFX_Blizzard_Wind-002" ID="{B75EE391-46DC-42AB-A8AE-EC447DB81295}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RFX_Blizzard_Wind-003" ID="{2D9A03D6-D859-4260-818D-4B7675AF9DFE}" ShortID="285474518">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RFX_Blizzard_Wind-003" ID="{360A6A20-533F-4534-9D4B-13B92B797228}">
-													<Language>SFX</Language>
-													<AudioFile>RFX_Blizzard_Wind-003.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="706624072"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="RFX_Blizzard_Wind-003" ID="{360A6A20-533F-4534-9D4B-13B92B797228}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RFX_Blizzard_Wind-004" ID="{D4C1D4E4-E23E-4017-A52E-1B0688AC0A37}" ShortID="244717013">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RFX_Blizzard_Wind-004" ID="{1C645B1F-E454-43EF-9E0A-312A001D25B1}">
-													<Language>SFX</Language>
-													<AudioFile>RFX_Blizzard_Wind-004.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="716221502"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="RFX_Blizzard_Wind-004" ID="{1C645B1F-E454-43EF-9E0A-312A001D25B1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RFX_Blizzard_Wind-005" ID="{0340FC1A-368D-4F20-B03F-2A1292E94C1F}" ShortID="107765873">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RFX_Blizzard_Wind-005" ID="{E538B8B7-B693-47C2-9F57-E69656C5D63D}">
-													<Language>SFX</Language>
-													<AudioFile>RFX_Blizzard_Wind-005.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="877322273"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="RFX_Blizzard_Wind-005" ID="{E538B8B7-B693-47C2-9F57-E69656C5D63D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="RFX_Blizz_Snow" ID="{DD4E78F1-ADA3-4A87-9548-699EF2AB5F6E}" ShortID="210179872">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="RFX_Blizzard_Snow-001" ID="{8EC13319-6E5C-4403-9FA9-120CDFC418C3}" ShortID="763094614">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RFX_Blizzard_Snow-001" ID="{442DC95E-A102-4916-B004-56C35AFD11C9}">
-													<Language>SFX</Language>
-													<AudioFile>RFX_Blizzard_Snow-001.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="920467685"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="RFX_Blizzard_Snow-001" ID="{442DC95E-A102-4916-B004-56C35AFD11C9}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RFX_Blizzard_Snow-002" ID="{EC07A8F6-1CFD-4D76-9D9C-E97939D2E275}" ShortID="278970747">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RFX_Blizzard_Snow-002" ID="{6B482DD8-D5C5-408F-9F44-FC7A0400AF31}">
-													<Language>SFX</Language>
-													<AudioFile>RFX_Blizzard_Snow-002.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="183592446"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="RFX_Blizzard_Snow-002" ID="{6B482DD8-D5C5-408F-9F44-FC7A0400AF31}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RFX_Blizzard_Snow-003" ID="{736D50C8-42B3-4512-B67C-788C20377C0B}" ShortID="646708891">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RFX_Blizzard_Snow-003" ID="{6FF2BF67-ECEE-4004-9660-F5A4BC06C770}">
-													<Language>SFX</Language>
-													<AudioFile>RFX_Blizzard_Snow-003.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="322672660"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="RFX_Blizzard_Snow-003" ID="{6FF2BF67-ECEE-4004-9660-F5A4BC06C770}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RFX_Blizzard_Snow-004" ID="{4BE4AAA6-416B-46D6-BF45-CB6D665FAB8D}" ShortID="713933271">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RFX_Blizzard_Snow-004" ID="{1880AF50-0508-4739-BCC0-8CDB6ED35574}">
-													<Language>SFX</Language>
-													<AudioFile>RFX_Blizzard_Snow-004.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="278620022"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="RFX_Blizzard_Snow-004" ID="{1880AF50-0508-4739-BCC0-8CDB6ED35574}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="RFX_Blizzard_Snow-005" ID="{1A7E0BB2-779F-4A6E-BB53-65FE73A588B6}" ShortID="457721483">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="RFX_Blizzard_Snow-005" ID="{C9F43099-F05B-4658-A528-7255ADA57B06}">
-													<Language>SFX</Language>
-													<AudioFile>RFX_Blizzard_Snow-005.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="302110965"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="RFX_Blizzard_Snow-005" ID="{C9F43099-F05B-4658-A528-7255ADA57B06}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-							</ChildrenList>
-						</BlendContainer>
-						<BlendContainer Name="Blizz" ID="{BB76F821-CB53-426D-9042-B7700C9524C7}" ShortID="394422524">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-								</Reference>
-							</ReferenceList>
 						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>

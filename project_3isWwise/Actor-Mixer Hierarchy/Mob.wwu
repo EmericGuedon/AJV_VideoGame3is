@@ -28,11 +28,15 @@
 									</ModifierList>
 								</Property>
 								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-100</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{39A69EDE-4390-4D5A-A96B-CD78011762F7}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="200"/>
 													<Property Name="Min" Type="Real64" Value="-480"/>
 												</PropertyList>
 											</Modifier>
@@ -62,7 +66,7 @@
 											<Modifier Name="" ID="{6C5B889A-39FC-42BB-A045-EBE9310672C6}">
 												<PropertyList>
 													<Property Name="Enabled" Type="bool" Value="True"/>
-													<Property Name="Min" Type="Real64" Value="-8"/>
+													<Property Name="Min" Type="Real64" Value="-2"/>
 												</PropertyList>
 											</Modifier>
 										</ModifierInfo>
@@ -155,6 +159,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="CHAR_MOB_KRAWL_BirdSynth-001" ID="{AD5413EB-9757-41EF-9D67-3BAB3AF94070}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0505262557077626"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.078947274543379"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CHAR_MOB_KRAWL_BirdSynth-001.wav</AudioFile>
 											<MediaIDList>
@@ -177,6 +186,11 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="CHAR_MOB_KRAWL_BirdSynth-002" ID="{33353ACB-EC43-4CA2-8CF8-4DA44EE8065E}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.114750428082192"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.114750428082192"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CHAR_MOB_KRAWL_BirdSynth-002.wav</AudioFile>
 											<MediaIDList>
@@ -199,6 +213,16 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="CHAR_MOB_KRAWL_BirdSynth-003" ID="{4891B37A-B729-4E9E-AC9F-39BE054F3451}">
+											<PropertyList>
+												<Property Name="LoopBegin" Type="Real64" Value="0.155602168949772"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.155602168949772"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>17.9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CHAR_MOB_KRAWL_BirdSynth-003.wav</AudioFile>
 											<MediaIDList>

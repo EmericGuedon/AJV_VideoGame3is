@@ -1290,13 +1290,13 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 										</Reference>
 										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="Snow" ID="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}" WorkUnitID="{A32F4D49-79B3-40BC-84DA-F1EA1A691BE7}"/>
+											<ObjectRef Name="Snow" ID="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}" WorkUnitID="{4F98B7B6-81C4-4184-84B1-E51E49D1E92C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="Footstep_Materials" ID="{36A67F29-5B45-47C9-A717-E5F6C6BC522E}" WorkUnitID="{A32F4D49-79B3-40BC-84DA-F1EA1A691BE7}"/>
+											<ObjectRef Name="Footstep_Materials" ID="{36A67F29-5B45-47C9-A717-E5F6C6BC522E}" WorkUnitID="{4F98B7B6-81C4-4184-84B1-E51E49D1E92C}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -1774,13 +1774,13 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 										</Reference>
 										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="WALK" ID="{989D954C-D9ED-4FB6-8E34-F92980A30EFB}" WorkUnitID="{A32F4D49-79B3-40BC-84DA-F1EA1A691BE7}"/>
+											<ObjectRef Name="WALK" ID="{989D954C-D9ED-4FB6-8E34-F92980A30EFB}" WorkUnitID="{4F98B7B6-81C4-4184-84B1-E51E49D1E92C}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="WP_Mooving" ID="{97B26E32-75CF-4C5C-BEBE-0C800D50DA64}" WorkUnitID="{A32F4D49-79B3-40BC-84DA-F1EA1A691BE7}"/>
+											<ObjectRef Name="WP_Mooving" ID="{97B26E32-75CF-4C5C-BEBE-0C800D50DA64}" WorkUnitID="{4F98B7B6-81C4-4184-84B1-E51E49D1E92C}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
@@ -2226,13 +2226,13 @@
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 										</Reference>
 										<Reference Name="DefaultSwitchOrState">
-											<ObjectRef Name="Dry" ID="{7B06EE73-6C48-4201-8697-C266B1BEDDDE}" WorkUnitID="{849B06D4-C469-4423-9783-1867B8BCCE84}"/>
+											<ObjectRef Name="Dry" ID="{7B06EE73-6C48-4201-8697-C266B1BEDDDE}" WorkUnitID="{E719C4B4-A07D-41A0-A808-C269125A3065}"/>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="Sword_Materials" ID="{7BB45654-3750-4D5F-B08C-A7A7E824B461}" WorkUnitID="{849B06D4-C469-4423-9783-1867B8BCCE84}"/>
+											<ObjectRef Name="Sword_Materials" ID="{7BB45654-3750-4D5F-B08C-A7A7E824B461}" WorkUnitID="{E719C4B4-A07D-41A0-A808-C269125A3065}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>

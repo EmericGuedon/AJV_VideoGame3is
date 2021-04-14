@@ -26,8 +26,8 @@
 				</SoundBank>
 				<SoundBank Name="TEST" ID="{E8226287-12BC-4FAE-813A-CCBD5CA4A49F}">
 					<ObjectInclusionList>
-						<ObjectRef Name="Play_SINE" ID="{4DD41C80-AD95-4050-A035-1231DEA280BF}" WorkUnitID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Stop_SINE" ID="{8D6245FA-1D54-4CA6-A68A-8FC0C5BEE03F}" WorkUnitID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SINE" ID="{4DD41C80-AD95-4050-A035-1231DEA280BF}" WorkUnitID="{F0F12306-F337-49B9-B360-4B8AB7385682}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_SINE" ID="{8D6245FA-1D54-4CA6-A68A-8FC0C5BEE03F}" WorkUnitID="{F0F12306-F337-49B9-B360-4B8AB7385682}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

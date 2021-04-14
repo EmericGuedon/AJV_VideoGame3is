@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9CE4DE4F-75E1-46FB-84D6-DE2DE4FD4BD6}" SchemaVersion="97" RootDocumentID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}">
+	<Events>
+		<WorkUnit Name="HUD" ID="{9CE4DE4F-75E1-46FB-84D6-DE2DE4FD4BD6}" OwnerID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="15"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Health_Repair" ID="{E03168B7-CB3A-4590-A619-39722A5B3A98}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{C1C04BCA-A8A3-4C11-BC10-3218395C1C17}" ShortID="354656196">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="HUD_Health Repair" ID="{3DB65D02-C2EA-4AD6-896E-E7B58353EA0C}" WorkUnitID="{DC2BCF3F-1819-468E-A4AE-9AD2071DAD32}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
