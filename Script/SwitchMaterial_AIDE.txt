@@ -1,0 +1,4 @@
+Modifie le prefab
+Mes un box collider en istrigger
+Mes le script akswitch (AktriggerEnter / cocher Use other Object / nom du switch)
+Mes le script akswitch (AktriggerExit / cocher Use other Object / nom du switch)
