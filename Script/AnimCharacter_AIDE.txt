@@ -1,0 +1,17 @@
+public string pour mettre le nom de ton event
+
+Char_FootstepWalk a mettre dans anim 
+-appelle event et switch
+
+Char_FootstepRun a mettre dans anim 
+
+Char_Sword a mettre sur l'anim de mouvement du character
+
+Char_SwordHit a mettre sur l'anim de hit du Wp et du Mob
+
+Char_Shield a mettre sur l'anim du shield hit
+
+Ne pas oublier d'envoyer un message sur discord quand tu veut push pour verifier
+que aucun ajv travaille dessus
+
+https://www.youtube.com/watch?v=oVjT7QguQno&t=728s
