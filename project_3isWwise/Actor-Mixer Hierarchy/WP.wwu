@@ -2948,6 +2948,293 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
+						<BlendContainer Name="WP_Jump" ID="{BDCA0E9E-598D-46FD-A28E-82EC557785DC}" ShortID="732986187">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="WP_Jump" ID="{D21F5929-2D8F-4C20-9094-278AEE74AACF}" ShortID="916007081">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CHAR_WhiteP_jump-003" ID="{71C44533-5388-4228-8567-51BE1D49B1D3}" ShortID="848057834">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_WhiteP_jump-003" ID="{9C120029-4916-4FE6-B050-F050B7CBDA74}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_WhiteP_jump-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1005838057"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_WhiteP_jump-003" ID="{9C120029-4916-4FE6-B050-F050B7CBDA74}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_WhiteP_jump-002" ID="{C1231AD9-647D-47D7-93E5-E9FBF045C03C}" ShortID="795371981">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_WhiteP_jump-002" ID="{C33024F3-BF59-4E2C-B685-E781EEE38D5A}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_WhiteP_jump-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1010972539"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_WhiteP_jump-002" ID="{C33024F3-BF59-4E2C-B685-E781EEE38D5A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_WhiteP_jump-004" ID="{3E322563-3E16-4091-B7F4-4A415F5C4950}" ShortID="574494426">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_WhiteP_jump-004" ID="{B2FF44F1-0B9D-4C02-9695-DFD3CC15FBE0}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_WhiteP_jump-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="5366843"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_WhiteP_jump-004" ID="{B2FF44F1-0B9D-4C02-9695-DFD3CC15FBE0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_WhiteP_jump-005" ID="{C5B68FED-A280-4839-84F2-92BE58981B50}" ShortID="524196216">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_WhiteP_jump-005" ID="{22052115-F324-4D37-B683-0B8344DB7F83}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_WhiteP_jump-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="128434571"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_WhiteP_jump-005" ID="{22052115-F324-4D37-B683-0B8344DB7F83}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_WhiteP_jump-006" ID="{F115C607-BEB0-447D-B82B-C28C1612202C}" ShortID="1053617618">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_WhiteP_jump-006" ID="{2013FC7F-CE20-4388-B867-6DD78D410E9E}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_WhiteP_jump-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="776909875"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_WhiteP_jump-006" ID="{2013FC7F-CE20-4388-B867-6DD78D410E9E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_WhiteP_jump-007" ID="{B99CE83F-474B-48E8-BEBD-382488F25906}" ShortID="634542077">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_WhiteP_jump-007" ID="{F677BE16-9738-4C59-BC87-046D697A8F72}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_WhiteP_jump-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="292826535"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_WhiteP_jump-007" ID="{F677BE16-9738-4C59-BC87-046D697A8F72}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_WhiteP_jump-001" ID="{424BAF5B-5734-494B-9B3E-4037BE7B2492}" ShortID="753738207">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_WhiteP_jump-001" ID="{18FE8F9C-3EE9-43A3-98CA-90BCA36F69EF}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_WhiteP_jump-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="536430469"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_WhiteP_jump-001" ID="{18FE8F9C-3EE9-43A3-98CA-90BCA36F69EF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="WP_JumpLand" ID="{5363331E-1EA2-438F-AD57-A754E59D0853}" ShortID="308958590">
+									<PropertyList>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CHAR_WhiteP_landing-001" ID="{AB364F4B-185B-4344-9A6F-E0C778D890A9}" ShortID="317855914">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_WhiteP_landing-001" ID="{95633CF6-2512-4354-B1B0-1414E9892B53}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_WhiteP_landing-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="278279553"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_WhiteP_landing-001" ID="{95633CF6-2512-4354-B1B0-1414E9892B53}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_WhiteP_landing-003" ID="{5A7891EA-22A1-4296-887B-1F91090BA7EF}" ShortID="1018322227">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_WhiteP_landing-003" ID="{6CD1421F-E338-486C-8385-73AC78F82E56}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_WhiteP_landing-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="261479452"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_WhiteP_landing-003" ID="{6CD1421F-E338-486C-8385-73AC78F82E56}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_WhiteP_landing-004" ID="{BC23DC29-6CE7-4F48-AFC6-8AD5E98F6FF7}" ShortID="105827822">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_WhiteP_landing-004" ID="{5BB34067-E332-4C85-928B-2B051C155476}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_WhiteP_landing-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="592083014"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_WhiteP_landing-004" ID="{5BB34067-E332-4C85-928B-2B051C155476}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_WhiteP_landing-005" ID="{9CB9E074-B55E-4BC2-B628-6230E3946669}" ShortID="861893896">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_WhiteP_landing-005" ID="{2B04B300-9961-4414-88D0-1C1A648B318E}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_WhiteP_landing-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="319486821"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_WhiteP_landing-005" ID="{2B04B300-9961-4414-88D0-1C1A648B318E}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

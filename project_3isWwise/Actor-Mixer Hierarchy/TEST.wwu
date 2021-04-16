@@ -19,7 +19,7 @@
 					<ChildrenList>
 						<SourcePlugin Name="Wwise Sine" ID="{152FE9AE-AD9D-42C1-B997-5910D832E8B0}" ShortID="370260484" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
 							<PropertyList>
-								<Property Name="SineDuration" Type="Real32" Value="6"/>
+								<Property Name="SineDuration" Type="Real32" Value="2"/>
 							</PropertyList>
 							<Language>SFX</Language>
 						</SourcePlugin>

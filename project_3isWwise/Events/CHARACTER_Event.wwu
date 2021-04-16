@@ -94,6 +94,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Jump_WP" ID="{77131AB6-39C8-4256-801F-E5D8402973A6}">
+					<ChildrenList>
+						<Action Name="" ID="{9BA1F6D2-E944-448E-9D57-6B92ED210AA3}" ShortID="577215823">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WP_Jump" ID="{D21F5929-2D8F-4C20-9094-278AEE74AACF}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="JumpLand_WP" ID="{6CCED489-741F-49EB-8902-C185D03DD8C6}">
+					<ChildrenList>
+						<Action Name="" ID="{5C0DF8D9-99FD-46AE-A7A5-1FCDFF300B0B}" ShortID="1039626379">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WP_JumpLand" ID="{5363331E-1EA2-438F-AD57-A754E59D0853}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
