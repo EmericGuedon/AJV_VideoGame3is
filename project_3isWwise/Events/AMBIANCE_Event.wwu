@@ -10,6 +10,10 @@
 				<Event Name="Play_Amb_Blizzard" ID="{D3FCF7CC-16C9-4B02-95E3-C12103B2FF8D}">
 					<ChildrenList>
 						<Action Name="" ID="{B9379B82-C638-4BC0-8179-4B4012AF343C}" ShortID="587877847">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="OUT_Blizz" ID="{21227C1E-CD75-4313-AACF-8C77CFA028D0}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
@@ -23,6 +27,8 @@
 						<Action Name="" ID="{551D81FC-6C3A-4BE8-B528-F5753B7228B2}" ShortID="829498056">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
@@ -35,6 +41,10 @@
 				<Event Name="Play_Amb_Cave" ID="{E09D7DE3-D876-4B83-AF66-1F23B43A564F}">
 					<ChildrenList>
 						<Action Name="" ID="{2C086A7B-F693-4CEA-859E-6DB751980939}" ShortID="60839704">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="OUT_Cave" ID="{FDA60D38-304B-453C-823C-85910DA509E0}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
@@ -48,6 +58,8 @@
 						<Action Name="" ID="{6D42B87B-15D7-4A1A-8DB3-B0B12EF79003}" ShortID="771681995">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">

@@ -130,6 +130,9 @@
 					</CurveUsageInfoList>
 				</Attenuation>
 				<Attenuation Name="PROPS_Cave" ID="{9FD9D8FC-A803-4843-9FB2-7FEA8AB11B4D}" ShortID="418925068">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="10"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -142,9 +145,16 @@
 											<XPos>0</XPos>
 											<YPos>0</YPos>
 											<Flags>5</Flags>
+											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>5.03771</XPos>
+											<YPos>-11.35266</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>SCurve</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>10</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -156,10 +166,60 @@
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
 						</VolumeWetGameUsage>
 						<VolumeWetUserUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+								<Curve Name="VolumeWetUser" ID="{9391CFBF-69E7-40CA-BCA0-36D55093FBCE}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="3"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>-6.68542</YPos>
+											<Flags>5</Flags>
+											<SegmentShape>SCurve</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>9.87458</XPos>
+											<YPos>-2.67122</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>SCurve</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>10</XPos>
+											<YPos>-200</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</CurveUsageInfo>
 						</VolumeWetUserUsage>
 						<LowPassFilterUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+								<Curve Name="LowPassFilter" ID="{382ABD91-835C-4340-911E-E6F49B7A2F19}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="65537"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>0</YPos>
+											<Flags>5</Flags>
+											<SegmentShape>SCurve</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>3.88472</XPos>
+											<YPos>25</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>SCurve</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>10</XPos>
+											<YPos>50</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</CurveUsageInfo>
 						</LowPassFilterUsage>
 						<HighPassFilterUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
@@ -191,8 +251,8 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>9.90596</XPos>
-											<YPos>-6.06835</YPos>
+											<XPos>10.03112</XPos>
+											<YPos>-6.2542</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
@@ -220,13 +280,13 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>0</YPos>
+											<YPos>20</YPos>
 											<Flags>5</Flags>
 											<SegmentShape>InvertedSCurve</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>7.42947</XPos>
-											<YPos>39</YPos>
+											<YPos>37</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>InvertedSCurve</SegmentShape>
 										</Point>

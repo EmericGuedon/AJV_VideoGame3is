@@ -63,14 +63,15 @@
 							<ChildrenList>
 								<BlendContainer Name="PROPS_WaterDrip" ID="{C7C9086F-F4DD-4335-832E-158093CBCCFE}" ShortID="89936256">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
-												<Value>22</Value>
+												<Value>28</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>25</Value>
+												<Value>34</Value>
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -81,7 +82,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-23</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -184,6 +185,240 @@
 										</Sound>
 									</ChildrenList>
 								</BlendContainer>
+								<RandomSequenceContainer Name="PROPS_IceImpact" ID="{45DD3812-5632-493B-8805-89E46FCC2F25}" ShortID="61432816">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{83769975-D299-49EE-8AB4-0F508FA3DF63}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="15"/>
+															<Property Name="Min" Type="Real64" Value="-4"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>60</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{0AD6E089-DA37-40D3-B4BD-6D5C19D04DCF}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="15"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-250</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{824CBDEB-0BE3-42AE-8FEF-8A8874276675}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-300"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="12">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4A60A52D-ECD7-4EE6-8A12-0B76613369BC}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6D73586D-D38D-47A7-B16F-7B9AF1CE1512}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="2"/>
+															<Property Name="Min" Type="Real64" Value="-3"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="PROPS_Cave" ID="{9FD9D8FC-A803-4843-9FB2-7FEA8AB11B4D}" WorkUnitID="{EBBBC9B0-AA40-4C36-9EE2-13BBC2E52546}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="AMB_Cave" ID="{2BAC5C46-7480-47BD-95B3-8E1366B5DA4D}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Cave" ID="{D7F90C21-3D50-4D9F-AECB-CB73FEB22D44}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="RFX_IceImpact-001" ID="{3A751977-F352-41B5-BDE5-3A10CFF47446}" ShortID="116656315">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_IceImpact-001" ID="{02E48167-0690-41FA-9163-204751002973}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_IceImpact-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="797533131"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_IceImpact-001" ID="{02E48167-0690-41FA-9163-204751002973}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_IceImpact-002" ID="{D0A6A37A-023D-4D24-A66E-B3C4B2BC94C4}" ShortID="762117926">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_IceImpact-002" ID="{1607653D-34E9-4404-93DE-6C855C1D98B8}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_IceImpact-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="730588240"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_IceImpact-002" ID="{1607653D-34E9-4404-93DE-6C855C1D98B8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_IceImpact-003" ID="{F461E9DB-1047-485C-AFFE-58D0B6E086CD}" ShortID="53180682">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_IceImpact-003" ID="{CE3FF9CD-267E-4115-8B76-8D01F460553B}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_IceImpact-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="861372152"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_IceImpact-003" ID="{CE3FF9CD-267E-4115-8B76-8D01F460553B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{47C8896D-92CB-417F-BEC1-5F8700C2F2A0}">
+											<ChildrenList>
+												<Path2D Name="RFX_IceImpact_Path" ID="{2E5C4A77-3031-47C4-A9FA-99BF22EBC181}">
+													<PointList>
+														<Point>
+															<XPos>-39.87342</XPos>
+															<YPos>43.63057</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_IceImpact_Path_01" ID="{8C3E1B8D-C04D-496C-92E5-C8B7CC8AAB68}">
+													<PointList>
+														<Point>
+															<XPos>41.77215</XPos>
+															<YPos>38.53504</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_IceImpact_Path_02" ID="{612D8BD5-6F85-412C-B140-2A2A42703D00}">
+													<PointList>
+														<Point>
+															<XPos>-45.56962</XPos>
+															<YPos>-2.2293</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_IceImpact_Path_03" ID="{A841597C-DC42-4DEE-B959-656F39D50516}">
+													<PointList>
+														<Point>
+															<XPos>43.03797</XPos>
+															<YPos>0.31847</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_IceImpact_Path_04" ID="{4857E53F-1924-4162-82DC-40FE0D258E00}">
+													<PointList>
+														<Point>
+															<XPos>8.22784</XPos>
+															<YPos>48.72611</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_IceImpact_Path_05" ID="{CCD588BD-B78B-4123-BA06-73865B22C3A0}">
+													<PointList>
+														<Point>
+															<XPos>55.69621</XPos>
+															<YPos>4.14013</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</ActorMixer>
 						<ActorMixer Name="Blizzard" ID="{CB6C98C3-EDC7-41F9-A002-FD152468756F}" ShortID="985361366">
@@ -203,7 +438,7 @@
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-15</Value>
+										<Value>-23</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -246,6 +481,12 @@
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-17</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -256,6 +497,9 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="RFX" ID="{A0EF48FD-F12D-48C5-BCC2-E104939CC924}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="Reverb_Blizzard" ID="{7D3CD3BC-8230-4DD2-A46C-109CAA4BC9D6}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

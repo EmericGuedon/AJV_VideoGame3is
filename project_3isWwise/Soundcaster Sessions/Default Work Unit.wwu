@@ -58,7 +58,7 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="RFX_IceImpact" ID="{45DD3812-5632-493B-8805-89E46FCC2F25}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+							<ObjectRef Name="PROPS_IceImpact" ID="{45DD3812-5632-493B-8805-89E46FCC2F25}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>

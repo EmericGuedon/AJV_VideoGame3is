@@ -19,7 +19,10 @@
 				</SoundBank>
 				<SoundBank Name="PROPS" ID="{DD90946E-5508-4BE2-9844-9F46E14C9BF3}">
 					<ObjectInclusionList>
-						<ObjectRef Name="PROPS" ID="{22E1028C-2FAC-40C2-860F-A99353AB343B}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Props_Waterdrip" ID="{B99AA7A8-CFDE-4548-9B69-E4443A15F129}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Props_In_Out_Cave" ID="{A0A2925A-A456-4598-BF5F-2E8C8A46A86A}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Props_Campfire" ID="{F0AAA3A6-2EA6-48BC-845B-5BC72AEAB040}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Props_Stalactic" ID="{CC7AEA65-1A23-4D35-8EA1-A92FC8C91D67}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="97" WwiseVersion="v2019.2.6" WwiseBuild="7381">
+<WwiseDocument Type="Project" SchemaVersion="97" WwiseVersion="v2019.2.10" WwiseBuild="7490">
 	<ProjectInfo>
 		<Project Name="project_3isWwise" ID="{C575A045-D1C6-4D17-A2B7-E30DBAF9A397}">
 			<Platforms>
@@ -31,10 +31,10 @@
 				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True"/>
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
-				<Property Name="SoundBankHeaderFilePath" Type="string" Value="C:\Users\etudiant\UnityProject\PROJET JEU AJV3 CC\Assets\StreamingAssets\Audio\GeneratedSoundBanks\"/>
+				<Property Name="SoundBankHeaderFilePath" Type="string" Value="..\..\..\3iS\Projet AJV\Unity\PROJET JEU AJV3 CC\Assets\StreamingAssets\Audio\GeneratedSoundBanks"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
-						<Value Platform="Windows">C:\Users\etudiant\UnityProject\PROJET JEU AJV3 CC\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</Value>
+						<Value Platform="Windows">..\..\..\3iS\Projet AJV\Unity\PROJET JEU AJV3 CC\Assets\StreamingAssets\Audio\GeneratedSoundBanks\Windows\</Value>
 					</ValueList>
 				</Property>
 				<Property Name="SoundBankPostGenerateCustomCmdDescription" Type="string">
