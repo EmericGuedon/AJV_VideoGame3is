@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wpillon : MonoBehaviour
+public class WpillonSound : MonoBehaviour
 {
-
+    public bool Debug_Enabled = false;
     public string FootstepWalk;
     public string FootstepRun;
     public string SwordHit;
@@ -14,13 +14,14 @@ public class Wpillon : MonoBehaviour
 
     void Start()
     {
-        
+        AkSoundEngine.RegisterGameObj(gameObject);
     }
 
     
     void Char_FootstepWalk()
     {
-        AkSoundEngine.SetSwitch("WP_Mooving", "WALK", gameObject);
+        Debug.Log("FT_Walk");
+        //AkSoundEngine.SetSwitch("WP_Mooving", "WALK", gameObject);
         AkSoundEngine.PostEvent(FootstepWalk, gameObject);
     }
 
