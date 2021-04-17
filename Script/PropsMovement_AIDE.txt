@@ -1,0 +1,7 @@
+Mettre script sur prefab
+Créer loop sound dans wwise
+créer rtpc avec -5 / 5 en parametre et O en valeur initial
+créer courbe rtpc "makeup gain" sur le son dans wwise
+mettre le nom du RTPC dans la ligne correspondant du script
+mettre le nom de l'event dans la ligne correspondant du script
+Faire glisser le rigidbody du props dans la ligne correspondant du script
