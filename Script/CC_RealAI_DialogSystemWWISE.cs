@@ -7,8 +7,15 @@ namespace Invector.vCharacterController.AI
 {
     [RequireComponent(typeof(AudioSource))]
 
-    public class CC_RealAI_DialogSystem : MonoBehaviour
+    public class CC_RealAI_DialogSystemWWISE : MonoBehaviour
     {
+
+        public string ChaseWwiseA;
+        public string ChaseWwiseB;
+        public string DeadWwiseA;
+        public string DeadWwiseB;
+
+
         [Header("Enemy_System")]
         public AudioClip SFXDialog;
         private AudioSource theaudio;
@@ -51,7 +58,8 @@ namespace Invector.vCharacterController.AI
             theaudio.Stop();
             theaudio.clip = AlertSFXA[Random.Range(0, AlertSFXA.Length)];
             theaudio.Play();
-          //  AkSoundEngine.PostEvent("clip", gameObject);
+            //Wwise
+            AkSoundEngine.PostEvent(ChaseWwiseA, gameObject);
         }
         private void ChaselistenerB()
         {
@@ -59,6 +67,8 @@ namespace Invector.vCharacterController.AI
             theaudio.Stop();
             theaudio.clip = AlertSFXB[Random.Range(0, AlertSFXB.Length)];
             theaudio.Play();
+            //Wwise
+            AkSoundEngine.PostEvent(ChaseWwiseB, gameObject);
         }
 
         private void Update()
@@ -83,6 +93,8 @@ namespace Invector.vCharacterController.AI
             theaudio.Stop();
             theaudio.clip = DieSFXA[Random.Range(0, DieSFXA.Length)];
             theaudio.Play();
+            //wwise
+            AkSoundEngine.PostEvent(DeadWwiseA, gameObject);
         }
 
         private void DeadlistenerB()
@@ -90,6 +102,8 @@ namespace Invector.vCharacterController.AI
             theaudio.Stop();
             theaudio.clip = DieSFXB[Random.Range(0, DieSFXB.Length)];
             theaudio.Play();
+            //wwise
+            AkSoundEngine.PostEvent(DeadWwiseB, gameObject);
         }
 
         IEnumerator ReturnToPatrol()
