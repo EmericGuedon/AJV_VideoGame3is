@@ -116,6 +116,28 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="VoiceDetect_Mob" ID="{9F5F7B46-0A8E-4852-902B-1ACD2C51055C}">
+					<ChildrenList>
+						<Action Name="" ID="{DF5C8B94-EF9D-431C-8982-DC720F075A54}" ShortID="887055583">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mob_Detect" ID="{9B7CFB95-4822-48BE-89D9-3394E1B7A5C9}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="VoiceDeath_Mob" ID="{0022EA02-1E0A-4906-A69E-522EC3B5F79F}">
+					<ChildrenList>
+						<Action Name="" ID="{743FA35E-338D-4C4F-8626-F5DA0DB2391A}" ShortID="367136945">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mob_Death" ID="{6668A981-441C-40F8-A741-817DD2C0ECE9}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
