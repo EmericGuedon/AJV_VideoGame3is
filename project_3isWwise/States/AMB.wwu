@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6B067EE5-C7FC-43A7-952E-65C042187513}" SchemaVersion="97" RootDocumentID="{849B06D4-C469-4423-9783-1867B8BCCE84}">
+	<States>
+		<WorkUnit Name="AMB" ID="{6B067EE5-C7FC-43A7-952E-65C042187513}" OwnerID="{849B06D4-C469-4423-9783-1867B8BCCE84}" PersistMode="Nested">
+			<ChildrenList>
+				<StateGroup Name="Blizzard" ID="{7D00F8C1-1005-443A-8538-68419184B076}">
+					<ChildrenList>
+						<State Name="None" ID="{B1CE15CB-05BD-4F39-9661-3E8EE2CFA6A8}"/>
+						<State Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>
+						<State Name="Mid" ID="{4CFCC9A7-265B-45FD-AAC0-4311A6DA0B62}"/>
+						<State Name="Hard" ID="{903C52C0-3A94-43FE-9499-6AE8F26B7D67}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>
+							<EndState Name="Mid" ID="{4CFCC9A7-265B-45FD-AAC0-4311A6DA0B62}"/>
+							<Time>2.5</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Mid" ID="{4CFCC9A7-265B-45FD-AAC0-4311A6DA0B62}"/>
+							<EndState Name="Hard" ID="{903C52C0-3A94-43FE-9499-6AE8F26B7D67}"/>
+							<Time>1.3</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="Hard" ID="{903C52C0-3A94-43FE-9499-6AE8F26B7D67}"/>
+							<EndState Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>
+							<Time>3</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{B1CE15CB-05BD-4F39-9661-3E8EE2CFA6A8}"/>
+							<EndState Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{B1CE15CB-05BD-4F39-9661-3E8EE2CFA6A8}"/>
+							<EndState Name="Mid" ID="{4CFCC9A7-265B-45FD-AAC0-4311A6DA0B62}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{B1CE15CB-05BD-4F39-9661-3E8EE2CFA6A8}"/>
+							<EndState Name="Hard" ID="{903C52C0-3A94-43FE-9499-6AE8F26B7D67}"/>
+							<Time>1</Time>
+							<IsShared>true</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

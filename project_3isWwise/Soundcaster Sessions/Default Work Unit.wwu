@@ -39,10 +39,6 @@
 							<GameParameterRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}"/>
 							<Value>0</Value>
 						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="RTPC_Bridge" ID="{634DFC54-F587-46A2-B709-3D2B42233E53}"/>
-							<Value>0</Value>
-						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
@@ -75,10 +71,6 @@
 							<GameParameterRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}"/>
 							<Value>0</Value>
 						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="RTPC_Bridge" ID="{634DFC54-F587-46A2-B709-3D2B42233E53}"/>
-							<Value>0</Value>
-						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
@@ -95,10 +87,6 @@
 							<GameParameterRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}"/>
 							<Value>0</Value>
 						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="RTPC_Bridge" ID="{634DFC54-F587-46A2-B709-3D2B42233E53}"/>
-							<Value>-0.775210084033613</Value>
-						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
@@ -108,17 +96,24 @@
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="AMB_BLIZZARD" ID="{52F6A7CD-C0CA-4346-8347-430515B6BA87}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="OUT_Blizz" ID="{21227C1E-CD75-4313-AACF-8C77CFA028D0}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}"/>
 							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
-							<GameParameterRef Name="RTPC_Bridge" ID="{634DFC54-F587-46A2-B709-3D2B42233E53}"/>
-							<Value>0</Value>
+							<GameParameterRef Name="RTPC_Barrel" ID="{66979BA4-B0F9-4228-B3C0-C206996D8C28}"/>
+							<Value>-0.0566037735849054</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Mid" ID="{4CFCC9A7-265B-45FD-AAC0-4311A6DA0B62}"/>
 						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

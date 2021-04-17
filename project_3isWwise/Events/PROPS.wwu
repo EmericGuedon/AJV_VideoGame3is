@@ -51,6 +51,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Props_Barrel_1" ID="{70759761-1B7D-4810-B1A3-C4DFBF5FE03D}">
+					<ChildrenList>
+						<Action Name="" ID="{70097E37-BF48-4C94-BB70-B7CCF55EF430}" ShortID="45237860">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Barrel" ID="{6F408F32-926F-4BB5-A943-906D4EAC253D}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

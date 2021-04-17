@@ -713,6 +713,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="AMB_Blizzard" ID="{D7CF2697-423E-4E07-964F-A157FA5FCB45}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="Reverb_Blizzard" ID="{7D3CD3BC-8230-4DD2-A46C-109CAA4BC9D6}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<BlendContainer Name="OUT_Blizz" ID="{21227C1E-CD75-4313-AACF-8C77CFA028D0}" ShortID="380995227">
@@ -747,7 +750,7 @@
 										<RandomSequenceContainer Name="RFX_Blizz_Rock" ID="{B309E588-7269-48EF-88F2-EA129D5DC071}" ShortID="1056142388">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
 														<Value>41</Value>
@@ -800,7 +803,7 @@
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-17</Value>
+														<Value>-20</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1001,7 +1004,6 @@
 												<Position Name="" ID="{1F5865F3-781C-42FD-9946-27B13278969C}">
 													<PropertyList>
 														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
-														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
 													</PropertyList>
 													<ChildrenList>
 														<Path2D Name="RFX_Blizz_Rock_Path" ID="{F7FD8D51-1D18-43FC-AA0B-A653565957D0}">
@@ -1011,8 +1013,8 @@
 															</PropertyList>
 															<PointList>
 																<Point>
-																	<XPos>34.17722</XPos>
-																	<YPos>6.6879</YPos>
+																	<XPos>53.53206</XPos>
+																	<YPos>11.80299</YPos>
 																	<Flags>12</Flags>
 																	<Time>0</Time>
 																</Point>
@@ -1025,8 +1027,8 @@
 															</PropertyList>
 															<PointList>
 																<Point>
-																	<XPos>-48.10127</XPos>
-																	<YPos>25.15924</YPos>
+																	<XPos>-56.16579</XPos>
+																	<YPos>30.78583</YPos>
 																	<Flags>12</Flags>
 																	<Time>0</Time>
 																</Point>
@@ -1040,7 +1042,7 @@
 															<PointList>
 																<Point>
 																	<XPos>25.94936</XPos>
-																	<YPos>49.36306</YPos>
+																	<YPos>53.45513</YPos>
 																	<Flags>12</Flags>
 																	<Time>0</Time>
 																</Point>
@@ -1053,8 +1055,8 @@
 															</PropertyList>
 															<PointList>
 																<Point>
-																	<XPos>39.87342</XPos>
-																	<YPos>38.53503</YPos>
+																	<XPos>45.24976</XPos>
+																	<YPos>40.06955</YPos>
 																	<Flags>12</Flags>
 																	<Time>0</Time>
 																</Point>
@@ -1063,12 +1065,12 @@
 														<Path2D Name="RFX_Blizz_Rock_Path_04" ID="{BF773E63-99FE-46D2-8F30-509CFBB7CF60}">
 															<PropertyList>
 																<Property Name="RandomX" Type="Real64" Value="25"/>
-																<Property Name="RandomY" Type="Real64" Value="10"/>
+																<Property Name="RandomY" Type="Real64" Value="20"/>
 															</PropertyList>
 															<PointList>
 																<Point>
-																	<XPos>-56.32911</XPos>
-																	<YPos>37.26115</YPos>
+																	<XPos>-47.18932</XPos>
+																	<YPos>39.8187</YPos>
 																	<Flags>12</Flags>
 																	<Time>0</Time>
 																</Point>
@@ -1077,8 +1079,8 @@
 														<Path2D Name="RFX_Blizz_Rock_Path_05" ID="{2C06D8A9-1793-47A2-8BA2-4FF656189A9F}">
 															<PointList>
 																<Point>
-																	<XPos>27.21519</XPos>
-																	<YPos>50</YPos>
+																	<XPos>-3.42997</XPos>
+																	<YPos>65.85678</YPos>
 																	<Flags>12</Flags>
 																	<Time>0</Time>
 																</Point>
@@ -1308,6 +1310,42 @@
 													</ChildrenList>
 												</Position>
 											</PositioningInfo>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Blizzard" ID="{7D00F8C1-1005-443A-8538-68419184B076}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Hard" ID="{903C52C0-3A94-43FE-9499-6AE8F26B7D67}"/>
+														<CustomState Name="" ID="{86952B5D-E773-443E-8C1F-32B02AFAB4D0}" ShortID="897738983">
+															<PropertyList>
+																<Property Name="Highpass" Type="int16" Value="9"/>
+																<Property Name="Lowpass" Type="int16" Value="1"/>
+																<Property Name="Pitch" Type="int32" Value="660"/>
+																<Property Name="Volume" Type="Real64" Value="4"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>
+														<CustomState Name="" ID="{E29C8D0F-24C7-47CD-BAF7-FE53C3FF59DE}" ShortID="323875370">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32" Value="-600"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Mid" ID="{4CFCC9A7-265B-45FD-AAC0-4311A6DA0B62}"/>
+														<CustomState Name="" ID="{72FDFBFE-48FB-464D-BBA4-A3A1302430A1}" ShortID="973805470">
+															<PropertyList>
+																<Property Name="Lowpass" Type="int16" Value="28"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="RFX_Blizz_Snow" ID="{DD4E78F1-ADA3-4A87-9548-699EF2AB5F6E}" ShortID="210179872">
 											<PropertyList>
@@ -1344,7 +1382,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-10</Value>
+														<Value>-3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1644,6 +1682,35 @@
 													</ChildrenList>
 												</Position>
 											</PositioningInfo>
+											<StateInfo>
+												<StateGroupList>
+													<StateGroupInfo>
+														<StateGroupRef Name="Blizzard" ID="{7D00F8C1-1005-443A-8538-68419184B076}"/>
+													</StateGroupInfo>
+												</StateGroupList>
+												<CustomStateList>
+													<CustomState>
+														<StateRef Name="Hard" ID="{903C52C0-3A94-43FE-9499-6AE8F26B7D67}"/>
+														<CustomState Name="" ID="{D569046F-7275-4F5F-A662-117D875C890F}" ShortID="352603671">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32" Value="400"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>
+														<CustomState Name="" ID="{A174EB4F-AD7F-49B9-B2CE-34CE9619D8D1}" ShortID="368457878">
+															<PropertyList>
+																<Property Name="Pitch" Type="int32" Value="-600"/>
+															</PropertyList>
+														</CustomState>
+													</CustomState>
+													<CustomState>
+														<StateRef Name="Mid" ID="{4CFCC9A7-265B-45FD-AAC0-4311A6DA0B62}"/>
+														<CustomState Name="" ID="{112945ED-370B-451C-98BC-4993216C1302}" ShortID="413670766"/>
+													</CustomState>
+												</CustomStateList>
+											</StateInfo>
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</BlendContainer>
@@ -1690,6 +1757,43 @@
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="Blizzard" ID="{7D00F8C1-1005-443A-8538-68419184B076}"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="Hard" ID="{903C52C0-3A94-43FE-9499-6AE8F26B7D67}"/>
+												<CustomState Name="" ID="{E9B8A3D8-479E-42EF-9D19-5B87FE5D240F}" ShortID="37969431">
+													<PropertyList>
+														<Property Name="Pitch" Type="int32" Value="510"/>
+														<Property Name="Volume" Type="Real64" Value="2"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>
+												<CustomState Name="" ID="{CB79292B-C6EA-465F-85FE-10881DDC5D2B}" ShortID="543412228">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="24"/>
+														<Property Name="Pitch" Type="int32" Value="-510"/>
+														<Property Name="Volume" Type="Real64" Value="-2"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="Mid" ID="{4CFCC9A7-265B-45FD-AAC0-4311A6DA0B62}"/>
+												<CustomState Name="" ID="{F5D76BB9-6732-409B-85F5-0A7FB46DD00D}" ShortID="355989634">
+													<PropertyList>
+														<Property Name="Lowpass" Type="int16" Value="14"/>
+														<Property Name="Pitch" Type="int32" Value="-200"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
 									<ActiveSourceList>
 										<ActiveSource Name="Amb_Out_Blizzard" ID="{2CFEE70F-FCE4-41DD-A822-7A5903C7840E}" Platform="Linked"/>
 									</ActiveSourceList>

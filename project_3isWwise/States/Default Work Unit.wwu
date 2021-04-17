@@ -4,6 +4,8 @@
 		<WorkUnit Name="Default Work Unit" ID="{849B06D4-C469-4423-9783-1867B8BCCE84}" PersistMode="Standalone">
 			<ChildrenList>
 				<WorkUnit Name="CHAR" ID="{E719C4B4-A07D-41A0-A808-C269125A3065}" PersistMode="Reference"/>
+				<WorkUnit Name="PROPS" ID="{8C71115E-4C2F-4730-8705-F3BE09B38C90}" PersistMode="Reference"/>
+				<WorkUnit Name="AMB" ID="{6B067EE5-C7FC-43A7-952E-65C042187513}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

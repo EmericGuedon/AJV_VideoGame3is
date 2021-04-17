@@ -20,41 +20,6 @@
 						<BlendContainer Name="RFX_Bridge" ID="{8272F62C-4D09-4B32-AEEC-7044C10C4639}" ShortID="198350389">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="MakeUpGain" Type="Real64">
-									<RTPCList>
-										<RTPC Name="" ID="{B8F838A8-EFBE-494E-A058-337032DF61E1}" ShortID="879088696">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="RTPC_Bridge" ID="{634DFC54-F587-46A2-B709-3D2B42233E53}" WorkUnitID="{F96E4292-F729-45B2-BFE7-65F7F1B172B8}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{F94917D8-B728-457C-8433-48B0A51D2B2E}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>-9</XPos>
-														<YPos>0</YPos>
-														<Flags>5</Flags>
-														<SegmentShape>Log1</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-192</YPos>
-														<Flags>0</Flags>
-														<SegmentShape>Exp1</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>9</XPos>
-														<YPos>0</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">

@@ -3,11 +3,11 @@
 	<GameParameters>
 		<WorkUnit Name="PROPS" ID="{F96E4292-F729-45B2-BFE7-65F7F1B172B8}" OwnerID="{D15516C3-7DD9-4D4C-B6CC-552696CBD959}" PersistMode="Nested">
 			<ChildrenList>
-				<GameParameter Name="RTPC_Bridge" ID="{634DFC54-F587-46A2-B709-3D2B42233E53}">
+				<GameParameter Name="RTPC_Barrel" ID="{66979BA4-B0F9-4228-B3C0-C206996D8C28}">
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
-						<Property Name="Max" Type="Real64" Value="9"/>
-						<Property Name="Min" Type="Real64" Value="-9"/>
+						<Property Name="Max" Type="Real64" Value="3"/>
+						<Property Name="Min" Type="Real64" Value="-3"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>
