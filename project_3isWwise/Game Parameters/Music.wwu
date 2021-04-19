@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{88CFE284-76AE-4493-B43D-FE95A710F347}" SchemaVersion="97" RootDocumentID="{D15516C3-7DD9-4D4C-B6CC-552696CBD959}">
+	<GameParameters>
+		<WorkUnit Name="Music" ID="{88CFE284-76AE-4493-B43D-FE95A710F347}" OwnerID="{D15516C3-7DD9-4D4C-B6CC-552696CBD959}" PersistMode="Nested">
+			<ChildrenList>
+				<GameParameter Name="FightDrums" ID="{01B12555-19EB-42F1-A778-73ABAA71AD67}"/>
+				<GameParameter Name="FightStrings" ID="{9FA0B117-5263-4ACD-BA1B-F4235312A472}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
