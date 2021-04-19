@@ -5,52 +5,52 @@ using UnityEngine;
 public class WpillonSound : MonoBehaviour
 {
     public bool Debug_Enabled = false;
-    public string FootstepWalk;
-    public string FootstepRun;
-    public string SwordHit;
-    public string SwordWoosh;
-    public string Shield;
-    public string Jump;
+    public AK.Wwise.Event FootstepWalk;
+    public AK.Wwise.Event FootstepRun;
+    public AK.Wwise.Event SwordHit;
+    public AK.Wwise.Event SwordWoosh;
+    public AK.Wwise.Event Shield;
+    public AK.Wwise.Event Jump;
 
-    void Start()
+    public void Start()
     {
         AkSoundEngine.RegisterGameObj(gameObject);
     }
 
     
-    void Char_FootstepWalk()
+    public void Char_FootstepWalk()
     {
         Debug.Log("FT_Walk");
         //AkSoundEngine.SetSwitch("WP_Mooving", "WALK", gameObject);
-        AkSoundEngine.PostEvent(FootstepWalk, gameObject);
+        FootstepWalk.Post(gameObject);
     }
 
     void Char_FootstepRun()
     {
         AkSoundEngine.SetSwitch("WP_Mooving", "RUN", gameObject);
-        AkSoundEngine.PostEvent(FootstepRun, gameObject);
+        FootstepRun.Post(gameObject);
     }
 
     void Char_Jump()
     {
-        AkSoundEngine.PostEvent(Jump, gameObject);
+        Jump.Post(gameObject);
     }
 
     void Char_Sword()
     {
-        AkSoundEngine.PostEvent(SwordWoosh, gameObject);
+        SwordWoosh.Post(gameObject);
     }
 
     void Char_SwordHit()
     {
         AkSoundEngine.SetState("Sword_Materials", "Dry");
-        AkSoundEngine.PostEvent(SwordHit, gameObject);      
+        SwordHit.Post(gameObject);
     }
 
     void Char_Shield()
     {
-        AkSoundEngine.PostEvent(Shield, gameObject);
+        Shield.Post(gameObject);
         AkSoundEngine.SetState("Sword_Materials", "Dry");
-        AkSoundEngine.PostEvent(SwordHit, gameObject);
+        SwordHit.Post(gameObject);
     }
 }
