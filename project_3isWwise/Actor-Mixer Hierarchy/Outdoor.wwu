@@ -1768,7 +1768,7 @@
 												<StateRef Name="Hard" ID="{903C52C0-3A94-43FE-9499-6AE8F26B7D67}"/>
 												<CustomState Name="" ID="{E9B8A3D8-479E-42EF-9D19-5B87FE5D240F}" ShortID="37969431">
 													<PropertyList>
-														<Property Name="Pitch" Type="int32" Value="510"/>
+														<Property Name="Pitch" Type="int32" Value="100"/>
 														<Property Name="Volume" Type="Real64" Value="2"/>
 													</PropertyList>
 												</CustomState>
@@ -1778,7 +1778,7 @@
 												<CustomState Name="" ID="{CB79292B-C6EA-465F-85FE-10881DDC5D2B}" ShortID="543412228">
 													<PropertyList>
 														<Property Name="Lowpass" Type="int16" Value="24"/>
-														<Property Name="Pitch" Type="int32" Value="-510"/>
+														<Property Name="Pitch" Type="int32" Value="-300"/>
 														<Property Name="Volume" Type="Real64" Value="-2"/>
 													</PropertyList>
 												</CustomState>

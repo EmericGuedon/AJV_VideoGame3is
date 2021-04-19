@@ -915,6 +915,195 @@
 						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
+				<ActorMixer Name="PROPS_Vaisselle" ID="{F6DCB33B-CD5B-4464-8EAA-88ECF0E33026}" ShortID="986183196">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Choppe" ID="{A98CA75A-088E-4A6D-B6ED-A608A7B682C4}" ShortID="776057419">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Wooden_Plates" ID="{1A319555-0D0D-4E9F-9B15-5BE34DFC8E98}" ShortID="144941135">
+									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{ABB2E57E-341B-4BF9-B7D5-477CD23687A9}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="PROPS_Fournitures" ID="{7B07417C-DA46-441B-B2C6-9CE71FB34FA0}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="PROPS_WoodenPlates_001" ID="{46F1788E-F452-410E-B3EC-115A596E1E6A}" ShortID="380785677">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PROPS_WoodenPlates_001" ID="{CBE5719F-9520-4938-9007-F972092BEEDF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0363162457191781"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0276695205479452"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.110678082191781"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.857755136986301"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>PROPS_WoodenPlates_001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="484206038"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PROPS_WoodenPlates_001" ID="{CBE5719F-9520-4938-9007-F972092BEEDF}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="PROPS_WoodenPlates_002" ID="{946968C4-8AF1-4E78-B0D2-8B90E57725BC}" ShortID="583603934">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PROPS_WoodenPlates_002" ID="{DF583280-3994-41DE-8144-093C654A979B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0254436001712329"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0407097602739726"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0983819206621004"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.695458404680365"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>PROPS_WoodenPlates_002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="854345840"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PROPS_WoodenPlates_002" ID="{DF583280-3994-41DE-8144-093C654A979B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="PROPS_WoodenPlates_003" ID="{6DDC902B-DB16-45F9-9F30-E75582339813}" ShortID="776228144">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PROPS_WoodenPlates_003" ID="{C6E00480-23F3-405C-A4B4-5300E32D0179}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0111063070776256"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.106303224885845"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0190393835616438"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.499783818493151"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>PROPS_WoodenPlates_003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1055196337"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PROPS_WoodenPlates_003" ID="{C6E00480-23F3-405C-A4B4-5300E32D0179}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="PROPS_WoodenPlates_004" ID="{2B1B6A72-7EE4-4814-B04D-7D13888F92B6}" ShortID="53662488">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="PROPS_WoodenPlates_004" ID="{A88EAB37-E753-4E70-9CE2-6AB3F19DE410}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0252534246575342"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0631335616438357"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0196415525114155"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.391428082191781"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>PROPS_WoodenPlates_004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="648494797"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="PROPS_WoodenPlates_004" ID="{A88EAB37-E753-4E70-9CE2-6AB3F19DE410}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

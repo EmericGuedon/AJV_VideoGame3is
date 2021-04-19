@@ -246,13 +246,13 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>0</YPos>
+											<YPos>-1.35994</YPos>
 											<Flags>5</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>10.03112</XPos>
-											<YPos>-6.2542</YPos>
+											<XPos>9.99977</XPos>
+											<YPos>-5.75176</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
@@ -266,7 +266,32 @@
 							</CurveUsageInfo>
 						</VolumeDryUsage>
 						<VolumeWetGameUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None">
+								<Curve Name="VolumeWetGame" ID="{E644C30C-3455-433A-BD30-8B1319E06874}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="3"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>-1.35994</YPos>
+											<Flags>5</Flags>
+											<SegmentShape>SCurve</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>9.99977</XPos>
+											<YPos>-5.75176</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>SCurve</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>20</XPos>
+											<YPos>-200</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</CurveUsageInfo>
 						</VolumeWetGameUsage>
 						<VolumeWetUserUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
@@ -280,19 +305,19 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>20</YPos>
+											<YPos>27</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>InvertedSCurve</SegmentShape>
+											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>7.42947</XPos>
-											<YPos>37</YPos>
+											<XPos>7.36677</XPos>
+											<YPos>51</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>InvertedSCurve</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>20</XPos>
-											<YPos>100</YPos>
+											<YPos>72</YPos>
 											<Flags>37</Flags>
 										</Point>
 									</PointList>
