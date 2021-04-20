@@ -2459,7 +2459,6 @@
 													<ChildrenList>
 														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Blood_Hard-002" ID="{21B1177F-11D1-4F4C-9466-A730AFF46C1A}">
 															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimEnd" Type="Real64" Value="1.27648812071918"/>
 															</PropertyList>
@@ -2821,9 +2820,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_Sword_Whoosh-001" ID="{4D14F4A2-B9BE-409C-9335-8E00556BAA48}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0316438356164384"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.413630136986301"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.00904109589041095"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.259931506849314"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_Sword_Whoosh-001.wav</AudioFile>
@@ -2848,9 +2848,11 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_Sword_Whoosh-002" ID="{38DA0314-3550-4309-81CF-31680A15EACF}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0114840182648402"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0229680365296804"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.374378995433791"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.00918721461187215"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.280210045662102"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_Sword_Whoosh-002.wav</AudioFile>
@@ -2875,9 +2877,11 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_Sword_Whoosh-003" ID="{6EE7C9CD-8588-4062-B4ED-547A56FD2AE2}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00918721461187215"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0551232876712329"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.397347031963472"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0137808219178082"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.326146118721463"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_Sword_Whoosh-003.wav</AudioFile>
@@ -2902,9 +2906,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_Sword_Whoosh-004" ID="{3C75999B-DD5F-47BF-B8A0-4FB343CD2416}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.010662100456621"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.063972602739726"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.330525114155251"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.287876712328767"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_Sword_Whoosh-004.wav</AudioFile>
@@ -2929,9 +2934,11 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_Sword_Whoosh-005" ID="{CABCE044-B016-4A76-9E57-BEB0B853DCE4}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0147990867579909"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0253698630136986"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.257926940639269"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.00845662100456621"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.23255707762557"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_Sword_Whoosh-005.wav</AudioFile>

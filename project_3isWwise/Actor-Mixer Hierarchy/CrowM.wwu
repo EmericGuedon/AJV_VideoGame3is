@@ -14,6 +14,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<BlendContainer Name="CrowM_Général_test" ID="{473EBC68-B68E-4087-8FBB-D00FCBEB59D0}" ShortID="678915020">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>

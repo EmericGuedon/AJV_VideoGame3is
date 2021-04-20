@@ -20,7 +20,6 @@
 										<ModifierInfo>
 											<Modifier Name="" ID="{845FDAA4-A14F-4920-9AB3-F43DF941B15B}">
 												<PropertyList>
-													<Property Name="Enabled" Type="bool" Value="True"/>
 													<Property Name="Max" Type="Real64" Value="4"/>
 												</PropertyList>
 											</Modifier>
@@ -58,9 +57,11 @@
 										</ModifierInfo>
 									</ModifierList>
 								</Property>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{6C5B889A-39FC-42BB-A045-EBE9310672C6}">
@@ -83,6 +84,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="CHAR_MOB_KRAWL_LOW_Seal_Low-001" ID="{28C934B9-25D5-4003-BC4E-9CD7904759B5}" ShortID="509642587">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -93,6 +101,18 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="CHAR_MOB_KRAWL_LOW_Seal_Low-001" ID="{A78E224F-1936-4768-B7B0-5FF10A4A299E}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0284546232876712"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0889206977739726"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0391251070205479"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.736263377568484"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CHAR_MOB_KRAWL_LOW_Seal_Low-001.wav</AudioFile>
 											<MediaIDList>
@@ -105,6 +125,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="CHAR_MOB_KRAWL_LOW_Seal_Low-002" ID="{80170EDC-4708-4A5B-94DE-610886AD281B}" ShortID="849820697">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -115,6 +142,18 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="CHAR_MOB_KRAWL_LOW_Seal_Low-002" ID="{6713B4F8-4136-4945-B85A-D2B7870A8118}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0175024971461187"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.133018978310502"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0210029965753425"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.906629352168949"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CHAR_MOB_KRAWL_LOW_Seal_Low-002.wav</AudioFile>
 											<MediaIDList>
@@ -127,6 +166,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="CHAR_MOB_KRAWL_LOW_Seal_Low-003" ID="{E00CE19B-69F9-4EE4-B1C4-2C7596BA21F6}" ShortID="181140790">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -137,6 +183,18 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="CHAR_MOB_KRAWL_LOW_Seal_Low-003" ID="{101D3312-09FD-4F5C-9DC6-D0233A5A3E27}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0370864726027397"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.111259417808219"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0782936643835616"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.956006849315066"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CHAR_MOB_KRAWL_LOW_Seal_Low-003.wav</AudioFile>
 											<MediaIDList>
@@ -161,8 +219,15 @@
 										<AudioFileSource Name="CHAR_MOB_KRAWL_BirdSynth-001" ID="{AD5413EB-9757-41EF-9D67-3BAB3AF94070}">
 											<PropertyList>
 												<Property Name="FadeInDuration" Type="Real64" Value="0.0505262557077626"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0378946917808219"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.078947274543379"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.779999072488585"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CHAR_MOB_KRAWL_BirdSynth-001.wav</AudioFile>
@@ -187,9 +252,15 @@
 									<ChildrenList>
 										<AudioFileSource Name="CHAR_MOB_KRAWL_BirdSynth-002" ID="{33353ACB-EC43-4CA2-8CF8-4DA44EE8065E}">
 											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0.114750428082192"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0777341609589042"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.114750428082192"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.914301797945215"/>
+												<Property Name="VolumeOffset" Type="Real64">
+													<ValueList>
+														<Value>10</Value>
+													</ValueList>
+												</Property>
 											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CHAR_MOB_KRAWL_BirdSynth-002.wav</AudioFile>
@@ -203,6 +274,13 @@
 									</ActiveSourceList>
 								</Sound>
 								<Sound Name="CHAR_MOB_KRAWL_BirdSynth-003" ID="{9A725732-B8EA-48CD-831F-320B9886A79B}" ShortID="441611166">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -214,12 +292,13 @@
 									<ChildrenList>
 										<AudioFileSource Name="CHAR_MOB_KRAWL_BirdSynth-003" ID="{4891B37A-B729-4E9E-AC9F-39BE054F3451}">
 											<PropertyList>
-												<Property Name="LoopBegin" Type="Real64" Value="0.155602168949772"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0972513555936073"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 												<Property Name="TrimBegin" Type="Real64" Value="0.155602168949772"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.04642458618721"/>
 												<Property Name="VolumeOffset" Type="Real64">
 													<ValueList>
-														<Value>17.9</Value>
+														<Value>10</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>

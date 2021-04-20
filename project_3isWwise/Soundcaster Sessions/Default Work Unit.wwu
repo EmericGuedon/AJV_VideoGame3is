@@ -122,7 +122,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Hard" ID="{903C52C0-3A94-43FE-9499-6AE8F26B7D67}"/>
-						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
+						<CurrentStateRef Name="Blood_Hard" ID="{2D0C6174-2835-4378-AD9E-93D861F6CA41}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Snow" ID="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}"/>
