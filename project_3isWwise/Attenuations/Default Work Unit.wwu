@@ -6,6 +6,7 @@
 				<WorkUnit Name="Dungeon" ID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}" PersistMode="Reference"/>
 				<WorkUnit Name="Outdoor" ID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}" PersistMode="Reference"/>
 				<WorkUnit Name="Cave" ID="{EBBBC9B0-AA40-4C36-9EE2-13BBC2E52546}" PersistMode="Reference"/>
+				<WorkUnit Name="CHAR" ID="{B7C62862-B7D8-4C76-B991-67934EE2F15B}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Attenuations>

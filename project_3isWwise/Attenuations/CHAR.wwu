@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B7C62862-B7D8-4C76-B991-67934EE2F15B}" SchemaVersion="97" RootDocumentID="{A7C69997-7715-4512-8E93-E23B7C161F6C}">
+	<Attenuations>
+		<WorkUnit Name="CHAR" ID="{B7C62862-B7D8-4C76-B991-67934EE2F15B}" OwnerID="{A7C69997-7715-4512-8E93-E23B7C161F6C}" PersistMode="Nested">
+			<ChildrenList>
+				<WorkUnit Name="Mob" ID="{20982C2F-770E-499F-B442-23010BF3C852}" PersistMode="Reference"/>
+				<WorkUnit Name="WP" ID="{818A3FC8-5416-4B07-A251-4A2925AA1907}" PersistMode="Reference"/>
+				<WorkUnit Name="CrowM" ID="{4EF35320-3153-49E2-919F-453155B600F5}" PersistMode="Reference"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Attenuations>
+</WwiseDocument>

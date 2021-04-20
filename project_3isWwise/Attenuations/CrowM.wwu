@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4EF35320-3153-49E2-919F-453155B600F5}" SchemaVersion="97" RootDocumentID="{A7C69997-7715-4512-8E93-E23B7C161F6C}">
+	<Attenuations>
+		<WorkUnit Name="CrowM" ID="{4EF35320-3153-49E2-919F-453155B600F5}" OwnerID="{B7C62862-B7D8-4C76-B991-67934EE2F15B}" PersistMode="Nested"/>
+	</Attenuations>
+</WwiseDocument>

@@ -4,7 +4,13 @@
 		<WorkUnit Name="WP" ID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}" OwnerID="{B32F5193-1056-4B08-ABBA-D68C0A0E704B}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="WP" ID="{5059346D-2555-483A-8344-F957CC0A6C81}" ShortID="237400713">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 						</Reference>
@@ -14,6 +20,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<BlendContainer Name="WP_Gear" ID="{7A76FA09-70EC-4FF2-9EEA-22411559B72D}" ShortID="514212194">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1275,6 +1288,13 @@
 							</ChildrenList>
 						</BlendContainer>
 						<BlendContainer Name="WP_Footstep" ID="{8E63F46C-FA42-4B99-80CA-A83F315394BB}" ShortID="402568258">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1285,6 +1305,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<SwitchContainer Name="Mob_Footstep_Materials" ID="{14FAD1FF-0A66-46E5-B6FA-1C15719A33D2}" ShortID="76830005">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1440,6 +1467,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="CHAR_MOB_Footsteps_MAT_Stone-001" ID="{C258280D-329A-41E7-BDAF-2B0E2031AD62}" ShortID="456317803">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1467,6 +1501,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="CHAR_MOB_Footsteps_MAT_Stone-002" ID="{B4A48C31-9BC3-4DAC-B2BE-00B5C366767A}" ShortID="571451435">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1494,6 +1535,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="CHAR_MOB_Footsteps_MAT_Stone-003" ID="{51310475-1DB1-49A6-BBB5-B863D7FC50E7}" ShortID="21627599">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1521,6 +1569,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="CHAR_MOB_Footsteps_MAT_Stone-004" ID="{4E3B869E-FCDA-45DB-9910-9758F4D34F9A}" ShortID="763958853">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1548,6 +1603,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="CHAR_MOB_Footsteps_MAT_Stone-005" ID="{CEF9C191-AAAE-49BA-B6E3-5F235E9FC731}" ShortID="30233468">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1590,6 +1652,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<Sound Name="CHAR_MOB_Footsteps_MAT_Wood-001" ID="{BB9FA846-F375-4AE2-899C-223F7A87F9EE}" ShortID="670946407">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1617,6 +1686,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="CHAR_MOB_Footsteps_MAT_Wood-002" ID="{AF64A190-A0FA-4E5B-8177-104D12FBA9BA}" ShortID="572474905">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1644,6 +1720,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="CHAR_MOB_Footsteps_MAT_Wood-003" ID="{04C81695-38A7-4439-91FA-6B00CC06AD00}" ShortID="315302207">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1671,6 +1754,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="CHAR_MOB_Footsteps_MAT_Wood-004" ID="{180D7A1F-64F8-4245-8BA8-7509636D577E}" ShortID="176438947">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1698,6 +1788,13 @@
 													</ActiveSourceList>
 												</Sound>
 												<Sound Name="CHAR_MOB_Footsteps_MAT_Wood-005" ID="{F61C550E-F1F4-40C0-B0E3-1E8F9D82016D}" ShortID="690302337">
+													<PropertyList>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
