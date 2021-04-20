@@ -1,0 +1,10 @@
+Problème footstep qui trigg continuellement
+
+1/ montrer sur wwise que l'event se trigg continuellement
+2/ faire ecouter le son ingame
+3/ Montrer l'animation et les events (présicé que c'est la bonne anim car les woosh d'épée marche)
+4/ Montrer le script VFootstep et les colliders sur les pieds du charcater
+5/ Montrer le wwise et montrer qu'il n'y a pas d'erreur
+6/ Expliqué qu'on a fais un essais sur un autre plan, pour exclure le problème du terrain utilisé,
+   (donc vient forcément du charcater)
+7/ suposé que le problème vient de Invector (le Perso Prefab qu'ils utilisent)
