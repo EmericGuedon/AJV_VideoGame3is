@@ -17,37 +17,38 @@ public class WpillonSound : MonoBehaviour
         AkSoundEngine.RegisterGameObj(gameObject);
     }
 
-    
-    public void Char_FootstepWalk()
+
+    public void Char_FootstepWalk(AnimationEvent evt)
     {
-        Debug.Log("FT_Walk");
-        //AkSoundEngine.SetSwitch("WP_Mooving", "WALK", gameObject);
-        FootstepWalk.Post(gameObject);
+        if (evt.animatorClipInfo.weight > 0.5f)
+        {
+            Debug.Log("FT_Walk");
+            FootstepWalk.Post(gameObject);
+        }
     }
 
-    void Char_FootstepRun()
+    public void Char_FootstepRun()
     {
-        AkSoundEngine.SetSwitch("WP_Mooving", "RUN", gameObject);
         FootstepRun.Post(gameObject);
     }
 
-    void Char_Jump()
+    public void Char_Jump()
     {
         Jump.Post(gameObject);
     }
 
-    void Char_Sword()
+    public void Char_Sword()
     {
         SwordWoosh.Post(gameObject);
     }
 
-    void Char_SwordHit()
+    public void Char_SwordHit()
     {
         AkSoundEngine.SetState("Sword_Materials", "Dry");
         SwordHit.Post(gameObject);
     }
 
-    void Char_Shield()
+    public void Char_Shield()
     {
         Shield.Post(gameObject);
         AkSoundEngine.SetState("Sword_Materials", "Dry");
