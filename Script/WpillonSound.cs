@@ -5,8 +5,13 @@ using UnityEngine;
 public class WpillonSound : MonoBehaviour
 {
     public bool Debug_Enabled = false;
+
     public AK.Wwise.Event FootstepWalk;
+    public float ThresholdWalk;
+
     public AK.Wwise.Event FootstepRun;
+    public float ThresholdRun;
+
     public AK.Wwise.Event SwordHit;
     public AK.Wwise.Event SwordWoosh;
     public AK.Wwise.Event Shield;
@@ -20,7 +25,7 @@ public class WpillonSound : MonoBehaviour
 
     public void Char_FootstepWalk(AnimationEvent evt)
     {
-        if (evt.animatorClipInfo.weight > 0.5f)
+        if (evt.animatorClipInfo.weight > ThresholdWalk)
         {
             Debug.Log("FT_Walk");
             FootstepWalk.Post(gameObject);
@@ -29,7 +34,12 @@ public class WpillonSound : MonoBehaviour
 
     public void Char_FootstepRun()
     {
-        FootstepRun.Post(gameObject);
+        if (evt.animatorClipInfo.weight > ThresholdRun)
+        {
+            Debug.Log("FT_Run");
+            AkSoundEngine.SetSwitch("CrowM_Mooving", "RUN", gameObject);
+            FootstepRun.Post(gameObject);
+        }
     }
 
     public void Char_Jump()

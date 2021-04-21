@@ -4,7 +4,11 @@ using UnityEngine;
 
 public class CorbacSound : MonoBehaviour
 {
+    public bool Debug_Enabled = false;
+
     public AK.Wwise.Event FootstepWalk;
+    public float ThresholdWalk;
+
     public AK.Wwise.Event SwordHit;
     public AK.Wwise.Event SwordWoosh;
     public AK.Wwise.Event Shield;
@@ -16,9 +20,13 @@ public class CorbacSound : MonoBehaviour
         AkSoundEngine.RegisterGameObj(gameObject);
     }
 
-    void Mob_Walk()
+    void Mob_Walk(AnimationEvent cb)
     {
-        FootstepWalk.Post(gameObject);
+        if (cb.animatorClipInfo.weight > ThresholdWalk)
+        {
+            Debug.Log("FT_Walk");
+            FootstepWalk.Post(gameObject);
+        }
     }
 
     void Mob_SwordWhoosh()
@@ -42,6 +50,8 @@ public class CorbacSound : MonoBehaviour
     void Mob_Hit()
     {
         HitVoice.Post(gameobject);
+        AkSoundEngine.SetState("Sword_Materials", "Blood_Soft");
+        SwordHit.Post(gameObject);
     }
 
     void Mob_Death()
