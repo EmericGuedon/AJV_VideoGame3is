@@ -6,19 +6,6 @@
 				<Property Name="Color" Type="int16" Value="10"/>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
-			<ChildrenList>
-				<Event Name="RFX_Bridge" ID="{FE798F09-D918-4832-9237-FBF4C1B9D06C}">
-					<ChildrenList>
-						<Action Name="" ID="{BA245962-3857-4FFE-8F1E-5DD937DF94D9}" ShortID="648603405">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="RFX_Bridge" ID="{8272F62C-4D09-4B32-AEEC-7044C10C4639}" WorkUnitID="{F55B8CDF-B6DE-454A-BADA-D4AAB3D4B752}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-			</ChildrenList>
 		</WorkUnit>
 	</Events>
 </WwiseDocument>

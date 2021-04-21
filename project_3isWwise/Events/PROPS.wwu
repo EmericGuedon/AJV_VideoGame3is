@@ -67,7 +67,18 @@
 						<Action Name="" ID="{D95E7C1E-3B35-442F-B0B9-FD5B787E8085}" ShortID="175467792">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Wooden_Plates" ID="{1A319555-0D0D-4E9F-9B15-5BE34DFC8E98}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
+									<ObjectRef Name="Wooden_Choppe" ID="{1A319555-0D0D-4E9F-9B15-5BE34DFC8E98}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Porps_Bridge" ID="{FE798F09-D918-4832-9237-FBF4C1B9D06C}">
+					<ChildrenList>
+						<Action Name="" ID="{BA245962-3857-4FFE-8F1E-5DD937DF94D9}" ShortID="648603405">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RFX_Bridge" ID="{8272F62C-4D09-4B32-AEEC-7044C10C4639}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
