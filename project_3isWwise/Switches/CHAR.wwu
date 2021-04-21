@@ -23,6 +23,12 @@
 						<Switch Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="Mob_Detect" ID="{83E4AA97-3E3D-41CC-932C-39BE960AD232}">
+					<ChildrenList>
+						<Switch Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>
+						<Switch Name="NoDetect" ID="{CDB93EAF-AC69-434B-8BDB-658CD8E51BEE}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

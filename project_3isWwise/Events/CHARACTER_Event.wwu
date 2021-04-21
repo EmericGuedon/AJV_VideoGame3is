@@ -121,7 +121,7 @@
 						<Action Name="" ID="{DF5C8B94-EF9D-431C-8982-DC720F075A54}" ShortID="887055583">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Mob_Detect" ID="{9B7CFB95-4822-48BE-89D9-3394E1B7A5C9}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+									<ObjectRef Name="Mob_DetectSwitch" ID="{24CBD70F-C549-40C9-A185-699CC862816C}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

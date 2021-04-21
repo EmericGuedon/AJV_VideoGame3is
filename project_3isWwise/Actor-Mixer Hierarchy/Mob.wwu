@@ -315,22 +315,22 @@
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Mob_Detect" ID="{9B7CFB95-4822-48BE-89D9-3394E1B7A5C9}" ShortID="9150996">
+						<RandomSequenceContainer Name="Mob_Death" ID="{6668A981-441C-40F8-A741-817DD2C0ECE9}" ShortID="306187005">
 							<PropertyList>
-								<Property Name="BelowThresholdBehavior" Type="int16" Value="3"/>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>1</Value>
-									</ValueList>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{7B720508-7394-47F1-A8D6-E3C761F8D2F8}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="758"/>
+													<Property Name="Min" Type="Real64" Value="-455"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
 								</Property>
-								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="VirtualVoiceQueueBehavior" Type="int16" Value="2"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -341,7 +341,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="CHAR_MOB_MobAlertReact-005" ID="{2E5F2943-EA09-487D-B1CE-34AD722C6211}" ShortID="433708108">
+								<Sound Name="CHAR_MOB_DeathSound-001" ID="{D78CDC85-62B4-42B1-8513-C8C5AE838102}" ShortID="1022517570">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -351,19 +351,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="CHAR_MOB_MobAlertReact-005" ID="{180D6C54-1647-4B1E-8BAA-CC4376BC65B5}">
+										<AudioFileSource Name="CHAR_MOB_DeathSound-001" ID="{0FF33A98-6DBA-43A8-866B-149A246730D1}">
 											<Language>SFX</Language>
-											<AudioFile>CHAR_MOB_MobAlertReact-005.wav</AudioFile>
+											<AudioFile>CHAR_MOB_DeathSound-001.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="264740904"/>
+												<MediaID ID="676654051"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="CHAR_MOB_MobAlertReact-005" ID="{180D6C54-1647-4B1E-8BAA-CC4376BC65B5}" Platform="Linked"/>
+										<ActiveSource Name="CHAR_MOB_DeathSound-001" ID="{0FF33A98-6DBA-43A8-866B-149A246730D1}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="CHAR_MOB_MobAlertReact-007" ID="{A0480D6C-ECAB-4593-A630-C0DFC6CFD6EA}" ShortID="73666604">
+								<Sound Name="CHAR_MOB_DeathSound-002" ID="{897153C8-6A62-406D-80AC-4C52AA5F56AD}" ShortID="562146304">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -373,19 +373,24 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="CHAR_MOB_MobAlertReact-007" ID="{DCE58039-84FF-44D6-8860-F99C4BE5ADB4}">
+										<AudioFileSource Name="CHAR_MOB_DeathSound-002" ID="{A5568AD6-E666-49A4-B3F6-7D2C81786015}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.532257491438356"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.08962146832192"/>
+											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>CHAR_MOB_MobAlertReact-007.wav</AudioFile>
+											<AudioFile>CHAR_MOB_DeathSound-002.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="446216763"/>
+												<MediaID ID="430334950"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="CHAR_MOB_MobAlertReact-007" ID="{DCE58039-84FF-44D6-8860-F99C4BE5ADB4}" Platform="Linked"/>
+										<ActiveSource Name="CHAR_MOB_DeathSound-002" ID="{A5568AD6-E666-49A4-B3F6-7D2C81786015}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="CHAR_MOB_MobAlertReact-009" ID="{B84C3507-DC98-4806-9D80-FBF97BA94B14}" ShortID="173431050">
+								<Sound Name="CHAR_MOB_DeathSound-006" ID="{3F43CEB7-024C-4F31-A623-E0B71A5B3DCC}" ShortID="752168935">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -395,19 +400,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="CHAR_MOB_MobAlertReact-009" ID="{8C7F73B9-DFC9-4613-9429-94A50D0E7559}">
+										<AudioFileSource Name="CHAR_MOB_DeathSound-006" ID="{91854886-6585-4AB8-B0F9-2F593A1154E5}">
 											<Language>SFX</Language>
-											<AudioFile>CHAR_MOB_MobAlertReact-009.wav</AudioFile>
+											<AudioFile>CHAR_MOB_DeathSound-006.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="82857381"/>
+												<MediaID ID="660746833"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="CHAR_MOB_MobAlertReact-009" ID="{8C7F73B9-DFC9-4613-9429-94A50D0E7559}" Platform="Linked"/>
+										<ActiveSource Name="CHAR_MOB_DeathSound-006" ID="{91854886-6585-4AB8-B0F9-2F593A1154E5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="CHAR_MOB_MobAlertReact-016" ID="{D48D90E1-1CE8-4069-9704-4E9DC96207D5}" ShortID="606844266">
+								<Sound Name="CHAR_MOB_DeathSound-010" ID="{66560D24-F8E8-4D5B-9F10-6849AD298C3D}" ShortID="675283431">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -417,31 +422,173 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="CHAR_MOB_MobAlertReact-016" ID="{F079D8DC-DF4D-4E5B-A293-0AB4CF2595A4}">
+										<AudioFileSource Name="CHAR_MOB_DeathSound-010" ID="{B68C62FE-456A-4A37-97CE-A6154556DD4D}">
 											<Language>SFX</Language>
-											<AudioFile>CHAR_MOB_MobAlertReact-016.wav</AudioFile>
+											<AudioFile>CHAR_MOB_DeathSound-010.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="935876883"/>
+												<MediaID ID="915891887"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="CHAR_MOB_MobAlertReact-016" ID="{F079D8DC-DF4D-4E5B-A293-0AB4CF2595A4}" Platform="Linked"/>
+										<ActiveSource Name="CHAR_MOB_DeathSound-010" ID="{B68C62FE-456A-4A37-97CE-A6154556DD4D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CHAR_MOB_DeathSound-011" ID="{716F573A-7470-46A7-A661-ED8BB67F8979}" ShortID="196125138">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CHAR_MOB_DeathSound-011" ID="{1D619B8E-D77C-4342-91C5-246A047B6420}">
+											<Language>SFX</Language>
+											<AudioFile>CHAR_MOB_DeathSound-011.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="4436868"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CHAR_MOB_DeathSound-011" ID="{1D619B8E-D77C-4342-91C5-246A047B6420}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
-						<RandomSequenceContainer Name="Mob_Death" ID="{6668A981-441C-40F8-A741-817DD2C0ECE9}" ShortID="306187005">
+						<SwitchContainer Name="Mob_DetectSwitch" ID="{24CBD70F-C549-40C9-A185-699CC862816C}" ShortID="263382958">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}" WorkUnitID="{4F98B7B6-81C4-4184-84B1-E51E49D1E92C}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="Mob_Detect" ID="{83E4AA97-3E3D-41CC-932C-39BE960AD232}" WorkUnitID="{4F98B7B6-81C4-4184-84B1-E51E49D1E92C}"/>
+								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Alexis_Scream-006" ID="{8E04F15F-88BA-43ED-85B4-AAF5CD13EB8C}" ShortID="202862665">
+								<RandomSequenceContainer Name="Mob_Detect" ID="{9B7CFB95-4822-48BE-89D9-3394E1B7A5C9}" ShortID="9150996">
+									<PropertyList>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="MOB" ID="{366D7D27-DC67-4FDD-A8F6-72AC99C23201}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CHAR_MOB_MobAlertReact-005" ID="{2E5F2943-EA09-487D-B1CE-34AD722C6211}" ShortID="433708108">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_MOB_MobAlertReact-005" ID="{180D6C54-1647-4B1E-8BAA-CC4376BC65B5}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_MOB_MobAlertReact-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="264740904"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_MOB_MobAlertReact-005" ID="{180D6C54-1647-4B1E-8BAA-CC4376BC65B5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_MOB_MobAlertReact-007" ID="{A0480D6C-ECAB-4593-A630-C0DFC6CFD6EA}" ShortID="73666604">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_MOB_MobAlertReact-007" ID="{DCE58039-84FF-44D6-8860-F99C4BE5ADB4}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_MOB_MobAlertReact-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="446216763"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_MOB_MobAlertReact-007" ID="{DCE58039-84FF-44D6-8860-F99C4BE5ADB4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_MOB_MobAlertReact-009" ID="{B84C3507-DC98-4806-9D80-FBF97BA94B14}" ShortID="173431050">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_MOB_MobAlertReact-009" ID="{8C7F73B9-DFC9-4613-9429-94A50D0E7559}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_MOB_MobAlertReact-009.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="82857381"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_MOB_MobAlertReact-009" ID="{8C7F73B9-DFC9-4613-9429-94A50D0E7559}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_MOB_MobAlertReact-016" ID="{D48D90E1-1CE8-4069-9704-4E9DC96207D5}" ShortID="606844266">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_MOB_MobAlertReact-016" ID="{F079D8DC-DF4D-4E5B-A293-0AB4CF2595A4}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_MOB_MobAlertReact-016.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="935876883"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_MOB_MobAlertReact-016" ID="{F079D8DC-DF4D-4E5B-A293-0AB4CF2595A4}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Silence" ID="{570B44D7-90FF-4047-82EF-6127B7B8BBD3}" ShortID="1006728913">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -451,64 +598,40 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Alexis_Scream-006" ID="{6CAC124D-6CA8-439F-86C3-7BC0AA7D5C18}">
+										<SourcePlugin Name="Wwise Silence" ID="{B774855A-6EE9-48BD-BC53-1FFB25D62D9A}" ShortID="538474558" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
 											<Language>SFX</Language>
-											<AudioFile>Alexis_Scream-006.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="699783132"/>
-											</MediaIDList>
-										</AudioFileSource>
+										</SourcePlugin>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Alexis_Scream-006" ID="{6CAC124D-6CA8-439F-86C3-7BC0AA7D5C18}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Alexis_Scream-002" ID="{8D45182E-0F0A-4832-A619-7A87411BF137}" ShortID="964081866">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Alexis_Scream-002" ID="{EA2686FA-0F34-4EDE-88D2-BEBE4A3B7D44}">
-											<Language>SFX</Language>
-											<AudioFile>Alexis_Scream-002.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="863311237"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Alexis_Scream-002" ID="{EA2686FA-0F34-4EDE-88D2-BEBE4A3B7D44}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="Alexis_Scream-024" ID="{0E4D5982-3C51-4E76-BA09-432FD62D298D}" ShortID="874903663">
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="Alexis_Scream-024" ID="{889C8AE1-D8AE-4AC3-BEC8-A8AE7B3968B7}">
-											<Language>SFX</Language>
-											<AudioFile>Alexis_Scream-024.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="951870172"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="Alexis_Scream-024" ID="{889C8AE1-D8AE-4AC3-BEC8-A8AE7B3968B7}" Platform="Linked"/>
+										<ActiveSource Name="Wwise Silence" ID="{B774855A-6EE9-48BD-BC53-1FFB25D62D9A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
-						</RandomSequenceContainer>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Mob_Detect" ID="{9B7CFB95-4822-48BE-89D9-3394E1B7A5C9}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Silence" ID="{570B44D7-90FF-4047-82EF-6127B7B8BBD3}"/>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>
+										<ItemList>
+											<ItemRef Name="Mob_Detect" ID="{9B7CFB95-4822-48BE-89D9-3394E1B7A5C9}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="NoDetect" ID="{CDB93EAF-AC69-434B-8BDB-658CD8E51BEE}"/>
+										<ItemList>
+											<ItemRef Name="Silence" ID="{570B44D7-90FF-4047-82EF-6127B7B8BBD3}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
