@@ -8,7 +8,6 @@
 						<State Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
 						<State Name="Dry" ID="{7B06EE73-6C48-4201-8697-C266B1BEDDDE}"/>
 						<State Name="Blood_Hard" ID="{2D0C6174-2835-4378-AD9E-93D861F6CA41}"/>
-						<State Name="Metal" ID="{3769D3E7-4529-478C-A784-FE2AC09A7B14}"/>
 						<State Name="Blood_Soft" ID="{EF1F9BF9-72FF-4A60-9D19-B06E9913C323}"/>
 					</ChildrenList>
 				</StateGroup>
