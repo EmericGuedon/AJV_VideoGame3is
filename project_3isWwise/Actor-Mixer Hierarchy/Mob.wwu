@@ -316,6 +316,9 @@
 							</ChildrenList>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Mob_Detect" ID="{9B7CFB95-4822-48BE-89D9-3394E1B7A5C9}" ShortID="9150996">
+							<PropertyList>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -325,7 +328,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Alexis_Scream-005" ID="{942B0220-09B4-42AC-A4B6-F6697BFB5EF7}" ShortID="377767863">
+								<Sound Name="CHAR_MOB_MobAlertReact-005" ID="{2E5F2943-EA09-487D-B1CE-34AD722C6211}" ShortID="433708108">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -335,19 +338,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Alexis_Scream-005" ID="{6A280158-A03C-4375-AE21-32A2D19D073F}">
+										<AudioFileSource Name="CHAR_MOB_MobAlertReact-005" ID="{180D6C54-1647-4B1E-8BAA-CC4376BC65B5}">
 											<Language>SFX</Language>
-											<AudioFile>Alexis_Scream-005.wav</AudioFile>
+											<AudioFile>CHAR_MOB_MobAlertReact-005.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="983695300"/>
+												<MediaID ID="264740904"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Alexis_Scream-005" ID="{6A280158-A03C-4375-AE21-32A2D19D073F}" Platform="Linked"/>
+										<ActiveSource Name="CHAR_MOB_MobAlertReact-005" ID="{180D6C54-1647-4B1E-8BAA-CC4376BC65B5}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Alexis_Scream-009" ID="{44ECB171-E013-4151-A3CC-47F5CE480772}" ShortID="585929465">
+								<Sound Name="CHAR_MOB_MobAlertReact-007" ID="{A0480D6C-ECAB-4593-A630-C0DFC6CFD6EA}" ShortID="73666604">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -357,19 +360,19 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Alexis_Scream-009" ID="{4BB6BD5F-8850-4152-A4DF-35ABA4234E9D}">
+										<AudioFileSource Name="CHAR_MOB_MobAlertReact-007" ID="{DCE58039-84FF-44D6-8860-F99C4BE5ADB4}">
 											<Language>SFX</Language>
-											<AudioFile>Alexis_Scream-009.wav</AudioFile>
+											<AudioFile>CHAR_MOB_MobAlertReact-007.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="733906524"/>
+												<MediaID ID="446216763"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Alexis_Scream-009" ID="{4BB6BD5F-8850-4152-A4DF-35ABA4234E9D}" Platform="Linked"/>
+										<ActiveSource Name="CHAR_MOB_MobAlertReact-007" ID="{DCE58039-84FF-44D6-8860-F99C4BE5ADB4}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Alexis_Scream-017" ID="{AB05746F-8C00-49AC-B8C5-F566AACEDE76}" ShortID="178497353">
+								<Sound Name="CHAR_MOB_MobAlertReact-009" ID="{B84C3507-DC98-4806-9D80-FBF97BA94B14}" ShortID="173431050">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -379,16 +382,38 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Alexis_Scream-017" ID="{16D30F8E-8E41-4244-B4E1-A2D6F59C3C23}">
+										<AudioFileSource Name="CHAR_MOB_MobAlertReact-009" ID="{8C7F73B9-DFC9-4613-9429-94A50D0E7559}">
 											<Language>SFX</Language>
-											<AudioFile>Alexis_Scream-017.wav</AudioFile>
+											<AudioFile>CHAR_MOB_MobAlertReact-009.wav</AudioFile>
 											<MediaIDList>
-												<MediaID ID="295519689"/>
+												<MediaID ID="82857381"/>
 											</MediaIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Alexis_Scream-017" ID="{16D30F8E-8E41-4244-B4E1-A2D6F59C3C23}" Platform="Linked"/>
+										<ActiveSource Name="CHAR_MOB_MobAlertReact-009" ID="{8C7F73B9-DFC9-4613-9429-94A50D0E7559}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CHAR_MOB_MobAlertReact-016" ID="{D48D90E1-1CE8-4069-9704-4E9DC96207D5}" ShortID="606844266">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CHAR_MOB_MobAlertReact-016" ID="{F079D8DC-DF4D-4E5B-A293-0AB4CF2595A4}">
+											<Language>SFX</Language>
+											<AudioFile>CHAR_MOB_MobAlertReact-016.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="935876883"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CHAR_MOB_MobAlertReact-016" ID="{F079D8DC-DF4D-4E5B-A293-0AB4CF2595A4}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
