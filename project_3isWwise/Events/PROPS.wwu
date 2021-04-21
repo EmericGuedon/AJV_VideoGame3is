@@ -51,17 +51,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Props_Barrel_1" ID="{70759761-1B7D-4810-B1A3-C4DFBF5FE03D}">
-					<ChildrenList>
-						<Action Name="" ID="{70097E37-BF48-4C94-BB70-B7CCF55EF430}" ShortID="45237860">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Barrel" ID="{6F408F32-926F-4BB5-A943-906D4EAC253D}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="Props_Wooden_Plates" ID="{44C222FA-D7F2-484E-91CC-6BEA40D57F70}">
 					<ChildrenList>
 						<Action Name="" ID="{D95E7C1E-3B35-442F-B0B9-FD5B787E8085}" ShortID="175467792">
@@ -79,6 +68,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="RFX_Bridge" ID="{8272F62C-4D09-4B32-AEEC-7044C10C4639}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Barrel" ID="{8180357D-63F9-4F3A-91AF-DB8C30A4CD37}">
+					<ChildrenList>
+						<Action Name="" ID="{5C201F03-03D3-4BF2-B2F4-4D7C2F74B901}" ShortID="211532855">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Barrel" ID="{6F408F32-926F-4BB5-A943-906D4EAC253D}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

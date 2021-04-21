@@ -11,7 +11,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Barrel" ID="{66979BA4-B0F9-4228-B3C0-C206996D8C28}"/>
-							<Value>0.00688073394495436</Value>
+							<Value>8.90027650006866E-312</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="FightDrums" ID="{01B12555-19EB-42F1-A778-73ABAA71AD67}"/>
