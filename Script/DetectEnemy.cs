@@ -5,19 +5,27 @@ using UnityEngine;
 public class DetectEnemy : MonoBehaviour
 {
 
-    public string EventName;
+    public AK.Wwise.Event EventName;
     public string SwitchGroup;
     public string SwitchNoDetect;
     public string SwitchDetect;    
-    public int CounterTime;        //temps avant que l'event puisse se rejouer
+    public int CounterTime;      
+
+    public Rigidbody rb;
 
     bool detect = false;
-    float resetTime = 0f;
+    float resetTime = 0;
 
-    private void OnTriggerEnter(Collider other)
+    void Start()
     {
-        //Joue l'event grace au trigger puis active le counter
-        AkSoundEngine.PostEvent(EventName, gameObject);       
+        AkSoundEngine.RegisterGameObj(gameObject);
+        rb = GetComponent<Rigidbody>();
+    }
+
+
+    private void OnTriggerEnter(Collider rb)
+    {
+        EventName.Post(gameObject);
         detect = true;  
     }
 
@@ -26,17 +34,17 @@ public class DetectEnemy : MonoBehaviour
      if(detect) 
       {
 
-       if(resetTime<= CounterTime)   //si le counter est inferieur a la valeur donnee il ne joue aucun son
-            {
+       if(resetTime<= CounterTime)   
+        {
           AkSoundEngine.SetSwitch(SwitchGroup, SwitchNoDetect, gameObject);
           resetTime+=Time.deltaTime;
         }
 
-       if (resetTime > CounterTime)   //si le counter est superieur a la valeur donnee il peut rejouer le son quand il trigg
-            {        
+       if (resetTime > CounterTime)   
+        {        
           AkSoundEngine.SetSwitch(SwitchGroup, SwitchDetect, gameObject);
           detect = false;
-          resetTime = 0f;
+          resetTime = 0;
         }
      
       }
