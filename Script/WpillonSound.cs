@@ -27,17 +27,18 @@ public class WpillonSound : MonoBehaviour
     {
         if (evt.animatorClipInfo.weight > ThresholdWalk)
         {
-            Debug.Log("FT_Walk");
+            Debug.Log("FT_Walk"); 
+            AkSoundEngine.SetSwitch("WP_Mooving", "WALK", gameObject);
             FootstepWalk.Post(gameObject);
         }
     }
 
-    public void Char_FootstepRun()
+    public void Char_FootstepRun(AnimationEvent evt)
     {
         if (evt.animatorClipInfo.weight > ThresholdRun)
         {
             Debug.Log("FT_Run");
-            AkSoundEngine.SetSwitch("CrowM_Mooving", "RUN", gameObject);
+            AkSoundEngine.SetSwitch("WP_Mooving", "RUN", gameObject);
             FootstepRun.Post(gameObject);
         }
     }

@@ -20,7 +20,7 @@ public class CorbacSound : MonoBehaviour
         AkSoundEngine.RegisterGameObj(gameObject);
     }
 
-    void Mob_Walk(AnimationEvent cb)
+    public void Mob_Walk(AnimationEvent cb)
     {
         if (cb.animatorClipInfo.weight > ThresholdWalk)
         {
@@ -29,34 +29,34 @@ public class CorbacSound : MonoBehaviour
         }
     }
 
-    void Mob_SwordWhoosh()
+    public void Mob_SwordWhoosh()
     {
-        SwordWoosh.Post(gameobject);
+        SwordWoosh.Post(gameObject);
     }
 
-    void Mob_SwordHit()
+    public void Mob_SwordHit()
     {
         AkSoundEngine.SetState("Sword_Materials", "Dry");
-        SwordHit.Post(gameobject);
+        SwordHit.Post(gameObject);
     }
 
-    void Mob_Shield()
+    public void Mob_Shield()
     {
         Shield.Post(gameObject);
         AkSoundEngine.SetState("Sword_Materials", "Dry");
         SwordHit.Post(gameObject);
     }
 
-    void Mob_Hit()
+    public void Mob_Hit()
     {
-        HitVoice.Post(gameobject);
+        HitVoice.Post(gameObject);
         AkSoundEngine.SetState("Sword_Materials", "Blood_Soft");
         SwordHit.Post(gameObject);
     }
 
-    void Mob_Death()
+    public void Mob_Death()
     {
-        DeathVoice.Post(gameobject);
+        DeathVoice.Post(gameObject);
     }
 
 }
