@@ -43,6 +43,14 @@
 							<ObjectRef Name="OUT_Blizz" ID="{21227C1E-CD75-4313-AACF-8C77CFA028D0}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Footstep_WP" ID="{C436D326-7B8E-49D6-B4DA-E299868282B7}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="WP_Footstep_Impact" ID="{2B6FF540-98A5-438E-9819-CF0CE9451F0A}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+							<Position X="1" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -67,8 +75,8 @@
 						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Wood" ID="{29C275A9-1195-4AD2-A2DA-7AF118049731}"/>
-						<CurrentSwitchRef Name="WALK" ID="{989D954C-D9ED-4FB6-8E34-F92980A30EFB}"/>
+						<CurrentSwitchRef Name="Snow" ID="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}"/>
+						<CurrentSwitchRef Name="RUN" ID="{27D4B2BD-628B-46BD-8452-6351AB298B87}"/>
 						<CurrentSwitchRef Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

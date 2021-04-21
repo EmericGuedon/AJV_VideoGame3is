@@ -33,6 +33,16 @@
 								<Sound Name="RFX_Bridge" ID="{13CADE35-178E-4F46-8CD7-8091A56654C8}" ShortID="84812861">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>48</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-250</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -63,6 +73,11 @@
 								</Sound>
 								<Sound Name="RFX_ChainBridge" ID="{25DCF673-D35B-45FC-9068-F39A993EFE88}" ShortID="921794688">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="MakeUpGain" Type="Real64">
 											<RTPCList>
@@ -99,6 +114,11 @@
 								</Sound>
 								<Sound Name="RFX_PlankSqueak" ID="{8E7575B8-752A-474F-8F89-E659770A0D81}" ShortID="127654819">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -130,6 +150,11 @@
 								</Sound>
 								<Sound Name="RFX_PlankSqueak_002" ID="{9A24205C-8FAF-4D9D-B4F5-5DBF3A405F73}" ShortID="939041370">
 									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
@@ -162,6 +187,16 @@
 								<Sound Name="RFX_WoodCrack" ID="{A920E90C-ADDB-484F-9F55-61B13F3AB16C}" ShortID="169555840">
 									<PropertyList>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>46</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1950</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">

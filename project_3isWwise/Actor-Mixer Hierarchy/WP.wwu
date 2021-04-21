@@ -23,7 +23,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-13</Value>
+										<Value>-9</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -793,8 +793,8 @@
 													<Modifier Name="" ID="{AFDB2FC2-82BA-4A76-AA61-50C52F876B3F}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="152"/>
-															<Property Name="Min" Type="Real64" Value="-152"/>
+															<Property Name="Max" Type="Real64" Value="150"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -802,6 +802,9 @@
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{A2230FD2-214A-4E24-BFF1-44482171A2D0}">
@@ -1060,6 +1063,9 @@
 								<RandomSequenceContainer Name="WP_Weapon_ShieldMetal" ID="{F9C55B63-2A4A-4CBE-B90F-9DDE1D532B80}" ShortID="733191235">
 									<PropertyList>
 										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{FF795409-1BB9-4571-BD70-F6DA947ACC23}">
@@ -1075,7 +1081,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-17</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -1318,7 +1324,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-7</Value>
+										<Value>-2</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1887,7 +1893,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-22</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1936,8 +1942,8 @@
 																	<Modifier Name="" ID="{F436A8D9-838E-4997-A993-67815E0FE1F1}">
 																		<PropertyList>
 																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Max" Type="Real64" Value="152"/>
-																			<Property Name="Min" Type="Real64" Value="-177"/>
+																			<Property Name="Max" Type="Real64" Value="150"/>
+																			<Property Name="Min" Type="Real64" Value="-200"/>
 																		</PropertyList>
 																	</Modifier>
 																</ModifierInfo>
@@ -2122,6 +2128,7 @@
 																<Value>15</Value>
 															</ValueList>
 														</Property>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="Pitch" Type="int32">
 															<ModifierList>
 																<ModifierInfo>
@@ -2137,6 +2144,9 @@
 														</Property>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>2</Value>
+															</ValueList>
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{C8C89A04-E913-4F9F-8620-50E3D8293BDE}">
@@ -2152,6 +2162,9 @@
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+															<ObjectRef Name="High_Impact" ID="{2AFD6FB0-C906-4683-A377-FEEEF72967B0}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
@@ -2297,11 +2310,32 @@
 												</RandomSequenceContainer>
 											</ChildrenList>
 										</BlendContainer>
+										<Sound Name="Silence" ID="{B6419A79-1A6B-4B8D-BE1F-BB4A8D5F4CCF}" ShortID="713866141">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Wwise Silence" ID="{DF6BF271-9449-4DCA-9322-4108FF4A867F}" ShortID="957988011" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Wwise Silence" ID="{DF6BF271-9449-4DCA-9322-4108FF4A867F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
 									<GroupingInfo>
 										<GroupingBehaviorList>
 											<GroupingBehavior>
 												<ItemRef Name="WP_Footstep_Run" ID="{6CC6CC60-16C6-4934-AFF9-4F7A19AA19FD}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="Silence" ID="{B6419A79-1A6B-4B8D-BE1F-BB4A8D5F4CCF}"/>
 											</GroupingBehavior>
 											<GroupingBehavior>
 												<ItemRef Name="WP_Footstep_Walk" ID="{730F9BD4-4CB3-410C-8046-474B478AD02B}"/>
@@ -2312,6 +2346,12 @@
 												<SwitchRef Name="WALK" ID="{989D954C-D9ED-4FB6-8E34-F92980A30EFB}"/>
 												<ItemList>
 													<ItemRef Name="WP_Footstep_Walk" ID="{730F9BD4-4CB3-410C-8046-474B478AD02B}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
+												<ItemList>
+													<ItemRef Name="Silence" ID="{B6419A79-1A6B-4B8D-BE1F-BB4A8D5F4CCF}"/>
 												</ItemList>
 											</Grouping>
 											<Grouping>
@@ -2367,14 +2407,27 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="WP_Weapon_Sword_Hit_Dry" ID="{5C0DC17B-6E0F-4BB3-9EDC-549065352CC8}" ShortID="1007392161">
 											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>21</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>33</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-300</Value>
+													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{7FE65C47-60FA-41F3-B918-57179B3E22FE}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="126"/>
-																	<Property Name="Min" Type="Real64" Value="-126"/>
+																	<Property Name="Max" Type="Real64" Value="150"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
@@ -2540,6 +2593,13 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="WP_Weapon_Sword_Hit_Blood_Hard" ID="{A0F1D507-14D0-4CFE-9859-BA90379083AD}" ShortID="171668072">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -2712,6 +2772,31 @@
 											</ChildrenList>
 										</RandomSequenceContainer>
 										<RandomSequenceContainer Name="WP_Weapon_Sword_Hit_Blood_Soft" ID="{BB14D950-391D-4FFE-B142-50EB5B37308F}" ShortID="1039322521">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>18</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>32</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6487D3C5-7CBB-426A-B25C-E29D9E4A6860}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="250"/>
+																	<Property Name="Min" Type="Real64" Value="-150"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -2922,6 +3007,11 @@
 								</SwitchContainer>
 								<RandomSequenceContainer Name="WP_Weapon_Sword_Woosh" ID="{E687EA3A-4658-4003-9FF6-5CBE420559A4}" ShortID="18223742">
 									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-600</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-4</Value>
@@ -2938,6 +3028,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="CHAR_Sword_Whoosh-001" ID="{EC62C17D-E095-4A37-9021-76EB34F2DCC9}" ShortID="894814241">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -2966,6 +3063,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="CHAR_Sword_Whoosh-002" ID="{676A91E5-0EC9-460B-AD39-B95AFDDCB1D4}" ShortID="441175895">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>180</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -2995,6 +3099,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="CHAR_Sword_Whoosh-003" ID="{6E9C2F12-4876-45B0-862F-97F610422021}" ShortID="252446462">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-200</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -3085,6 +3196,13 @@
 							</ChildrenList>
 						</BlendContainer>
 						<BlendContainer Name="WP_Jump" ID="{BDCA0E9E-598D-46FD-A28E-82EC557785DC}" ShortID="732986187">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -3100,6 +3218,11 @@
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-5</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -3269,6 +3392,11 @@
 								<RandomSequenceContainer Name="WP_JumpLand" ID="{5363331E-1EA2-438F-AD57-A754E59D0853}" ShortID="308958590">
 									<PropertyList>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">

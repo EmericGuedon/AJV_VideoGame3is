@@ -20,6 +20,7 @@
 					<ChildrenList>
 						<Switch Name="RUN" ID="{27D4B2BD-628B-46BD-8452-6351AB298B87}"/>
 						<Switch Name="WALK" ID="{989D954C-D9ED-4FB6-8E34-F92980A30EFB}"/>
+						<Switch Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>
