@@ -118,7 +118,7 @@
 				</Attenuation>
 				<Attenuation Name="PROPS_Outdoor" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" ShortID="718407073">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="20"/>
+						<Property Name="RadiusMax" Type="Real64" Value="25"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -135,13 +135,13 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>7.46869</XPos>
+											<XPos>9.3358625</XPos>
 											<YPos>-8.46107</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>25</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -166,13 +166,13 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>7.39348</XPos>
+											<XPos>9.24185</XPos>
 											<YPos>-1.66053</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>25</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -194,13 +194,13 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>5.56391</XPos>
+											<XPos>6.9548875</XPos>
 											<YPos>47</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>20</XPos>
+											<XPos>25</XPos>
 											<YPos>77</YPos>
 											<Flags>37</Flags>
 										</Point>
