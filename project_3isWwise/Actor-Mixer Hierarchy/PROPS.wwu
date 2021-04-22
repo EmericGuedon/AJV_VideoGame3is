@@ -1185,7 +1185,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-15</Value>
+												<Value>-11</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1201,35 +1201,6 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="PROPS_WoodenChoppe_001" ID="{46F1788E-F452-410E-B3EC-115A596E1E6A}" ShortID="380785677">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="PROPS_WoodenPlates_001" ID="{CBE5719F-9520-4938-9007-F972092BEEDF}">
-													<PropertyList>
-														<Property Name="FadeInDuration" Type="Real64" Value="0.0363162457191781"/>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.0276695205479452"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.112407427226028"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.323387521404108"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>PROPS_WoodenPlates_001.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="484206038"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="PROPS_WoodenPlates_001" ID="{CBE5719F-9520-4938-9007-F972092BEEDF}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
 										<Sound Name="PROPS_WoodenChoppe_002" ID="{946968C4-8AF1-4E78-B0D2-8B90E57725BC}" ShortID="583603934">
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1330,8 +1301,319 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Plates_Impact" ID="{A62D6053-7078-4E03-8B95-E349ADF2820E}" ShortID="852575227">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{11C5A895-3513-4F37-959A-FF6538A15D1D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="27"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>150</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{9B0AF02D-D0D4-4357-B46D-83E746C5FAA9}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="379"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{2DBC6E72-436E-4DDF-9362-97E51773AEA5}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="4"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CTCK IMPACT Brass Pieces Dropped On Steel Plate" ID="{14990119-1F3F-4E0F-A2B4-09B23A8B5DB0}" ShortID="33455750">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CTCK IMPACT Brass Pieces Dropped On Steel Plate" ID="{8485F5CD-8726-4C8F-8E30-80C21CDF4E88}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.393474842767296"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.309647016802626"/>
+														<Property Name="TrimEnd" Type="Real64" Value="1.1501572327044"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CTCK IMPACT Brass Pieces Dropped On Steel Plate.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="990384612"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CTCK IMPACT Brass Pieces Dropped On Steel Plate" ID="{8485F5CD-8726-4C8F-8E30-80C21CDF4E88}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MLCK CRAFT Iron Plate On Iron Plate" ID="{881A964E-AFF5-4473-9CC8-5B3555EBAB5A}" ShortID="796900278">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MLCK CRAFT Iron Plate On Iron Plate" ID="{AF62C102-59F3-4410-8539-CE188C4ECC26}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.359151627635557"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.221342831004519"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.757196248449225"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>MLCK CRAFT Iron Plate On Iron Plate.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="946782544"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MLCK CRAFT Iron Plate On Iron Plate" ID="{AF62C102-59F3-4410-8539-CE188C4ECC26}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MLCK CRAFT Iron Plate On Iron Plate_01" ID="{1566B467-200F-46F6-A92D-D57CFB555FB9}" ShortID="510120948">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MLCK CRAFT Iron Plate On Iron Plate" ID="{BD8654C9-45E9-4FC7-8DAA-2953ACDCABCA}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.492587625759233"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="6.75255536978282"/>
+														<Property Name="TrimEnd" Type="Real64" Value="7.52391116252628"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>MLCK CRAFT Iron Plate On Iron Plate.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="392573211"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MLCK CRAFT Iron Plate On Iron Plate" ID="{BD8654C9-45E9-4FC7-8DAA-2953ACDCABCA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MLCK CRAFT Iron Plate On Iron Plate_02" ID="{DC3BB310-0C0E-4A83-A1A8-C8623B9A69BF}" ShortID="95788802">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MLCK CRAFT Iron Plate On Iron Plate" ID="{8FE68872-F03A-4432-8B34-985449B1C31F}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.229479239727397"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="23.9399473659814"/>
+														<Property Name="TrimEnd" Type="Real64" Value="24.2920326431814"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>MLCK CRAFT Iron Plate On Iron Plate.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1014966652"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MLCK CRAFT Iron Plate On Iron Plate" ID="{8FE68872-F03A-4432-8B34-985449B1C31F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MLCK CRAFT Iron Plate On Iron Plate_03" ID="{6381B12F-A239-4B8E-AB87-D03F08BC4948}" ShortID="974517726">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MLCK CRAFT Iron Plate On Iron Plate" ID="{67285D33-B6D9-434D-95EF-F927CD5C4977}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.508871514214086"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="31.7728054890647"/>
+														<Property Name="TrimEnd" Type="Real64" Value="32.6172233850891"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>MLCK CRAFT Iron Plate On Iron Plate.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="551434916"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MLCK CRAFT Iron Plate On Iron Plate" ID="{67285D33-B6D9-434D-95EF-F927CD5C4977}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CTCK IMPACT Brass Pieces Dropped On Steel Plate_01" ID="{27D5B637-8729-4F2B-B3AA-70F3136CD9AF}" ShortID="892861484">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CTCK IMPACT Brass Pieces Dropped On Steel Plate" ID="{EF34764D-4885-4E1F-9CE5-C2212B0BD404}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.696147798742139"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="4.04475885056431"/>
+														<Property Name="TrimEnd" Type="Real64" Value="4.99410377358491"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CTCK IMPACT Brass Pieces Dropped On Steel Plate.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="87405298"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CTCK IMPACT Brass Pieces Dropped On Steel Plate" ID="{EF34764D-4885-4E1F-9CE5-C2212B0BD404}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CTCK IMPACT Brass Pieces Dropped On Steel Plate_02" ID="{0100E826-B5E7-484F-89B4-61D22D713152}" ShortID="277250320">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CTCK IMPACT Brass Pieces Dropped On Steel Plate" ID="{996F4A39-6A07-4147-8CAA-B06527DCFFD9}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.42374213836478"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="10.3507627339045"/>
+														<Property Name="TrimEnd" Type="Real64" Value="10.9520775040835"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CTCK IMPACT Brass Pieces Dropped On Steel Plate.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="308375457"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CTCK IMPACT Brass Pieces Dropped On Steel Plate" ID="{996F4A39-6A07-4147-8CAA-B06527DCFFD9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CTCK IMPACT Brass Pieces Dropped On Steel Plate_03" ID="{A8BC190D-14CF-4493-AE8D-763F8D8999B7}" ShortID="467265782">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-9</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CTCK IMPACT Brass Pieces Dropped On Steel Plate" ID="{047C1703-E765-4F34-81EA-503AAFC33774}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.393474842767295"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="13.3838696835153"/>
+														<Property Name="TrimEnd" Type="Real64" Value="14.1953616352201"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CTCK IMPACT Brass Pieces Dropped On Steel Plate.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="565061000"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CTCK IMPACT Brass Pieces Dropped On Steel Plate" ID="{047C1703-E765-4F34-81EA-503AAFC33774}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
 						</ActorMixer>
-						<ActorMixer Name="Banc" ID="{C433F524-D93A-445B-9D86-F3CEE6BFBEA3}" ShortID="141128730">
+						<ActorMixer Name="Bench" ID="{C433F524-D93A-445B-9D86-F3CEE6BFBEA3}" ShortID="141128730">
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1340,6 +1622,194 @@
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 								</Reference>
 							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Bench_Impact" ID="{BC7503BD-9D8F-4081-B32A-EA5EA78CFACD}" ShortID="777497490">
+									<PropertyList>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FFDE6D02-EF70-49E8-9BC6-EE66EDF117A8}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="253"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="PROPS_Fournitures" ID="{7B07417C-DA46-441B-B2C6-9CE71FB34FA0}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="MLCK ACTION Crate Impact Rattle 01" ID="{91D1DCB6-7591-4343-A268-08B0295AA212}" ShortID="564205198">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MLCK ACTION Crate Impact Rattle 01" ID="{BE3266C4-3A75-430F-9AA8-4E3D1BEC6B99}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="1.13309805395986"/>
+														<Property Name="TrimEnd" Type="Real64" Value="2.25841783804539"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>MLCK ACTION Crate Impact Rattle 01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="983345479"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MLCK ACTION Crate Impact Rattle 01" ID="{BE3266C4-3A75-430F-9AA8-4E3D1BEC6B99}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MLCK ACTION Crate Impact Rattle 01_01" ID="{61C9A74D-8507-4B4B-BEDA-6F44927A498F}" ShortID="366552544">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MLCK ACTION Crate Impact Rattle 01" ID="{E9BC2FD4-2914-4CBC-8153-B2A0231A9D4F}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.15723225779093"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="5.5067001043521"/>
+														<Property Name="TrimEnd" Type="Real64" Value="6.44519760595879"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>MLCK ACTION Crate Impact Rattle 01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="580527485"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MLCK ACTION Crate Impact Rattle 01" ID="{E9BC2FD4-2914-4CBC-8153-B2A0231A9D4F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MLCK ACTION Crate Impact Rattle 01_02" ID="{1AD6C177-9AD5-4D59-BDBE-75F86D89F2D2}" ShortID="911847233">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MLCK ACTION Crate Impact Rattle 01" ID="{482F448F-3DF3-4C35-863F-C819CB8C1EC0}">
+													<PropertyList>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="11.5797224038827"/>
+														<Property Name="TrimEnd" Type="Real64" Value="12.3615696182718"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>MLCK ACTION Crate Impact Rattle 01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="691822154"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MLCK ACTION Crate Impact Rattle 01" ID="{482F448F-3DF3-4C35-863F-C819CB8C1EC0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MLCK ACTION Crate Impact Rattle 01_03" ID="{6FF5E68F-4E40-41DD-BB97-BF520B45E998}" ShortID="230062783">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MLCK ACTION Crate Impact Rattle 01" ID="{9CAD75B7-0775-477B-B531-252FBA5FC6D7}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0536958738443154"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.106273367650832"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="15.9242192882793"/>
+														<Property Name="TrimEnd" Type="Real64" Value="16.5868203639377"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>MLCK ACTION Crate Impact Rattle 01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="363130773"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MLCK ACTION Crate Impact Rattle 01" ID="{9CAD75B7-0775-477B-B531-252FBA5FC6D7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="MLCK ACTION Crate Impact Rattle 01_04" ID="{A8803E38-B4DF-450F-AA53-F8A1C60CF2D0}" ShortID="781190349">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="MLCK ACTION Crate Impact Rattle 01" ID="{8ED0EC85-1B1E-484B-9526-F93EFBE4DE1B}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.171225928734323"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="25.6880140076273"/>
+														<Property Name="TrimEnd" Type="Real64" Value="26.3489627010867"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>MLCK ACTION Crate Impact Rattle 01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1024067680"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="MLCK ACTION Crate Impact Rattle 01" ID="{8ED0EC85-1B1E-484B-9526-F93EFBE4DE1B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
 				</ActorMixer>
