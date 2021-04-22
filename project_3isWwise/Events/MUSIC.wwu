@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{0C392AA6-037F-42C3-A703-8372F6380D65}" SchemaVersion="97" RootDocumentID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}">
+	<Events>
+		<WorkUnit Name="MUSIC" ID="{0C392AA6-037F-42C3-A703-8372F6380D65}" OwnerID="{FBBAB356-2BC1-4A47-A6C8-5DF76EA93D0D}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="19"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Event Name="Music_fight" ID="{C1B88FB8-438B-4813-A811-2D0AB9819BE6}">
+					<ChildrenList>
+						<Action Name="" ID="{BBBA8A70-F3B9-4A77-B9F1-93A718EF89E0}" ShortID="164573078">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Fight" ID="{0587247D-F11C-4B3F-9BC7-082F60D40F0D}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_Amb_Fight" ID="{5926886F-7EB7-4EC6-8599-EFC1F5C31D1F}">
+					<ChildrenList>
+						<Action Name="" ID="{44CE71F6-4BC3-4EDF-B35E-B6C8D8AC2746}" ShortID="296757058">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FightAmb" ID="{CE7EB0F2-C9D9-4BB7-9D87-47F84D6C6887}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_CrowM" ID="{906AD98F-2804-47AE-814A-7F18F7C76062}">
+					<ChildrenList>
+						<Action Name="" ID="{2F608243-6EFC-49BC-9A28-7C81F05D8891}" ShortID="609283649">
+							<PropertyList>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CrowMMusic" ID="{A10D5E74-AC36-4CEA-A00B-368C871F6F74}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_fight_STOP" ID="{A6CE2606-DB0D-446D-9676-A436520A70B4}">
+					<ChildrenList>
+						<Action Name="" ID="{4D1785E9-61E6-4557-BC35-A12EAA0ADDBF}" ShortID="797674562">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music_Fight" ID="{0587247D-F11C-4B3F-9BC7-082F60D40F0D}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_Amb_Fight_STOP" ID="{D96C2437-FC83-4F04-87D2-0CAADFAB5ADC}">
+					<ChildrenList>
+						<Action Name="" ID="{7081F114-AB21-447D-951D-FED286648C2A}" ShortID="23720185">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FightAmb" ID="{CE7EB0F2-C9D9-4BB7-9D87-47F84D6C6887}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_CrowM_STOP" ID="{3EA88581-3C8D-4F1D-9791-AF6103002041}">
+					<ChildrenList>
+						<Action Name="" ID="{4AAB0752-12BB-420E-8454-6954D66B8A10}" ShortID="816465552">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="CrowMMusic" ID="{A10D5E74-AC36-4CEA-A00B-368C871F6F74}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

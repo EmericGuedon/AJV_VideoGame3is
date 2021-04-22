@@ -10,6 +10,7 @@
 				<WorkUnit Name="HUD" ID="{9CE4DE4F-75E1-46FB-84D6-DE2DE4FD4BD6}" PersistMode="Reference"/>
 				<WorkUnit Name="UI" ID="{6B8990F3-F27E-4469-833C-465E08B96186}" PersistMode="Reference"/>
 				<WorkUnit Name="TEST" ID="{F0F12306-F337-49B9-B360-4B8AB7385682}" PersistMode="Reference"/>
+				<WorkUnit Name="MUSIC" ID="{0C392AA6-037F-42C3-A703-8372F6380D65}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
