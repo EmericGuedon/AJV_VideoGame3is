@@ -2017,6 +2017,3186 @@
 								</Sound>
 							</ChildrenList>
 						</BlendContainer>
+						<BlendContainer Name="IN_Dungeon_Final" ID="{21084B03-A893-4665-A6D7-CBECD06BA0AC}" ShortID="770612697">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="AMB_Dungeon" ID="{C9ED5C17-5B3E-4380-B26F-79F6C282B2F1}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<BlendContainer Name="RFX_Dungeon" ID="{2313156C-03EA-4EA7-9113-4BD145A4D38F}" ShortID="653162575">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="AMB_Dungeon" ID="{C9ED5C17-5B3E-4380-B26F-79F6C282B2F1}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="RFX_MetalSqueak" ID="{451FA117-6326-4D69-AD1E-7FEF8FAF1729}" ShortID="98983488">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>55</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{FF0578E3-22C9-49EC-B7D2-440B1A0DA6E1}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Min" Type="Real64" Value="-10"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-300</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{99268A88-581E-4CEF-BC6A-DCD029243404}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="400"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="25">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C3160DA0-E774-4160-A4DF-DC434EC340D4}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="15"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F2CA590E-4A9E-4F4E-A034-23642EA5ACCF}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AMB_In_RFX_MetalSqueak_1" ID="{469E6318-A6EC-4A1E-9AD0-2165A712CEF7}" ShortID="69170442">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalSqueak_1" ID="{D5BD28C9-13E6-497D-8580-92A75524CB14}">
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalSqueak_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="427661397"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalSqueak_1" ID="{D5BD28C9-13E6-497D-8580-92A75524CB14}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalSqueak_2" ID="{2A399AD3-74CB-42D5-87FF-40A52428BA8A}" ShortID="67678009">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalSqueak_2" ID="{9BF714ED-6E5F-41F7-8108-3BB925E625C8}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.134442636986301"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.138396832191781"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.2890676369863"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalSqueak_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="337067221"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalSqueak_2" ID="{9BF714ED-6E5F-41F7-8108-3BB925E625C8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalSqueak_3" ID="{DDB73FCA-F9D7-4A1E-B58E-2342FD904AF8}" ShortID="765786948">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalSqueak_3" ID="{465C2D1C-F55A-49A9-882C-304B51B40F4E}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0792439355022831"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.150146404109589"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.4263908390411"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalSqueak_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1004013221"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalSqueak_3" ID="{465C2D1C-F55A-49A9-882C-304B51B40F4E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalSqueak_4" ID="{8F0B2825-7770-446F-9248-E05A86399F93}" ShortID="853095644">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalSqueak_4" ID="{458EC8D4-07ED-425D-89A0-9AAF787344EC}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.119357341609589"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.100260166952055"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0716144049657534"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.78081153681507"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalSqueak_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="84491838"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalSqueak_4" ID="{458EC8D4-07ED-425D-89A0-9AAF787344EC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalSqueak_5" ID="{E560B5B6-D2AC-4EC2-BB97-E01F85002528}" ShortID="472952064">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalSqueak_5" ID="{70B5BE8A-A68A-4E3D-ABE4-5016BD4FCAE0}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0880607163242009"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.155799728881279"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.04656774400685"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalSqueak_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="518621572"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalSqueak_5" ID="{70B5BE8A-A68A-4E3D-ABE4-5016BD4FCAE0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalSqueak_6" ID="{D29489B6-4A92-4EC5-9339-F5A813B3E5F2}" ShortID="828592976">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalSqueak_6" ID="{2805E401-8DAA-49DA-A9B2-1F97332682A1}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0433172089041096"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0758051155821918"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.11541812928082"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalSqueak_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="541533438"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalSqueak_6" ID="{2805E401-8DAA-49DA-A9B2-1F97332682A1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{B356F014-4251-4FF6-8F3A-AF62A89C6560}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="RFX_MetalSqueak_Path" ID="{93D1EA8C-A71C-40E6-95F3-ECB68CA15113}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>24.68355</XPos>
+																	<YPos>57.00637</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalSqueak_Path_01" ID="{FFF0FAF6-DBF1-46DF-A977-7102C86F2B40}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="12"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+																<Property Name="RandomZ" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>41.77215</XPos>
+																	<YPos>54.4586</YPos>
+																	<ZPos>40</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalSqueak_Path_02" ID="{943DF2EA-0377-4D67-924E-79ED0FBA7D90}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-39.87341</XPos>
+																	<YPos>51.91083</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalSqueak_Path_03" ID="{C86D4BC8-742A-4AF9-AA84-64A3597BEC98}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+																<Property Name="RandomZ" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-46.83544</XPos>
+																	<YPos>48.72612</YPos>
+																	<ZPos>40</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalSqueak_Path_04" ID="{EF7D105A-2FCE-456D-BFA1-1A050A1A7A93}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-47.46835</XPos>
+																	<YPos>0.95542</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalSqueak_Path_05" ID="{C9B93359-D8FD-4113-9C71-C67C8B63CC51}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+																<Property Name="RandomZ" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-60.12658</XPos>
+																	<YPos>10.50956</YPos>
+																	<ZPos>40</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalSqueak_Path_06" ID="{1F2957E5-4816-4D8F-9F75-5C203720E7FF}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>51.89874</XPos>
+																	<YPos>4.14013</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalSqueak_Path_07" ID="{6610CA03-89EB-4626-A921-07E8B23AD6F7}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+																<Property Name="RandomZ" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>58.22785</XPos>
+																	<YPos>-33.43948</YPos>
+																	<ZPos>40</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RFX_Cage" ID="{FDA0B439-543D-466D-AC5F-66E7696EDAFA}" ShortID="893211877">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{73C5C4A4-54EB-415E-99A9-ECAA0BF1E67D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="250"/>
+																	<Property Name="Min" Type="Real64" Value="-300"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="20">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C8374ADE-4631-4DD7-A2ED-5A954C6598B2}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-16</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{F9EBCED9-AC7E-4DB0-9F29-6F6CB8DDCAB6}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AMB_In_RFX_Cage_1" ID="{03693198-C87D-4A18-A8ED-362574F64D9B}" ShortID="462040632">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Cage_1" ID="{69FA67D2-8E3B-44B3-B661-F22BD13947E0}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.162671232876712"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.470890410958904"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.57876712328767"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Cage_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="808807052"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Cage_1" ID="{69FA67D2-8E3B-44B3-B661-F22BD13947E0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_Cage_2" ID="{11B6221E-EC22-4B5F-B707-B768462EF217}" ShortID="829543358">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Cage_2" ID="{D66507FC-DE45-43EE-89E0-16A9A7B189D7}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0924657534246575"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.133561643835616"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.82191780821918"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Cage_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="965092901"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Cage_2" ID="{D66507FC-DE45-43EE-89E0-16A9A7B189D7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_Cage_3" ID="{5168C782-29DF-4A80-BC5D-A944F2F54B06}" ShortID="1033360065">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Cage_3" ID="{00A6EBC6-F0FD-46D3-B810-03C201FD9AC8}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.102739726027397"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.188356164383562"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.31335616438356"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Cage_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="889532459"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Cage_3" ID="{00A6EBC6-F0FD-46D3-B810-03C201FD9AC8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_Cage_4" ID="{8854E7C6-A134-4333-AA42-66EFA8275DAD}" ShortID="42572183">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Cage_4" ID="{80E3E7B6-4A85-45D2-AC3A-DA3F4643A6EA}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0924657534246576"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.184931506849315"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.4486301369863"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Cage_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="903163063"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Cage_4" ID="{80E3E7B6-4A85-45D2-AC3A-DA3F4643A6EA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_Cage_5" ID="{363AB484-00CE-40D3-9D4B-87CA59806B91}" ShortID="610247739">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Cage_5" ID="{2C0DCE23-01AC-4B2F-93C7-34FDB6AD73AB}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.071917808219178"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.311643835616438"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="5.14212328767123"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Cage_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="488505412"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Cage_5" ID="{2C0DCE23-01AC-4B2F-93C7-34FDB6AD73AB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_Cage_6" ID="{0119CF4F-9750-4609-9C0B-ADE1F17B045B}" ShortID="931135867">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_Cage_6" ID="{0D56330D-A8DD-4505-87FB-36AB43F85CAD}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0856164383561644"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.179794520547945"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.10102739726028"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_Cage_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="410199459"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_Cage_6" ID="{0D56330D-A8DD-4505-87FB-36AB43F85CAD}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{A2B94B1D-44EB-43D1-B65B-6AECB0831263}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="RFX_Cage_Path" ID="{A6AC7FD2-5E3E-4F2D-9A67-1EF54AD39017}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>64.55696</XPos>
+																	<YPos>15.60509</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Cage_Path_01" ID="{91863162-C7DB-4385-8CFF-28E536344ACC}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-20.88607</XPos>
+																	<YPos>57.6433</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Cage_Path_02" ID="{04489AF4-1CA9-46A1-BBD0-3CEAAB86E754}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-48.73417</XPos>
+																	<YPos>19.42674</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Cage_Path_03" ID="{49CFEBCC-B476-4FF1-BE5B-23676B74EEE6}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>64.55697</XPos>
+																	<YPos>-19.42676</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Cage_Path_04" ID="{4D7CA866-D842-4FE7-AA6F-058805FF8232}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-54.43037</XPos>
+																	<YPos>-32.80256</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Cage_Path_05" ID="{42B1A2A5-EB8A-409B-BF68-239C87EDA9F8}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>70.25317</XPos>
+																	<YPos>30.25477</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RFX_Heavy_MetalChains" ID="{6E89BDE3-B485-4A24-8795-D0CEDD8EB587}" ShortID="326794927">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>45</Value>
+													</ValueList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{CA816E1A-52FB-46A9-A92B-4A19ACC5BB21}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="227"/>
+																	<Property Name="Min" Type="Real64" Value="-278"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="13">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{81F470C0-9F40-4893-8A53-4E6A7690FDC7}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="12"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-22</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CTCK CLUNK Chain Massive" ID="{66E86C48-81B9-41B8-81A8-DB111473719F}" ShortID="808395059">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CTCK CLUNK Chain Massive" ID="{08D12151-9DE9-4723-84DA-C4091A3065F5}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.197242294520548"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.887590325342456"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CTCK CLUNK Chain Massive.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="754039596"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CTCK CLUNK Chain Massive" ID="{08D12151-9DE9-4723-84DA-C4091A3065F5}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CTCK CLUNK Chain Massive_01" ID="{2437C5B7-FE54-44C9-B11B-DC8BE5B8EAE4}" ShortID="930154657">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="AMB_Dungeon" ID="{C9ED5C17-5B3E-4380-B26F-79F6C282B2F1}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CTCK CLUNK Chain Massive" ID="{78879D99-2B17-4682-913D-4FBD944C4460}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0836499873484886"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="2.98328970462329"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.67429203936204"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CTCK CLUNK Chain Massive.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="99490316"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{2B4189A2-3DD7-4921-A97D-FEC5DB971851}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="RFX_Rats_Path" ID="{2F858C6C-FFBD-4339-9535-2A849DAF1FC3}">
+																	<PropertyList>
+																		<Property Name="LinearTime" Type="bool" Value="False"/>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>32.91139</XPos>
+																			<YPos>57.00637</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>56.96202</XPos>
+																			<YPos>34.3949</YPos>
+																			<Flags>0</Flags>
+																			<Time>980</Time>
+																		</Point>
+																		<Point>
+																			<XPos>69.62026</XPos>
+																			<YPos>3.82165</YPos>
+																			<Flags>0</Flags>
+																			<Time>1505</Time>
+																		</Point>
+																		<Point>
+																			<XPos>91.77215</XPos>
+																			<YPos>-5.73248</YPos>
+																			<Flags>0</Flags>
+																			<Time>2011</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Rats_Path_01" ID="{64E4DA66-9DDF-49D1-BA04-06A0A1834C6B}">
+																	<PropertyList>
+																		<Property Name="LinearTime" Type="bool" Value="False"/>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-26.58228</XPos>
+																			<YPos>60.19109</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-43.67088</XPos>
+																			<YPos>28.66242</YPos>
+																			<Flags>0</Flags>
+																			<Time>1108</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-74.68354</XPos>
+																			<YPos>8.9172</YPos>
+																			<Flags>0</Flags>
+																			<Time>2026</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-73.41772</XPos>
+																			<YPos>-38.21656</YPos>
+																			<Flags>0</Flags>
+																			<Time>3026</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Rats_Path_02" ID="{93187C32-8A92-4C37-ABC2-DB75B9CBB2B1}">
+																	<PropertyList>
+																		<Property Name="LinearTime" Type="bool" Value="False"/>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>19.62025</XPos>
+																			<YPos>35.98727</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>49.36709</XPos>
+																			<YPos>-19.74522</YPos>
+																			<Flags>0</Flags>
+																			<Time>733</Time>
+																		</Point>
+																		<Point>
+																			<XPos>71.51899</XPos>
+																			<YPos>21.65605</YPos>
+																			<Flags>0</Flags>
+																			<Time>1605</Time>
+																		</Point>
+																		<Point>
+																			<XPos>84.17721</XPos>
+																			<YPos>6.36942</YPos>
+																			<Flags>0</Flags>
+																			<Time>2468</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Rats_Path_03" ID="{C5947CAB-FA36-44B6-9260-028DF77E1CD1}">
+																	<PropertyList>
+																		<Property Name="LinearTime" Type="bool" Value="False"/>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-21.51899</XPos>
+																			<YPos>37.89809</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-34.1772151898734</XPos>
+																			<YPos>23.5668789808917</YPos>
+																			<Flags>0</Flags>
+																			<Time>834</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-49.3670886075949</XPos>
+																			<YPos>-2.54777070063695</YPos>
+																			<Flags>0</Flags>
+																			<Time>1496</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-39.87341</XPos>
+																			<YPos>-36.94267</YPos>
+																			<Flags>0</Flags>
+																			<Time>2267</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Rats_Path_04" ID="{4D47FB05-BBC2-4F39-93CD-C4A6B63A5CB4}">
+																	<PropertyList>
+																		<Property Name="LinearTime" Type="bool" Value="False"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-51.89873</XPos>
+																			<YPos>17.51592</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-36.07595</XPos>
+																			<YPos>-10.82803</YPos>
+																			<Flags>0</Flags>
+																			<Time>537</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-1.89873417721519</XPos>
+																			<YPos>-23.5668789808917</YPos>
+																			<Flags>0</Flags>
+																			<Time>1165</Time>
+																		</Point>
+																		<Point>
+																			<XPos>53.7974683544304</XPos>
+																			<YPos>-14.0127388535032</YPos>
+																			<Flags>0</Flags>
+																			<Time>1648</Time>
+																		</Point>
+																		<Point>
+																			<XPos>81.6455696202532</XPos>
+																			<YPos>8.9171974522293</YPos>
+																			<Flags>0</Flags>
+																			<Time>2011</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="CTCK CLUNK Chain Massive" ID="{78879D99-2B17-4682-913D-4FBD944C4460}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CTCK CLUNK Chain Massive_02" ID="{DF1A2F3F-A134-4F3F-9CE7-32DC7F410EDC}" ShortID="912445232">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="AMB_Dungeon" ID="{C9ED5C17-5B3E-4380-B26F-79F6C282B2F1}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CTCK CLUNK Chain Massive" ID="{26CD91DC-B18F-44D3-B22C-EE27DE2FF95E}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.535774712356019"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="5.42416309931507"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.26244285102739"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CTCK CLUNK Chain Massive.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="167581560"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{DC4742C5-681D-4C56-A122-F5B27D0391C4}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="RFX_Rats_Path" ID="{F57FEF67-A40D-400B-B049-5B60D3522CEF}">
+																	<PropertyList>
+																		<Property Name="LinearTime" Type="bool" Value="False"/>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>32.91139</XPos>
+																			<YPos>57.00637</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>56.96202</XPos>
+																			<YPos>34.3949</YPos>
+																			<Flags>0</Flags>
+																			<Time>980</Time>
+																		</Point>
+																		<Point>
+																			<XPos>69.62026</XPos>
+																			<YPos>3.82165</YPos>
+																			<Flags>0</Flags>
+																			<Time>1505</Time>
+																		</Point>
+																		<Point>
+																			<XPos>91.77215</XPos>
+																			<YPos>-5.73248</YPos>
+																			<Flags>0</Flags>
+																			<Time>2011</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Rats_Path_01" ID="{5021BE89-237D-4644-B078-5C0501D8E677}">
+																	<PropertyList>
+																		<Property Name="LinearTime" Type="bool" Value="False"/>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-26.58228</XPos>
+																			<YPos>60.19109</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-43.67088</XPos>
+																			<YPos>28.66242</YPos>
+																			<Flags>0</Flags>
+																			<Time>1108</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-74.68354</XPos>
+																			<YPos>8.9172</YPos>
+																			<Flags>0</Flags>
+																			<Time>2026</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-73.41772</XPos>
+																			<YPos>-38.21656</YPos>
+																			<Flags>0</Flags>
+																			<Time>3026</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Rats_Path_02" ID="{D0B76437-0E28-4D0A-A25B-A996F05AE6E1}">
+																	<PropertyList>
+																		<Property Name="LinearTime" Type="bool" Value="False"/>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>19.62025</XPos>
+																			<YPos>35.98727</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>49.36709</XPos>
+																			<YPos>-19.74522</YPos>
+																			<Flags>0</Flags>
+																			<Time>733</Time>
+																		</Point>
+																		<Point>
+																			<XPos>71.51899</XPos>
+																			<YPos>21.65605</YPos>
+																			<Flags>0</Flags>
+																			<Time>1605</Time>
+																		</Point>
+																		<Point>
+																			<XPos>84.17721</XPos>
+																			<YPos>6.36942</YPos>
+																			<Flags>0</Flags>
+																			<Time>2468</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Rats_Path_03" ID="{F6CDB7FC-EC62-4ED7-9505-4641060D3647}">
+																	<PropertyList>
+																		<Property Name="LinearTime" Type="bool" Value="False"/>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-21.51899</XPos>
+																			<YPos>37.89809</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-34.1772151898734</XPos>
+																			<YPos>23.5668789808917</YPos>
+																			<Flags>0</Flags>
+																			<Time>834</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-49.3670886075949</XPos>
+																			<YPos>-2.54777070063695</YPos>
+																			<Flags>0</Flags>
+																			<Time>1496</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-39.87341</XPos>
+																			<YPos>-36.94267</YPos>
+																			<Flags>0</Flags>
+																			<Time>2267</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Rats_Path_04" ID="{FD6E32D1-2AD8-4CC5-89EC-601EBBDAE308}">
+																	<PropertyList>
+																		<Property Name="LinearTime" Type="bool" Value="False"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-51.89873</XPos>
+																			<YPos>17.51592</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-36.07595</XPos>
+																			<YPos>-10.82803</YPos>
+																			<Flags>0</Flags>
+																			<Time>537</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-1.89873417721519</XPos>
+																			<YPos>-23.5668789808917</YPos>
+																			<Flags>0</Flags>
+																			<Time>1165</Time>
+																		</Point>
+																		<Point>
+																			<XPos>53.7974683544304</XPos>
+																			<YPos>-14.0127388535032</YPos>
+																			<Flags>0</Flags>
+																			<Time>1648</Time>
+																		</Point>
+																		<Point>
+																			<XPos>81.6455696202532</XPos>
+																			<YPos>8.9171974522293</YPos>
+																			<Flags>0</Flags>
+																			<Time>2011</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="CTCK CLUNK Chain Massive" ID="{26CD91DC-B18F-44D3-B22C-EE27DE2FF95E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CTCK CLUNK Chain Massive_03" ID="{1409D93F-F987-4887-B93A-2EE3F37283A3}" ShortID="777804375">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="AMB_Dungeon" ID="{C9ED5C17-5B3E-4380-B26F-79F6C282B2F1}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CTCK CLUNK Chain Massive" ID="{D9E7512E-49BC-41E8-94A5-FCB5AB55F375}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.570340822830603"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.93900235445205"/>
+																<Property Name="TrimEnd" Type="Real64" Value="8.87590325342465"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CTCK CLUNK Chain Massive.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="107948817"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{0E9B6DF1-29D0-46BD-8F09-ADF88946856E}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="RFX_Rats_Path" ID="{36C232C1-30C0-494F-A260-B5A70747A900}">
+																	<PropertyList>
+																		<Property Name="LinearTime" Type="bool" Value="False"/>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>32.91139</XPos>
+																			<YPos>57.00637</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>56.96202</XPos>
+																			<YPos>34.3949</YPos>
+																			<Flags>0</Flags>
+																			<Time>980</Time>
+																		</Point>
+																		<Point>
+																			<XPos>69.62026</XPos>
+																			<YPos>3.82165</YPos>
+																			<Flags>0</Flags>
+																			<Time>1505</Time>
+																		</Point>
+																		<Point>
+																			<XPos>91.77215</XPos>
+																			<YPos>-5.73248</YPos>
+																			<Flags>0</Flags>
+																			<Time>2011</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Rats_Path_01" ID="{DD99EA57-8514-43EA-A4F6-F51456D22C36}">
+																	<PropertyList>
+																		<Property Name="LinearTime" Type="bool" Value="False"/>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-26.58228</XPos>
+																			<YPos>60.19109</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-43.67088</XPos>
+																			<YPos>28.66242</YPos>
+																			<Flags>0</Flags>
+																			<Time>1108</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-74.68354</XPos>
+																			<YPos>8.9172</YPos>
+																			<Flags>0</Flags>
+																			<Time>2026</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-73.41772</XPos>
+																			<YPos>-38.21656</YPos>
+																			<Flags>0</Flags>
+																			<Time>3026</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Rats_Path_02" ID="{238BA5D2-A95A-43BF-8B73-9E2B2C30DC90}">
+																	<PropertyList>
+																		<Property Name="LinearTime" Type="bool" Value="False"/>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>19.62025</XPos>
+																			<YPos>35.98727</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>49.36709</XPos>
+																			<YPos>-19.74522</YPos>
+																			<Flags>0</Flags>
+																			<Time>733</Time>
+																		</Point>
+																		<Point>
+																			<XPos>71.51899</XPos>
+																			<YPos>21.65605</YPos>
+																			<Flags>0</Flags>
+																			<Time>1605</Time>
+																		</Point>
+																		<Point>
+																			<XPos>84.17721</XPos>
+																			<YPos>6.36942</YPos>
+																			<Flags>0</Flags>
+																			<Time>2468</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Rats_Path_03" ID="{274CFD80-5CF6-4F3F-853A-381C394262AC}">
+																	<PropertyList>
+																		<Property Name="LinearTime" Type="bool" Value="False"/>
+																		<Property Name="RandomX" Type="Real64" Value="10"/>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-21.51899</XPos>
+																			<YPos>37.89809</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-34.1772151898734</XPos>
+																			<YPos>23.5668789808917</YPos>
+																			<Flags>0</Flags>
+																			<Time>834</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-49.3670886075949</XPos>
+																			<YPos>-2.54777070063695</YPos>
+																			<Flags>0</Flags>
+																			<Time>1496</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-39.87341</XPos>
+																			<YPos>-36.94267</YPos>
+																			<Flags>0</Flags>
+																			<Time>2267</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Rats_Path_04" ID="{CBC8FEC4-E18F-430E-8B5B-A14CEF752F86}">
+																	<PropertyList>
+																		<Property Name="LinearTime" Type="bool" Value="False"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-51.89873</XPos>
+																			<YPos>17.51592</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-36.07595</XPos>
+																			<YPos>-10.82803</YPos>
+																			<Flags>0</Flags>
+																			<Time>537</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-1.89873417721519</XPos>
+																			<YPos>-23.5668789808917</YPos>
+																			<Flags>0</Flags>
+																			<Time>1165</Time>
+																		</Point>
+																		<Point>
+																			<XPos>53.7974683544304</XPos>
+																			<YPos>-14.0127388535032</YPos>
+																			<Flags>0</Flags>
+																			<Time>1648</Time>
+																		</Point>
+																		<Point>
+																			<XPos>81.6455696202532</XPos>
+																			<YPos>8.9171974522293</YPos>
+																			<Flags>0</Flags>
+																			<Time>2011</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="CTCK CLUNK Chain Massive" ID="{D9E7512E-49BC-41E8-94A5-FCB5AB55F375}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{A98FA18B-A487-4C14-804D-3F5C0D2FD585}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="RFX_Rats_Path" ID="{80D5AEEC-C720-439D-93B2-23BBCC6A92F8}">
+															<PropertyList>
+																<Property Name="LinearTime" Type="bool" Value="False"/>
+																<Property Name="RandomX" Type="Real64" Value="10"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>32.91139</XPos>
+																	<YPos>57.00637</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>56.96202</XPos>
+																	<YPos>34.3949</YPos>
+																	<Flags>0</Flags>
+																	<Time>980</Time>
+																</Point>
+																<Point>
+																	<XPos>69.62026</XPos>
+																	<YPos>3.82165</YPos>
+																	<Flags>0</Flags>
+																	<Time>1505</Time>
+																</Point>
+																<Point>
+																	<XPos>91.77215</XPos>
+																	<YPos>-5.73248</YPos>
+																	<Flags>0</Flags>
+																	<Time>2011</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Rats_Path_01" ID="{DF6057CF-E00E-4CBF-B479-A4FBAAD9D5C3}">
+															<PropertyList>
+																<Property Name="LinearTime" Type="bool" Value="False"/>
+																<Property Name="RandomX" Type="Real64" Value="10"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-26.58228</XPos>
+																	<YPos>60.19109</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-43.67088</XPos>
+																	<YPos>28.66242</YPos>
+																	<Flags>0</Flags>
+																	<Time>1108</Time>
+																</Point>
+																<Point>
+																	<XPos>-74.68354</XPos>
+																	<YPos>8.9172</YPos>
+																	<Flags>0</Flags>
+																	<Time>2026</Time>
+																</Point>
+																<Point>
+																	<XPos>-73.41772</XPos>
+																	<YPos>-38.21656</YPos>
+																	<Flags>0</Flags>
+																	<Time>3026</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Rats_Path_02" ID="{93B6C77A-CE9E-4467-8D4A-23E311D459FE}">
+															<PropertyList>
+																<Property Name="LinearTime" Type="bool" Value="False"/>
+																<Property Name="RandomX" Type="Real64" Value="10"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>19.62025</XPos>
+																	<YPos>35.98727</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>49.36709</XPos>
+																	<YPos>-19.74522</YPos>
+																	<Flags>0</Flags>
+																	<Time>733</Time>
+																</Point>
+																<Point>
+																	<XPos>71.51899</XPos>
+																	<YPos>21.65605</YPos>
+																	<Flags>0</Flags>
+																	<Time>1605</Time>
+																</Point>
+																<Point>
+																	<XPos>84.17721</XPos>
+																	<YPos>6.36942</YPos>
+																	<Flags>0</Flags>
+																	<Time>2468</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Rats_Path_03" ID="{CD34FC5E-4C90-4B76-BF0B-A4AC8AED94A0}">
+															<PropertyList>
+																<Property Name="LinearTime" Type="bool" Value="False"/>
+																<Property Name="RandomX" Type="Real64" Value="10"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-21.51899</XPos>
+																	<YPos>37.89809</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-34.1772151898734</XPos>
+																	<YPos>23.5668789808917</YPos>
+																	<Flags>0</Flags>
+																	<Time>834</Time>
+																</Point>
+																<Point>
+																	<XPos>-49.3670886075949</XPos>
+																	<YPos>-2.54777070063695</YPos>
+																	<Flags>0</Flags>
+																	<Time>1496</Time>
+																</Point>
+																<Point>
+																	<XPos>-39.87341</XPos>
+																	<YPos>-36.94267</YPos>
+																	<Flags>0</Flags>
+																	<Time>2267</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Rats_Path_04" ID="{E2CF88B6-A2A9-4D13-9893-F67B687E97B7}">
+															<PropertyList>
+																<Property Name="LinearTime" Type="bool" Value="False"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-51.89873</XPos>
+																	<YPos>17.51592</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+																<Point>
+																	<XPos>-36.07595</XPos>
+																	<YPos>-10.82803</YPos>
+																	<Flags>0</Flags>
+																	<Time>537</Time>
+																</Point>
+																<Point>
+																	<XPos>-1.89873417721519</XPos>
+																	<YPos>-23.5668789808917</YPos>
+																	<Flags>0</Flags>
+																	<Time>1165</Time>
+																</Point>
+																<Point>
+																	<XPos>53.7974683544304</XPos>
+																	<YPos>-14.0127388535032</YPos>
+																	<Flags>0</Flags>
+																	<Time>1648</Time>
+																</Point>
+																<Point>
+																	<XPos>81.6455696202532</XPos>
+																	<YPos>8.9171974522293</YPos>
+																	<Flags>0</Flags>
+																	<Time>2011</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RFX_MetalCreak" ID="{D2480A99-2042-483D-8B8E-7B57366D7C27}" ShortID="1028157456">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{ABCA10E1-C650-4A8C-9227-D24CC2316CA5}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="300"/>
+																	<Property Name="Min" Type="Real64" Value="-700"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="20">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{0CBE0B36-5A3C-4A44-8D50-4F8E43901582}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-15</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="AMB_In_RFX_MetalCreak_1" ID="{4FAAF348-01F3-4036-A82F-85BA45D76BD9}" ShortID="172014302">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalCreak_1" ID="{199896B1-09BA-4283-91E4-CCD37422EDEF}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0165753424657534"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.182328767123288"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.185643835616438"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.182328767123288"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.931534246575343"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalCreak_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="369210972"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalCreak_1" ID="{199896B1-09BA-4283-91E4-CCD37422EDEF}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalCreak_2" ID="{ACC18ED3-1338-487F-A828-A15E4B346ACC}" ShortID="1056942976">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalCreak_2" ID="{2D5BA49B-428D-4B24-9E1B-F67D07C45592}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0487893835616438"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.138236586757991"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.20347146118721"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalCreak_2.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="963177718"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalCreak_2" ID="{2D5BA49B-428D-4B24-9E1B-F67D07C45592}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalCreak_3" ID="{B65E54B6-6AA2-4845-9315-55DBCDE900F7}" ShortID="668907752">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalCreak_3" ID="{B49D1C10-4E90-4B8F-ADAC-A17FA258EEC2}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0478635131278539"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.224958511700913"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.59385498715753"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalCreak_3.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="684501554"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalCreak_3" ID="{B49D1C10-4E90-4B8F-ADAC-A17FA258EEC2}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalCreak_4" ID="{C0223C23-B019-4EF6-8A74-259EEE28D7AA}" ShortID="913966761">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalCreak_4" ID="{041DB61B-52B1-449C-8BF6-83128C314D30}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0618531678082192"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.195868364726027"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.113397474315069"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.10304815924658"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalCreak_4.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="97629492"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalCreak_4" ID="{041DB61B-52B1-449C-8BF6-83128C314D30}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalCreak_5" ID="{19C30911-BC12-4F94-8FA8-D0E509041B4F}" ShortID="853155689">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalCreak_5" ID="{BEFD36C8-A4CA-4BC9-8FF4-E19923DDC6D9}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0371501141552511"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.151977739726027"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.148600456621005"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.959148401826484"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalCreak_5.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="300926878"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalCreak_5" ID="{BEFD36C8-A4CA-4BC9-8FF4-E19923DDC6D9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="AMB_In_RFX_MetalCreak_6" ID="{C19DFF90-EC86-4F26-B00D-5C0A8D874906}" ShortID="770030406">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="AMB_In_RFX_MetalCreak_6" ID="{4348C399-FCE5-4C60-AB95-D07F3AEC3199}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0394217679794521"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.236530607876712"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.09305811215754"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>AMB_In_RFX_MetalCreak_6.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="427696587"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="AMB_In_RFX_MetalCreak_6" ID="{4348C399-FCE5-4C60-AB95-D07F3AEC3199}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{33B8A036-735E-467E-9DAA-06229C4BFC71}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="RFX_MetalCreak_Path" ID="{7A376E29-324A-4C2C-BD43-54689AC77CDE}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="8"/>
+																<Property Name="RandomZ" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-55.0633</XPos>
+																	<YPos>52.54776</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_01" ID="{7B8D5384-3D89-4C9B-BE0A-13278F9E7703}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="10"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-39.87343</XPos>
+																	<YPos>34.71337</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_02" ID="{A9CCD916-0FCA-48B3-8211-C3ED6C2B4A5D}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="8"/>
+																<Property Name="RandomZ" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>37.97467</XPos>
+																	<YPos>57.00636</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_03" ID="{999DB7C9-00CC-4D30-A187-081DBFC8700B}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="5"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>25.94935</XPos>
+																	<YPos>43.63057</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_04" ID="{F980A016-7680-44C2-882C-9C355C3352EF}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="8"/>
+																<Property Name="RandomZ" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>68.98733</XPos>
+																	<YPos>21.97451</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_05" ID="{2156CA2C-6D4B-4617-AF81-E210A35E5F58}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="8"/>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>50.63289</XPos>
+																	<YPos>15.60509</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_06" ID="{7DF4AFDD-C1C3-405A-BB62-169DFA98C4EA}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="8"/>
+																<Property Name="RandomZ" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>41.13923</XPos>
+																	<YPos>-30.89173</YPos>
+																	<ZPos>15</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_07" ID="{AAC6235B-2FB4-4BBA-959F-71AB30C8A005}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+																<Property Name="RandomZ" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>65.82277</XPos>
+																	<YPos>-33.4395</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_08" ID="{5CE99596-9F65-4739-8CDE-0FF74587A0A6}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+																<Property Name="RandomY" Type="Real64" Value="8"/>
+																<Property Name="RandomZ" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-55.0633</XPos>
+																	<YPos>-53.18472</YPos>
+																	<ZPos>15</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_MetalCreak_Path_09" ID="{D5C9B966-54B8-456D-ABB9-352FFB663E01}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="15"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+																<Property Name="RandomZ" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-31.01267</XPos>
+																	<YPos>-34.07644</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RFX_Light_MetalChains" ID="{7C24D031-B43C-4256-B6A3-CB70D562905A}" ShortID="428895598">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>14</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{265A231D-AE66-42D6-807B-DF156D3515C5}"/>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>22</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5E6D2D4C-F77B-4407-864B-168F75575B9D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="11"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-200</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{EC424CA0-0FF9-435E-8B88-AF5C123C78A7}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="25"/>
+																	<Property Name="Min" Type="Real64" Value="-51"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="15">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{AEE7433D-801B-48CC-A8F9-7909B617B841}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="15"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-18</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{A1ACC88A-B1AC-464E-9D6E-05DF453B6F6E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle" ID="{470501CF-8130-4B53-B7CE-EE87E38CDEA9}" ShortID="797858786">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle" ID="{DAAC173E-6797-4C90-B298-54F901B5A96E}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.760523749011678"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.55475575828295"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="723599081"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle" ID="{DAAC173E-6797-4C90-B298-54F901B5A96E}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle_01" ID="{D34474AF-5392-4A76-9BA0-0ADC5DF42511}" ShortID="1008387535">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="AMB_Dungeon" ID="{C9ED5C17-5B3E-4380-B26F-79F6C282B2F1}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle" ID="{A3E959D4-BAF7-4F89-B476-2FC68F0F0F50}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="3.5445205479452"/>
+																<Property Name="TrimEnd" Type="Real64" Value="6.06164383561644"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="763688778"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{E7BA9482-8451-401A-9E36-530501590858}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="RFX_WoodenCreak_Path" ID="{9A2F50DB-C319-4208-8425-9CDE617A763D}">
+																	<PropertyList>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-63.92405</XPos>
+																			<YPos>51.91083</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_01" ID="{285A54B0-692C-41AE-B2FE-395173EF3718}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="20"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-41.77216</XPos>
+																			<YPos>20.70065</YPos>
+																			<ZPos>-20</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_02" ID="{D236AF30-ACCE-4247-A1F0-EEC1B0DD10CB}">
+																	<PropertyList>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>41.77215</XPos>
+																			<YPos>57.64331</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_03" ID="{212471EA-834A-421F-ADA8-71B90B0CD88A}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="20"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>39.87341</XPos>
+																			<YPos>35.35032</YPos>
+																			<ZPos>-20</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_04" ID="{0FB1625F-3849-4698-A9A1-1F2E5D52A736}">
+																	<PropertyList>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>59.49367</XPos>
+																			<YPos>0.95541</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_05" ID="{94BA2F87-DA32-4861-BD02-9C838FC77200}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="20"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>52.53164</XPos>
+																			<YPos>-13.05732</YPos>
+																			<ZPos>-20</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_06" ID="{A7F2DB17-35B1-4243-94B0-6655C8B24768}">
+																	<PropertyList>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-58.86076</XPos>
+																			<YPos>-28.34395</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_07" ID="{4B326D05-9BB2-4EDC-8808-B2DBC5EA85DB}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="20"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-32.9114</XPos>
+																			<YPos>-24.5223</YPos>
+																			<ZPos>-20</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle" ID="{A3E959D4-BAF7-4F89-B476-2FC68F0F0F50}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle_02" ID="{CC3D095A-DF4A-49BD-97C9-12E3C93BAD01}" ShortID="973063145">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="AMB_Dungeon" ID="{C9ED5C17-5B3E-4380-B26F-79F6C282B2F1}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle" ID="{C709522F-7C4E-4650-B4DE-E6483EFC8045}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.980362645210366"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="9.27733362736162"/>
+																<Property Name="TrimEnd" Type="Real64" Value="11.4842945080181"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1022348264"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{A2D9916C-3C51-4013-BA19-20D35D14897C}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="RFX_WoodenCreak_Path" ID="{BBDAA97C-540D-4509-8D52-D5726B73D948}">
+																	<PropertyList>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-63.92405</XPos>
+																			<YPos>51.91083</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_01" ID="{62D40A81-D257-4630-9393-456DA8CE2C62}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="20"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-41.77216</XPos>
+																			<YPos>20.70065</YPos>
+																			<ZPos>-20</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_02" ID="{67D6FC7D-7E99-478D-817B-973FC9EA764E}">
+																	<PropertyList>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>41.77215</XPos>
+																			<YPos>57.64331</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_03" ID="{931A7B7E-AE4F-4805-B0D3-2DDAD0A97D8E}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="20"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>39.87341</XPos>
+																			<YPos>35.35032</YPos>
+																			<ZPos>-20</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_04" ID="{1672191B-A995-4278-9926-604F565B5C89}">
+																	<PropertyList>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>59.49367</XPos>
+																			<YPos>0.95541</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_05" ID="{F44DB14B-8344-459E-9D08-676A0FC6EC45}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="20"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>52.53164</XPos>
+																			<YPos>-13.05732</YPos>
+																			<ZPos>-20</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_06" ID="{D09D8C63-AB3E-4BED-82BA-2EE9BAEE5A6F}">
+																	<PropertyList>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-58.86076</XPos>
+																			<YPos>-28.34395</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_07" ID="{92C88EA9-0AE4-4FF6-89CD-A2DE7F0819F6}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="20"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-32.9114</XPos>
+																			<YPos>-24.5223</YPos>
+																			<ZPos>-20</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle" ID="{C709522F-7C4E-4650-B4DE-E6483EFC8045}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle_03" ID="{0B27D840-E76E-443C-95BC-464F5D1DF72C}" ShortID="704835411">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="AMB_Dungeon" ID="{C9ED5C17-5B3E-4380-B26F-79F6C282B2F1}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle" ID="{05E6AA77-8E02-4B04-9328-C0445E0CEE63}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="20.1258919340508"/>
+																<Property Name="TrimEnd" Type="Real64" Value="22.0266366557758"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="814605062"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{AA400D99-B009-4C37-8D72-76A848C579F7}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="RFX_WoodenCreak_Path" ID="{C82DB570-BBD3-42D7-A029-A3AC6572C922}">
+																	<PropertyList>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-63.92405</XPos>
+																			<YPos>51.91083</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_01" ID="{05F4E517-D730-41E4-9808-8C4DDEF9ABD7}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="20"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-41.77216</XPos>
+																			<YPos>20.70065</YPos>
+																			<ZPos>-20</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_02" ID="{9FE64272-E474-4898-B0E9-0A392FDD6C3C}">
+																	<PropertyList>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>41.77215</XPos>
+																			<YPos>57.64331</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_03" ID="{F3CE413E-99CD-4F54-9B2D-8B4C7E98809B}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="20"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>39.87341</XPos>
+																			<YPos>35.35032</YPos>
+																			<ZPos>-20</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_04" ID="{6945416A-6369-4666-8E47-2C16E10596E4}">
+																	<PropertyList>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>59.49367</XPos>
+																			<YPos>0.95541</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_05" ID="{C77B8CAA-C782-4C6B-9E1C-AE2ACA317816}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="20"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>52.53164</XPos>
+																			<YPos>-13.05732</YPos>
+																			<ZPos>-20</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_06" ID="{F9712D40-E44B-432D-B9E1-49AF5E60A987}">
+																	<PropertyList>
+																		<Property Name="RandomY" Type="Real64" Value="10"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-58.86076</XPos>
+																			<YPos>-28.34395</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_WoodenCreak_Path_07" ID="{4B821038-FBC7-4F97-A154-B1CE6361E1F8}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="20"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-32.9114</XPos>
+																			<YPos>-24.5223</YPos>
+																			<ZPos>-20</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="MAFCK METAL Sequence Chimes Metal Movement Copper Chain Subtle" ID="{05E6AA77-8E02-4B04-9328-C0445E0CEE63}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{6D2212E2-D143-49B4-963C-7B11587AB0A2}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="RFX_WoodenCreak_Path" ID="{A86249CD-E51F-4846-87DB-97C047B12245}">
+															<PropertyList>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-63.92405</XPos>
+																	<YPos>51.91083</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_WoodenCreak_Path_01" ID="{7AB1740F-ECA9-43C6-8B1D-3E9BE8C689F8}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-41.77216</XPos>
+																	<YPos>20.70065</YPos>
+																	<ZPos>-20</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_WoodenCreak_Path_02" ID="{BD16665E-3022-4F74-956B-FCDDFF21F6FF}">
+															<PropertyList>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>41.77215</XPos>
+																	<YPos>57.64331</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_WoodenCreak_Path_03" ID="{EED39F0B-9385-40C7-842E-7B068A7188C2}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>39.87341</XPos>
+																	<YPos>35.35032</YPos>
+																	<ZPos>-20</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_WoodenCreak_Path_04" ID="{6154A1BF-27B2-46F4-9CCB-95C8189BC77C}">
+															<PropertyList>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>59.49367</XPos>
+																	<YPos>0.95541</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_WoodenCreak_Path_05" ID="{81695CC0-A44E-40B9-AD1A-086982E5F904}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>52.53164</XPos>
+																	<YPos>-13.05732</YPos>
+																	<ZPos>-20</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_WoodenCreak_Path_06" ID="{C363D90F-A94C-40DB-9CE3-A68B56014665}">
+															<PropertyList>
+																<Property Name="RandomY" Type="Real64" Value="10"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-58.86076</XPos>
+																	<YPos>-28.34395</YPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_WoodenCreak_Path_07" ID="{2A5104AB-F2F3-4A63-B890-54EF3C7BC039}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="20"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-32.9114</XPos>
+																	<YPos>-24.5223</YPos>
+																	<ZPos>-20</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="RFX_Wind" ID="{15C06632-F6E7-4C4C-948E-7FA017A6E973}" ShortID="763896273">
+											<PropertyList>
+												<Property Name="3DPosition" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>39</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{39A9B23B-740B-4B86-9093-067E7A85DA9E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="16"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{04ED23E8-C1AE-43BB-A12A-306DE301261C}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="250"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="8.5">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{11F0D25A-6F88-4F66-901D-42C91EBEA16D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-23</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{088B11E5-68B3-4F74-8DDC-2C538A40A88E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="AMB_Dungeon" ID="{C9ED5C17-5B3E-4380-B26F-79F6C282B2F1}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="15 Howling wind" ID="{F642E519-D2C6-45C2-BB9D-7F1677DB5A59}" ShortID="988838630">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="15 Howling wind" ID="{51F9AF34-97F7-4E0A-AB28-8BD957A7CC29}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="10.3388430092778"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="1.08800597952476"/>
+																<Property Name="TrimEnd" Type="Real64" Value="12.7505862960329"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>15 Howling wind.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="396579010"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="15 Howling wind" ID="{51F9AF34-97F7-4E0A-AB28-8BD957A7CC29}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="15 Howling wind_01" ID="{9F254B21-F758-4FA3-B5EC-7748EB8532AF}" ShortID="33333705">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="AMB_Dungeon" ID="{C9ED5C17-5B3E-4380-B26F-79F6C282B2F1}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="15 Howling wind" ID="{FB75CBC4-4CB9-4B4A-90E5-DF634E0C37B9}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="4.78722630990896"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="10.3388430092778"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="32.204976993933"/>
+																<Property Name="TrimEnd" Type="Real64" Value="45.7241428886891"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>15 Howling wind.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="138308039"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="15 Howling wind" ID="{FB75CBC4-4CB9-4B4A-90E5-DF634E0C37B9}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="15 Howling wind_02" ID="{19AADEB9-CF28-4329-A235-8E064B81526D}" ShortID="1024676303">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="RFX_Dungeon" ID="{596D43B9-0846-4BC3-8D11-B7EECA00C331}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="AMB_Dungeon" ID="{C9ED5C17-5B3E-4380-B26F-79F6C282B2F1}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+														<Reference Name="UserAuxSend0">
+															<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="15 Howling wind" ID="{A86978E1-EC2D-42CF-B1C7-AEF6E8DD651C}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="4.78722630990896"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="10.3388430092778"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="104.013371642567"/>
+																<Property Name="TrimEnd" Type="Real64" Value="116.444531557799"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>15 Howling wind.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="978997454"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Position Name="" ID="{85A7048F-C643-4093-B5F4-C755B0E53C4A}">
+															<PropertyList>
+																<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="RFX_Cage_Path" ID="{8C7AD016-9E35-469A-8484-E207E1898757}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="35"/>
+																		<Property Name="RandomY" Type="Real64" Value="15"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>64.55696</XPos>
+																			<YPos>15.60509</YPos>
+																			<ZPos>10</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Cage_Path_01" ID="{BB250A3B-3E33-4F2B-A2E7-31EC09DA92C7}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="35"/>
+																		<Property Name="RandomY" Type="Real64" Value="15"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-20.88607</XPos>
+																			<YPos>57.6433</YPos>
+																			<ZPos>10</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Cage_Path_02" ID="{9320E3EE-EE3F-4A92-AA4A-6CF0B9B3B193}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="35"/>
+																		<Property Name="RandomY" Type="Real64" Value="15"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-48.73417</XPos>
+																			<YPos>19.42674</YPos>
+																			<ZPos>10</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Cage_Path_03" ID="{64145DC1-E95A-4702-8DE8-92A4AA25A0A5}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="35"/>
+																		<Property Name="RandomY" Type="Real64" Value="15"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>64.55697</XPos>
+																			<YPos>-19.42676</YPos>
+																			<ZPos>10</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Cage_Path_04" ID="{C5B73B0A-1D47-4EDD-AC97-DB1E07B749F5}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="35"/>
+																		<Property Name="RandomY" Type="Real64" Value="15"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-54.43037</XPos>
+																			<YPos>-32.80256</YPos>
+																			<ZPos>10</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="RFX_Cage_Path_05" ID="{440851AB-A4B5-4250-A6E2-1AFBA1F3705E}">
+																	<PropertyList>
+																		<Property Name="RandomX" Type="Real64" Value="35"/>
+																		<Property Name="RandomY" Type="Real64" Value="15"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>70.25317</XPos>
+																			<YPos>30.25477</YPos>
+																			<ZPos>10</ZPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<ActiveSourceList>
+														<ActiveSource Name="15 Howling wind" ID="{A86978E1-EC2D-42CF-B1C7-AEF6E8DD651C}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+											<PositioningInfo>
+												<Position Name="" ID="{53513EE7-2C4E-4677-A3EF-E1874E7CF6B1}">
+													<PropertyList>
+														<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+													</PropertyList>
+													<ChildrenList>
+														<Path2D Name="RFX_Cage_Path" ID="{2EFC9EEA-1DA7-445F-B1B8-EC1497D28BD3}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>64.55696</XPos>
+																	<YPos>15.60509</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Cage_Path_01" ID="{998467FC-5CC2-4BA2-9447-CF5C7FC3E96E}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-20.88607</XPos>
+																	<YPos>57.6433</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Cage_Path_02" ID="{8B48137B-03B4-434E-A072-74176248E33B}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-48.73417</XPos>
+																	<YPos>19.42674</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Cage_Path_03" ID="{216A0B08-8DAA-49AF-9CB6-0B23CA82816E}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>64.55697</XPos>
+																	<YPos>-19.42676</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Cage_Path_04" ID="{99A9EF89-0274-4701-9F1F-7589EAE2F2E0}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>-54.43037</XPos>
+																	<YPos>-32.80256</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+														<Path2D Name="RFX_Cage_Path_05" ID="{BFC4E405-437D-47AA-803D-303644983B2E}">
+															<PropertyList>
+																<Property Name="RandomX" Type="Real64" Value="35"/>
+																<Property Name="RandomY" Type="Real64" Value="15"/>
+															</PropertyList>
+															<PointList>
+																<Point>
+																	<XPos>70.25317</XPos>
+																	<YPos>30.25477</YPos>
+																	<ZPos>10</ZPos>
+																	<Flags>12</Flags>
+																	<Time>0</Time>
+																</Point>
+															</PointList>
+														</Path2D>
+													</ChildrenList>
+												</Position>
+											</PositioningInfo>
+										</RandomSequenceContainer>
+									</ChildrenList>
+								</BlendContainer>
+								<Sound Name="Roomton_Castle" ID="{0310EC82-2DEA-46FB-A862-123E012F4330}" ShortID="306619564">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-24</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="AMB_Dungeon" ID="{C9ED5C17-5B3E-4380-B26F-79F6C282B2F1}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="AMB_In_Roomtone_Castle" ID="{1607E91C-2353-4A78-8A70-CBC8AD181B1B}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="2021.053"/>
+												<Property Name="LoopBegin" Type="Real64" Value="2.84931506849315"/>
+												<Property Name="LoopEnd" Type="Real64" Value="125.58904109589"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="127.123287671233"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>AMB_In_Roomtone_Castle.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="487094529"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="AMB_In_Roomtone_Castle" ID="{1607E91C-2353-4A78-8A70-CBC8AD181B1B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

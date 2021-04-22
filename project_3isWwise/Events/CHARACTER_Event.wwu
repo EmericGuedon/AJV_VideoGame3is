@@ -48,14 +48,14 @@
 						<Action Name="" ID="{1E0BEA9E-A2A3-4D4E-923A-A549BAA0CB89}" ShortID="987067924">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Mob_Footstep_Materials" ID="{14FAD1FF-0A66-46E5-B6FA-1C15719A33D2}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+									<ObjectRef Name="Mob_Footstep_Materials" ID="{14FAD1FF-0A66-46E5-B6FA-1C15719A33D2}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
 						<Action Name="" ID="{60293C57-9BB2-41A4-BF12-927E3BE4BAF8}" ShortID="770435534">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="WP_Gear_Cloth" ID="{C10AA835-1266-4216-8318-9075EF9CE32F}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+									<ObjectRef Name="Mob_Gear" ID="{7BA4DFF8-D53E-40E0-AFCD-998146BA0CE8}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -133,6 +133,17 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Mob_Death" ID="{6668A981-441C-40F8-A741-817DD2C0ECE9}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="JumpLand_Hard_WP" ID="{DFF7601E-6089-4CFD-A7FE-16FBD774C3B4}">
+					<ChildrenList>
+						<Action Name="" ID="{B1E561BF-E765-4C4E-A04C-77F31E8C5F4E}" ShortID="420026785">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WP_Jumpland_Hard" ID="{50F50EAF-F08E-4B45-8D47-0B4062EF7E25}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
