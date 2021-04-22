@@ -3244,6 +3244,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_WhiteP_jump-003" ID="{9C120029-4916-4FE6-B050-F050B7CBDA74}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0264517694063927"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.171936501141553"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.10911354880137"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.611697167522832"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_WhiteP_jump-003.wav</AudioFile>
 													<MediaIDList>
@@ -3266,6 +3273,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_WhiteP_jump-002" ID="{C33024F3-BF59-4E2C-B685-E781EEE38D5A}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0597274543378995"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.164250499429224"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.122441281392694"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.695824843036529"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_WhiteP_jump-002.wav</AudioFile>
 													<MediaIDList>
@@ -3288,6 +3302,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_WhiteP_jump-004" ID="{B2FF44F1-0B9D-4C02-9695-DFD3CC15FBE0}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0447133989726027"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.194822666952055"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0319381421232877"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.376870077054795"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_WhiteP_jump-004.wav</AudioFile>
 													<MediaIDList>
@@ -3310,6 +3331,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_WhiteP_jump-005" ID="{22052115-F324-4D37-B683-0B8344DB7F83}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0685580764840183"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0685580764840182"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.229669556221461"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.764422552796803"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_WhiteP_jump-005.wav</AudioFile>
 													<MediaIDList>
@@ -3332,6 +3360,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_WhiteP_jump-006" ID="{2013FC7F-CE20-4388-B867-6DD78D410E9E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0557630565068493"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0984053938356164"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0918450342465754"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.659316138698631"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_WhiteP_jump-006.wav</AudioFile>
 													<MediaIDList>
@@ -3354,6 +3389,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_WhiteP_jump-007" ID="{F677BE16-9738-4C59-BC87-046D697A8F72}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.113870719178082"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.120771974885845"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.086265696347032"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.734983732876712"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_WhiteP_jump-007.wav</AudioFile>
 													<MediaIDList>
@@ -3376,6 +3418,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_WhiteP_jump-001" ID="{18FE8F9C-3EE9-43A3-98CA-90BCA36F69EF}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0188428938356164"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.119338327625571"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0188428938356164"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.634377425799087"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_WhiteP_jump-001.wav</AudioFile>
 													<MediaIDList>
@@ -3418,6 +3467,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_WhiteP_landing-001" ID="{95633CF6-2512-4354-B1B0-1414E9892B53}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0568083261986301"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.365549229452055"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_WhiteP_landing-001.wav</AudioFile>
 													<MediaIDList>
@@ -3440,6 +3494,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_WhiteP_landing-003" ID="{6CD1421F-E338-486C-8385-73AC78F82E56}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0191943493150685"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0719788099315068"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0167950556506849"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.39588345462329"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_WhiteP_landing-003.wav</AudioFile>
 													<MediaIDList>
@@ -3462,6 +3523,12 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_WhiteP_landing-004" ID="{5BB34067-E332-4C85-928B-2B051C155476}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0132371932077626"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0873654751712329"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.463301762271692"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_WhiteP_landing-004.wav</AudioFile>
 													<MediaIDList>
@@ -3484,6 +3551,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_WhiteP_landing-005" ID="{2B04B300-9961-4414-88D0-1C1A648B318E}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0247390839041096"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0989563356164383"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0439805936073059"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.475540168378998"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_WhiteP_landing-005.wav</AudioFile>
 													<MediaIDList>
