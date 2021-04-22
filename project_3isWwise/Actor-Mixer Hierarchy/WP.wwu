@@ -780,8 +780,265 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
+								<RandomSequenceContainer Name="WP_Weapon_ShieldMetal" ID="{F9C55B63-2A4A-4CBE-B90F-9DDE1D532B80}" ShortID="733191235">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-200</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{FF795409-1BB9-4571-BD70-F6DA947ACC23}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="101"/>
+															<Property Name="Min" Type="Real64" Value="-177"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{60EE4434-9F02-4A62-853E-D7165C5D174D}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CHAR_Weapon_Shield_Metal-001" ID="{D2967E92-11C8-4A60-B6C1-65FFAEEB4526}" ShortID="473637572">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-001" ID="{0F6E4A5E-EDE2-4D92-889F-7B7021090977}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_Weapon_Shield_Metal-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="514580300"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_Weapon_Shield_Metal-001" ID="{0F6E4A5E-EDE2-4D92-889F-7B7021090977}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_Weapon_Shield_Metal-002" ID="{357E09DC-65C3-4F27-A8EE-5937E3D214BF}" ShortID="315808069">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-002" ID="{2BBE0DD9-D9F7-49D7-9CED-AB9E804396B1}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_Weapon_Shield_Metal-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="943226565"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_Weapon_Shield_Metal-002" ID="{2BBE0DD9-D9F7-49D7-9CED-AB9E804396B1}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_Weapon_Shield_Metal-003" ID="{E9816ECA-F7C0-4742-854D-013A2E216B07}" ShortID="951954801">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-003" ID="{2532AD57-6A33-4BEC-B889-CEB67A444BEE}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0422133632990868"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0422133632990868"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CHAR_Weapon_Shield_Metal-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="539124665"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_Weapon_Shield_Metal-003" ID="{2532AD57-6A33-4BEC-B889-CEB67A444BEE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_Weapon_Shield_Metal-004" ID="{472D91DB-CB7C-41CB-B5D3-FF28222A818C}" ShortID="229034997">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-004" ID="{9415A16A-6A2E-4C34-95BD-9B5DB0DEB0AB}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0384587970890411"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0384587970890411"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CHAR_Weapon_Shield_Metal-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="788504167"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_Weapon_Shield_Metal-004" ID="{9415A16A-6A2E-4C34-95BD-9B5DB0DEB0AB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_Weapon_Shield_Metal-005" ID="{FC9BABB9-D37A-4ED7-8606-E012878107EF}" ShortID="619195793">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-005" ID="{00E8F37E-BB3E-427C-A37F-0F2EC72553E5}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0272263127853881"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0272263127853881"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CHAR_Weapon_Shield_Metal-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="918205937"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_Weapon_Shield_Metal-005" ID="{00E8F37E-BB3E-427C-A37F-0F2EC72553E5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_Weapon_Shield_Metal-006" ID="{652ECBD8-F052-4737-8E67-7A3991CC9D81}" ShortID="693175706">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-006" ID="{F0EA521D-4C78-452B-8F1E-926E0E227599}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0238994363584475"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0238994363584475"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CHAR_Weapon_Shield_Metal-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="309677809"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_Weapon_Shield_Metal-006" ID="{F0EA521D-4C78-452B-8F1E-926E0E227599}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_Weapon_Shield_Metal-007" ID="{4DC6DD70-5B3C-49F4-89A8-79FB56721D40}" ShortID="746397556">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-007" ID="{2D029525-27CE-4E0A-80DC-7190DB510A04}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0541356307077626"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0541356307077626"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CHAR_Weapon_Shield_Metal-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="420375851"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_Weapon_Shield_Metal-007" ID="{2D029525-27CE-4E0A-80DC-7190DB510A04}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_Weapon_Shield_Metal-008" ID="{8ACBAE21-4E58-419D-9A8C-4454C96BE5CE}" ShortID="797954525">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-008" ID="{FC2CEDC8-9224-4890-8B92-EB4BBE77E5D9}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0.0621805436643836"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0621805436643836"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CHAR_Weapon_Shield_Metal-008.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="175577784"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_Weapon_Shield_Metal-008" ID="{FC2CEDC8-9224-4890-8B92-EB4BBE77E5D9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="WP_Weapon_ShieldWood" ID="{A06C1B71-2179-4C9E-987C-2D0BA015546A}" ShortID="304159933">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
 												<Value>15</Value>
@@ -818,6 +1075,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 										</Reference>
@@ -1056,258 +1316,6 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="CHAR_Weapon_Shield_Wood-009" ID="{CBAD82A1-D3A6-4D37-B2DA-090AFC69FA11}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
-								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="WP_Weapon_ShieldMetal" ID="{F9C55B63-2A4A-4CBE-B90F-9DDE1D532B80}" ShortID="733191235">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-200</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{FF795409-1BB9-4571-BD70-F6DA947ACC23}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="101"/>
-															<Property Name="Min" Type="Real64" Value="-177"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-17</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{60EE4434-9F02-4A62-853E-D7165C5D174D}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Min" Type="Real64" Value="-2"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="CHAR_Weapon_Shield_Metal-001" ID="{D2967E92-11C8-4A60-B6C1-65FFAEEB4526}" ShortID="473637572">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-001" ID="{0F6E4A5E-EDE2-4D92-889F-7B7021090977}">
-													<Language>SFX</Language>
-													<AudioFile>CHAR_Weapon_Shield_Metal-001.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="514580300"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_Weapon_Shield_Metal-001" ID="{0F6E4A5E-EDE2-4D92-889F-7B7021090977}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_Weapon_Shield_Metal-002" ID="{357E09DC-65C3-4F27-A8EE-5937E3D214BF}" ShortID="315808069">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-002" ID="{2BBE0DD9-D9F7-49D7-9CED-AB9E804396B1}">
-													<Language>SFX</Language>
-													<AudioFile>CHAR_Weapon_Shield_Metal-002.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="943226565"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_Weapon_Shield_Metal-002" ID="{2BBE0DD9-D9F7-49D7-9CED-AB9E804396B1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_Weapon_Shield_Metal-003" ID="{E9816ECA-F7C0-4742-854D-013A2E216B07}" ShortID="951954801">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-003" ID="{2532AD57-6A33-4BEC-B889-CEB67A444BEE}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0422133632990868"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0422133632990868"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_Weapon_Shield_Metal-003.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="539124665"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_Weapon_Shield_Metal-003" ID="{2532AD57-6A33-4BEC-B889-CEB67A444BEE}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_Weapon_Shield_Metal-004" ID="{472D91DB-CB7C-41CB-B5D3-FF28222A818C}" ShortID="229034997">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-004" ID="{9415A16A-6A2E-4C34-95BD-9B5DB0DEB0AB}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0384587970890411"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0384587970890411"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_Weapon_Shield_Metal-004.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="788504167"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_Weapon_Shield_Metal-004" ID="{9415A16A-6A2E-4C34-95BD-9B5DB0DEB0AB}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_Weapon_Shield_Metal-005" ID="{FC9BABB9-D37A-4ED7-8606-E012878107EF}" ShortID="619195793">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-005" ID="{00E8F37E-BB3E-427C-A37F-0F2EC72553E5}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0272263127853881"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0272263127853881"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_Weapon_Shield_Metal-005.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="918205937"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_Weapon_Shield_Metal-005" ID="{00E8F37E-BB3E-427C-A37F-0F2EC72553E5}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_Weapon_Shield_Metal-006" ID="{652ECBD8-F052-4737-8E67-7A3991CC9D81}" ShortID="693175706">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-006" ID="{F0EA521D-4C78-452B-8F1E-926E0E227599}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0238994363584475"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0238994363584475"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_Weapon_Shield_Metal-006.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="309677809"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_Weapon_Shield_Metal-006" ID="{F0EA521D-4C78-452B-8F1E-926E0E227599}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_Weapon_Shield_Metal-007" ID="{4DC6DD70-5B3C-49F4-89A8-79FB56721D40}" ShortID="746397556">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-007" ID="{2D029525-27CE-4E0A-80DC-7190DB510A04}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0541356307077626"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0541356307077626"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_Weapon_Shield_Metal-007.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="420375851"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_Weapon_Shield_Metal-007" ID="{2D029525-27CE-4E0A-80DC-7190DB510A04}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_Weapon_Shield_Metal-008" ID="{8ACBAE21-4E58-419D-9A8C-4454C96BE5CE}" ShortID="797954525">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_Weapon_Shield_Metal-008" ID="{FC2CEDC8-9224-4890-8B92-EB4BBE77E5D9}">
-													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0621805436643836"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0621805436643836"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_Weapon_Shield_Metal-008.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="175577784"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_Weapon_Shield_Metal-008" ID="{FC2CEDC8-9224-4890-8B92-EB4BBE77E5D9}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
