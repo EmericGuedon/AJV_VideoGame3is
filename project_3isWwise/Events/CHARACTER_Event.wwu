@@ -41,6 +41,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{333B2F01-6BAE-40D4-8353-CDA80710E29C}" ShortID="625227398">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Mob_Footstep_Materials" ID="{14FAD1FF-0A66-46E5-B6FA-1C15719A33D2}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Footstep_Mob" ID="{9CFAFFD3-23E5-4916-84EF-80BFDC1CC2B4}">
