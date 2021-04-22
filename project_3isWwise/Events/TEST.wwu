@@ -32,6 +32,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_SinePluck" ID="{C1FFBA4D-9F5A-4ED5-9196-8C24BBB941D7}">
+					<ChildrenList>
+						<Action Name="" ID="{0F65199A-63DD-4761-8021-FF8CCED1479F}" ShortID="322390183">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SinePluck" ID="{7B0A78B3-B6E4-4D88-86BC-B123616E68E2}" WorkUnitID="{B7DF8193-1C64-4EE4-A00D-2C2356EB80C7}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
