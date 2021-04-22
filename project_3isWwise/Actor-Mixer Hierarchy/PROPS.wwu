@@ -434,6 +434,292 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 										</Reference>
 									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="Wooden_Box_Crackles" ID="{470B4010-BE70-47B0-A967-AB145498C0B9}" ShortID="178736302">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-20</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="Wood Planks Break" ID="{2B5C9E41-9FE9-4BE8-9A8A-9631006AD2EA}" ShortID="17519577">
+													<PropertyList>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>27</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{FE83D07A-05E0-4A37-87FC-51E2A402BAED}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="13"/>
+																			<Property Name="Min" Type="Real64" Value="-7"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{3B6626B7-CC6A-465D-B469-7754E32575B2}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="22"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{0B6891A7-F9F3-4AC7-809E-2DFAD6240D3C}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="328"/>
+																			<Property Name="Min" Type="Real64" Value="-227"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{3668064D-2830-44CB-8C6D-E8427C55BCD8}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="4"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wood Planks Break" ID="{85852483-0107-4F39-A7CC-529825CDE528}">
+															<PropertyList>
+																<Property Name="FadeInDuration" Type="Real64" Value="0.0286762503743636"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0745582509733453"/>
+																<Property Name="LoopBegin" Type="Real64" Value="0.395732255166218"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.254262753319357"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.768523510032943"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Wood Planks Break.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="551660935"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wood Planks Break" ID="{85852483-0107-4F39-A7CC-529825CDE528}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="Wooden_Box_Hit" ID="{F0632037-C8C7-4ECD-BC88-5CA3A4A2CA75}" ShortID="755930347">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>14</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{38D6395F-401A-4CC1-B94F-A07BA8DA3B5B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="17"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{DB0BA737-3DE5-4048-8FF5-3A61DDF6B982}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="152"/>
+																	<Property Name="Min" Type="Real64" Value="-152"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-20</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{95C819C6-1255-4965-AE41-F4D485A02D2B}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CSCK SWEETENER Wood Box Hammer Scrape Hit Near" ID="{AB0F89A6-4941-48DE-A391-E8EB4C325079}" ShortID="991025775">
+													<PropertyList>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CSCK SWEETENER Wood Box Hammer Scrape Hit Near" ID="{F20FED36-CF97-44FF-8FE8-9B70EA1D56B6}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.284948784823187"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.796614401628123"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CSCK SWEETENER Wood Box Hammer Scrape Hit Near.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="340202229"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CSCK SWEETENER Wood Box Hammer Scrape Hit Near" ID="{F20FED36-CF97-44FF-8FE8-9B70EA1D56B6}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CSCK SWEETENER Wood Box Hammer Scrape Hit Near_01" ID="{5FAE6E7E-C5C3-4947-A731-4DA6E32DD13E}" ShortID="342228271">
+													<PropertyList>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Indoor" ID="{E367DFD4-3824-4C11-8A14-C65037EC3182}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CSCK SWEETENER Wood Box Hammer Scrape Hit Near" ID="{E9FACB76-3FED-40CA-96F2-A2AB13DB85A8}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="3.76950334389289"/>
+																<Property Name="TrimEnd" Type="Real64" Value="4.31090861062289"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CSCK SWEETENER Wood Box Hammer Scrape Hit Near.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1052207227"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CSCK SWEETENER Wood Box Hammer Scrape Hit Near" ID="{E9FACB76-3FED-40CA-96F2-A2AB13DB85A8}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CSCK SWEETENER Wood Box Hammer Scrape Hit Near_02" ID="{FEBDCEF6-F328-43BB-9E80-0AA22E216A2B}" ShortID="660324768">
+													<PropertyList>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Indoor" ID="{E367DFD4-3824-4C11-8A14-C65037EC3182}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CSCK SWEETENER Wood Box Hammer Scrape Hit Near" ID="{C0A61110-0BEA-486B-9F1C-6324FEF922FE}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="7.72152617792194"/>
+																<Property Name="TrimEnd" Type="Real64" Value="8.27348023136405"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CSCK SWEETENER Wood Box Hammer Scrape Hit Near.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="857942862"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CSCK SWEETENER Wood Box Hammer Scrape Hit Near" ID="{C0A61110-0BEA-486B-9F1C-6324FEF922FE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CSCK SWEETENER Wood Box Hammer Scrape Hit Near_03" ID="{CEDBE1C7-4677-4F20-AA17-26054A85285A}" ShortID="94828093">
+													<PropertyList>
+														<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Indoor" ID="{E367DFD4-3824-4C11-8A14-C65037EC3182}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CSCK SWEETENER Wood Box Hammer Scrape Hit Near" ID="{BAF2AD4E-F5F4-4344-8015-E33EDF9BFD5D}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="11.6468203036553"/>
+																<Property Name="TrimEnd" Type="Real64" Value="12.0794493409811"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CSCK SWEETENER Wood Box Hammer Scrape Hit Near.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="116428132"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CSCK SWEETENER Wood Box Hammer Scrape Hit Near" ID="{BAF2AD4E-F5F4-4344-8015-E33EDF9BFD5D}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
 								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
