@@ -352,6 +352,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="CHAR_MOB_DeathSound-001" ID="{0FF33A98-6DBA-43A8-866B-149A246730D1}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0319457547169811"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0319457547169811"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0780896226415094"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.18909198113207"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CHAR_MOB_DeathSound-001.wav</AudioFile>
 											<MediaIDList>
@@ -375,8 +382,10 @@
 									<ChildrenList>
 										<AudioFileSource Name="CHAR_MOB_DeathSound-002" ID="{A5568AD6-E666-49A4-B3F6-7D2C81786015}">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.532257491438356"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0368860062893082"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.403156469425778"/>
 												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0829935141509434"/>
 												<Property Name="TrimEnd" Type="Real64" Value="1.08962146832192"/>
 											</PropertyList>
 											<Language>SFX</Language>
@@ -401,6 +410,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="CHAR_MOB_DeathSound-006" ID="{91854886-6585-4AB8-B0F9-2F593A1154E5}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0771221174004193"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.13978383778826"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0385610587002096"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.75934830319707"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CHAR_MOB_DeathSound-006.wav</AudioFile>
 											<MediaIDList>
@@ -423,6 +439,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="CHAR_MOB_DeathSound-010" ID="{B68C62FE-456A-4A37-97CE-A6154556DD4D}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.0568899043501048"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.11377980870021"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.087522929769392"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.6848163980608"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CHAR_MOB_DeathSound-010.wav</AudioFile>
 											<MediaIDList>
@@ -445,6 +468,14 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="CHAR_MOB_DeathSound-011" ID="{1D619B8E-D77C-4342-91C5-246A047B6420}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.046663161687631"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0806000065513628"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.0975684289832285"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0933263233752621"/>
+												<Property Name="TrimEnd" Type="Real64" Value="1.60775802541929"/>
+											</PropertyList>
 											<Language>SFX</Language>
 											<AudioFile>CHAR_MOB_DeathSound-011.wav</AudioFile>
 											<MediaIDList>
@@ -509,6 +540,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_MobAlertReact-005" ID="{180D6C54-1647-4B1E-8BAA-CC4376BC65B5}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0281168107966457"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0309284918763103"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.101220518867924"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.59607638888889"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_MobAlertReact-005.wav</AudioFile>
 													<MediaIDList>
@@ -531,6 +569,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_MobAlertReact-007" ID="{DCE58039-84FF-44D6-8860-F99C4BE5ADB4}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0364862421383648"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0364862421383648"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0334457219601677"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.714522241876312"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_MobAlertReact-007.wav</AudioFile>
 													<MediaIDList>
@@ -553,6 +598,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_MobAlertReact-009" ID="{8C7F73B9-DFC9-4613-9429-94A50D0E7559}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0294299004192872"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0321053459119497"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0668861373165618"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.527062762054507"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_MobAlertReact-009.wav</AudioFile>
 													<MediaIDList>
@@ -575,6 +627,13 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_MobAlertReact-016" ID="{F079D8DC-DF4D-4E5B-A293-0AB4CF2595A4}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0288191496331237"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0497785311844864"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.070737912735849"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.576382992662475"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_MobAlertReact-016.wav</AudioFile>
 													<MediaIDList>
@@ -794,14 +853,14 @@
 													<ChildrenList>
 														<AudioFileSource Name="CHAR_WhiteP_Gear_Purse001" ID="{52EE7681-D4B4-456E-94ED-79804FF91EEA}">
 															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0697713246855346"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimEnd" Type="Real64" Value="0.46080522260274"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_WhiteP_Gear_Purse001.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="316467109"/>
+																<MediaID ID="868596758"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -821,14 +880,14 @@
 													<ChildrenList>
 														<AudioFileSource Name="CHAR_WhiteP_Gear_Purse003" ID="{04E79730-D94E-4C7D-AC8C-B04AF9DF1082}">
 															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0607119693396226"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimEnd" Type="Real64" Value="0.435887913812786"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_WhiteP_Gear_Purse003.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="179112598"/>
+																<MediaID ID="998790194"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -848,14 +907,14 @@
 													<ChildrenList>
 														<AudioFileSource Name="CHAR_WhiteP_Gear_Purse002" ID="{178F6C78-87D4-4DC5-BC0F-D62965DEFFA9}">
 															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0809535508385744"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimEnd" Type="Real64" Value="0.506300299657534"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_WhiteP_Gear_Purse002.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="224414948"/>
+																<MediaID ID="435429113"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -875,14 +934,14 @@
 													<ChildrenList>
 														<AudioFileSource Name="CHAR_WhiteP_Gear_Purse004" ID="{D678D84B-D61E-47FB-8A7A-EDD4FBE6FFD4}">
 															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.064969765461216"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimEnd" Type="Real64" Value="0.441607198915524"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_WhiteP_Gear_Purse004.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="15120042"/>
+																<MediaID ID="144078138"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -902,14 +961,14 @@
 													<ChildrenList>
 														<AudioFileSource Name="CHAR_WhiteP_Gear_Purse005" ID="{5FA8B1DC-5F27-466C-B86A-680F3B1C7D46}">
 															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0486533018867924"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimEnd" Type="Real64" Value="0.51976198630137"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.485009627810804"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_WhiteP_Gear_Purse005.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="200966250"/>
+																<MediaID ID="44749860"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -971,6 +1030,7 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_GEAR_cloth-001" ID="{6ED8B6D5-F5B3-4CBA-951B-37E7E2CBF368}">
 													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0656546449161425"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0599682505707763"/>
 														<Property Name="TrimEnd" Type="Real64" Value="0.401325984589041"/>
@@ -978,7 +1038,7 @@
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_GEAR_cloth-001.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="765319452"/>
+														<MediaID ID="7916736"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -998,14 +1058,15 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_GEAR_cloth-002" ID="{39BA07A1-6623-4477-926F-BC01BF0E8D1B}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.101580443778539"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0498913456498952"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.101580443778539"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.340562663784066"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_GEAR_cloth-002.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="1044551512"/>
+														<MediaID ID="422654526"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1024,10 +1085,15 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_GEAR_cloth-003" ID="{D2DB61A2-9D8E-4B14-AB45-4C03BA8CB1C6}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0526187106918239"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.401217669025157"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_GEAR_cloth-003.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="323197515"/>
+														<MediaID ID="331096072"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1046,10 +1112,15 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_GEAR_cloth-004" ID="{179E08EA-F466-45A5-96AA-9E5ADB9265BC}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0545843160377359"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.379906839622641"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_GEAR_cloth-004.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="727750019"/>
+														<MediaID ID="862968186"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1068,10 +1139,15 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_GEAR_cloth-005" ID="{58326642-1947-4AD3-824E-660396EA5A08}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0743085036687631"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.409758320230607"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_GEAR_cloth-005.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="113160131"/>
+														<MediaID ID="815666465"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1139,10 +1215,14 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="CHAR_MOB_GEAR_Stuff-002" ID="{ECD6B5BE-46A0-4EB0-A61D-03E4268D3A62}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.393988502358491"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_MOB_GEAR_Stuff-002.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="275166912"/>
+																<MediaID ID="648205610"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1161,10 +1241,15 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="CHAR_MOB_GEAR_Stuff-001" ID="{6D0466BB-A7CB-44CA-BA72-83EEB530BDE4}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0283018867924528"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.349056603773584"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_MOB_GEAR_Stuff-001.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="659949253"/>
+																<MediaID ID="129924123"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1183,10 +1268,15 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="CHAR_MOB_GEAR_Stuff-005" ID="{055051C5-25E2-4133-A385-947AA76990B1}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.408018867924528"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_MOB_GEAR_Stuff-005.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="786842801"/>
+																<MediaID ID="108631963"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1205,10 +1295,15 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="CHAR_MOB_GEAR_Stuff-004" ID="{38999106-7478-406E-B4E8-A81757DBCA38}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.318028203616351"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_MOB_GEAR_Stuff-004.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="492661314"/>
+																<MediaID ID="429826598"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1227,10 +1322,14 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="CHAR_MOB_GEAR_Stuff-003" ID="{EC091EFD-E65E-45E7-889F-46945E1945AE}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.434445754716981"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_MOB_GEAR_Stuff-003.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="1047326198"/>
+																<MediaID ID="151090996"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -1323,6 +1422,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_Footsteps_MAT_Snow-001" ID="{C52E8143-72EC-482C-9469-0779C8DEB03D}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0249997051886792"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.452267393867924"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_Footsteps_MAT_Snow-001.wav</AudioFile>
 													<MediaIDList>
@@ -1345,6 +1449,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_Footsteps_MAT_Snow-002" ID="{4BB2F99D-7A88-48E0-8A10-C5C18F733A13}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0518867924528302"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.441037735849056"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_Footsteps_MAT_Snow-002.wav</AudioFile>
 													<MediaIDList>
@@ -1367,6 +1476,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_Footsteps_MAT_Snow-003" ID="{6FB3C49A-DC8E-4D96-96E9-D025F5AA5593}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0197352594339622"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.40347641509434"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_Footsteps_MAT_Snow-003.wav</AudioFile>
 													<MediaIDList>
@@ -1389,6 +1503,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_Footsteps_MAT_Snow-004" ID="{72CD0386-C1E4-4348-B7D2-1D90E3E54A17}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0372225825471698"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.319676297169812"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_Footsteps_MAT_Snow-004.wav</AudioFile>
 													<MediaIDList>
@@ -1411,6 +1530,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_Footsteps_MAT_Snow-005" ID="{8F7DA0B7-04B1-4DCD-8B91-88D5484C94FE}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0176771488469602"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.413203354297693"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_Footsteps_MAT_Snow-005.wav</AudioFile>
 													<MediaIDList>
@@ -1460,9 +1584,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_Footsteps_MAT_Stone-001" ID="{DD8D06BF-1F4A-4B33-B6D9-FCF80DF31C5A}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0597549229452055"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0185711477987421"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0597549229452055"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.211668877751572"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_Footsteps_MAT_Stone-001.wav</AudioFile>
@@ -1494,9 +1619,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_Footsteps_MAT_Stone-002" ID="{88BA8BFE-7D07-4693-B53B-277BFB343E58}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0460348886986301"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0201290618448637"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0460348886986301"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.231484211215934"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_Footsteps_MAT_Stone-002.wav</AudioFile>
@@ -1528,9 +1654,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_Footsteps_MAT_Stone-003" ID="{85523279-4752-4D8D-8C95-953FA4E7A676}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0531062714041096"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0636055424528302"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0531062714041096"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.275624017295597"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_Footsteps_MAT_Stone-003.wav</AudioFile>
@@ -1562,9 +1689,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_Footsteps_MAT_Stone-004" ID="{8E9966BD-C68A-4D12-ADE2-1AB6BF69567A}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0433611586757991"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0477790880503145"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0433611586757991"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.207042714884696"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_Footsteps_MAT_Stone-004.wav</AudioFile>
@@ -1596,9 +1724,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_Footsteps_MAT_Stone-005" ID="{B79421A1-CFB8-4049-A443-6FD92CF5A886}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0513074343607306"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0256977201257862"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0513074343607306"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.24198686451782"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_Footsteps_MAT_Stone-005.wav</AudioFile>
@@ -1650,9 +1779,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_Footsteps_MAT_Wood-001" ID="{B5209C2C-4770-415E-B61B-E9ACE3362AF1}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0569545519406393"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0271949030398323"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0569545519406393"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.299143933438155"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_Footsteps_MAT_Wood-001.wav</AudioFile>
@@ -1684,9 +1814,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_Footsteps_MAT_Wood-002" ID="{CA7964A9-BE26-4D26-9880-A470949E8089}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0258318707191781"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.034501572327044"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0258318707191781"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.377360947327044"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_Footsteps_MAT_Wood-002.wav</AudioFile>
@@ -1718,9 +1849,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_Footsteps_MAT_Wood-003" ID="{B8290D68-2F1E-46F0-84E9-8FF5854A73B7}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0679418521689498"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0451766902515723"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0679418521689498"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.337749541404612"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_Footsteps_MAT_Wood-003.wav</AudioFile>
@@ -1752,9 +1884,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_Footsteps_MAT_Wood-004" ID="{F2043AB0-43AC-4891-BD0C-03ED35C43245}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0387290953196347"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0376544811320755"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0387290953196347"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.374452895702306"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_Footsteps_MAT_Wood-004.wav</AudioFile>
@@ -1786,9 +1919,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="CHAR_MOB_Footsteps_MAT_Wood-005" ID="{D9C2FEDC-5946-48DD-8AC5-B6FFBEDFEB8E}">
 													<PropertyList>
-														<Property Name="LoopBegin" Type="Real64" Value="0.0554914383561644"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.021231001048218"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0554914383561644"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.159232507861635"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>CHAR_MOB_Footsteps_MAT_Wood-005.wav</AudioFile>
