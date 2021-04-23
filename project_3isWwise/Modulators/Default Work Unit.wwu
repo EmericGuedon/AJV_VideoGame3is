@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8448C00A-1B51-4C29-BC97-5FB6BDA98398}" SchemaVersion="97">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{8448C00A-1B51-4C29-BC97-5FB6BDA98398}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8448C00A-1B51-4C29-BC97-5FB6BDA98398}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="LFO Bridge" ID="{9AEB0600-99CF-4FFE-A86F-4EC90593241B}" ShortID="897942551">
+					<PropertyList>
+						<Property Name="LfoDepth" Type="Real64" Value="46.3"/>
+						<Property Name="LfoFrequency" Type="Real64">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{1DFE00EC-647B-4400-95FE-780C07253E15}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="105"/>
+											<Property Name="Min" Type="Real64" Value="-737"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="LfoSmoothing" Type="Real64" Value="21"/>
+						<Property Name="LfoWaveform" Type="int32" Value="5"/>
+					</PropertyList>
+				</ModulatorLfo>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>
