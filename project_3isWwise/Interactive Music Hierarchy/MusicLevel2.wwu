@@ -23,7 +23,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-18</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -615,7 +615,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-18</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -841,6 +841,13 @@
 									</SequenceList>
 								</MusicTrack>
 								<MusicTrack Name="Choeur" ID="{1F7B1C7D-F1FA-41E7-A6C7-26F6068C4497}" ShortID="555261068">
+									<PropertyList>
+										<Property Name="Inclusion" Type="bool">
+											<ValueList>
+												<Value>False</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
@@ -931,7 +938,7 @@
 						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-10</Value>
+								<Value>-18</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
