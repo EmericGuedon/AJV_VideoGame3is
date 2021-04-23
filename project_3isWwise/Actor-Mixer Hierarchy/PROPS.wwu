@@ -50,25 +50,25 @@
 														</PropertyList>
 														<PointList>
 															<Point>
-																<XPos>-2</XPos>
+																<XPos>-2.5</XPos>
 																<YPos>-24</YPos>
 																<Flags>5</Flags>
 																<SegmentShape>Log1</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>-0.6528305</XPos>
+																<XPos>-1.003145</XPos>
 																<YPos>14</YPos>
 																<Flags>0</Flags>
 																<SegmentShape>Exp1</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>0.24484</XPos>
+																<XPos>-0.00573333333333359</XPos>
 																<YPos>29</YPos>
 																<Flags>0</Flags>
 																<SegmentShape>Log1</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>1.164148</XPos>
+																<XPos>1.01572</XPos>
 																<YPos>13</YPos>
 																<Flags>0</Flags>
 																<SegmentShape>Exp1</SegmentShape>
@@ -97,14 +97,16 @@
 														</PropertyList>
 														<PointList>
 															<Point>
-																<XPos>-2</XPos>
+																<XPos>-2.5</XPos>
 																<YPos>-0.04074</YPos>
 																<Flags>5</Flags>
+																<SegmentShape>Log1</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>0.25</XPos>
+																<XPos>0</XPos>
 																<YPos>-192</YPos>
 																<Flags>0</Flags>
+																<SegmentShape>Exp1</SegmentShape>
 															</Point>
 															<Point>
 																<XPos>2.5</XPos>
@@ -130,12 +132,12 @@
 														</PropertyList>
 														<PointList>
 															<Point>
-																<XPos>-2</XPos>
+																<XPos>-2.5</XPos>
 																<YPos>254</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>
-																<XPos>0.25</XPos>
+																<XPos>0</XPos>
 																<YPos>-254</YPos>
 																<Flags>0</Flags>
 															</Point>
