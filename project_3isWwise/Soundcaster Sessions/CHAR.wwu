@@ -23,7 +23,7 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{B1CE15CB-05BD-4F39-9661-3E8EE2CFA6A8}"/>
+						<CurrentStateRef Name="Mid" ID="{4CFCC9A7-265B-45FD-AAC0-4311A6DA0B62}"/>
 						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">

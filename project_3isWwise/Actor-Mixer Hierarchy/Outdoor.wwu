@@ -52,20 +52,31 @@
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="InitialDelay" Type="Real64">
 													<ValueList>
-														<Value>3</Value>
+														<Value>4</Value>
 													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{06F8B51A-02E2-4B83-8344-949F9E4144B2}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="2"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
 												</Property>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="25">
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10">
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{6F3192C1-6702-4892-9212-C3CE841E06A7}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="10"/>
+																	<Property Name="Max" Type="Real64" Value="8"/>
 																	<Property Name="Min" Type="Real64" Value="-3"/>
 																</PropertyList>
 															</Modifier>
@@ -76,7 +87,7 @@
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-10</Value>
+														<Value>-7</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -314,10 +325,14 @@
 												<Property Name="3DPosition" Type="int16" Value="2"/>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{4AEE5DFE-4637-46C2-9BFC-E27BD3EC012D}">
 																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
 																	<Property Name="Max" Type="Real64" Value="15"/>
 																	<Property Name="Min" Type="Real64" Value="-2"/>
 																</PropertyList>
@@ -361,14 +376,14 @@
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5">
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6">
 													<ModifierList>
 														<ModifierInfo>
 															<Modifier Name="" ID="{996D0EED-F078-4905-95F2-10CA5C53185E}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="10"/>
-																	<Property Name="Min" Type="Real64" Value="-5"/>
+																	<Property Name="Max" Type="Real64" Value="5"/>
+																	<Property Name="Min" Type="Real64" Value="-4"/>
 																</PropertyList>
 															</Modifier>
 														</ModifierInfo>
@@ -378,7 +393,7 @@
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-10</Value>
+														<Value>-6</Value>
 													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
@@ -694,6 +709,290 @@
 										<ActiveSource Name="AMB_Out_Cave_Roomtone" ID="{C093236F-411E-44DD-9C57-0F189A8F298C}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
+								<RandomSequenceContainer Name="RFX_Blizz_Wind" ID="{15CF7BA5-3793-4E0B-8DE1-9A2800EC9FDD}" ShortID="547980693">
+									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>20</Value>
+											</ValueList>
+										</Property>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>5.5</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{5CCECE9B-2127-482D-809F-A2DB06807A66}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>40</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{409D8C21-C6B3-4791-A491-0E3FBD05DD15}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-580</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{10BF68BC-FC27-4124-8EA1-413D9F615696}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="300"/>
+															<Property Name="Min" Type="Real64" Value="-100"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{BD8ACEFF-7A85-4F7A-81AE-0682A4DEC03A}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+															<Property Name="Min" Type="Real64" Value="-2"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="RFX_Outdoor" ID="{64932D91-9191-4F24-9E96-63FFBCF90F39}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="AMB_Blizzard" ID="{D7CF2697-423E-4E07-964F-A157FA5FCB45}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Blizzard" ID="{7D3CD3BC-8230-4DD2-A46C-109CAA4BC9D6}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="RFX_Blizzard_Wind-001" ID="{4C678FC9-C23A-43A5-9BED-E720B226A066}" ShortID="183375991">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_Blizzard_Wind-001" ID="{E757F89D-DB7B-4BAA-BBFA-29DFF22598A8}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_Blizzard_Wind-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="291228112"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_Blizzard_Wind-001" ID="{E757F89D-DB7B-4BAA-BBFA-29DFF22598A8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_Blizzard_Wind-002" ID="{C2CA6606-ACF8-455E-B456-A87A8D45F490}" ShortID="576798418">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_Blizzard_Wind-002" ID="{CCB37471-21A4-4725-BA27-5B6621998EDB}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_Blizzard_Wind-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="737466167"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_Blizzard_Wind-002" ID="{CCB37471-21A4-4725-BA27-5B6621998EDB}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_Blizzard_Wind-003" ID="{B6881D44-7DD7-40D5-B086-162E016BCC31}" ShortID="1039303677">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_Blizzard_Wind-003" ID="{C8F602AF-EB27-4E9E-B7D0-F1F78965CF78}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_Blizzard_Wind-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="706624072"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_Blizzard_Wind-003" ID="{C8F602AF-EB27-4E9E-B7D0-F1F78965CF78}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_Blizzard_Wind-004" ID="{A386EC84-D7A3-481E-A98F-01549A051071}" ShortID="131524265">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_Blizzard_Wind-004" ID="{6E9C29EE-2862-49F9-9955-B5D6A788AB93}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_Blizzard_Wind-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="716221502"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_Blizzard_Wind-004" ID="{6E9C29EE-2862-49F9-9955-B5D6A788AB93}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_Blizzard_Wind-005" ID="{879300CF-8B9E-444B-95FB-A34249AA15C1}" ShortID="697286762">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_Blizzard_Wind-005" ID="{C6D937A9-2047-48F4-8714-088D6065ECAE}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_Blizzard_Wind-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="877322273"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_Blizzard_Wind-005" ID="{C6D937A9-2047-48F4-8714-088D6065ECAE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{8C76D7C6-2531-4E47-93CD-6BDFBC4D2155}">
+											<ChildrenList>
+												<Path2D Name="RFX_Blizz_Wind_Path" ID="{BDB0F8D5-698B-48D1-8BC8-A56F2D22093E}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="12"/>
+														<Property Name="RandomY" Type="Real64" Value="6"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-55.06329</XPos>
+															<YPos>25.15924</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_Blizz_Wind_Path_01" ID="{498EFCCD-2FF2-4472-B669-749D562A7C3A}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="10"/>
+														<Property Name="RandomY" Type="Real64" Value="9"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>39.87342</XPos>
+															<YPos>30.25477</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_Blizz_Wind_Path_02" ID="{FC59E2D8-6016-4F56-8DB8-CD9C1735BB26}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="9"/>
+														<Property Name="RandomY" Type="Real64" Value="11"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-45.56962</XPos>
+															<YPos>55.09554</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_Blizz_Wind_Path_03" ID="{166C9159-5EA5-4DE2-AFD5-5F07A77EB16D}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="6"/>
+														<Property Name="RandomY" Type="Real64" Value="11"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>22.1519</XPos>
+															<YPos>50.63694</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="RFX_Blizz_Wind_Path_04" ID="{05FF9EDD-D4D9-4B2E-B26C-501BF063D443}">
+													<PropertyList>
+														<Property Name="RandomX" Type="Real64" Value="17"/>
+														<Property Name="RandomY" Type="Real64" Value="22"/>
+													</PropertyList>
+													<PointList>
+														<Point>
+															<XPos>-31.01266</XPos>
+															<YPos>37.89809</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
 					</ChildrenList>
@@ -751,6 +1050,22 @@
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>4</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{7361B368-4937-40D9-9A43-8F6FDEBA4B10}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="8"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
 														<Value>41</Value>
@@ -786,7 +1101,7 @@
 												</Property>
 												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
 												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10">
 													<ModifierList>
 														<ModifierInfo>
@@ -801,6 +1116,7 @@
 													</ModifierList>
 												</Property>
 												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-20</Value>
@@ -1099,12 +1415,45 @@
 														<Value>20</Value>
 													</ValueList>
 												</Property>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>2.5</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{5E05B5CC-AB6D-442B-A953-94928C42D580}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="7"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
 														<Value>14</Value>
 													</ValueList>
 												</Property>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3C929427-B264-4FAA-9A82-4ABF203998FF}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="5"/>
+																	<Property Name="Min" Type="Real64" Value="-3"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-14</Value>
@@ -1351,6 +1700,22 @@
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="InitialDelay" Type="Real64">
+													<ValueList>
+														<Value>3.5</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{AC17B7AB-3E13-476F-BA31-D1C9D42B6349}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="8"/>
+																	<Property Name="Min" Type="Real64" Value="-1"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
 												<Property Name="Lowpass" Type="int16">
 													<ModifierList>
 														<ModifierInfo>
@@ -1380,6 +1745,24 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
+												<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+												<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="10">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{58B3CF64-0737-45E6-8115-0A30FCD44D7F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="3"/>
+																	<Property Name="Min" Type="Real64" Value="-5"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-3</Value>

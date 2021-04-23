@@ -73,7 +73,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Barrel" ID="{8180357D-63F9-4F3A-91AF-DB8C30A4CD37}">
+				<Event Name="Play_Barrel_1" ID="{8180357D-63F9-4F3A-91AF-DB8C30A4CD37}">
 					<ChildrenList>
 						<Action Name="" ID="{5C201F03-03D3-4BF2-B2F4-4D7C2F74B901}" ShortID="211532855">
 							<ReferenceList>
