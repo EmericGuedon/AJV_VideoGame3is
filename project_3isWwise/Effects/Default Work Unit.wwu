@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{85ABFDD9-D4CC-4FE6-AC34-950059152F36}" SchemaVersion="97">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{85ABFDD9-D4CC-4FE6-AC34-950059152F36}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{85ABFDD9-D4CC-4FE6-AC34-950059152F36}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Disto_1" ID="{C34BF3FB-7F2A-45B5-A57A-66F831AD2D33}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+					<PropertyList>
+						<Property Name="DistortionDrive" Type="Real32" Value="49"/>
+						<Property Name="DistortionTone" Type="Real32" Value="26"/>
+						<Property Name="DistortionType" Type="int32" Value="3"/>
+						<Property Name="PostEQBand3Enable" Type="bool" Value="True"/>
+						<Property Name="PostEQBand3FilterType" Type="int32" Value="3"/>
+						<Property Name="PostEQBand3Frequency" Type="Real32" Value="2220"/>
+						<Property Name="PreEQBand1Enable" Type="bool" Value="True"/>
+						<Property Name="PreEQBand1Frequency" Type="Real32" Value="778"/>
+						<Property Name="PreEQBand1Gain" Type="Real32" Value="3"/>
+						<Property Name="PreEQBand2Enable" Type="bool" Value="True"/>
+						<Property Name="PreEQBand2FilterType" Type="int32" Value="1"/>
+						<Property Name="PreEQBand2Frequency" Type="Real32" Value="935"/>
+						<Property Name="PreEQBand2Gain" Type="Real32" Value="-24.5"/>
+						<Property Name="PreEQBand3Enable" Type="bool" Value="True"/>
+						<Property Name="PreEQBand3FilterType" Type="int32" Value="3"/>
+						<Property Name="PreEQBand3Frequency" Type="Real32" Value="4373"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

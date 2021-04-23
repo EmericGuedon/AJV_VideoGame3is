@@ -2071,7 +2071,19 @@
 									</PositioningInfo>
 								</BlendContainer>
 								<BlendContainer Name="Out_Campfire" ID="{82249540-D255-46B0-91B1-ADA758A437DD}" ShortID="8025351">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="PROPS_Outdoor" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 										</Reference>
@@ -2084,11 +2096,10 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-13</Value>
+														<Value>-4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2139,7 +2150,6 @@
 														<Value>5</Value>
 													</ValueList>
 												</Property>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
 														<Value>-100</Value>
@@ -2147,7 +2157,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-17</Value>
+														<Value>-4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -2179,6 +2189,89 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="RFX_Campfire_2" ID="{322C8197-449B-4F26-AEB2-988C969CB1AC}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Campfire_3" ID="{058A0C50-7BF0-48BD-92D2-1D219C38639B}" ShortID="784108420">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>15</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>34</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MidiTransposition" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{96D15C81-6F00-4EE2-AC0C-42D980D75E97}" ShortID="785191573">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="LFO Bridge" ID="{9AEB0600-99CF-4FFE-A86F-4EC90593241B}" WorkUnitID="{8448C00A-1B51-4C29-BC97-5FB6BDA98398}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{6C9B1C5A-79A6-4FF0-99BA-AEB0D118EA8C}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-830</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+													<ObjectRef Name="Disto_1" ID="{C34BF3FB-7F2A-45B5-A57A-66F831AD2D33}" WorkUnitID="{85ABFDD9-D4CC-4FE6-AC34-950059152F36}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_Camprfire_3" ID="{31DC66CA-A8F5-4232-BCAC-0B0F919ECCF6}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="1845.41"/>
+														<Property Name="LoopBegin" Type="Real64" Value="1.40961151541096"/>
+														<Property Name="LoopEnd" Type="Real64" Value="29.4452183219178"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>RFX_Camprfire_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="321851169"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_Camprfire_3" ID="{31DC66CA-A8F5-4232-BCAC-0B0F919ECCF6}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
