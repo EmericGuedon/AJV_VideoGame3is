@@ -1166,53 +1166,14 @@
 								<ActiveSource Name="IN_OUT_Cavern" ID="{135519F6-C9FE-4CAC-B374-9C94328EA5C0}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
-						<Sound Name="CampFire" ID="{79395D65-DE83-4EC4-80B4-6C24F34522D9}" ShortID="144828834">
+						<BlendContainer Name="RFX_Bridge" ID="{8272F62C-4D09-4B32-AEEC-7044C10C4639}" ShortID="198350389">
 							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
-								<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-17</Value>
-									</ValueList>
-								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
-									<ObjectRef Name="PROPS_Outdoor" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+									<ObjectRef Name="PROPS_Bridge" ID="{106EF7F9-CECE-48DB-A48D-1C4DF510FB95}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
 								</Reference>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="RFX" ID="{A0EF48FD-F12D-48C5-BCC2-E104939CC924}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-								</Reference>
-								<Reference Name="UserAuxSend0">
-									<ObjectRef Name="Reverb_Blizzard" ID="{7D3CD3BC-8230-4DD2-A46C-109CAA4BC9D6}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="RFX_CampFire" ID="{65E9A5D3-7523-477D-8A8F-7AA8E726249E}">
-									<PropertyList>
-										<Property Name="CrossfadeDuration" Type="Real64" Value="667.021"/>
-										<Property Name="LoopBegin" Type="Real64" Value="1.24005779109589"/>
-										<Property Name="LoopEnd" Type="Real64" Value="32.7995285744863"/>
-										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-									</PropertyList>
-									<Language>SFX</Language>
-									<AudioFile>RFX_CampFire.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="287252065"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="RFX_CampFire" ID="{65E9A5D3-7523-477D-8A8F-7AA8E726249E}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<BlendContainer Name="RFX_Bridge" ID="{8272F62C-4D09-4B32-AEEC-7044C10C4639}" ShortID="198350389">
-							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 								</Reference>
@@ -1414,6 +1375,119 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="RFX_WoodCrack" ID="{60A59C16-5027-4875-8837-8D9EADE18AF6}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="Out_Campfire" ID="{82249540-D255-46B0-91B1-ADA758A437DD}" ShortID="8025351">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="CampFire_1" ID="{79395D65-DE83-4EC4-80B4-6C24F34522D9}" ShortID="144828834">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="PROPS_Outdoor" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Outdoor" ID="{DFAB7B18-B62E-41B3-9B28-22262EAF0C75}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Blizzard" ID="{7D3CD3BC-8230-4DD2-A46C-109CAA4BC9D6}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RFX_CampFire" ID="{65E9A5D3-7523-477D-8A8F-7AA8E726249E}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="667.021"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.24005779109589"/>
+												<Property Name="LoopEnd" Type="Real64" Value="32.7995285744863"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>RFX_CampFire.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="287252065"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RFX_CampFire" ID="{65E9A5D3-7523-477D-8A8F-7AA8E726249E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Campfire_2" ID="{CE9E219F-293F-450F-AFA2-8BBB422994FB}" ShortID="1048081940">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>16</Value>
+											</ValueList>
+										</Property>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>5</Value>
+											</ValueList>
+										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-100</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-17</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="PROPS_Outdoor" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RFX_Campfire_2" ID="{322C8197-449B-4F26-AEB2-988C969CB1AC}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="2516.746"/>
+												<Property Name="LoopBegin" Type="Real64" Value="2.26145945704909"/>
+												<Property Name="LoopEnd" Type="Real64" Value="43.7475432898116"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>RFX_Campfire_2.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1041692345"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RFX_Campfire_2" ID="{322C8197-449B-4F26-AEB2-988C969CB1AC}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
