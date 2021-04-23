@@ -1168,6 +1168,7 @@
 						</Sound>
 						<BlendContainer Name="RFX_Bridge" ID="{8272F62C-4D09-4B32-AEEC-7044C10C4639}" ShortID="198350389">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
@@ -1182,17 +1183,40 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="RFX_Bridge" ID="{13CADE35-178E-4F46-8CD7-8091A56654C8}" ShortID="84812861">
+								<RandomSequenceContainer Name="CracksBridge" ID="{BA6A62D6-37F7-4D84-B9CD-8E6E53637110}" ShortID="573400025">
 									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>48</Value>
-											</ValueList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{DA22FA8C-9C2D-494D-B371-7F6592BEA95A}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="8"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
-										<Property Name="Pitch" Type="int32">
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{44E4762D-C452-4BA0-916F-9E2313E651B3}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="7"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
+										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-250</Value>
+												<Value>-2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1205,36 +1229,197 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="RFX_Bridge" ID="{0F9709E4-C324-46AB-8331-4E2294D786DA}">
-											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="405.775"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0.61607341609589"/>
-												<Property Name="LoopEnd" Type="Real64" Value="15.3724985730594"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>RFX_Bridge.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="1023645411"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="RFX_Cracksbridge-001" ID="{E90E7864-8380-4132-B45D-5122FAB4806A}" ShortID="1063621446">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_Cracksbridge-001" ID="{9CC7924F-7E27-444B-826A-31AC395D90C8}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_Cracksbridge-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="300998399"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_Cracksbridge-001" ID="{9CC7924F-7E27-444B-826A-31AC395D90C8}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_Cracksbridge-002" ID="{9DCEB8FA-B872-461B-A1EF-04E7503A6411}" ShortID="848075316">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_Cracksbridge-002" ID="{29E34553-32C2-4698-8780-9AFDC0667792}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_Cracksbridge-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="597238792"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_Cracksbridge-002" ID="{29E34553-32C2-4698-8780-9AFDC0667792}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_Cracksbridge-003" ID="{64497A46-EE4F-400E-859F-4518F1BB4E7C}" ShortID="80504282">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_Cracksbridge-003" ID="{A137564B-94C0-42C2-B421-C57BED5DAF3B}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_Cracksbridge-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1054508925"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_Cracksbridge-003" ID="{A137564B-94C0-42C2-B421-C57BED5DAF3B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_Cracksbridge-004" ID="{D161E193-2632-4986-B78C-B0FCC144772A}" ShortID="325493469">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_Cracksbridge-004" ID="{BCCD3191-44C7-4511-9487-ECD644CB3954}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_Cracksbridge-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="944590855"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_Cracksbridge-004" ID="{BCCD3191-44C7-4511-9487-ECD644CB3954}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_Cracksbridge-005" ID="{5AB0FD91-D149-4564-9B6D-8782B3508C7D}" ShortID="165411025">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_Cracksbridge-005" ID="{3859B32E-B35B-4086-877F-933499BDDBF5}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_Cracksbridge-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="285302597"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_Cracksbridge-005" ID="{3859B32E-B35B-4086-877F-933499BDDBF5}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_Cracksbridge-006" ID="{21CEDC1D-B422-4910-A4DF-944C2161883C}" ShortID="7876292">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_Cracksbridge-006" ID="{9E111AA5-66F0-48CA-9A9D-14DD5FD8B274}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_Cracksbridge-006.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="496553641"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_Cracksbridge-006" ID="{9E111AA5-66F0-48CA-9A9D-14DD5FD8B274}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_Cracksbridge-007" ID="{9DA95E0F-B651-4C20-8B3B-682ED0E74A18}" ShortID="845390960">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_Cracksbridge-007" ID="{480F4AE2-E6C6-41D7-8695-F9827EEE13CD}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_Cracksbridge-007.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="508122426"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_Cracksbridge-007" ID="{480F4AE2-E6C6-41D7-8695-F9827EEE13CD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="RFX_Bridge" ID="{0F9709E4-C324-46AB-8331-4E2294D786DA}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="RFX_ChainBridge" ID="{25DCF673-D35B-45FC-9068-F39A993EFE88}" ShortID="921794688">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="WoodBridge" ID="{1D1C3E31-A8E5-4FB0-AB24-4948DDA9CD7D}" ShortID="645022015">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{996E7429-3E03-41AE-9A53-1F38E7D6F12E}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="12"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
 										</Property>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="MakeUpGain" Type="Real64">
-											<RTPCList>
-												<RTPC Name="" ID="{005B393B-6F99-418C-87C4-BC87F86BD962}" ShortID="795550116"/>
-											</RTPCList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{338767ED-4D00-4A8F-8555-839B29075C64}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="4"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-21</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -1246,32 +1431,154 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="RFX_ChainBridge" ID="{DE50BF28-FEE4-4B3E-836F-0DFB32739C50}">
-											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="798.07"/>
-												<Property Name="LoopBegin" Type="Real64" Value="1.99727632705479"/>
-												<Property Name="LoopEnd" Type="Real64" Value="20.8515648544521"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>RFX_ChainBridge.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="970532345"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="RFX_WoodBridge-001" ID="{B59F3AD7-18F2-4FF9-A1CF-FF733C9CB6CE}" ShortID="189009328">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_WoodBridge-001" ID="{A9D99066-522E-4839-AB25-29D7E7FA37AE}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_WoodBridge-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="624882443"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_WoodBridge-001" ID="{A9D99066-522E-4839-AB25-29D7E7FA37AE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_WoodBridge-002" ID="{D8CC3625-41AC-4EF4-9406-276FF76CCC2A}" ShortID="630971209">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_WoodBridge-002" ID="{D3097737-413D-4799-8EAB-DD794B604C18}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_WoodBridge-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="4281640"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_WoodBridge-002" ID="{D3097737-413D-4799-8EAB-DD794B604C18}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_WoodBridge-003" ID="{6B05520F-91B7-43B8-A78B-410998ABEB81}" ShortID="242925099">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_WoodBridge-003" ID="{7A813760-39B2-4649-AA01-24EAAF0841A7}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_WoodBridge-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="563938915"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_WoodBridge-003" ID="{7A813760-39B2-4649-AA01-24EAAF0841A7}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_WoodBridge-004" ID="{1F0FFA01-DBCD-466C-93D3-A3E9ADDF0634}" ShortID="537514316">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_WoodBridge-004" ID="{E8B92B18-56B3-450A-A2C9-5D9271D77CD0}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_WoodBridge-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="170548236"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_WoodBridge-004" ID="{E8B92B18-56B3-450A-A2C9-5D9271D77CD0}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_WoodBridge-005" ID="{7926A7EB-3320-446A-8E7C-83DEB6922809}" ShortID="829003976">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_WoodBridge-005" ID="{10786E62-7A9C-49F9-A01C-3084D4C6FBB2}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_WoodBridge-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="841224417"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_WoodBridge-005" ID="{10786E62-7A9C-49F9-A01C-3084D4C6FBB2}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="RFX_ChainBridge" ID="{DE50BF28-FEE4-4B3E-836F-0DFB32739C50}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="RFX_PlankSqueak" ID="{8E7575B8-752A-474F-8F89-E659770A0D81}" ShortID="127654819">
+								</RandomSequenceContainer>
+								<RandomSequenceContainer Name="ChainBridge" ID="{6D29DECB-6087-4EFC-BCCC-DD0C5030BE9B}" ShortID="814962687">
 									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
+										<Property Name="InitialDelay" Type="Real64">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{8A33A061-907E-4CDD-B2AC-FE8FE04309B6}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="10"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{ECDFBDF7-6CC3-4F47-81D3-432B45D379F6}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>False</Value>
+												<Value>3</Value>
 											</ValueList>
 										</Property>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1282,101 +1589,118 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="RFX_PlankSqueak" ID="{3FB12C6D-C6D6-4357-A230-CA08FAF77EB6}">
-											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="577.254"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0.72439116010274"/>
-												<Property Name="LoopEnd" Type="Real64" Value="14.0853836686644"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>RFX_PlankSqueak.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="166407821"/>
-											</MediaIDList>
-										</AudioFileSource>
+										<Sound Name="RFX_ChainBridge-001" ID="{9B9E19BF-AC3C-4D6E-A5A6-B7EB2C508815}" ShortID="981438274">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_ChainBridge-001" ID="{2259A83E-6C94-40D0-B19B-3B0D62C7D146}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_ChainBridge-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="93628451"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_ChainBridge-001" ID="{2259A83E-6C94-40D0-B19B-3B0D62C7D146}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_ChainBridge-002" ID="{0047298C-F718-4424-BB04-92233E333BC2}" ShortID="276463660">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_ChainBridge-002" ID="{FAF37256-FF25-457C-8A92-44A3C37321F9}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_ChainBridge-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="740524103"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_ChainBridge-002" ID="{FAF37256-FF25-457C-8A92-44A3C37321F9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_ChainBridge-003" ID="{2E915C55-8D4F-40D4-9E78-5FC0D8D80AC7}" ShortID="645066050">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_ChainBridge-003" ID="{E00C329E-7F69-478C-BE14-7B8771E56D4F}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_ChainBridge-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="687964301"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_ChainBridge-003" ID="{E00C329E-7F69-478C-BE14-7B8771E56D4F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_ChainBridge-004" ID="{3ED1D3CF-5C5B-4640-8D8A-C5BF83FEC5A3}" ShortID="805675610">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_ChainBridge-004" ID="{6E03EA68-9CCD-42C2-938A-86AEE4B919DE}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_ChainBridge-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="370976073"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_ChainBridge-004" ID="{6E03EA68-9CCD-42C2-938A-86AEE4B919DE}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="RFX_ChainBridge-005" ID="{36AA0A7B-0E40-4D45-85FD-B9951022EFAF}" ShortID="123879867">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_ChainBridge-005" ID="{16F2B55C-66A4-4918-8D91-FDAC4598D1B3}">
+													<Language>SFX</Language>
+													<AudioFile>RFX_ChainBridge-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="264976561"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_ChainBridge-005" ID="{16F2B55C-66A4-4918-8D91-FDAC4598D1B3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
 									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="RFX_PlankSqueak" ID="{3FB12C6D-C6D6-4357-A230-CA08FAF77EB6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="RFX_PlankSqueak_002" ID="{9A24205C-8FAF-4D9D-B4F5-5DBF3A405F73}" ShortID="939041370">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="RFX_PlankSqueak_002" ID="{75071025-AC67-41B3-93D3-921697D34AB7}">
-											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="597.822"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0.486242508561644"/>
-												<Property Name="LoopEnd" Type="Real64" Value="16.759158461758"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>RFX_PlankSqueak_002.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="150434721"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="RFX_PlankSqueak_002" ID="{75071025-AC67-41B3-93D3-921697D34AB7}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
-								<Sound Name="RFX_WoodCrack" ID="{A920E90C-ADDB-484F-9F55-61B13F3AB16C}" ShortID="169555840">
-									<PropertyList>
-										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>46</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>-1950</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<AudioFileSource Name="RFX_WoodCrack" ID="{60A59C16-5027-4875-8837-8D9EADE18AF6}">
-											<PropertyList>
-												<Property Name="CrossfadeDuration" Type="Real64" Value="452.75"/>
-												<Property Name="LoopBegin" Type="Real64" Value="0.455286708047945"/>
-												<Property Name="LoopEnd" Type="Real64" Value="13.6853828125"/>
-												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-											</PropertyList>
-											<Language>SFX</Language>
-											<AudioFile>RFX_WoodCrack.wav</AudioFile>
-											<MediaIDList>
-												<MediaID ID="229620362"/>
-											</MediaIDList>
-										</AudioFileSource>
-									</ChildrenList>
-									<ActiveSourceList>
-										<ActiveSource Name="RFX_WoodCrack" ID="{60A59C16-5027-4875-8837-8D9EADE18AF6}" Platform="Linked"/>
-									</ActiveSourceList>
-								</Sound>
+								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
 						<BlendContainer Name="Out_Campfire" ID="{82249540-D255-46B0-91B1-ADA758A437DD}" ShortID="8025351">
