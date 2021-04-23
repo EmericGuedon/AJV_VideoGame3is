@@ -1185,28 +1185,48 @@
 							<ChildrenList>
 								<RandomSequenceContainer Name="CracksBridge" ID="{BA6A62D6-37F7-4D84-B9CD-8E6E53637110}" ShortID="573400025">
 									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>16</Value>
+											</ValueList>
+										</Property>
 										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.5</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{DA22FA8C-9C2D-494D-B371-7F6592BEA95A}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="8"/>
+															<Property Name="Max" Type="Real64" Value="2"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>36</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-1670</Value>
+											</ValueList>
+										</Property>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="4">
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2">
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{44E4762D-C452-4BA0-916F-9E2313E651B3}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="7"/>
+															<Property Name="Max" Type="Real64" Value="4"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -1221,6 +1241,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="PROPS_Bridge" ID="{106EF7F9-CECE-48DB-A48D-1C4DF510FB95}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 										</Reference>
@@ -1384,31 +1407,110 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{82172335-7DBC-46C8-BD33-DF69A0BAE3C5}">
+											<ChildrenList>
+												<Path2D Name="CracksBridge_Path" ID="{AC60F65C-8184-48F0-8D00-87CDB86E3091}">
+													<PointList>
+														<Point>
+															<XPos>-27.8481</XPos>
+															<YPos>42.99363</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="CracksBridge_Path_01" ID="{7D540AC3-30A3-4F73-ADB7-0A2FABA1D602}">
+													<PointList>
+														<Point>
+															<XPos>43.03797</XPos>
+															<YPos>28.34395</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="CracksBridge_Path_02" ID="{E993FBEC-01C1-4BBB-80E7-8E70C1770EA8}">
+													<PointList>
+														<Point>
+															<XPos>-27.8481</XPos>
+															<YPos>-3.50318</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="CracksBridge_Path_03" ID="{A45F652D-58AF-4129-9CA5-EB5A7F01D3A8}">
+													<PointList>
+														<Point>
+															<XPos>31.64557</XPos>
+															<YPos>-16.87898</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="CracksBridge_Path_04" ID="{34F52E4E-CC0C-4FE2-A23E-23B40C1E76B5}">
+													<PointList>
+														<Point>
+															<XPos>-5.06329</XPos>
+															<YPos>-19.42675</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="WoodBridge" ID="{1D1C3E31-A8E5-4FB0-AB24-4948DDA9CD7D}" ShortID="645022015">
 									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
 										<Property Name="InitialDelay" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{996E7429-3E03-41AE-9A53-1F38E7D6F12E}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="12"/>
+															<Property Name="Max" Type="Real64" Value="2"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
 											</ModifierList>
 										</Property>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>35</Value>
+											</ValueList>
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{D07AA91F-C11D-41D8-B5F2-12A28EE60C63}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="5"/>
+															<Property Name="Min" Type="Real64" Value="-5"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-730</Value>
+											</ValueList>
+										</Property>
 										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="1"/>
-										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="3">
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64">
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{338767ED-4D00-4A8F-8555-839B29075C64}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="4"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -1418,11 +1520,14 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-21</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="PROPS_Bridge" ID="{106EF7F9-CECE-48DB-A48D-1C4DF510FB95}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 										</Reference>
@@ -1542,16 +1647,87 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{DE81410E-0F6B-44A6-96EF-FB8C1875B7DC}">
+											<ChildrenList>
+												<Path2D Name="WoodBridge_Path" ID="{A3E38398-ACB8-4C69-923C-5F34ED099A73}">
+													<PointList>
+														<Point>
+															<XPos>25.31646</XPos>
+															<YPos>41.0828</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="WoodBridge_Path_01" ID="{CFF9949B-57D2-42BD-9887-DA150912B898}">
+													<PointList>
+														<Point>
+															<XPos>-22.1519</XPos>
+															<YPos>28.98089</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="WoodBridge_Path_02" ID="{8280A62A-759E-4FBE-824E-9F473EFF7D22}">
+													<PointList>
+														<Point>
+															<XPos>44.93671</XPos>
+															<YPos>-1.59236</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="WoodBridge_Path_03" ID="{82638D9A-3159-4946-A8A2-238A1A00F855}">
+													<PointList>
+														<Point>
+															<XPos>-24.05063</XPos>
+															<YPos>-20.06369</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="WoodBridge_Path_04" ID="{BA6084C3-7F03-4F26-B070-2658BB3B89B1}">
+													<PointList>
+														<Point>
+															<XPos>29.74684</XPos>
+															<YPos>-18.15287</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+												<Path2D Name="WoodBridge_Path_05" ID="{05DF5792-2985-428D-B46D-9C407A1F268D}">
+													<PointList>
+														<Point>
+															<XPos>-43.03797</XPos>
+															<YPos>1.59236</YPos>
+															<Flags>12</Flags>
+															<Time>0</Time>
+														</Point>
+													</PointList>
+												</Path2D>
+											</ChildrenList>
+										</Position>
+									</PositioningInfo>
 								</RandomSequenceContainer>
 								<RandomSequenceContainer Name="ChainBridge" ID="{6D29DECB-6087-4EFC-BCCC-DD0C5030BE9B}" ShortID="814962687">
 									<PropertyList>
+										<Property Name="3DPosition" Type="int16" Value="1"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.5</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{8A33A061-907E-4CDD-B2AC-FE8FE04309B6}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="10"/>
+															<Property Name="Max" Type="Real64" Value="3"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -1566,7 +1742,8 @@
 													<Modifier Name="" ID="{ECDFBDF7-6CC3-4F47-81D3-432B45D379F6}">
 														<PropertyList>
 															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="5"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+															<Property Name="Min" Type="Real64" Value="-1"/>
 														</PropertyList>
 													</Modifier>
 												</ModifierInfo>
@@ -1581,6 +1758,9 @@
 										</Property>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="PROPS_Bridge" ID="{106EF7F9-CECE-48DB-A48D-1C4DF510FB95}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 										</Reference>
@@ -1700,8 +1880,105 @@
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
+									<PositioningInfo>
+										<Position Name="" ID="{6D85423A-B0B5-4C09-B545-B52F38E9A032}"/>
+									</PositioningInfo>
 								</RandomSequenceContainer>
 							</ChildrenList>
+							<PositioningInfo>
+								<Position Name="" ID="{91222F52-1ED9-4225-B3E5-3F593A5FBB94}">
+									<PropertyList>
+										<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="RFX_Bridge_Path" ID="{4F78A6EC-E5F5-4834-BAD1-8C95D2F03D7E}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="10"/>
+												<Property Name="RandomY" Type="Real64" Value="5"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-29.74684</XPos>
+													<YPos>21.97452</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="RFX_Bridge_Path_01" ID="{20A13003-8A66-4051-8A50-E9D2238FA969}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="10"/>
+												<Property Name="RandomY" Type="Real64" Value="5"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-8.86077</XPos>
+													<YPos>41.08281</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="RFX_Bridge_Path_02" ID="{896FD500-6591-4E0C-BC6E-AD8167102862}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="10"/>
+												<Property Name="RandomY" Type="Real64" Value="5"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>-27.21519</XPos>
+													<YPos>-20.0637</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="RFX_Bridge_Path_03" ID="{996AFA9D-FCBC-4FDD-9734-A46E83449C1D}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="10"/>
+												<Property Name="RandomY" Type="Real64" Value="5"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>32.91139</XPos>
+													<YPos>14.96815</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="RFX_Bridge_Path_04" ID="{8FDD0638-2662-40E8-9927-600BF4A2FE10}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="10"/>
+												<Property Name="RandomY" Type="Real64" Value="5"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>29.74684</XPos>
+													<YPos>-27.707</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="RFX_Bridge_Path_05" ID="{681110BB-D236-4FFC-9059-673C304FC6CC}">
+											<PropertyList>
+												<Property Name="RandomX" Type="Real64" Value="10"/>
+												<Property Name="RandomY" Type="Real64" Value="5"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>22.78481</XPos>
+													<YPos>35.35032</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
 						</BlendContainer>
 						<BlendContainer Name="Out_Campfire" ID="{82249540-D255-46B0-91B1-ADA758A437DD}" ShortID="8025351">
 							<ReferenceList>
