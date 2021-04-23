@@ -1884,6 +1884,43 @@
 										<Position Name="" ID="{6D85423A-B0B5-4C09-B545-B52F38E9A032}"/>
 									</PositioningInfo>
 								</RandomSequenceContainer>
+								<Sound Name="RFX_Bridge" ID="{6675B56A-813D-45FF-A3F9-10E5156EB950}" ShortID="966534331">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="RFX_Bridge" ID="{51999542-75C4-46EF-AE83-59CB2D62F873}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="676.291"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.997452197488584"/>
+												<Property Name="LoopEnd" Type="Real64" Value="14.1110149115297"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="16.5166349172374"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>RFX_Bridge.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="454966585"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="RFX_Bridge" ID="{51999542-75C4-46EF-AE83-59CB2D62F873}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 							<PositioningInfo>
 								<Position Name="" ID="{91222F52-1ED9-4225-B3E5-3F593A5FBB94}">
