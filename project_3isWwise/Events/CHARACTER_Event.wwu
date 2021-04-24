@@ -250,6 +250,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="CrowM_Gear" ID="{190EA628-6B55-4B0F-85B0-9A0CFC36A2E7}">
+							<ChildrenList>
+								<Action Name="" ID="{2CDC52E7-91A0-4A31-AD48-7EE951322D93}" ShortID="540540380">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CrowM_Gear" ID="{873C92D9-401B-4689-9B2E-F85E27DBCED6}" WorkUnitID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="CrowM_BodyFall" ID="{14FABF52-06CC-481D-9FE7-A1D27BA9B31A}">
+							<ChildrenList>
+								<Action Name="" ID="{FA681505-965D-40BD-A6C4-08359000DF52}" ShortID="556815192">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CrowM_BodyFall" ID="{ECDFD69A-32BE-46CF-9F22-B8F45F6A8C1B}" WorkUnitID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
