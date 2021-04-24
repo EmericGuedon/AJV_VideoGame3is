@@ -4215,6 +4215,20 @@
 							</ChildrenList>
 						</BlendContainer>
 						<BlendContainer Name="WP_Hit" ID="{5CAEAB29-EEA6-474C-9B38-EEE4B02F65DC}" ShortID="397163156">
+							<PropertyList>
+								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="MaxSoundPerInstance" Type="int16">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -4254,11 +4268,6 @@
 									<ChildrenList>
 										<BlendContainer Name="Hit" ID="{0EFED8A5-47FF-44F0-9FB5-44EE77956B64}" ShortID="18359637">
 											<PropertyList>
-												<Property Name="Inclusion" Type="bool">
-													<ValueList>
-														<Value>False</Value>
-													</ValueList>
-												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-8</Value>
@@ -4277,9 +4286,14 @@
 												<RandomSequenceContainer Name="Hit_01" ID="{DD7012BF-C4F7-4A63-97E0-FD182F35589C}" ShortID="911556014">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
 														<Property Name="Lowpass" Type="int16">
 															<ValueList>
-																<Value>49</Value>
+																<Value>51</Value>
 															</ValueList>
 															<ModifierList>
 																<ModifierInfo>
@@ -4326,14 +4340,15 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<Sound Name="Armor Leather Impact 02 1" ID="{3380A973-B089-498B-A71F-568380C5E6A4}" ShortID="48606882">
+														<Sound Name="CC-DS Kick Torso Medium 02" ID="{DE369465-0E8C-4A09-B837-7EA743B572AA}" ShortID="798035383">
 															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
+																<Property Name="Inclusion" Type="bool">
+																	<ValueList>
+																		<Value>False</Value>
+																	</ValueList>
+																</Property>
 															</PropertyList>
 															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
-																</Reference>
 																<Reference Name="Conversion">
 																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 																</Reference>
@@ -4342,128 +4357,21 @@
 																</Reference>
 															</ReferenceList>
 															<ChildrenList>
-																<AudioFileSource Name="Armor Leather Impact 02 1" ID="{53244858-1124-4605-A46A-37968A52FE47}">
+																<AudioFileSource Name="CC-DS Kick Torso Medium 02" ID="{E29D8C96-B6D8-4A5B-B055-D6C06E82F7BC}">
 																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="0.106933416077289"/>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="0.12823033369874"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.00281616355852765"/>
 																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="0.0942870100726031"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="0.921300496906084"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.398679026867886"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
-																	<AudioFile>Armor Leather Impact 02 1.wav</AudioFile>
+																	<AudioFile>CC-DS Kick Torso Medium 02.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="717601582"/>
+																		<MediaID ID="430865454"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
 															<ActiveSourceList>
-																<ActiveSource Name="Armor Leather Impact 02 1" ID="{53244858-1124-4605-A46A-37968A52FE47}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Armor Leather Impact 02 4" ID="{C8420C00-DBCA-448D-ADCC-49301F2434E8}" ShortID="160410328">
-															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Armor Leather Impact 02 1" ID="{90D32846-9AF0-4D93-A3C0-69E031B3C742}">
-																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="0.0515194372365855"/>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0491776446349199"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="4.72936110572435"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="5.3170703836523"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>Armor Leather Impact 02 1.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="364477737"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Armor Leather Impact 02 1" ID="{90D32846-9AF0-4D93-A3C0-69E031B3C742}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Armor Leather Impact 02 2" ID="{658262D5-8097-4980-B669-2C18DD3EF514}" ShortID="219097808">
-															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Armor Leather Impact 02 1" ID="{C848CA93-8985-43D6-9E2E-A33BF8C9B52B}">
-																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="0.0548578967695148"/>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0411434225771359"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="1.65037167426813"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="2.15735589895917"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>Armor Leather Impact 02 1.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="1029576378"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Armor Leather Impact 02 1" ID="{C848CA93-8985-43D6-9E2E-A33BF8C9B52B}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Armor Leather Impact 02 3" ID="{4F6EB23B-9C18-49B6-BF64-78B6D0DE73C9}" ShortID="437703801">
-															<PropertyList>
-																<Property Name="3DSpatialization" Type="int16" Value="2"/>
-															</PropertyList>
-															<ReferenceList>
-																<Reference Name="Attenuation">
-																	<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
-																</Reference>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Armor Leather Impact 02 1" ID="{0CAAE334-DEAD-4710-B236-1C8422633AF1}">
-																	<PropertyList>
-																		<Property Name="FadeInDuration" Type="Real64" Value="0.0684757420091322"/>
-																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0618233246839006"/>
-																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="3.19005640503162"/>
-																		<Property Name="TrimEnd" Type="Real64" Value="3.67266361876461"/>
-																	</PropertyList>
-																	<Language>SFX</Language>
-																	<AudioFile>Armor Leather Impact 02 1.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="545055048"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Armor Leather Impact 02 1" ID="{0CAAE334-DEAD-4710-B236-1C8422633AF1}" Platform="Linked"/>
+																<ActiveSource Name="CC-DS Kick Torso Medium 02" ID="{E29D8C96-B6D8-4A5B-B055-D6C06E82F7BC}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
@@ -4471,6 +4379,11 @@
 												<RandomSequenceContainer Name="Chicken" ID="{2A161B8F-79CE-4F4B-820A-F73FCDDD569D}" ShortID="179263969">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Inclusion" Type="bool">
+															<ValueList>
+																<Value>False</Value>
+															</ValueList>
+														</Property>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 													</PropertyList>
@@ -4613,16 +4526,281 @@
 														</Sound>
 													</ChildrenList>
 												</RandomSequenceContainer>
+												<Sound Name="HitSub" ID="{D63E1CBE-C226-42CA-84E7-B36C0B9227DF}" ShortID="808845155">
+													<PropertyList>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{6BC755B2-751C-42FF-8C52-4F04133F39AA}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="480"/>
+																			<Property Name="Min" Type="Real64" Value="-556"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{B5314AB1-F69E-46E0-84D1-26FD509A0053}"/>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<ObjectRef Name="EQ_Synth" ID="{35D1302E-4BDE-4003-A647-C0BFAF825EF7}" WorkUnitID="{85ABFDD9-D4CC-4FE6-AC34-950059152F36}"/>
+														</Reference>
+														<Reference Name="Effect1">
+															<Custom>
+																<Effect Name="Wwise_Compressor_(Custom)" ID="{7BED7B59-18EB-4CA9-9089-1FCFC11511DD}" ShortID="94060677" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+																	<PropertyList>
+																		<Property Name="AttackTime" Type="Real32" Value="0.4"/>
+																		<Property Name="ReleaseTime" Type="Real32" Value="0.41"/>
+																		<Property Name="Threshold" Type="Real32" Value="-35"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="Effect2">
+															<Custom>
+																<Effect Name="Wwise_Guitar_Distortion_(Custom)" ID="{51E323DE-FC8F-4919-85E8-57D62C73B97F}" ShortID="727565064" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DistortionDrive" Type="Real32" Value="36"/>
+																		<Property Name="DistortionType" Type="int32" Value="4"/>
+																		<Property Name="PostEQBand1Enable" Type="bool" Value="True"/>
+																		<Property Name="PostEQBand1FilterType" Type="int32" Value="1"/>
+																		<Property Name="PostEQBand1Frequency" Type="Real32" Value="390"/>
+																		<Property Name="PostEQBand1Gain" Type="Real32" Value="-3.5"/>
+																		<Property Name="PostEQBand1QFactor" Type="Real32" Value="0.1"/>
+																		<Property Name="PostEQBand2Enable" Type="bool" Value="True"/>
+																		<Property Name="PostEQBand2Frequency" Type="Real32" Value="304"/>
+																		<Property Name="PostEQBand2Gain" Type="Real32" Value="2"/>
+																		<Property Name="PreEQBand1Enable" Type="bool" Value="True"/>
+																		<Property Name="PreEQBand1FilterType" Type="int32" Value="3"/>
+																		<Property Name="PreEQBand1Frequency" Type="Real32" Value="4373"/>
+																		<Property Name="PreEQBand2Enable" Type="bool" Value="True"/>
+																		<Property Name="PreEQBand2FilterType" Type="int32" Value="2"/>
+																		<Property Name="PreEQBand2Frequency" Type="Real32" Value="1502"/>
+																		<Property Name="PreEQBand2Gain" Type="Real32" Value="3.5"/>
+																		<Property Name="PreEQBand3Enable" Type="bool" Value="True"/>
+																		<Property Name="PreEQBand3Frequency" Type="Real32" Value="70"/>
+																		<Property Name="PreEQBand3Gain" Type="Real32" Value="-5"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<SourcePlugin Name="Wwise Synth One" ID="{9B4DE824-C7CD-4594-B79B-4CA06E1A8EE7}" ShortID="417023659" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+															<PropertyList>
+																<Property Name="BaseFrequency" Type="Real32" Value="90">
+																	<RTPCList>
+																		<RTPC Name="" ID="{D7A99E1F-10D7-4EB1-8506-8D1D4CEFB3F9}" ShortID="614216354">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom>
+																						<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{C3C78D47-5F81-42F3-94EE-0B12A99D54E3}" ShortID="734018803">
+																							<PropertyList>
+																								<Property Name="EnvelopeAttackCurve" Type="Real64" Value="1"/>
+																								<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.016"/>
+																								<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.105"/>
+																								<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																							</PropertyList>
+																						</ModulatorEnvelope>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{9DD9A8E5-5D36-4657-90A9-1CDFDA55392B}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="5"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>20</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>176.84585</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="NoiseLevel" Type="Real32" Value="3">
+																	<RTPCList>
+																		<RTPC Name="" ID="{4082A2C1-D10E-43AC-8B2A-12077BF90E60}" ShortID="749365672">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom CreatedFrom="{4BE44301-68FE-49EC-9851-861BD47BB9E9}">
+																						<ModulatorEnvelope Name="Enveloppe_HitSub (Custom)" ID="{258CC89B-D6FA-4C79-A06A-37268A081E9D}" ShortID="75911738">
+																							<PropertyList>
+																								<Property Name="EnvelopeAttackCurve" Type="Real64" Value="0"/>
+																								<Property Name="EnvelopeAttackTime" Type="Real64" Value="0"/>
+																								<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.263"/>
+																								<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.432"/>
+																								<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																							</PropertyList>
+																						</ModulatorEnvelope>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{DC440D39-F5B2-4317-A601-142B9AC18924}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-96</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>-0.06655</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="NoiseShape" Type="int32" Value="2">
+																	<RTPCList>
+																		<RTPC Name="" ID="{396B6D20-18F7-4884-B561-6F47828AEAFA}" ShortID="618939575">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom CreatedFrom="{4BE44301-68FE-49EC-9851-861BD47BB9E9}">
+																						<ModulatorEnvelope Name="Enveloppe_HitSub (Custom)" ID="{FFB32284-9A68-44D3-93BF-B85B385C9235}" ShortID="53174714">
+																							<PropertyList>
+																								<Property Name="EnvelopeAttackCurve" Type="Real64" Value="37"/>
+																								<Property Name="EnvelopeAttackTime" Type="Real64" Value="0"/>
+																								<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.142"/>
+																								<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0"/>
+																								<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																							</PropertyList>
+																						</ModulatorEnvelope>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{67DE0E28-CF42-4D58-AA48-E583BDE13E60}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="65537"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>3</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Osc1Level" Type="Real32" Value="-8"/>
+																<Property Name="Osc1Transpose" Type="int32" Value="-600"/>
+																<Property Name="Osc2Level" Type="Real32" Value="-8"/>
+																<Property Name="Osc2Pwm" Type="Real32" Value="0">
+																	<RTPCList>
+																		<RTPC Name="" ID="{001C4375-74E5-4AFA-A521-079EBB350D3D}" ShortID="759707985">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<Custom CreatedFrom="{4BE44301-68FE-49EC-9851-861BD47BB9E9}">
+																						<ModulatorEnvelope Name="Enveloppe_HitSub (Custom)" ID="{CA890438-7ADA-44A1-9FB3-57FAAFD5C68C}" ShortID="586412073">
+																							<PropertyList>
+																								<Property Name="EnvelopeAttackCurve" Type="Real64" Value="0"/>
+																								<Property Name="EnvelopeAttackTime" Type="Real64" Value="0"/>
+																								<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.221"/>
+																								<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.653"/>
+																								<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+																							</PropertyList>
+																						</ModulatorEnvelope>
+																					</Custom>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{2AD13046-4772-4905-87FC-6D8784215614}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="1"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>0</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>100</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+																<Property Name="Osc2Transpose" Type="int32" Value="-1200"/>
+																<Property Name="Osc2Waveform" Type="int32" Value="2"/>
+																<Property Name="OutputLevel" Type="Real32">
+																	<RTPCList>
+																		<RTPC Name="" ID="{1A8998AD-E8AC-4A8D-8617-9A7A024345AA}" ShortID="477027566">
+																			<ReferenceList>
+																				<Reference Name="ControlInput">
+																					<ObjectRef Name="Enveloppe_HitSub" ID="{4BE44301-68FE-49EC-9851-861BD47BB9E9}" WorkUnitID="{8448C00A-1B51-4C29-BC97-5FB6BDA98398}"/>
+																				</Reference>
+																			</ReferenceList>
+																			<Curve Name="" ID="{D4FAC732-5941-46C9-900E-F5BA80483401}">
+																				<PropertyList>
+																					<Property Name="Flags" Type="int32" Value="3"/>
+																				</PropertyList>
+																				<PointList>
+																					<Point>
+																						<XPos>0</XPos>
+																						<YPos>-120</YPos>
+																						<Flags>21</Flags>
+																					</Point>
+																					<Point>
+																						<XPos>1</XPos>
+																						<YPos>0.02213</YPos>
+																						<Flags>53</Flags>
+																					</Point>
+																				</PointList>
+																			</Curve>
+																		</RTPC>
+																	</RTPCList>
+																</Property>
+															</PropertyList>
+															<Language>SFX</Language>
+														</SourcePlugin>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wwise Synth One" ID="{9B4DE824-C7CD-4594-B79B-4CA06E1A8EE7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
 										</BlendContainer>
 										<BlendContainer Name="Wings" ID="{9B020934-749A-4F20-BE77-435F554943FC}" ShortID="743761766">
-											<PropertyList>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-4</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -4656,7 +4834,7 @@
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-22</Value>
+																<Value>-14</Value>
 															</ValueList>
 															<ModifierList>
 																<ModifierInfo>
@@ -4684,6 +4862,11 @@
 													</ReferenceList>
 													<ChildrenList>
 														<AudioFileSource Name="Wings_1" ID="{BC2AB4C8-4724-4382-98D3-D9BFC8B0AF2A}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0590753424657535"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.480308219178083"/>
+															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>Wings_1.wav</AudioFile>
 															<MediaIDList>
@@ -4725,7 +4908,7 @@
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-9</Value>
+																<Value>-4</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -4752,6 +4935,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Wings 2_1" ID="{FEFB91BA-CF8D-47BE-AE3D-C77FD99BD46F}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0436643835616438"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.495719178082192"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Wings 2_1.wav</AudioFile>
 																	<MediaIDList>
@@ -4774,6 +4962,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Wings 2_2" ID="{FF864038-26AB-495E-AE94-2444DC7F0CCA}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0551369863013699"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.504109589041097"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Wings 2_2.wav</AudioFile>
 																	<MediaIDList>
@@ -4796,6 +4989,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Wings 2_3" ID="{D2BD8161-78B6-4316-B0EB-3A7F94835B04}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.063013698630137"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.472602739726029"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Wings 2_3.wav</AudioFile>
 																	<MediaIDList>
@@ -4818,6 +5016,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Wings 2_4" ID="{976EA8D3-2AF5-468F-824C-806FD55EFB3B}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0712328767123288"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.506849315068493"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Wings 2_4.wav</AudioFile>
 																	<MediaIDList>
@@ -4840,6 +5043,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Wings 2_5" ID="{48A89FBB-B368-46DC-AB21-09F3297CB939}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0262557077625571"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.420091324200915"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Wings 2_5.wav</AudioFile>
 																	<MediaIDList>
@@ -4856,13 +5064,29 @@
 												<RandomSequenceContainer Name="Wings_3" ID="{7246F4FC-15BE-4201-B109-38A0C7A940CD}" ShortID="273803206">
 													<PropertyList>
 														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>34</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{E6A967E1-6257-47AE-A5FA-E15E3D0B7555}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="8"/>
+																			<Property Name="Min" Type="Real64" Value="-12"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 														<Property Name="Pitch" Type="int32">
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{B4D972E5-6E1C-4F15-90E4-664C7A6A3667}">
 																		<PropertyList>
 																			<Property Name="Enabled" Type="bool" Value="True"/>
-																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
 																			<Property Name="Min" Type="Real64" Value="-200"/>
 																		</PropertyList>
 																	</Modifier>
@@ -4872,7 +5096,7 @@
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-6</Value>
+																<Value>-3</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -4899,6 +5123,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Wings 3_1" ID="{68D9E622-E095-406E-9D6E-2BAB5A2F8C26}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0590753424657534"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.434075342465754"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Wings 3_1.wav</AudioFile>
 																	<MediaIDList>
@@ -4921,6 +5150,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Wings 3_2" ID="{69670BC1-4BDC-4574-A0B9-174CDC177868}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0551369863013699"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.467351598173518"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Wings 3_2.wav</AudioFile>
 																	<MediaIDList>
@@ -4930,28 +5164,6 @@
 															</ChildrenList>
 															<ActiveSourceList>
 																<ActiveSource Name="Wings 3_2" ID="{69670BC1-4BDC-4574-A0B9-174CDC177868}" Platform="Linked"/>
-															</ActiveSourceList>
-														</Sound>
-														<Sound Name="Wings 3_3" ID="{BC5E5BCB-68C8-4A7E-ACA5-28B574030695}" ShortID="549683855">
-															<ReferenceList>
-																<Reference Name="Conversion">
-																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-																</Reference>
-																<Reference Name="OutputBus">
-																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-																</Reference>
-															</ReferenceList>
-															<ChildrenList>
-																<AudioFileSource Name="Wings 3_3" ID="{2F6C2A20-B5F1-4FAD-96CB-961C99DC8636}">
-																	<Language>SFX</Language>
-																	<AudioFile>Wings 3_3.wav</AudioFile>
-																	<MediaIDList>
-																		<MediaID ID="370526600"/>
-																	</MediaIDList>
-																</AudioFileSource>
-															</ChildrenList>
-															<ActiveSourceList>
-																<ActiveSource Name="Wings 3_3" ID="{2F6C2A20-B5F1-4FAD-96CB-961C99DC8636}" Platform="Linked"/>
 															</ActiveSourceList>
 														</Sound>
 													</ChildrenList>
@@ -4980,7 +5192,7 @@
 														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 														<Property Name="Volume" Type="Real64">
 															<ValueList>
-																<Value>-6</Value>
+																<Value>-5</Value>
 															</ValueList>
 														</Property>
 													</PropertyList>
@@ -5007,6 +5219,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Wings 4_1" ID="{D62068BC-0696-462D-A02B-2467DC571355}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0552511415525114"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.414383561643835"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Wings 4_1.wav</AudioFile>
 																	<MediaIDList>
@@ -5029,6 +5246,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Wings 4_2" ID="{6EE288EA-BE3C-44ED-8518-908EF35910F0}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.102397260273973"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.51461187214612"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Wings 4_2.wav</AudioFile>
 																	<MediaIDList>
@@ -5051,6 +5273,11 @@
 															</ReferenceList>
 															<ChildrenList>
 																<AudioFileSource Name="Wings 4_3" ID="{FE9CEDBC-8CB9-4D3F-8CEA-36A6B958F39E}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0539954337899544"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimEnd" Type="Real64" Value="0.402511415525114"/>
+																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>Wings 4_3.wav</AudioFile>
 																	<MediaIDList>
@@ -5079,7 +5306,7 @@
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-14</Value>
+												<Value>-9</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5110,8 +5337,19 @@
 												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
-														<Value>530</Value>
+														<Value>200</Value>
 													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{4B1D281A-88D4-4BDF-934A-3EC5DE169B58}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="100"/>
+																	<Property Name="Min" Type="Real64" Value="-100"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
 												</Property>
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>

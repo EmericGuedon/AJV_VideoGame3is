@@ -4,6 +4,12 @@
 		<WorkUnit Name="CHAR" ID="{37C587BC-DC20-48DC-9CA8-DE1963524B7B}" OwnerID="{BE95830D-1A78-40F9-991D-1DAA2DEBEFA1}" PersistMode="Nested">
 			<ChildrenList>
 				<SoundcasterSession Name="CHARACTER" ID="{68C66A41-3BBD-464F-BDEC-1DFDE8A746FF}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="WP_Hit" ID="{5CAEAB29-EEA6-474C-9B38-EEE4B02F65DC}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}"/>

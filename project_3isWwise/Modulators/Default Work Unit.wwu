@@ -23,6 +23,15 @@
 						<Property Name="LfoWaveform" Type="int32" Value="5"/>
 					</PropertyList>
 				</ModulatorLfo>
+				<ModulatorEnvelope Name="Enveloppe_HitSub" ID="{4BE44301-68FE-49EC-9851-861BD47BB9E9}" ShortID="353144473">
+					<PropertyList>
+						<Property Name="EnvelopeAttackCurve" Type="Real64" Value="0"/>
+						<Property Name="EnvelopeAttackTime" Type="Real64" Value="0"/>
+						<Property Name="EnvelopeDecayTime" Type="Real64" Value="0.284"/>
+						<Property Name="EnvelopeReleaseTime" Type="Real64" Value="0.284"/>
+						<Property Name="EnvelopeSustainLevel" Type="Real64" Value="0"/>
+					</PropertyList>
+				</ModulatorEnvelope>
 			</ChildrenList>
 		</WorkUnit>
 	</Modulators>

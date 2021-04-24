@@ -23,6 +23,16 @@
 						<Property Name="PreEQBand3Frequency" Type="Real32" Value="4373"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="EQ_Synth" ID="{35D1302E-4BDE-4003-A647-C0BFAF825EF7}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+						<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="47"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="2077"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="2077"/>
+						<Property Name="GainBand2" Type="Real32" Value="-2.5"/>
+					</PropertyList>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
