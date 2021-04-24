@@ -10,6 +10,7 @@
 				<WorkUnit Name="TEST" ID="{B7DF8193-1C64-4EE4-A00D-2C2356EB80C7}" PersistMode="Reference"/>
 				<WorkUnit Name="HUD" ID="{DC2BCF3F-1819-468E-A4AE-9AD2071DAD32}" PersistMode="Reference"/>
 				<WorkUnit Name="UI" ID="{570F564F-602A-4945-B7E7-693E006A4BF2}" PersistMode="Reference"/>
+				<WorkUnit Name="Music" ID="{17EB0432-8EC2-4967-A03A-D7B9FB7C4FE2}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

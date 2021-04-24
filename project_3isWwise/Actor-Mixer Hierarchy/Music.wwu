@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{17EB0432-8EC2-4967-A03A-D7B9FB7C4FE2}" SchemaVersion="97" RootDocumentID="{3F718F07-86BF-45AA-9CF2-FBE66C973C6C}">
+	<AudioObjects>
+		<WorkUnit Name="Music" ID="{17EB0432-8EC2-4967-A03A-D7B9FB7C4FE2}" OwnerID="{3F718F07-86BF-45AA-9CF2-FBE66C973C6C}" PersistMode="Nested">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="20"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<Sound Name="Hymne_MasterV2" ID="{2BAC39D8-20E1-4CB7-9AA4-6E26E23B1089}" ShortID="468882735">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Hymne_MasterV2" ID="{7A28EE5B-9449-4BD6-A525-DD426C150CB6}">
+							<Language>SFX</Language>
+							<AudioFile>Hymne_MasterV2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="933662731"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Hymne_MasterV2" ID="{7A28EE5B-9449-4BD6-A525-DD426C150CB6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

@@ -228,6 +228,28 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="CrowM_AttackImpact" ID="{98036396-9BCA-48A9-8C55-D2BE1CFE400A}">
+							<ChildrenList>
+								<Action Name="" ID="{F65ECF05-3602-4666-BAF1-1B73644982C8}" ShortID="1052707271">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CrowM_ImpactAttack" ID="{F925AAF7-F47C-43ED-8114-84529085358B}" WorkUnitID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="CrowM_AttackWoosh" ID="{D600EAB1-CE67-462E-95ED-758D7D43DBF0}">
+							<ChildrenList>
+								<Action Name="" ID="{CFBC3283-7507-4027-88E7-33FAD470A18D}" ShortID="881678738">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CrowM_WooshAttack" ID="{6D3858F9-7650-451B-8606-B7C63F213D26}" WorkUnitID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
