@@ -71,3 +71,4 @@ crashlytics-build.properties
 *.validationcache
 *.wsettings
 *.prof
+project_3isWwise/.cache/SoundBankInfoCache.dat
