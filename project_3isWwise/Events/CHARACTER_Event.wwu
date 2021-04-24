@@ -7,202 +7,229 @@
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
 			</PropertyList>
 			<ChildrenList>
-				<Event Name="Footstep_CrowM" ID="{4E95F54F-E9E9-41C6-A055-9C5115E7F17F}">
+				<Folder Name="WP" ID="{4F075A71-857D-406C-8D90-00F66250F0C9}" ShortID="674220865">
 					<ChildrenList>
-						<Action Name="" ID="{DE0DC6F8-F68C-406A-A643-85B5021E7A6E}" ShortID="823561542">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="CrowM_Run_Walk" ID="{5E9188A4-0C59-48C9-B8F9-B1356D786D04}" WorkUnitID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{6884FDAF-0356-4E06-9CE7-030021F3262E}" ShortID="964312213">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="CrowM_Gear" ID="{873C92D9-401B-4689-9B2E-F85E27DBCED6}" WorkUnitID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Footstep_WP" ID="{C436D326-7B8E-49D6-B4DA-E299868282B7}">
+							<ChildrenList>
+								<Action Name="" ID="{6DA5BB1B-D934-403D-A6CD-66F388A79514}" ShortID="860445062">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WP_Footstep" ID="{8E63F46C-FA42-4B99-80CA-A83F315394BB}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{76C848AC-2368-4EBD-9462-04FFF748AA0C}" ShortID="272385339">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WP_Gear" ID="{7A76FA09-70EC-4FF2-9EEA-22411559B72D}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{333B2F01-6BAE-40D4-8353-CDA80710E29C}" ShortID="625227398">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mob_Footstep_Materials" ID="{14FAD1FF-0A66-46E5-B6FA-1C15719A33D2}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Jump_WP" ID="{77131AB6-39C8-4256-801F-E5D8402973A6}">
+							<ChildrenList>
+								<Action Name="" ID="{9BA1F6D2-E944-448E-9D57-6B92ED210AA3}" ShortID="577215823">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WP_Jump" ID="{D21F5929-2D8F-4C20-9094-278AEE74AACF}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="JumpLand_Hard_WP" ID="{DFF7601E-6089-4CFD-A7FE-16FBD774C3B4}">
+							<ChildrenList>
+								<Action Name="" ID="{B1E561BF-E765-4C4E-A04C-77F31E8C5F4E}" ShortID="420026785">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WP_Jumpland_Hard" ID="{50F50EAF-F08E-4B45-8D47-0B4062EF7E25}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="JumpLand_WP" ID="{6CCED489-741F-49EB-8902-C185D03DD8C6}">
+							<ChildrenList>
+								<Action Name="" ID="{5C0DF8D9-99FD-46AE-A7A5-1FCDFF300B0B}" ShortID="1039626379">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WP_JumpLand" ID="{5363331E-1EA2-438F-AD57-A754E59D0853}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Sword_WP" ID="{48016EFC-5E25-452C-B939-B5324AE640A9}">
+							<ChildrenList>
+								<Action Name="" ID="{540E3388-1C03-4C6A-A049-803C0B2D1D81}" ShortID="647450710">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WP_Weapon_Sword" ID="{256BB137-5347-4133-AA65-A7EB596B04BF}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{2BC9AE8A-8219-4DF6-B56B-E220034AD9BC}" ShortID="752158859">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WP_Gear_Whoosh" ID="{AD41BDF8-3333-46B4-84A9-72A8A1600F95}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Shield_Main" ID="{52632D14-B7F7-4246-AD30-0845DF5B49AB}">
+							<ChildrenList>
+								<Action Name="" ID="{C71EE9C6-4B9E-4FC2-BE99-7587B1AF0BDA}" ShortID="936782882">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WP_Weapon_Shield" ID="{78EE7BBF-E35B-4913-A6FD-789AB4B71382}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WP_AttaqueC" ID="{E933B09F-64AC-441A-BBAC-B18DC8C85E1B}">
+							<ChildrenList>
+								<Action Name="" ID="{C1F0C3DA-336C-48EB-BEDF-8F649FFEC2CB}" ShortID="247663003">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WP_Weapon_C" ID="{DEDF6300-62C5-4023-8590-27675B53DDBE}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9F345DF2-2F24-4606-B2D9-C4AA530E2109}" ShortID="1058745198">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WP_Gear_Whoosh" ID="{AD41BDF8-3333-46B4-84A9-72A8A1600F95}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WP_Hurt" ID="{5C01F67C-5A16-4CA6-8A06-6DDA35644F66}">
+							<ChildrenList>
+								<Action Name="" ID="{179E0A92-B9FC-4DB0-9523-27AADFBFC0F0}" ShortID="123672633">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WP_Hurt" ID="{53E7F621-7992-4FB4-A32F-F4A00B1B3520}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Footstep_WP" ID="{C436D326-7B8E-49D6-B4DA-E299868282B7}">
+				</Folder>
+				<Folder Name="Mob" ID="{F14112F9-4344-48DF-A1CD-ABAACEB1BE32}" ShortID="294136807">
 					<ChildrenList>
-						<Action Name="" ID="{6DA5BB1B-D934-403D-A6CD-66F388A79514}" ShortID="860445062">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="WP_Footstep" ID="{8E63F46C-FA42-4B99-80CA-A83F315394BB}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{76C848AC-2368-4EBD-9462-04FFF748AA0C}" ShortID="272385339">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="WP_Gear" ID="{7A76FA09-70EC-4FF2-9EEA-22411559B72D}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{333B2F01-6BAE-40D4-8353-CDA80710E29C}" ShortID="625227398">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Mob_Footstep_Materials" ID="{14FAD1FF-0A66-46E5-B6FA-1C15719A33D2}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Footstep_Mob" ID="{9CFAFFD3-23E5-4916-84EF-80BFDC1CC2B4}">
+							<ChildrenList>
+								<Action Name="" ID="{1E0BEA9E-A2A3-4D4E-923A-A549BAA0CB89}" ShortID="987067924">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mob_Footstep_Materials" ID="{14FAD1FF-0A66-46E5-B6FA-1C15719A33D2}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{60293C57-9BB2-41A4-BF12-927E3BE4BAF8}" ShortID="770435534">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mob_Gear" ID="{7BA4DFF8-D53E-40E0-AFCD-998146BA0CE8}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Voice_Mob" ID="{48DC80BD-8764-4E83-8FEC-69273D3FB193}">
+							<ChildrenList>
+								<Action Name="" ID="{9A627559-99F7-4F71-BD47-EA993CAC8987}" ShortID="940094108">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mob_Krawl" ID="{B68D8BBC-0F27-4967-A096-6BAC4B11AEE6}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VoiceDetect_Mob" ID="{9F5F7B46-0A8E-4852-902B-1ACD2C51055C}">
+							<ChildrenList>
+								<Action Name="" ID="{DF5C8B94-EF9D-431C-8982-DC720F075A54}" ShortID="887055583">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mob_DetectSwitch" ID="{24CBD70F-C549-40C9-A185-699CC862816C}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="VoiceDeath_Mob" ID="{0022EA02-1E0A-4906-A69E-522EC3B5F79F}">
+							<ChildrenList>
+								<Action Name="" ID="{743FA35E-338D-4C4F-8626-F5DA0DB2391A}" ShortID="367136945">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mob_Death" ID="{6668A981-441C-40F8-A741-817DD2C0ECE9}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Sword_Mob" ID="{6FE79788-A30C-4130-9427-9D4DB60335F8}">
+							<ChildrenList>
+								<Action Name="" ID="{6241B680-22FD-44B9-B93C-5D4250056680}" ShortID="71158342">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Mob_Weapon_Sword" ID="{EEAE2744-A465-493C-AE69-5831DFE6F549}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Footstep_Mob" ID="{9CFAFFD3-23E5-4916-84EF-80BFDC1CC2B4}">
+				</Folder>
+				<Folder Name="Other CHAR" ID="{0F21150E-525E-4FE9-B348-1FE14BA7D444}" ShortID="220339697">
 					<ChildrenList>
-						<Action Name="" ID="{1E0BEA9E-A2A3-4D4E-923A-A549BAA0CB89}" ShortID="987067924">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Mob_Footstep_Materials" ID="{14FAD1FF-0A66-46E5-B6FA-1C15719A33D2}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{60293C57-9BB2-41A4-BF12-927E3BE4BAF8}" ShortID="770435534">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Mob_Gear" ID="{7BA4DFF8-D53E-40E0-AFCD-998146BA0CE8}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="BodyFall" ID="{2896D6F5-F85D-4120-BC7D-EA4672B6EB6F}">
+							<ChildrenList>
+								<Action Name="" ID="{1BAC1E7B-1BE6-4EC9-981C-FC142D39BD3E}" ShortID="175141650">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="BodyFall" ID="{F6DABD06-F104-4FC8-BDE4-5E85A66CDA56}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Sword_Main" ID="{48016EFC-5E25-452C-B939-B5324AE640A9}">
+				</Folder>
+				<Folder Name="CrowM" ID="{5552520A-E768-4FB3-8277-E4D69A72542B}" ShortID="627809277">
 					<ChildrenList>
-						<Action Name="" ID="{540E3388-1C03-4C6A-A049-803C0B2D1D81}" ShortID="647450710">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="WP_Weapon_Sword" ID="{256BB137-5347-4133-AA65-A7EB596B04BF}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{2BC9AE8A-8219-4DF6-B56B-E220034AD9BC}" ShortID="752158859">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="WP_Gear_Whoosh" ID="{AD41BDF8-3333-46B4-84A9-72A8A1600F95}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="Footstep_CrowM" ID="{4E95F54F-E9E9-41C6-A055-9C5115E7F17F}">
+							<ChildrenList>
+								<Action Name="" ID="{DE0DC6F8-F68C-406A-A643-85B5021E7A6E}" ShortID="823561542">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CrowM_Run_Walk" ID="{5E9188A4-0C59-48C9-B8F9-B1356D786D04}" WorkUnitID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6884FDAF-0356-4E06-9CE7-030021F3262E}" ShortID="964312213">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CrowM_Gear" ID="{873C92D9-401B-4689-9B2E-F85E27DBCED6}" WorkUnitID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="Shield_Main" ID="{52632D14-B7F7-4246-AD30-0845DF5B49AB}">
-					<ChildrenList>
-						<Action Name="" ID="{C71EE9C6-4B9E-4FC2-BE99-7587B1AF0BDA}" ShortID="936782882">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="WP_Weapon_Shield" ID="{78EE7BBF-E35B-4913-A6FD-789AB4B71382}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Voice_Mob" ID="{48DC80BD-8764-4E83-8FEC-69273D3FB193}">
-					<ChildrenList>
-						<Action Name="" ID="{9A627559-99F7-4F71-BD47-EA993CAC8987}" ShortID="940094108">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Mob_Krawl" ID="{B68D8BBC-0F27-4967-A096-6BAC4B11AEE6}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="Jump_WP" ID="{77131AB6-39C8-4256-801F-E5D8402973A6}">
-					<ChildrenList>
-						<Action Name="" ID="{9BA1F6D2-E944-448E-9D57-6B92ED210AA3}" ShortID="577215823">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="WP_Jump" ID="{D21F5929-2D8F-4C20-9094-278AEE74AACF}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="JumpLand_WP" ID="{6CCED489-741F-49EB-8902-C185D03DD8C6}">
-					<ChildrenList>
-						<Action Name="" ID="{5C0DF8D9-99FD-46AE-A7A5-1FCDFF300B0B}" ShortID="1039626379">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="WP_JumpLand" ID="{5363331E-1EA2-438F-AD57-A754E59D0853}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="VoiceDetect_Mob" ID="{9F5F7B46-0A8E-4852-902B-1ACD2C51055C}">
-					<ChildrenList>
-						<Action Name="" ID="{DF5C8B94-EF9D-431C-8982-DC720F075A54}" ShortID="887055583">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Mob_DetectSwitch" ID="{24CBD70F-C549-40C9-A185-699CC862816C}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="VoiceDeath_Mob" ID="{0022EA02-1E0A-4906-A69E-522EC3B5F79F}">
-					<ChildrenList>
-						<Action Name="" ID="{743FA35E-338D-4C4F-8626-F5DA0DB2391A}" ShortID="367136945">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Mob_Death" ID="{6668A981-441C-40F8-A741-817DD2C0ECE9}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="JumpLand_Hard_WP" ID="{DFF7601E-6089-4CFD-A7FE-16FBD774C3B4}">
-					<ChildrenList>
-						<Action Name="" ID="{B1E561BF-E765-4C4E-A04C-77F31E8C5F4E}" ShortID="420026785">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="WP_Jumpland_Hard" ID="{50F50EAF-F08E-4B45-8D47-0B4062EF7E25}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="WP_Hurt" ID="{5C01F67C-5A16-4CA6-8A06-6DDA35644F66}">
-					<ChildrenList>
-						<Action Name="" ID="{179E0A92-B9FC-4DB0-9523-27AADFBFC0F0}" ShortID="123672633">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="WP_Hurt" ID="{53E7F621-7992-4FB4-A32F-F4A00B1B3520}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="WP_AttaqueC" ID="{E933B09F-64AC-441A-BBAC-B18DC8C85E1B}">
-					<ChildrenList>
-						<Action Name="" ID="{C1F0C3DA-336C-48EB-BEDF-8F649FFEC2CB}" ShortID="247663003">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="WP_Weapon_C" ID="{DEDF6300-62C5-4023-8590-27675B53DDBE}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{9F345DF2-2F24-4606-B2D9-C4AA530E2109}" ShortID="1058745198">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="WP_Gear_Whoosh" ID="{AD41BDF8-3333-46B4-84A9-72A8A1600F95}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="BodyFall" ID="{2896D6F5-F85D-4120-BC7D-EA4672B6EB6F}">
-					<ChildrenList>
-						<Action Name="" ID="{1BAC1E7B-1BE6-4EC9-981C-FC142D39BD3E}" ShortID="175141650">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="BodyFall" ID="{F6DABD06-F104-4FC8-BDE4-5E85A66CDA56}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
