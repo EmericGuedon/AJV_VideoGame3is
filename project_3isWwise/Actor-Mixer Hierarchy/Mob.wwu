@@ -4,6 +4,9 @@
 		<WorkUnit Name="Mob" ID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}" OwnerID="{B32F5193-1056-4B08-ABBA-D68C0A0E704B}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="MOB" ID="{71093F7F-BEAF-42DF-BE8D-F86B98FC58C0}" ShortID="41801442">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>

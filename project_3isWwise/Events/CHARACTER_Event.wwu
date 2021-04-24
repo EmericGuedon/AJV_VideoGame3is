@@ -165,10 +165,10 @@
 				</Event>
 				<Event Name="WP_Hurt" ID="{5C01F67C-5A16-4CA6-8A06-6DDA35644F66}">
 					<ChildrenList>
-						<Action Name="" ID="{26F38B19-EDAE-4FEE-AAC7-BF54D9981073}" ShortID="511147241">
+						<Action Name="" ID="{179E0A92-B9FC-4DB0-9523-27AADFBFC0F0}" ShortID="123672633">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="WP_Hurt" ID="{F842A928-F80E-46FC-AFF6-A11F4A54C4DD}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+									<ObjectRef Name="WP_Hurt" ID="{53E7F621-7992-4FB4-A32F-F4A00B1B3520}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -192,12 +192,12 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="WP_Hit" ID="{63F8332E-567C-4D1D-ABFB-B60A5C550EB6}">
+				<Event Name="BodyFall" ID="{2896D6F5-F85D-4120-BC7D-EA4672B6EB6F}">
 					<ChildrenList>
-						<Action Name="" ID="{8D5136DE-25EC-453B-85C0-8FF5ED46131D}" ShortID="66516535">
+						<Action Name="" ID="{1BAC1E7B-1BE6-4EC9-981C-FC142D39BD3E}" ShortID="175141650">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="WP_Hit" ID="{421538D9-7125-454D-93C2-049A9EE0F125}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+									<ObjectRef Name="BodyFall" ID="{F6DABD06-F104-4FC8-BDE4-5E85A66CDA56}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

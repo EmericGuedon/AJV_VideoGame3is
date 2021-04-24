@@ -11,6 +11,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="CrowM" ID="{9CB9EEA2-C920-4CA5-BE12-BAD7DEB0278F}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<BlendContainer Name="CrowM_Général_test" ID="{473EBC68-B68E-4087-8FBB-D00FCBEB59D0}" ShortID="678915020">
