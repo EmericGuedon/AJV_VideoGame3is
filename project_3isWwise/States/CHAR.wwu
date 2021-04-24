@@ -3,12 +3,20 @@
 	<States>
 		<WorkUnit Name="CHAR" ID="{E719C4B4-A07D-41A0-A808-C269125A3065}" OwnerID="{849B06D4-C469-4423-9783-1867B8BCCE84}" PersistMode="Nested">
 			<ChildrenList>
-				<StateGroup Name="Sword_Materials" ID="{7BB45654-3750-4D5F-B08C-A7A7E824B461}">
+				<StateGroup Name="Sword_WP" ID="{7BB45654-3750-4D5F-B08C-A7A7E824B461}">
 					<ChildrenList>
 						<State Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
 						<State Name="Dry" ID="{7B06EE73-6C48-4201-8697-C266B1BEDDDE}"/>
 						<State Name="Blood_Hard" ID="{2D0C6174-2835-4378-AD9E-93D861F6CA41}"/>
 						<State Name="Blood_Soft" ID="{EF1F9BF9-72FF-4A60-9D19-B06E9913C323}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Sword_Corbac" ID="{367EF8D1-673C-4CB8-BC70-8DAD6E689417}">
+					<ChildrenList>
+						<State Name="None" ID="{5244ADD7-69E8-4519-9694-572624493ACE}"/>
+						<State Name="Dry" ID="{DB41879A-9873-4133-842B-4C5BEF794579}"/>
+						<State Name="Blood_Hard" ID="{59D712EB-6D6E-4D2F-B6AE-C21A3A9A5EB0}"/>
+						<State Name="Blood_Soft" ID="{EEBF44A1-9C9A-45BF-9EF9-E5512292DD6E}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

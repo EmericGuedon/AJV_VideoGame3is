@@ -1982,6 +1982,841 @@
 								</GroupingList>
 							</GroupingInfo>
 						</SwitchContainer>
+						<BlendContainer Name="Mob_Weapon_Sword" ID="{EEAE2744-A465-493C-AE69-5831DFE6F549}" ShortID="54189244">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-11</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SwitchContainer Name="Mob_Weapon_SwordMaterial" ID="{589437C8-4538-4100-991B-A40206D483B4}" ShortID="951066893">
+									<PropertyList>
+										<Property Name="InitialDelay" Type="Real64">
+											<ValueList>
+												<Value>0.1</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="DefaultSwitchOrState">
+											<ObjectRef Name="Dry" ID="{DB41879A-9873-4133-842B-4C5BEF794579}" WorkUnitID="{E719C4B4-A07D-41A0-A808-C269125A3065}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+										<Reference Name="SwitchGroupOrStateGroup">
+											<ObjectRef Name="Sword_Corbac" ID="{367EF8D1-673C-4CB8-BC70-8DAD6E689417}" WorkUnitID="{E719C4B4-A07D-41A0-A808-C269125A3065}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<RandomSequenceContainer Name="WP_Weapon_Sword_Hit_Dry" ID="{8CC41E20-746A-4C86-A2F4-5330091F359D}" ShortID="27461317">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>21</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>33</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-300</Value>
+													</ValueList>
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{3531CA62-7CD6-4163-B54F-1C297AD22106}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="150"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{2EE98C1E-087D-4B35-A64A-463F12C7C6D6}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-2"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Dry-001" ID="{FC03C819-33D8-444E-828D-45CCF74AB00E}" ShortID="488922020">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Dry-001" ID="{75C4E77C-9E1A-46EC-8AE4-EAEF992284E0}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0479585830479452"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.533938891267124"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Dry-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="871447747"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Dry-001" ID="{75C4E77C-9E1A-46EC-8AE4-EAEF992284E0}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Dry-002" ID="{45B0CD8E-F02B-4AD1-90BE-EA72D31C4004}" ShortID="729570845">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Dry-002" ID="{35A6DB6C-9DBD-4B3E-BF02-6B7FE5FBEA82}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0273972602739726"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.654109589041096"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Dry-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="246973735"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Dry-002" ID="{35A6DB6C-9DBD-4B3E-BF02-6B7FE5FBEA82}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Dry-003" ID="{02C6A12C-DFC2-4648-A102-4F1B740FA1CB}" ShortID="206708807">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Dry-003" ID="{C3993395-E89B-4F1F-BD95-3B95312C81FC}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0450400256849315"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.479354559075343"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Dry-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="224498148"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Dry-003" ID="{C3993395-E89B-4F1F-BD95-3B95312C81FC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Dry-004" ID="{E9DDE70A-B7AD-4C3C-AAB4-6FF35F60BEF8}" ShortID="1034556331">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Dry-004" ID="{A0AC453A-22BA-49E7-BF06-EAAD8A736F57}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0599315068493151"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.69777397260274"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Dry-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="54184917"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Dry-004" ID="{A0AC453A-22BA-49E7-BF06-EAAD8A736F57}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Dry-005" ID="{DCB9291E-A5E5-4FCC-A82B-733CA9BDA6FB}" ShortID="221593884">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Dry-005" ID="{314C8001-C18E-4B00-944F-9DF93A8B4414}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0338033675799087"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.729186929223745"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Dry-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="803178818"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Dry-005" ID="{314C8001-C18E-4B00-944F-9DF93A8B4414}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="WP_Weapon_Sword_Hit_Blood_Hard" ID="{8837C7D6-1ABB-472D-8431-CA2B33383360}" ShortID="367196305">
+											<PropertyList>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>30</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Blood_Hard-001" ID="{7F66F207-515D-4FF5-81F9-C1D93A345987}" ShortID="293187464">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Blood_Hard-001" ID="{67C2100E-67BC-4A80-961E-474F89D38E1B}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.32248769263699"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Hard-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="612866988"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Blood_Hard-001" ID="{67C2100E-67BC-4A80-961E-474F89D38E1B}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Blood_Hard-002" ID="{786CC47C-7233-40B2-9FBF-5E7681F088F7}" ShortID="1055044803">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Blood_Hard-002" ID="{654EB033-728F-4996-A948-F8E94C3CD4AB}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.27648812071918"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Hard-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="368883417"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Blood_Hard-002" ID="{654EB033-728F-4996-A948-F8E94C3CD4AB}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Blood_Hard-003" ID="{0E53E03C-52E4-40B0-B194-F493B4E44554}" ShortID="333398896">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Blood_Hard-003" ID="{5D32A979-313E-49D0-AAC3-1F62DFF3EF64}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.25732163242009"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Hard-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="798918979"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Blood_Hard-003" ID="{5D32A979-313E-49D0-AAC3-1F62DFF3EF64}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Blood_Hard-004" ID="{CF6553DB-D341-4B22-B251-AD174F8B72D0}" ShortID="671646801">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Blood_Hard-004" ID="{64A05C75-8B5D-40A2-8C69-B33D37A7445A}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.42215286101598"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Hard-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1001571240"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Blood_Hard-004" ID="{64A05C75-8B5D-40A2-8C69-B33D37A7445A}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Blood_Hard-005" ID="{BC72C5A5-CFC5-4358-8304-E47635CB98A6}" ShortID="299123287">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Blood_Hard-005" ID="{3461D71D-1557-4BB8-BBFB-F66D6A08474F}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.44264497716895"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Hard-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="140867875"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Blood_Hard-005" ID="{3461D71D-1557-4BB8-BBFB-F66D6A08474F}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Blood_Hard-006" ID="{759CEC68-695D-4118-A252-449CC6182FFF}" ShortID="593636051">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Blood_Hard-006" ID="{9B270CC9-50BA-485B-B35F-F680B866C645}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.42215286101598"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Hard-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="659107968"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Blood_Hard-006" ID="{9B270CC9-50BA-485B-B35F-F680B866C645}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+										<RandomSequenceContainer Name="WP_Weapon_Sword_Hit_Blood_Soft" ID="{EA323BBB-CDC1-44EE-A7D4-7947C7736879}" ShortID="1002153228">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>18</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>32</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{7102EB45-B89B-4ABE-A376-F35B73AE39E9}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="250"/>
+																	<Property Name="Min" Type="Real64" Value="-150"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Blood_Soft-001" ID="{0AAF85A0-792F-467D-BA6A-2289B69921B8}" ShortID="528614990">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Blood_Soft-001" ID="{700441E3-ABB0-47FA-ADC8-ED21386867B3}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.12656392694064"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Soft-001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1055313706"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Blood_Soft-001" ID="{700441E3-ABB0-47FA-ADC8-ED21386867B3}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Blood_Soft-002" ID="{C6A0FB9A-9ADF-4A91-B5D5-F92063778D9D}" ShortID="110530020">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Blood_Soft-002" ID="{6911BE4E-90EF-4574-AB63-83D900E62160}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.07727675513699"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Soft-002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="753191400"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Blood_Soft-002" ID="{6911BE4E-90EF-4574-AB63-83D900E62160}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Blood_Soft-003" ID="{0B364B7F-FC67-4C97-8A39-51A8E6C73D19}" ShortID="484321868">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Blood_Soft-003" ID="{C92C4E82-CBA6-4999-9728-746B1EFF66AC}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.08431777968037"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Soft-003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="800431890"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Blood_Soft-003" ID="{C92C4E82-CBA6-4999-9728-746B1EFF66AC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Blood_Soft-004" ID="{2B351C67-83B6-4025-B026-44E66E522BAC}" ShortID="651985342">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Blood_Soft-004" ID="{FC75289C-2D6A-471D-B884-73EE7CEB3D62}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.900315068493151"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Soft-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="1020558999"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Blood_Soft-004" ID="{FC75289C-2D6A-471D-B884-73EE7CEB3D62}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Blood_Soft-005" ID="{51171C16-AB60-4249-A356-7261BF8A8510}" ShortID="545241408">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Blood_Soft-005" ID="{402F7443-8218-4534-8413-A5245C8F4486}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.928547945205478"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Soft-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="603034516"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Blood_Soft-005" ID="{402F7443-8218-4534-8413-A5245C8F4486}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_Weapon_Sword_Hit_Blood_Soft-006" ID="{3BA88194-1417-49E0-AA23-D0C2A43B385E}" ShortID="965909668">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_Weapon_Sword_Hit_Blood_Soft-006" ID="{CD28DF15-6DC5-45B1-B5D5-D69919B485AA}">
+															<PropertyList>
+																<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.859534246575342"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Soft-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="838565379"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_Weapon_Sword_Hit_Blood_Soft-006" ID="{CD28DF15-6DC5-45B1-B5D5-D69919B485AA}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+											</ChildrenList>
+										</RandomSequenceContainer>
+									</ChildrenList>
+									<GroupingInfo>
+										<GroupingBehaviorList>
+											<GroupingBehavior>
+												<ItemRef Name="WP_Weapon_Sword_Hit_Dry" ID="{8CC41E20-746A-4C86-A2F4-5330091F359D}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="WP_Weapon_Sword_Hit_Blood_Soft" ID="{EA323BBB-CDC1-44EE-A7D4-7947C7736879}"/>
+											</GroupingBehavior>
+											<GroupingBehavior>
+												<ItemRef Name="WP_Weapon_Sword_Hit_Blood_Hard" ID="{8837C7D6-1ABB-472D-8431-CA2B33383360}"/>
+											</GroupingBehavior>
+										</GroupingBehaviorList>
+										<GroupingList>
+											<Grouping>
+												<SwitchRef Name="Dry" ID="{DB41879A-9873-4133-842B-4C5BEF794579}"/>
+												<ItemList>
+													<ItemRef Name="WP_Weapon_Sword_Hit_Dry" ID="{8CC41E20-746A-4C86-A2F4-5330091F359D}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Blood_Soft" ID="{EEBF44A1-9C9A-45BF-9EF9-E5512292DD6E}"/>
+												<ItemList>
+													<ItemRef Name="WP_Weapon_Sword_Hit_Blood_Soft" ID="{EA323BBB-CDC1-44EE-A7D4-7947C7736879}"/>
+												</ItemList>
+											</Grouping>
+											<Grouping>
+												<SwitchRef Name="Blood_Hard" ID="{59D712EB-6D6E-4D2F-B6AE-C21A3A9A5EB0}"/>
+												<ItemList>
+													<ItemRef Name="WP_Weapon_Sword_Hit_Blood_Hard" ID="{8837C7D6-1ABB-472D-8431-CA2B33383360}"/>
+												</ItemList>
+											</Grouping>
+										</GroupingList>
+									</GroupingInfo>
+								</SwitchContainer>
+								<RandomSequenceContainer Name="Mob_Weapon_Sword_Woosh" ID="{DC11B7C8-2857-461F-8B9F-9E38AEC8CE09}" ShortID="95424008">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-600</Value>
+											</ValueList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CHAR_Sword_Whoosh-001" ID="{73FA6DFE-1F70-4573-B636-81185E9526FF}" ShortID="743706689">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-100</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_Sword_Whoosh-001" ID="{70108BB4-9126-4199-BEBE-B18F0C66F363}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0316438356164384"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.00904109589041095"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.259931506849314"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CHAR_Sword_Whoosh-001.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="883979082"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_Sword_Whoosh-001" ID="{70108BB4-9126-4199-BEBE-B18F0C66F363}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_Sword_Whoosh-002" ID="{413A01AE-B217-4E74-A35D-C7EF3555DF56}" ShortID="734034067">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>180</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_Sword_Whoosh-002" ID="{7FFAE169-3718-49BD-96C2-EDF7EED0C04F}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0114840182648402"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0229680365296804"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.00918721461187215"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.280210045662102"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CHAR_Sword_Whoosh-002.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="154508326"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_Sword_Whoosh-002" ID="{7FFAE169-3718-49BD-96C2-EDF7EED0C04F}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_Sword_Whoosh-003" ID="{6E47A037-B878-4684-80CA-68A9EBF7B150}" ShortID="617988320">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-200</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_Sword_Whoosh-003" ID="{DC9E0704-B6EC-40F1-861E-058C3F9B745D}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.00918721461187215"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0551232876712329"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0137808219178082"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.326146118721463"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CHAR_Sword_Whoosh-003.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1072964109"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_Sword_Whoosh-003" ID="{DC9E0704-B6EC-40F1-861E-058C3F9B745D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_Sword_Whoosh-004" ID="{3CC24928-6759-48D1-90D7-9E69F922C655}" ShortID="856612013">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_Sword_Whoosh-004" ID="{45F00904-E71A-4ABF-AB3D-5DFADF05E984}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.010662100456621"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.063972602739726"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.287876712328767"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CHAR_Sword_Whoosh-004.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="716160252"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_Sword_Whoosh-004" ID="{45F00904-E71A-4ABF-AB3D-5DFADF05E984}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_Sword_Whoosh-005" ID="{3860C860-B563-464A-A40D-8B01C1A49442}" ShortID="633911300">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_Sword_Whoosh-005" ID="{CEBBE9E0-2A86-4C46-8BAA-FECF329BBF3B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0147990867579909"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0253698630136986"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.00845662100456621"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.23255707762557"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CHAR_Sword_Whoosh-005.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="809443356"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_Sword_Whoosh-005" ID="{CEBBE9E0-2A86-4C46-8BAA-FECF329BBF3B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

@@ -28,7 +28,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Mid" ID="{4CFCC9A7-265B-45FD-AAC0-4311A6DA0B62}"/>
-						<CurrentStateRef Name="Dry" ID="{7B06EE73-6C48-4201-8697-C266B1BEDDDE}"/>
+						<CurrentStateRef Name="Blood_Soft" ID="{EF1F9BF9-72FF-4A60-9D19-B06E9913C323}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>

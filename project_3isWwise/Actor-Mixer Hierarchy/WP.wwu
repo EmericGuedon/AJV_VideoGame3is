@@ -2096,7 +2096,7 @@
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 										</Reference>
 										<Reference Name="SwitchGroupOrStateGroup">
-											<ObjectRef Name="Sword_Materials" ID="{7BB45654-3750-4D5F-B08C-A7A7E824B461}" WorkUnitID="{E719C4B4-A07D-41A0-A808-C269125A3065}"/>
+											<ObjectRef Name="Sword_WP" ID="{7BB45654-3750-4D5F-B08C-A7A7E824B461}" WorkUnitID="{E719C4B4-A07D-41A0-A808-C269125A3065}"/>
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
