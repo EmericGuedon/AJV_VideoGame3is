@@ -5140,9 +5140,8 @@
 													<ChildrenList>
 														<AudioFileSource Name="CHAR_WP_GetHurt-001" ID="{8FFA93C5-5A3D-4898-ACD6-4BA478E2C364}">
 															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="0.0631849315068493"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.0631849315068493"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.094777397260274"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_WP_GetHurt-001.wav</AudioFile>
@@ -5167,9 +5166,8 @@
 													<ChildrenList>
 														<AudioFileSource Name="CHAR_WP_GetHurt-002" ID="{0BB6911D-EA11-498F-9CE9-791D24A2523A}">
 															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="0.0948458904109589"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.0948458904109589"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.134092465753425"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_WP_GetHurt-002.wav</AudioFile>
@@ -5194,9 +5192,8 @@
 													<ChildrenList>
 														<AudioFileSource Name="CHAR_WP_GetHurt-003" ID="{BDB2B959-AE98-4B82-A41D-72909A5113D7}">
 															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="0.0804794520547945"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.0804794520547945"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0965753424657534"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_WP_GetHurt-003.wav</AudioFile>
@@ -5221,9 +5218,8 @@
 													<ChildrenList>
 														<AudioFileSource Name="CHAR_WP_GetHurt-004" ID="{F916B18A-D098-4C05-8B65-878ABDD75D71}">
 															<PropertyList>
-																<Property Name="LoopBegin" Type="Real64" Value="0.0631164383561644"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.0631164383561644"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.093013698630137"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_WP_GetHurt-004.wav</AudioFile>
@@ -5250,8 +5246,8 @@
 															<PropertyList>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.0809075342465754"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.0841438356164384"/>
-																<Property Name="TrimEnd" Type="Real64" Value="0.721695205479452"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.110034246575342"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.598715753424657"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_WP_GetHurt-005.wav</AudioFile>
@@ -5277,7 +5273,7 @@
 														<AudioFileSource Name="CHAR_WP_GetHurt-006" ID="{97C456AC-2206-4CC1-901F-2793127B9A50}">
 															<PropertyList>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.0696917808219178"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.104537671232877"/>
 																<Property Name="TrimEnd" Type="Real64" Value="0.867979452054795"/>
 															</PropertyList>
 															<Language>SFX</Language>
@@ -5305,7 +5301,7 @@
 															<PropertyList>
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.0711986301369862"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																<Property Name="TrimBegin" Type="Real64" Value="0.0813698630136986"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.101712328767123"/>
 																<Property Name="TrimEnd" Type="Real64" Value="0.966267123287671"/>
 															</PropertyList>
 															<Language>SFX</Language>
