@@ -119,7 +119,18 @@
 								<Action Name="" ID="{179E0A92-B9FC-4DB0-9523-27AADFBFC0F0}" ShortID="123672633">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="WP_Hurt" ID="{53E7F621-7992-4FB4-A32F-F4A00B1B3520}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+											<ObjectRef Name="WP_Hit" ID="{5CAEAB29-EEA6-474C-9B38-EEE4B02F65DC}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="WP_Death" ID="{54B98669-E3DB-4873-A0AF-66DBF0144264}">
+							<ChildrenList>
+								<Action Name="" ID="{6213A33F-6D2C-4A26-B040-70946BAA94CB}" ShortID="937873371">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WP_Death_Random" ID="{0EF2F191-6281-446E-BA6B-4733C22CA18A}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -233,7 +244,7 @@
 								<Action Name="" ID="{F65ECF05-3602-4666-BAF1-1B73644982C8}" ShortID="1052707271">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="CrowM_ImpactAttack" ID="{F925AAF7-F47C-43ED-8114-84529085358B}" WorkUnitID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}"/>
+											<ObjectRef Name="CrowM_Impact" ID="{AD2D6D9F-44AB-40C4-B061-CFDFF9A3402F}" WorkUnitID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

@@ -1365,11 +1365,6 @@
 						</BlendContainer>
 						<BlendContainer Name="CrowM_Attack" ID="{F40FF719-59E9-4365-856E-6C7A00EAAE8B}" ShortID="50448033">
 							<PropertyList>
-								<Property Name="Highpass" Type="int16">
-									<ValueList>
-										<Value>17</Value>
-									</ValueList>
-								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-11</Value>
@@ -1578,23 +1573,7 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="CrowM_ImpactAttack" ID="{F925AAF7-F47C-43ED-8114-84529085358B}" ShortID="272262077">
-									<PropertyList>
-										<Property Name="Pitch" Type="int32">
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{7CF9CA69-584C-45F2-A304-AA5B074F4011}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="152"/>
-															<Property Name="Min" Type="Real64" Value="-126"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
-									</PropertyList>
+								<BlendContainer Name="CrowM_Impact" ID="{AD2D6D9F-44AB-40C4-B061-CFDFF9A3402F}" ShortID="978353114">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1604,148 +1583,211 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="CHAR_CrowM_Hit_Massive_Attack -001" ID="{2279304F-89D6-4579-B22C-0166CA63BB16}" ShortID="600392774">
+										<RandomSequenceContainer Name="CrowM_ImpactAttack" ID="{F925AAF7-F47C-43ED-8114-84529085358B}" ShortID="272262077">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{7CF9CA69-584C-45F2-A304-AA5B074F4011}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="152"/>
+																	<Property Name="Min" Type="Real64" Value="-126"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+													<ObjectRef Name="CrowM" ID="{9CB9EEA2-C920-4CA5-BE12-BAD7DEB0278F}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Hit_Massive_Attack -001" ID="{187BCF2F-740B-4595-86D0-4176CDCE21BC}">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.943513698630137"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0245068493150685"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.11506164383561"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Hit_Massive_Attack -001.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="211898466"/>
-													</MediaIDList>
-												</AudioFileSource>
+												<Sound Name="CHAR_CrowM_Hit_Massive_Attack -001" ID="{2279304F-89D6-4579-B22C-0166CA63BB16}" ShortID="600392774">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Hit_Massive_Attack -001" ID="{187BCF2F-740B-4595-86D0-4176CDCE21BC}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.943513698630137"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0245068493150685"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.11506164383561"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Hit_Massive_Attack -001.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="211898466"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Hit_Massive_Attack -001" ID="{187BCF2F-740B-4595-86D0-4176CDCE21BC}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Hit_Massive_Attack -002" ID="{5D8ABC01-ABDD-44A5-9469-34BC026EB1A7}" ShortID="128360388">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Hit_Massive_Attack -002" ID="{2D774C68-C4C4-4A7E-B58B-B50D8B48B793}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.05109474885845"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0622358732876712"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.26546275684932"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Hit_Massive_Attack -002.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="314295030"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Hit_Massive_Attack -002" ID="{2D774C68-C4C4-4A7E-B58B-B50D8B48B793}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Hit_Massive_Attack -003" ID="{3D57D550-7F05-40D8-89E3-B5295813470A}" ShortID="809531256">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Hit_Massive_Attack -003" ID="{072E0BC0-F022-4161-9F2A-A34D16685CFE}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.942365938926941"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.14600035673516"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.20782113299087"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Hit_Massive_Attack -003.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="606272409"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Hit_Massive_Attack -003" ID="{072E0BC0-F022-4161-9F2A-A34D16685CFE}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Hit_Massive_Attack -004" ID="{0B87ABCD-D914-44BB-8AD9-3C9E82011610}" ShortID="342310255">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Hit_Massive_Attack -004" ID="{41B18DC2-CB6A-49EF-9BE3-9F7010A02E46}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="1.03092080479452"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.124020547945205"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.51925171232877"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Hit_Massive_Attack -004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="507200538"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Hit_Massive_Attack -004" ID="{41B18DC2-CB6A-49EF-9BE3-9F7010A02E46}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_CrowM_Hit_Massive_Attack -005" ID="{611E9E26-CA3B-4259-8597-AC5F8DAEAEC9}" ShortID="130960856">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_CrowM_Hit_Massive_Attack -005" ID="{F8BD8FD5-93A5-445A-88BA-0A1ECBFD8065}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.713664383561643"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.203904109589041"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.36458904109589"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_CrowM_Hit_Massive_Attack -005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="821391263"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_CrowM_Hit_Massive_Attack -005" ID="{F8BD8FD5-93A5-445A-88BA-0A1ECBFD8065}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Hit_Massive_Attack -001" ID="{187BCF2F-740B-4595-86D0-4176CDCE21BC}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_CrowM_Hit_Massive_Attack -002" ID="{5D8ABC01-ABDD-44A5-9469-34BC026EB1A7}" ShortID="128360388">
+										</RandomSequenceContainer>
+										<Sound Name="Sub-01" ID="{2306C9BD-32DF-4923-9826-AACA532612EA}" ShortID="369772482">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-6</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 												</Reference>
 												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+													<ObjectRef Name="CrowM" ID="{9CB9EEA2-C920-4CA5-BE12-BAD7DEB0278F}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Hit_Massive_Attack -002" ID="{2D774C68-C4C4-4A7E-B58B-B50D8B48B793}">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1.05109474885845"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0622358732876712"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.26546275684932"/>
-													</PropertyList>
+												<AudioFileSource Name="Sub-01" ID="{B10DD9D2-EAA7-465B-B5B9-E358185D653B}">
 													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Hit_Massive_Attack -002.wav</AudioFile>
+													<AudioFile>Sub-01.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="314295030"/>
+														<MediaID ID="717980228"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
 											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Hit_Massive_Attack -002" ID="{2D774C68-C4C4-4A7E-B58B-B50D8B48B793}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_CrowM_Hit_Massive_Attack -003" ID="{3D57D550-7F05-40D8-89E3-B5295813470A}" ShortID="809531256">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Hit_Massive_Attack -003" ID="{072E0BC0-F022-4161-9F2A-A34D16685CFE}">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.942365938926941"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.14600035673516"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.20782113299087"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Hit_Massive_Attack -003.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="606272409"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Hit_Massive_Attack -003" ID="{072E0BC0-F022-4161-9F2A-A34D16685CFE}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_CrowM_Hit_Massive_Attack -004" ID="{0B87ABCD-D914-44BB-8AD9-3C9E82011610}" ShortID="342310255">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Hit_Massive_Attack -004" ID="{41B18DC2-CB6A-49EF-9BE3-9F7010A02E46}">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="1.03092080479452"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.124020547945205"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.51925171232877"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Hit_Massive_Attack -004.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="507200538"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Hit_Massive_Attack -004" ID="{41B18DC2-CB6A-49EF-9BE3-9F7010A02E46}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_CrowM_Hit_Massive_Attack -005" ID="{611E9E26-CA3B-4259-8597-AC5F8DAEAEC9}" ShortID="130960856">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_CrowM_Hit_Massive_Attack -005" ID="{F8BD8FD5-93A5-445A-88BA-0A1ECBFD8065}">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.713664383561643"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.203904109589041"/>
-														<Property Name="TrimEnd" Type="Real64" Value="1.36458904109589"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_CrowM_Hit_Massive_Attack -005.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="821391263"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_CrowM_Hit_Massive_Attack -005" ID="{F8BD8FD5-93A5-445A-88BA-0A1ECBFD8065}" Platform="Linked"/>
+												<ActiveSource Name="Sub-01" ID="{B10DD9D2-EAA7-465B-B5B9-E358185D653B}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>
-								</RandomSequenceContainer>
+								</BlendContainer>
 							</ChildrenList>
 						</BlendContainer>
 						<BlendContainer Name="CrowM_Gear" ID="{3D0FC38B-3425-46A2-B156-7D06D2A1300D}" ShortID="1017990523">
