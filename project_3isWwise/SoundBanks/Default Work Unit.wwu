@@ -28,6 +28,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Play_SINE" ID="{4DD41C80-AD95-4050-A035-1231DEA280BF}" WorkUnitID="{F0F12306-F337-49B9-B360-4B8AB7385682}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Stop_SINE" ID="{8D6245FA-1D54-4CA6-A68A-8FC0C5BEE03F}" WorkUnitID="{F0F12306-F337-49B9-B360-4B8AB7385682}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SinePluck" ID="{C1FFBA4D-9F5A-4ED5-9196-8C24BBB941D7}" WorkUnitID="{F0F12306-F337-49B9-B360-4B8AB7385682}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

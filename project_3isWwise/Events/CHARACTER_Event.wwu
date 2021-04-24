@@ -119,7 +119,14 @@
 								<Action Name="" ID="{179E0A92-B9FC-4DB0-9523-27AADFBFC0F0}" ShortID="123672633">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="WP_Hit" ID="{5CAEAB29-EEA6-474C-9B38-EEE4B02F65DC}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+											<ObjectRef Name="WP_Hurt" ID="{5CAEAB29-EEA6-474C-9B38-EEE4B02F65DC}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{B05E2834-06F3-440E-84C3-7DC5C73ABAF1}" ShortID="380826469">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WP_Hurt_Voice" ID="{35F8D5B2-0FE2-4A3B-8F58-4DCBD03A716A}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

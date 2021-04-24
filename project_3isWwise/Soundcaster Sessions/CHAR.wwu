@@ -6,7 +6,7 @@
 				<SoundcasterSession Name="CHARACTER" ID="{68C66A41-3BBD-464F-BDEC-1DFDE8A746FF}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="WP_Hit" ID="{5CAEAB29-EEA6-474C-9B38-EEE4B02F65DC}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+							<ObjectRef Name="WP_Hurt" ID="{5C01F67C-5A16-4CA6-8A06-6DDA35644F66}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 					</ModuleList>
@@ -34,12 +34,13 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Mid" ID="{4CFCC9A7-265B-45FD-AAC0-4311A6DA0B62}"/>
-						<CurrentStateRef Name="Blood_Soft" ID="{EF1F9BF9-72FF-4A60-9D19-B06E9913C323}"/>
+						<CurrentStateRef Name="None" ID="{5244ADD7-69E8-4519-9694-572624493ACE}"/>
+						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>
 						<CurrentSwitchRef Name="Snow" ID="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}"/>
-						<CurrentSwitchRef Name="WALK" ID="{989D954C-D9ED-4FB6-8E34-F92980A30EFB}"/>
+						<CurrentSwitchRef Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
 						<CurrentSwitchRef Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
