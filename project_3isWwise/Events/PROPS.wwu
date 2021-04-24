@@ -108,6 +108,50 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_Woodbox" ID="{F1D9D07B-C2FB-4D9D-97CC-314996B904AD}">
+					<ChildrenList>
+						<Action Name="" ID="{4C33829F-F4D4-4197-B413-BDC90A237357}" ShortID="325081253">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wooden Box" ID="{5D12BAC0-A008-480A-849E-E8D181AB4142}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Props_Ceramic" ID="{436BDDB3-1B0C-449D-9E9A-73D8268D2BE5}">
+					<ChildrenList>
+						<Action Name="" ID="{BAB34BB8-7245-4534-B53E-93758758D40F}" ShortID="528709404">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Ceramic_Impact" ID="{5CC37692-CE6C-4CC5-91C2-D8B47FAB6FE7}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Props_Choppe" ID="{AF620570-4D63-4ED4-A968-B94A828A4A5C}">
+					<ChildrenList>
+						<Action Name="" ID="{3F87157F-D80D-4B6A-BE2B-7C302EA90788}" ShortID="422234381">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wooden_Choppe" ID="{1A319555-0D0D-4E9F-9B15-5BE34DFC8E98}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Props_Bench" ID="{EB9E6703-7F5E-452C-A71F-2CB5395B00FB}">
+					<ChildrenList>
+						<Action Name="" ID="{812B08C5-4D51-4D2F-8C94-4FC6DF376147}" ShortID="316279014">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bench_Impact" ID="{BC7503BD-9D8F-4081-B32A-EA5EA78CFACD}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

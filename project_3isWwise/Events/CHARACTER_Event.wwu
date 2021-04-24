@@ -77,6 +77,13 @@
 								</Reference>
 							</ReferenceList>
 						</Action>
+						<Action Name="" ID="{2BC9AE8A-8219-4DF6-B56B-E220034AD9BC}" ShortID="752158859">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WP_Gear_Whoosh" ID="{AD41BDF8-3333-46B4-84A9-72A8A1600F95}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 					</ChildrenList>
 				</Event>
 				<Event Name="Shield_Main" ID="{52632D14-B7F7-4246-AD30-0845DF5B49AB}">
@@ -151,6 +158,35 @@
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="WP_Jumpland_Hard" ID="{50F50EAF-F08E-4B45-8D47-0B4062EF7E25}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="WP_Hurt" ID="{5C01F67C-5A16-4CA6-8A06-6DDA35644F66}">
+					<ChildrenList>
+						<Action Name="" ID="{26F38B19-EDAE-4FEE-AAC7-BF54D9981073}" ShortID="511147241">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WP_Hurt" ID="{F842A928-F80E-46FC-AFF6-A11F4A54C4DD}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="WP_AttaqueC" ID="{E933B09F-64AC-441A-BBAC-B18DC8C85E1B}">
+					<ChildrenList>
+						<Action Name="" ID="{C1F0C3DA-336C-48EB-BEDF-8F649FFEC2CB}" ShortID="247663003">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WP_Weapon_C" ID="{DEDF6300-62C5-4023-8590-27675B53DDBE}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9F345DF2-2F24-4606-B2D9-C4AA530E2109}" ShortID="1058745198">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WP_Gear_Whoosh" ID="{AD41BDF8-3333-46B4-84A9-72A8A1600F95}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

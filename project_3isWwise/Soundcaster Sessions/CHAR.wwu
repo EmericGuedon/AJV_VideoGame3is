@@ -11,11 +11,15 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Barrel" ID="{66979BA4-B0F9-4228-B3C0-C206996D8C28}"/>
-							<Value>2.5</Value>
+							<Value>0.0109890109890109</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="FightDrums" ID="{01B12555-19EB-42F1-A778-73ABAA71AD67}"/>
 							<Value>50.187265917603</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Box" ID="{750CAAB6-6336-45E6-9306-BC368E56FDA2}"/>
+							<Value>-0.340659340659339</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="FightStrings" ID="{9FA0B117-5263-4ACD-BA1B-F4235312A472}"/>
@@ -29,7 +33,7 @@
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>
 						<CurrentSwitchRef Name="Snow" ID="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}"/>
-						<CurrentSwitchRef Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
+						<CurrentSwitchRef Name="RUN" ID="{27D4B2BD-628B-46BD-8452-6351AB298B87}"/>
 						<CurrentSwitchRef Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
