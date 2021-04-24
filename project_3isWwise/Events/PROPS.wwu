@@ -155,6 +155,9 @@
 				<Event Name="Play_CampFire_Menu" ID="{1B12D6F7-C8F0-4B49-9C51-122C42628A2A}">
 					<ChildrenList>
 						<Action Name="" ID="{372DFA89-AD2D-4D79-BDC3-1B22E534ACDD}" ShortID="860065085">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="CampFire_1" ID="{79395D65-DE83-4EC4-80B4-6C24F34522D9}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
