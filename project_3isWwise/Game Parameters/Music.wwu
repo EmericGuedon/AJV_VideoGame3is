@@ -5,6 +5,12 @@
 			<ChildrenList>
 				<GameParameter Name="FightDrums" ID="{01B12555-19EB-42F1-A778-73ABAA71AD67}"/>
 				<GameParameter Name="FightStrings" ID="{9FA0B117-5263-4ACD-BA1B-F4235312A472}"/>
+				<GameParameter Name="MusicFight_LevelSound" ID="{2C16E1BA-C57A-431E-867C-6794DB26AA36}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

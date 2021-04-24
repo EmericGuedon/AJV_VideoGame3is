@@ -9,16 +9,43 @@
 			<ChildrenList>
 				<MusicPlaylistContainer Name="Music_Fight" ID="{0587247D-F11C-4B3F-9BC7-082F60D40F0D}" ShortID="561279989">
 					<PropertyList>
-						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MakeUpGain" Type="Real64">
+							<RTPCList>
+								<RTPC Name="" ID="{221D85B2-2575-4C54-9256-876E92F0ADD0}" ShortID="537759885">
+									<ReferenceList>
+										<Reference Name="ControlInput">
+											<ObjectRef Name="MusicFight_LevelSound" ID="{2C16E1BA-C57A-431E-867C-6794DB26AA36}" WorkUnitID="{88CFE284-76AE-4493-B43D-FE95A710F347}"/>
+										</Reference>
+									</ReferenceList>
+									<Curve Name="" ID="{FF3938EF-A2B7-44F3-9BB1-15FEF9E0B6AF}">
+										<PropertyList>
+											<Property Name="Flags" Type="int32" Value="3"/>
+										</PropertyList>
+										<PointList>
+											<Point>
+												<XPos>0</XPos>
+												<YPos>-96</YPos>
+												<Flags>5</Flags>
+											</Point>
+											<Point>
+												<XPos>0.5</XPos>
+												<YPos>-192</YPos>
+												<Flags>0</Flags>
+											</Point>
+											<Point>
+												<XPos>1</XPos>
+												<YPos>0</YPos>
+												<Flags>37</Flags>
+											</Point>
+										</PointList>
+									</Curve>
+								</RTPC>
+							</RTPCList>
+						</Property>
 						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 						<Property Name="MaxSoundPerInstance" Type="int16">
 							<ValueList>
-								<Value>3</Value>
-							</ValueList>
-						</Property>
-						<Property Name="UseMaxSoundPerInstance" Type="bool">
-							<ValueList>
-								<Value>True</Value>
+								<Value>4</Value>
 							</ValueList>
 						</Property>
 						<Property Name="Volume" Type="Real64">
@@ -577,11 +604,11 @@
 								<MusicPlaylistItem Name="" ID="{27994A27-0EC6-4A99-BB96-E1E6132CEBF3}" ShortID="992579651">
 									<PropertyList>
 										<Property Name="LoopCount" Type="int16" Value="0"/>
-										<Property Name="PlayMode" Type="int16" Value="3"/>
 									</PropertyList>
 									<ChildrenList>
 										<MusicPlaylistItem Name="" ID="{40FF68FA-20DD-4ADD-AAD1-4F808D989848}" ShortID="133482952">
 											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
 												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 											</PropertyList>
 											<SegmentRef Name="MusicFight" ID="{D9DE1F22-B70F-4720-B907-352D7C44E3C5}"/>
