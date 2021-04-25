@@ -102,6 +102,7 @@
 					<ChildrenList>
 						<Action Name="" ID="{5F42D323-9B06-4E33-AE24-9E451208230D}" ShortID="426195664">
 							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="2"/>
 								<Property Name="FadeTime" Type="Real64" Value="4"/>
 							</PropertyList>
 							<ReferenceList>
