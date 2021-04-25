@@ -22,8 +22,14 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>4.75668</XPos>
-											<YPos>-2.45709</YPos>
+											<XPos>4.03249</XPos>
+											<YPos>-0</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>SCurve</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>8.01233</XPos>
+											<YPos>-2.59434</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>

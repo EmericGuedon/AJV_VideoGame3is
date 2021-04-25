@@ -97,6 +97,9 @@
 				<Event Name="Play_Amb_Dungeon_Final" ID="{DBDE03D6-32BD-4955-A984-308F216B7B62}">
 					<ChildrenList>
 						<Action Name="" ID="{832F8F5A-F81A-43BF-9BBD-178A059D87D5}" ShortID="784557372">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="IN_Dungeon_Final" ID="{21084B03-A893-4665-A6D7-CBECD06BA0AC}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>

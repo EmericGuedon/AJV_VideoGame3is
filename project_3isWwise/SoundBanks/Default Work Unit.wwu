@@ -10,13 +10,6 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
-				<SoundBank Name="RFX" ID="{6F1C5E41-B6C7-413B-A46B-DD3A4A54DC07}">
-					<ObjectInclusionList>
-						<ObjectRef Name="RFX_Event" ID="{B82A4C42-0790-4B38-965D-84E1AC2F3384}" WorkUnitID="{B82A4C42-0790-4B38-965D-84E1AC2F3384}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
 				<SoundBank Name="PROPS" ID="{DD90946E-5508-4BE2-9844-9F46E14C9BF3}">
 					<ObjectInclusionList>
 						<ObjectRef Name="PROPS" ID="{22E1028C-2FAC-40C2-860F-A99353AB343B}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}" Origin="Manual" Filter="7"/>

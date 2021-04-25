@@ -1014,7 +1014,6 @@
 									</ReferenceList>
 									<ChildrenList>
 										<AudioFileSource Name="BrassCrowMander" ID="{DE399BFF-DBA6-445B-BC32-8AB0D1FB806D}">
-											<ReferenceList/>
 											<Language>SFX</Language>
 											<AudioFile>BrassCrowMander.wav</AudioFile>
 											<MediaIDList>
@@ -1436,7 +1435,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-22</Value>
+								<Value>-8</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -1545,7 +1544,7 @@
 					<PropertyList>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-22</Value>
+								<Value>-10</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>

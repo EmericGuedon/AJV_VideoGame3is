@@ -131,6 +131,9 @@
 				<Event Name="Music_Boss" ID="{6199AD46-2B21-44DD-8DB5-0297B484A676}">
 					<ChildrenList>
 						<Action Name="" ID="{30DD61D0-B8DD-4E57-903B-FF94281F54FB}" ShortID="802311837">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="MusicBoss" ID="{641B4140-2A03-4AF1-A1B5-9A80630F6422}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
@@ -143,7 +146,8 @@
 					<ChildrenList>
 						<Action Name="" ID="{4C95688F-E1AC-4EEF-A80B-0BF9DB57E690}" ShortID="884790382">
 							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="5"/>
+								<Property Name="Delay" Type="Real64" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="4"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">

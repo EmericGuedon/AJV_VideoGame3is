@@ -5,11 +5,11 @@
 			<ChildrenList>
 				<ActorMixer Name="CrowM" ID="{16ED5AE4-D385-4C58-8425-EDD007470AAD}" ShortID="295284490">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
-							<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
+							<ObjectRef Name="CrowM" ID="{2C415989-8A7A-4FC5-8C60-011E8F7E4EDE}" WorkUnitID="{4EF35320-3153-49E2-919F-453155B600F5}"/>
 						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -27,6 +27,11 @@
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
 										<Value>8</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Lowpass" Type="int16">
+									<ValueList>
+										<Value>28</Value>
 									</ValueList>
 								</Property>
 								<Property Name="Volume" Type="Real64">
@@ -1373,7 +1378,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-11</Value>
+										<Value>-6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1580,6 +1585,13 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<BlendContainer Name="CrowM_Impact" ID="{AD2D6D9F-44AB-40C4-B061-CFDFF9A3402F}" ShortID="978353114">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1815,7 +1827,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3065,7 +3077,7 @@
 									<PropertyList>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-3</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3142,6 +3154,145 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="CHAR_CrowM_Death-03" ID="{B3CD1B31-1191-440E-B53A-AEEC6694D60D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="CrowM_Hurt" ID="{840F81AE-05A8-40FA-B51A-746C8F218E64}" ShortID="928788839">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="CrowM" ID="{9CB9EEA2-C920-4CA5-BE12-BAD7DEB0278F}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="CrowM_Death" ID="{561A67CD-20E7-4808-9CBC-12A4D0D5B864}" ShortID="261395065">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{63104C5B-3B9E-4BDE-8788-EEE51BB38CB0}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="200"/>
+															<Property Name="Min" Type="Real64" Value="-200"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CHAR_CrowM_Death-01" ID="{5411D55C-1C92-456B-B62C-91F2A7AAF307}" ShortID="653610732">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_CrowM_Death-01" ID="{6005E517-31C3-4178-8468-20F593A81E35}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0546806506849316"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.184547196061644"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="2.0368542380137"/>
+														<Property Name="TrimEnd" Type="Real64" Value="3.43121083047945"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CHAR_CrowM_Death-01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="45203966"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_CrowM_Death-01" ID="{6005E517-31C3-4178-8468-20F593A81E35}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_CrowM_Death-02" ID="{E57BA751-A6F7-42FD-B2C5-D713AB438DD1}" ShortID="1021979531">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_CrowM_Death-02" ID="{1B5D75DC-6493-4DDC-9545-54E74015B710}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.376749607591324"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.0568678652968037"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.454942922374431"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CHAR_CrowM_Death-02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="395378078"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_CrowM_Death-02" ID="{1B5D75DC-6493-4DDC-9545-54E74015B710}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_CrowM_Death-03" ID="{4F69D4F3-C9CA-4934-B5C9-89DF3393D67C}" ShortID="314343870">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_CrowM_Death-03" ID="{56572990-35C5-4B8D-9D1C-F4383F2888D6}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.0284339326484018"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.135061180079909"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimBegin" Type="Real64" Value="0.319881742294522"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.73928224885845"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>CHAR_CrowM_Death-03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="590205056"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_CrowM_Death-03" ID="{56572990-35C5-4B8D-9D1C-F4383F2888D6}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>

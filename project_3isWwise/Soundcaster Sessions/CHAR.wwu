@@ -9,6 +9,10 @@
 							<ObjectRef Name="WP_Hurt" ID="{5C01F67C-5A16-4CA6-8A06-6DDA35644F66}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Footstep_WP" ID="{C436D326-7B8E-49D6-B4DA-E299868282B7}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="0" Y="1"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
@@ -33,14 +37,14 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Mid" ID="{4CFCC9A7-265B-45FD-AAC0-4311A6DA0B62}"/>
+						<CurrentStateRef Name="None" ID="{B1CE15CB-05BD-4F39-9661-3E8EE2CFA6A8}"/>
 						<CurrentStateRef Name="None" ID="{5244ADD7-69E8-4519-9694-572624493ACE}"/>
 						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>
-						<CurrentSwitchRef Name="Snow" ID="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}"/>
-						<CurrentSwitchRef Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
+						<CurrentSwitchRef Name="Stone" ID="{BA7BE688-E22A-4D67-B9E5-E8CB54B5BDB3}"/>
+						<CurrentSwitchRef Name="WALK" ID="{989D954C-D9ED-4FB6-8E34-F92980A30EFB}"/>
 						<CurrentSwitchRef Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

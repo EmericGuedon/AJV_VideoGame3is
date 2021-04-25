@@ -118,7 +118,7 @@
 				</Attenuation>
 				<Attenuation Name="PROPS_Outdoor" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" ShortID="718407073">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="25"/>
+						<Property Name="RadiusMax" Type="Real64" Value="16"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -135,13 +135,19 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>14.99842</XPos>
-											<YPos>-5.86714</YPos>
+											<XPos>2.07088</XPos>
+											<YPos>0</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>25</XPos>
+											<XPos>7.55276</XPos>
+											<YPos>-8.50597</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>SCurve</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>16</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -163,13 +169,13 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12.41753</XPos>
+											<XPos>7.9472192</XPos>
 											<YPos>-4.07267</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>25</XPos>
+											<XPos>16</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -191,13 +197,13 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>9.24185</XPos>
+											<XPos>5.914784</XPos>
 											<YPos>-1.66053</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>25</XPos>
+											<XPos>16</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -219,13 +225,19 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>10.07507</XPos>
-											<YPos>47</YPos>
+											<XPos>2.24344888888889</XPos>
+											<YPos>32</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>25</XPos>
+											<XPos>7.58209</XPos>
+											<YPos>61</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>SCurve</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>16</XPos>
 											<YPos>77</YPos>
 											<Flags>37</Flags>
 										</Point>
