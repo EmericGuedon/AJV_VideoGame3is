@@ -170,7 +170,7 @@
 								<Action Name="" ID="{9A627559-99F7-4F71-BD47-EA993CAC8987}" ShortID="940094108">
 									<ReferenceList>
 										<Reference Name="Target">
-											<ObjectRef Name="Mob_Krawl" ID="{B68D8BBC-0F27-4967-A096-6BAC4B11AEE6}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+											<ObjectRef Name="Mob_Hit" ID="{27EE8FDF-59A0-478A-BAD4-1D2089816FE1}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

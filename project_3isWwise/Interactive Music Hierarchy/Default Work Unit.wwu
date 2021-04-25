@@ -4,7 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{21927FED-AE43-4B23-AA00-C251EF24D63B}" PersistMode="Standalone">
 			<ChildrenList>
 				<WorkUnit Name="MusicLevel2" ID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}" PersistMode="Reference"/>
-				<WorkUnit Name="MusicLevel1" ID="{B08BEE12-805D-47DD-8F38-B896F592B8C1}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

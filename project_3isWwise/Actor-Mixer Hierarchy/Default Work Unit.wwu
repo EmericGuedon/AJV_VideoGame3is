@@ -4,7 +4,6 @@
 		<WorkUnit Name="Default Work Unit" ID="{3F718F07-86BF-45AA-9CF2-FBE66C973C6C}" PersistMode="Standalone">
 			<ChildrenList>
 				<WorkUnit Name="AMBIANCE" ID="{D5657254-4A74-42CE-87DF-457E95E39B25}" PersistMode="Reference"/>
-				<WorkUnit Name="RFX" ID="{F55B8CDF-B6DE-454A-BADA-D4AAB3D4B752}" PersistMode="Reference"/>
 				<WorkUnit Name="CHARACTER" ID="{B32F5193-1056-4B08-ABBA-D68C0A0E704B}" PersistMode="Reference"/>
 				<WorkUnit Name="PROPS" ID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}" PersistMode="Reference"/>
 				<WorkUnit Name="TEST" ID="{B7DF8193-1C64-4EE4-A00D-2C2356EB80C7}" PersistMode="Reference"/>

@@ -2816,6 +2816,235 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
+						<RandomSequenceContainer Name="Mob_Hit" ID="{27EE8FDF-59A0-478A-BAD4-1D2089816FE1}" ShortID="13897161">
+							<PropertyList>
+								<Property Name="Highpass" Type="int16">
+									<ValueList>
+										<Value>13</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{BC71775C-0015-4235-BB1D-5E4417767D79}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="227"/>
+													<Property Name="Min" Type="Real64" Value="-328"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="CHAR_Mob_GetHurt-002" ID="{51BA7798-7EE9-42C9-970C-6EF2B6FFF876}" ShortID="322416870">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CHAR_Mob_GetHurt-002" ID="{35D7ED9B-3B62-44AA-8E4B-A5E45B56CC81}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0459091395547945"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.7223037956621"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>CHAR_Mob_GetHurt-002.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="586087856"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CHAR_Mob_GetHurt-002" ID="{35D7ED9B-3B62-44AA-8E4B-A5E45B56CC81}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CHAR_Mob_GetHurt-003" ID="{9B0C2BB4-1C8F-4848-AEEC-B858A8798AEA}" ShortID="1005147290">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CHAR_Mob_GetHurt-003" ID="{9C1C36C9-4BAF-44D7-9448-085B5B427A89}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0439914383561644"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.615880136986302"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>CHAR_Mob_GetHurt-003.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="404492952"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CHAR_Mob_GetHurt-003" ID="{9C1C36C9-4BAF-44D7-9448-085B5B427A89}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CHAR_Mob_GetHurt-004" ID="{AE49CA5D-E3B0-4601-9E93-5084CB20B4D0}" ShortID="218903232">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CHAR_Mob_GetHurt-004" ID="{51274494-E02A-4F35-9802-BB76199E8966}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0889661815068493"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.714694991438356"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>CHAR_Mob_GetHurt-004.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="101436297"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CHAR_Mob_GetHurt-004" ID="{51274494-E02A-4F35-9802-BB76199E8966}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CHAR_Mob_GetHurt-005" ID="{1FFCCDCF-3BAC-4C9D-ABCE-7DF21EEB0D95}" ShortID="908654499">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CHAR_Mob_GetHurt-005" ID="{69EAD827-5525-4F65-8B70-828364BC0849}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0553597317351598"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.696367151826484"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>CHAR_Mob_GetHurt-005.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="973478285"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CHAR_Mob_GetHurt-005" ID="{69EAD827-5525-4F65-8B70-828364BC0849}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CHAR_Mob_GetHurt-007" ID="{5304CDF4-0880-497E-BA13-514803D7B25B}" ShortID="780751841">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CHAR_Mob_GetHurt-007" ID="{3FB5AA59-A697-4544-A553-E17FC2B03730}">
+											<PropertyList>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0296746575342466"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.447592751141552"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>CHAR_Mob_GetHurt-007.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="580779888"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CHAR_Mob_GetHurt-007" ID="{3FB5AA59-A697-4544-A553-E17FC2B03730}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CHAR_Mob_GetHurt-010" ID="{DC5284BE-FD65-479C-80AF-5077B0A5B42C}" ShortID="817341875">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CHAR_Mob_GetHurt-010" ID="{ACE5BD54-3652-4D65-9906-6F5B6574A8DC}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.244984267979452"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0445425941780822"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.569508882705478"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>CHAR_Mob_GetHurt-010.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="245574135"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CHAR_Mob_GetHurt-010" ID="{ACE5BD54-3652-4D65-9906-6F5B6574A8DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="CHAR_Mob_GetHurt-011" ID="{A19C3CF4-FDF0-42DF-B667-0032ECB02EA6}" ShortID="919527498">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="CHAR_Mob_GetHurt-011" ID="{2FF5DEE6-3159-43B6-AFA6-8277AECE7337}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.0574093892694064"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="0.0545389198059361"/>
+												<Property Name="TrimEnd" Type="Real64" Value="0.683171732305936"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>CHAR_Mob_GetHurt-011.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="764839795"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="CHAR_Mob_GetHurt-011" ID="{2FF5DEE6-3159-43B6-AFA6-8277AECE7337}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>
