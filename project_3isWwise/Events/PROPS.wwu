@@ -207,6 +207,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="StopAll_PROPS" ID="{0E7171BA-28EA-40E4-A18F-506B000A2C6B}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -157,6 +157,16 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="StopAll_MUSIC" ID="{917FEEBA-F710-443C-81F4-1032E350255C}">
+					<ChildrenList>
+						<Action Name="" ID="{109150CC-4C37-4439-AFA2-A867028C3A77}" ShortID="854085421">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

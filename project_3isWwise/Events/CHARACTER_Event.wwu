@@ -314,6 +314,16 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Event Name="StopAll_CHAR" ID="{0DFD7A0A-38E0-4C58-809B-C0113F4ADCA2}">
+					<ChildrenList>
+						<Action Name="" ID="{BADEDF7B-4CE6-4171-A1CC-43CBCA5B759A}" ShortID="158501006">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
