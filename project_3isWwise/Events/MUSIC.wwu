@@ -129,24 +129,24 @@
 				</Event>
 				<Event Name="Music_Boss" ID="{6199AD46-2B21-44DD-8DB5-0297B484A676}">
 					<ChildrenList>
-						<Action Name="" ID="{0A904FC3-42FD-4029-A8FA-D6BAE4B5CE15}" ShortID="263156000">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="CrowMMusic" ID="{A10D5E74-AC36-4CEA-A00B-368C871F6F74}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{C1847B8B-156E-49CD-BB39-0BBA099DE86B}" ShortID="336040472">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="FightAmb" ID="{CE7EB0F2-C9D9-4BB7-9D87-47F84D6C6887}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
 						<Action Name="" ID="{30DD61D0-B8DD-4E57-903B-FF94281F54FB}" ShortID="802311837">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Music_Fight" ID="{0587247D-F11C-4B3F-9BC7-082F60D40F0D}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
+									<ObjectRef Name="MusicBoss" ID="{641B4140-2A03-4AF1-A1B5-9A80630F6422}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MusicScene2" ID="{CADCAB75-EA27-46EB-98BD-70A1CC302011}">
+					<ChildrenList>
+						<Action Name="" ID="{4C95688F-E1AC-4EEF-A80B-0BF9DB57E690}" ShortID="884790382">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicScene2" ID="{2E105810-C617-4CC5-8641-F6D20EA94627}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
