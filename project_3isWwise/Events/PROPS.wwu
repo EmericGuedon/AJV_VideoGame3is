@@ -166,6 +166,36 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_Woodbox" ID="{5A437309-ECA1-4F7F-AC60-02CC16B16807}">
+					<ChildrenList>
+						<Action Name="" ID="{C5F01048-74F4-4F7A-BA84-4479B94EFDE5}" ShortID="960606089">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Wooden Box" ID="{5D12BAC0-A008-480A-849E-E8D181AB4142}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_Barrel" ID="{4E18D84D-EAE9-42A6-96FE-B53B5630FDAC}">
+					<ChildrenList>
+						<Action Name="" ID="{C5701F9E-BA2F-40C3-8C6A-95508594D8C7}" ShortID="179287245">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeInCurve" Type="int16" Value="5"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Barrel" ID="{6F408F32-926F-4BB5-A943-906D4EAC253D}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

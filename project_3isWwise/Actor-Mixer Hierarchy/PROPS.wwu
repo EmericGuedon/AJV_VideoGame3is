@@ -118,6 +118,11 @@
 												</RTPC>
 											</RTPCList>
 										</Property>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
 										<Property Name="MidiTransposition" Type="int32">
 											<RTPCList>
 												<RTPC Name="" ID="{543AAD39-F9D0-4083-88E5-66044EC62519}" ShortID="666675414">
@@ -432,6 +437,7 @@
 								</BlendContainer>
 								<BlendContainer Name="Wooden Box" ID="{5D12BAC0-A008-480A-849E-E8D181AB4142}" ShortID="382056085">
 									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="Lowpass" Type="int16">
 											<RTPCList>
 												<RTPC Name="" ID="{8E182768-C94C-4CEC-8674-F3B7249AA70C}" ShortID="807458506">
@@ -547,8 +553,12 @@
 												</RTPC>
 											</RTPCList>
 										</Property>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 									</PropertyList>
 									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="PROPS_Barrel" ID="{19D89512-E9DE-48BF-A85C-9FDA5542B9D5}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 										</Reference>
@@ -2668,7 +2678,13 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="PROPS_Vaisselle" ID="{F6DCB33B-CD5B-4464-8EAA-88ECF0E33026}" ShortID="986183196">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+					</PropertyList>
 					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="PROPS_Dungeon" ID="{6D9AC303-288F-4281-A8CB-5C23221AA986}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+						</Reference>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 						</Reference>

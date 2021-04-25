@@ -4,6 +4,9 @@
 		<WorkUnit Name="Dungeon" ID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}" OwnerID="{A7C69997-7715-4512-8E93-E23B7C161F6C}" PersistMode="Nested">
 			<ChildrenList>
 				<Attenuation Name="PROPS_Dungeon" ID="{6D9AC303-288F-4281-A8CB-5C23221AA986}" ShortID="231700079">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="8"/>
+					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -19,7 +22,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>8</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -28,10 +31,35 @@
 							</CurveUsageInfo>
 						</VolumeDryUsage>
 						<VolumeWetGameUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+								<Curve Name="VolumeWetGame" ID="{8065F922-08E5-46EB-A5AA-A7DB96FB7869}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="3"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>-200</YPos>
+											<Flags>5</Flags>
+											<SegmentShape>Log1</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>4.77043</XPos>
+											<YPos>-15.9028</YPos>
+											<Flags>0</Flags>
+											<SegmentShape>Exp1</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>8</XPos>
+											<YPos>-4.35285</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</CurveUsageInfo>
 						</VolumeWetGameUsage>
 						<VolumeWetUserUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+							<CurveUsageInfo Platform="Linked" CurveToUse="None">
 								<Curve Name="VolumeWetUser" ID="{C24478C4-BFBB-4326-AD5E-EBEDA5FEA67C}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="3"/>
@@ -44,7 +72,7 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>8</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -66,7 +94,7 @@
 											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>8</XPos>
 											<YPos>46</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -90,7 +118,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>100</XPos>
+											<XPos>8</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
