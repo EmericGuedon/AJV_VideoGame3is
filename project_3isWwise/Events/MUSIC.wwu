@@ -157,11 +157,13 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="StopAll_MUSIC" ID="{917FEEBA-F710-443C-81F4-1032E350255C}">
+				<Event Name="Stop_Zik" ID="{80EC949F-19CD-47F6-A09A-9EF02DA8D0DF}">
 					<ChildrenList>
-						<Action Name="" ID="{109150CC-4C37-4439-AFA2-A867028C3A77}" ShortID="854085421">
+						<Action Name="" ID="{39B65F26-5C6B-4DAA-8615-1A21D0905F30}" ShortID="785094460">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList/>
 						</Action>

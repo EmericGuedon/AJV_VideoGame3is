@@ -311,15 +311,15 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>27</YPos>
+											<YPos>0</YPos>
 											<Flags>5</Flags>
-											<SegmentShape>Exp1</SegmentShape>
+											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>9.2084625</XPos>
 											<YPos>51</YPos>
 											<Flags>0</Flags>
-											<SegmentShape>InvertedSCurve</SegmentShape>
+											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
 											<XPos>25</XPos>

@@ -22,6 +22,18 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Stop_HUD" ID="{3247234B-390D-4355-BD10-4DC4FE69901B}">
+					<ChildrenList>
+						<Action Name="" ID="{841C119C-DC84-49FF-A0CB-5AD6C695FA93}" ShortID="574034287">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

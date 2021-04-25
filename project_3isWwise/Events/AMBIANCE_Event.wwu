@@ -122,7 +122,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="StopAll_AMB" ID="{242EC7A1-BE16-49B5-B6E0-BA6C9114FF41}">
+				<Event Name="Stop_Amb" ID="{242EC7A1-BE16-49B5-B6E0-BA6C9114FF41}">
 					<ChildrenList>
 						<Action Name="" ID="{1018BA4A-AF6F-42E0-B775-C6045C08C73F}" ShortID="80830564">
 							<PropertyList>

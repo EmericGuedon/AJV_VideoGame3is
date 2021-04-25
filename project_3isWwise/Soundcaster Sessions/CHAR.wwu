@@ -43,8 +43,8 @@
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>
-						<CurrentSwitchRef Name="Stone" ID="{BA7BE688-E22A-4D67-B9E5-E8CB54B5BDB3}"/>
-						<CurrentSwitchRef Name="WALK" ID="{989D954C-D9ED-4FB6-8E34-F92980A30EFB}"/>
+						<CurrentSwitchRef Name="Snow" ID="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}"/>
+						<CurrentSwitchRef Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
 						<CurrentSwitchRef Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

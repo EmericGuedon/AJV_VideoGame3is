@@ -312,13 +312,26 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="CrowM_Parade" ID="{E28CF273-3E91-4893-BBC1-4BD6CD0A5E00}">
+							<ChildrenList>
+								<Action Name="" ID="{EE84B08B-18E4-42C8-9DA6-EE5B3D554E19}" ShortID="360041308">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CrowM_Parade" ID="{8AA4467D-8EA9-4539-A062-F8870F739A54}" WorkUnitID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
-				<Event Name="StopAll_CHAR" ID="{0DFD7A0A-38E0-4C58-809B-C0113F4ADCA2}">
+				<Event Name="Stop_Char" ID="{251E80E7-5DDE-4F31-B239-3941253D9022}">
 					<ChildrenList>
-						<Action Name="" ID="{BADEDF7B-4CE6-4171-A1CC-43CBCA5B759A}" ShortID="158501006">
+						<Action Name="" ID="{E8D35588-E8D5-4845-BDAC-302769CF967A}" ShortID="641337039">
 							<PropertyList>
 								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
 							</PropertyList>
 							<ReferenceList/>
 						</Action>

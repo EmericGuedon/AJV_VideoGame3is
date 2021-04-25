@@ -50,9 +50,33 @@
 						</Bus>
 						<Bus Name="CHAR" ID="{338DAE42-702C-4CFB-B030-6BD91AF5904B}">
 							<ChildrenList>
-								<Bus Name="CrowM" ID="{9CB9EEA2-C920-4CA5-BE12-BAD7DEB0278F}"/>
-								<Bus Name="WP" ID="{473D245B-475D-4C23-91A1-B74C5694FE58}"/>
-								<Bus Name="MOB" ID="{366D7D27-DC67-4FDD-A8F6-72AC99C23201}"/>
+								<Bus Name="CrowM" ID="{9CB9EEA2-C920-4CA5-BE12-BAD7DEB0278F}">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+								</Bus>
+								<Bus Name="WP" ID="{473D245B-475D-4C23-91A1-B74C5694FE58}">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+								</Bus>
+								<Bus Name="MOB" ID="{366D7D27-DC67-4FDD-A8F6-72AC99C23201}">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+								</Bus>
 							</ChildrenList>
 						</Bus>
 						<Bus Name="PROPS" ID="{E53638DA-1B9C-41C1-9536-BCB61B14E3C3}">

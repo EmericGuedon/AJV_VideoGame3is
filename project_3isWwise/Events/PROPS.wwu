@@ -207,7 +207,18 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="StopAll_PROPS" ID="{0E7171BA-28EA-40E4-A18F-506B000A2C6B}"/>
+				<Event Name="Stop_Props" ID="{D876F907-F481-4EC1-B0B5-9A0180F57BC7}">
+					<ChildrenList>
+						<Action Name="" ID="{CD71744F-9796-42AF-A73B-474E7AF15701}" ShortID="385607941">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

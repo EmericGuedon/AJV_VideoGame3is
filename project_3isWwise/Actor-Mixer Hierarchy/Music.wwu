@@ -9,9 +9,21 @@
 			<ChildrenList>
 				<Sound Name="Hymne_MasterV2" ID="{2BAC39D8-20E1-4CB7-9AA4-6E26E23B1089}" ShortID="468882735">
 					<PropertyList>
+						<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-24</Value>
+								<Value>-12</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
