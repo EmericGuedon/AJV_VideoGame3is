@@ -122,6 +122,18 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="StopALL" ID="{242EC7A1-BE16-49B5-B6E0-BA6C9114FF41}">
+					<ChildrenList>
+						<Action Name="" ID="{1018BA4A-AF6F-42E0-B775-C6045C08C73F}" ShortID="80830564">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
