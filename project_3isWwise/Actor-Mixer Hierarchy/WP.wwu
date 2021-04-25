@@ -5068,49 +5068,8 @@
 								</RandomSequenceContainer>
 							</ChildrenList>
 						</BlendContainer>
-					</ChildrenList>
-				</ActorMixer>
-				<BlendContainer Name="WP_Hurt_Voice" ID="{35F8D5B2-0FE2-4A3B-8F58-4DCBD03A716A}" ShortID="637563474">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<RandomSequenceContainer Name="WP_Hurt_Voice" ID="{DBA2D1D6-DC76-4ACA-8606-47C1322154A9}" ShortID="694141717">
-							<PropertyList>
-								<Property Name="3DSpatialization" Type="int16" Value="2"/>
-								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
-								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-								<Property Name="MaxSoundPerInstance" Type="int16">
-									<ValueList>
-										<Value>3</Value>
-									</ValueList>
-								</Property>
-								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
-								<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.16"/>
-								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
-								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-								<Property Name="UseMaxSoundPerInstance" Type="bool">
-									<ValueList>
-										<Value>True</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-8</Value>
-									</ValueList>
-								</Property>
-							</PropertyList>
+						<BlendContainer Name="WP_Hurt_Voice" ID="{35F8D5B2-0FE2-4A3B-8F58-4DCBD03A716A}" ShortID="637563474">
 							<ReferenceList>
-								<Reference Name="Attenuation">
-									<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
-								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 								</Reference>
@@ -5119,13 +5078,30 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<BlendContainer Name="Wings" ID="{82AA4556-DB0A-44D8-97D8-0788C0FB022A}" ShortID="40990911">
+								<RandomSequenceContainer Name="WP_Hurt_Voice" ID="{DBA2D1D6-DC76-4ACA-8606-47C1322154A9}" ShortID="694141717">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+										<Property Name="MaxSoundPerInstance" Type="int16">
+											<ValueList>
+												<Value>3</Value>
+											</ValueList>
+										</Property>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="0.16"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomOrSequence" Type="int16" Value="0"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="UseMaxSoundPerInstance" Type="bool">
+											<ValueList>
+												<Value>True</Value>
+											</ValueList>
+										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>2</Value>
+												<Value>-8</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -5141,43 +5117,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="Wings_1" ID="{09F56CB1-1AE1-4074-8E96-54AD93672E55}" ShortID="676109362">
+										<BlendContainer Name="Wings" ID="{82AA4556-DB0A-44D8-97D8-0788C0FB022A}" ShortID="40990911">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="Lowpass" Type="int16">
-													<ValueList>
-														<Value>26</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{96C1DE3C-EF1A-46B6-A557-597309CEB918}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="300"/>
-																	<Property Name="Min" Type="Real64" Value="-300"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-14</Value>
+														<Value>2</Value>
 													</ValueList>
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{AD3E0066-6903-4090-9594-09845E515340}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="2"/>
-																	<Property Name="Min" Type="Real64" Value="-2"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
@@ -5192,317 +5139,504 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Wings_1" ID="{6674F70A-7F58-4E57-B737-BE632F2DBB59}">
+												<Sound Name="Wings_1" ID="{09F56CB1-1AE1-4074-8E96-54AD93672E55}" ShortID="676109362">
 													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.0590753424657535"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>26</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{96C1DE3C-EF1A-46B6-A557-597309CEB918}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-300"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-14</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{AD3E0066-6903-4090-9594-09845E515340}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="2"/>
+																			<Property Name="Min" Type="Real64" Value="-2"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
 													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>Wings_1.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="857502177"/>
-													</MediaIDList>
-												</AudioFileSource>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Wings_1" ID="{6674F70A-7F58-4E57-B737-BE632F2DBB59}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0590753424657535"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>Wings_1.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="857502177"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="Wings_1" ID="{6674F70A-7F58-4E57-B737-BE632F2DBB59}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<RandomSequenceContainer Name="Wings_2" ID="{5E471D74-2C84-4EDF-AC64-0C9A6044594C}" ShortID="900261361">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Highpass" Type="int16">
+															<ValueList>
+																<Value>42</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>17</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{48E4121E-0F99-4482-800A-D59EACEDE93C}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="150"/>
+																			<Property Name="Min" Type="Real64" Value="-200"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-4</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Wings 2_1" ID="{044FFCC9-65EC-4BBA-A0A1-290976866736}" ShortID="1044340447">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Wings 2_1" ID="{66D44B18-2A5E-4EA7-80D2-B393D4611D9B}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0436643835616438"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Wings 2_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="334670326"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wings 2_1" ID="{66D44B18-2A5E-4EA7-80D2-B393D4611D9B}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Wings 2_2" ID="{86905CEB-5696-4A60-ABC3-02650628FB52}" ShortID="222704816">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Wings 2_2" ID="{8EDE7D9B-F53B-449E-B57B-9A83AAC0CB14}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0551369863013699"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Wings 2_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="1012320508"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wings 2_2" ID="{8EDE7D9B-F53B-449E-B57B-9A83AAC0CB14}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Wings 2_3" ID="{1C50E9D0-6188-4B3D-ADE4-5F25745D8256}" ShortID="286594759">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Wings 2_3" ID="{666A5AE4-BDA5-49ED-810C-B04B847D1C50}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.063013698630137"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Wings 2_3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="972717773"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wings 2_3" ID="{666A5AE4-BDA5-49ED-810C-B04B847D1C50}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Wings 2_4" ID="{1F8728CB-710D-43BE-A6A6-D2D9543B4144}" ShortID="18689306">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Wings 2_4" ID="{AA4B2C9E-0BEE-4276-B0C3-5E1606F6CD25}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0712328767123288"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Wings 2_4.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="135334131"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wings 2_4" ID="{AA4B2C9E-0BEE-4276-B0C3-5E1606F6CD25}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Wings 2_5" ID="{F8FD1C17-3741-4234-835C-1B4AE9E03D0F}" ShortID="213028573">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Wings 2_5" ID="{D16DF9CB-00B8-4D02-A0D0-7D22CFF3AA93}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0262557077625571"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Wings 2_5.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="25615166"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wings 2_5" ID="{D16DF9CB-00B8-4D02-A0D0-7D22CFF3AA93}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Wings_3" ID="{9A13AA7C-4861-498A-A947-0ABB6E529884}" ShortID="316957190">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>34</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{0619FCE1-4C59-4783-BA50-CC6D7FB9D5BA}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="8"/>
+																			<Property Name="Min" Type="Real64" Value="-12"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{5E171E2C-C7A0-4847-BE98-9EFBD6EEF836}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="300"/>
+																			<Property Name="Min" Type="Real64" Value="-200"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Wings 3_1" ID="{E9C861B0-15FA-4F1F-BA8C-A2F8DB5EBD97}" ShortID="208364903">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Wings 3_1" ID="{54A20DE6-295F-4935-B81D-FAB5CB850AA8}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0590753424657534"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Wings 3_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="795568156"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wings 3_1" ID="{54A20DE6-295F-4935-B81D-FAB5CB850AA8}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Wings 3_2" ID="{23C07AD4-33B7-4251-9129-3F266404D3A2}" ShortID="350356852">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Wings 3_2" ID="{FE28ECD6-FF3C-4629-8785-FB77E4021C2E}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0551369863013699"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Wings 3_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="943850999"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wings 3_2" ID="{FE28ECD6-FF3C-4629-8785-FB77E4021C2E}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
+												<RandomSequenceContainer Name="Wings 4" ID="{6FEEB613-EAE0-4B52-9DBD-B9E778F17C4F}" ShortID="209063343">
+													<PropertyList>
+														<Property Name="3DSpatialization" Type="int16" Value="2"/>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>31</Value>
+															</ValueList>
+														</Property>
+														<Property Name="Pitch" Type="int32">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{FC7AB459-A5D8-4B1C-85D3-C161A8A6F0D6}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="100"/>
+																			<Property Name="Min" Type="Real64" Value="-100"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Attenuation">
+															<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
+														</Reference>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<Sound Name="Wings 4_1" ID="{8587A563-8527-419A-BDE0-E964269834E0}" ShortID="153886372">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Wings 4_1" ID="{187C407C-62A3-4B1E-8993-77827682BAC4}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0552511415525114"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Wings 4_1.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="635124794"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wings 4_1" ID="{187C407C-62A3-4B1E-8993-77827682BAC4}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Wings 4_2" ID="{27D13CD9-9734-4E1D-801B-7697D8EFE200}" ShortID="622112846">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Wings 4_2" ID="{5D7111EB-498F-48AF-8CCE-2CF914B6C710}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.102397260273973"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Wings 4_2.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="297555110"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wings 4_2" ID="{5D7111EB-498F-48AF-8CCE-2CF914B6C710}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+														<Sound Name="Wings 4_3" ID="{71FE9E6D-E68C-4D06-9801-7E18DAED28D3}" ShortID="787589905">
+															<ReferenceList>
+																<Reference Name="Conversion">
+																	<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+																</Reference>
+																<Reference Name="OutputBus">
+																	<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+																</Reference>
+															</ReferenceList>
+															<ChildrenList>
+																<AudioFileSource Name="Wings 4_3" ID="{FEF374AC-4201-4FBD-A776-AA5912BDB533}">
+																	<PropertyList>
+																		<Property Name="FadeOutDuration" Type="Real64" Value="0.0539954337899544"/>
+																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																	</PropertyList>
+																	<Language>SFX</Language>
+																	<AudioFile>Wings 4_3.wav</AudioFile>
+																	<MediaIDList>
+																		<MediaID ID="465793966"/>
+																	</MediaIDList>
+																</AudioFileSource>
+															</ChildrenList>
+															<ActiveSourceList>
+																<ActiveSource Name="Wings 4_3" ID="{FEF374AC-4201-4FBD-A776-AA5912BDB533}" Platform="Linked"/>
+															</ActiveSourceList>
+														</Sound>
+													</ChildrenList>
+												</RandomSequenceContainer>
 											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="Wings_1" ID="{6674F70A-7F58-4E57-B737-BE632F2DBB59}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<RandomSequenceContainer Name="Wings_2" ID="{5E471D74-2C84-4EDF-AC64-0C9A6044594C}" ShortID="900261361">
+										</BlendContainer>
+										<RandomSequenceContainer Name="Hit_Voice" ID="{B4A205EC-1974-4D20-9168-761FEFB12419}" ShortID="969236370">
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>42</Value>
+														<Value>15</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>17</Value>
+														<Value>33</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+												<Property Name="MaxSoundPerInstance" Type="int16">
+													<ValueList>
+														<Value>1</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{48E4121E-0F99-4482-800A-D59EACEDE93C}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="150"/>
-																	<Property Name="Min" Type="Real64" Value="-200"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-4</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
-												</Reference>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Wings 2_1" ID="{044FFCC9-65EC-4BBA-A0A1-290976866736}" ShortID="1044340447">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Wings 2_1" ID="{66D44B18-2A5E-4EA7-80D2-B393D4611D9B}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.0436643835616438"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Wings 2_1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="334670326"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Wings 2_1" ID="{66D44B18-2A5E-4EA7-80D2-B393D4611D9B}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Wings 2_2" ID="{86905CEB-5696-4A60-ABC3-02650628FB52}" ShortID="222704816">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Wings 2_2" ID="{8EDE7D9B-F53B-449E-B57B-9A83AAC0CB14}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.0551369863013699"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Wings 2_2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="1012320508"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Wings 2_2" ID="{8EDE7D9B-F53B-449E-B57B-9A83AAC0CB14}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Wings 2_3" ID="{1C50E9D0-6188-4B3D-ADE4-5F25745D8256}" ShortID="286594759">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Wings 2_3" ID="{666A5AE4-BDA5-49ED-810C-B04B847D1C50}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.063013698630137"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Wings 2_3.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="972717773"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Wings 2_3" ID="{666A5AE4-BDA5-49ED-810C-B04B847D1C50}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Wings 2_4" ID="{1F8728CB-710D-43BE-A6A6-D2D9543B4144}" ShortID="18689306">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Wings 2_4" ID="{AA4B2C9E-0BEE-4276-B0C3-5E1606F6CD25}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.0712328767123288"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Wings 2_4.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="135334131"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Wings 2_4" ID="{AA4B2C9E-0BEE-4276-B0C3-5E1606F6CD25}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Wings 2_5" ID="{F8FD1C17-3741-4234-835C-1B4AE9E03D0F}" ShortID="213028573">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Wings 2_5" ID="{D16DF9CB-00B8-4D02-A0D0-7D22CFF3AA93}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.0262557077625571"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Wings 2_5.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="25615166"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Wings 2_5" ID="{D16DF9CB-00B8-4D02-A0D0-7D22CFF3AA93}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Wings_3" ID="{9A13AA7C-4861-498A-A947-0ABB6E529884}" ShortID="316957190">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="Lowpass" Type="int16">
-													<ValueList>
-														<Value>34</Value>
+														<Value>200</Value>
 													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
-															<Modifier Name="" ID="{0619FCE1-4C59-4783-BA50-CC6D7FB9D5BA}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="8"/>
-																	<Property Name="Min" Type="Real64" Value="-12"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{5E171E2C-C7A0-4847-BE98-9EFBD6EEF836}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="300"/>
-																	<Property Name="Min" Type="Real64" Value="-200"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-3</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Attenuation">
-													<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
-												</Reference>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<Sound Name="Wings 3_1" ID="{E9C861B0-15FA-4F1F-BA8C-A2F8DB5EBD97}" ShortID="208364903">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Wings 3_1" ID="{54A20DE6-295F-4935-B81D-FAB5CB850AA8}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.0590753424657534"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Wings 3_1.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="795568156"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Wings 3_1" ID="{54A20DE6-295F-4935-B81D-FAB5CB850AA8}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-												<Sound Name="Wings 3_2" ID="{23C07AD4-33B7-4251-9129-3F266404D3A2}" ShortID="350356852">
-													<ReferenceList>
-														<Reference Name="Conversion">
-															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-														</Reference>
-														<Reference Name="OutputBus">
-															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-														</Reference>
-													</ReferenceList>
-													<ChildrenList>
-														<AudioFileSource Name="Wings 3_2" ID="{FE28ECD6-FF3C-4629-8785-FB77E4021C2E}">
-															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.0551369863013699"/>
-																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-															</PropertyList>
-															<Language>SFX</Language>
-															<AudioFile>Wings 3_2.wav</AudioFile>
-															<MediaIDList>
-																<MediaID ID="943850999"/>
-															</MediaIDList>
-														</AudioFileSource>
-													</ChildrenList>
-													<ActiveSourceList>
-														<ActiveSource Name="Wings 3_2" ID="{FE28ECD6-FF3C-4629-8785-FB77E4021C2E}" Platform="Linked"/>
-													</ActiveSourceList>
-												</Sound>
-											</ChildrenList>
-										</RandomSequenceContainer>
-										<RandomSequenceContainer Name="Wings 4" ID="{6FEEB613-EAE0-4B52-9DBD-B9E778F17C4F}" ShortID="209063343">
-											<PropertyList>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
-												<Property Name="Lowpass" Type="int16">
-													<ValueList>
-														<Value>31</Value>
-													</ValueList>
-												</Property>
-												<Property Name="Pitch" Type="int32">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{FC7AB459-A5D8-4B1C-85D3-C161A8A6F0D6}">
+															<Modifier Name="" ID="{4B1D281A-88D4-4BDF-934A-3EC5DE169B58}">
 																<PropertyList>
 																	<Property Name="Enabled" Type="bool" Value="True"/>
 																	<Property Name="Max" Type="Real64" Value="100"/>
@@ -5512,10 +5646,17 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
+												<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+												<Property Name="UseMaxSoundPerInstance" Type="bool">
+													<ValueList>
+														<Value>True</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-5</Value>
+														<Value>-7</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -5531,7 +5672,7 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<Sound Name="Wings 4_1" ID="{8587A563-8527-419A-BDE0-E964269834E0}" ShortID="153886372">
+												<Sound Name="CHAR_WP_GetHurt-001" ID="{D808A09D-17DE-4856-99E4-32A2142A9367}" ShortID="775090754">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -5541,23 +5682,23 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Wings 4_1" ID="{187C407C-62A3-4B1E-8993-77827682BAC4}">
+														<AudioFileSource Name="CHAR_WP_GetHurt-001" ID="{8FFA93C5-5A3D-4898-ACD6-4BA478E2C364}">
 															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.0552511415525114"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.094777397260274"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>Wings 4_1.wav</AudioFile>
+															<AudioFile>CHAR_WP_GetHurt-001.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="635124794"/>
+																<MediaID ID="16452857"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wings 4_1" ID="{187C407C-62A3-4B1E-8993-77827682BAC4}" Platform="Linked"/>
+														<ActiveSource Name="CHAR_WP_GetHurt-001" ID="{8FFA93C5-5A3D-4898-ACD6-4BA478E2C364}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Wings 4_2" ID="{27D13CD9-9734-4E1D-801B-7697D8EFE200}" ShortID="622112846">
+												<Sound Name="CHAR_WP_GetHurt-002" ID="{5F10F0AB-1EB1-436F-BCF4-C26BCAD6E33B}" ShortID="559297669">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -5567,23 +5708,23 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Wings 4_2" ID="{5D7111EB-498F-48AF-8CCE-2CF914B6C710}">
+														<AudioFileSource Name="CHAR_WP_GetHurt-002" ID="{0BB6911D-EA11-498F-9CE9-791D24A2523A}">
 															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.102397260273973"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.134092465753425"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>Wings 4_2.wav</AudioFile>
+															<AudioFile>CHAR_WP_GetHurt-002.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="297555110"/>
+																<MediaID ID="872180024"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wings 4_2" ID="{5D7111EB-498F-48AF-8CCE-2CF914B6C710}" Platform="Linked"/>
+														<ActiveSource Name="CHAR_WP_GetHurt-002" ID="{0BB6911D-EA11-498F-9CE9-791D24A2523A}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
-												<Sound Name="Wings 4_3" ID="{71FE9E6D-E68C-4D06-9801-7E18DAED28D3}" ShortID="787589905">
+												<Sound Name="CHAR_WP_GetHurt-003" ID="{B8BF6FBA-5CF5-48AF-8F5A-BEECA31DA776}" ShortID="830443979">
 													<ReferenceList>
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -5593,284 +5734,143 @@
 														</Reference>
 													</ReferenceList>
 													<ChildrenList>
-														<AudioFileSource Name="Wings 4_3" ID="{FEF374AC-4201-4FBD-A776-AA5912BDB533}">
+														<AudioFileSource Name="CHAR_WP_GetHurt-003" ID="{BDB2B959-AE98-4B82-A41D-72909A5113D7}">
 															<PropertyList>
-																<Property Name="FadeOutDuration" Type="Real64" Value="0.0539954337899544"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.0965753424657534"/>
 															</PropertyList>
 															<Language>SFX</Language>
-															<AudioFile>Wings 4_3.wav</AudioFile>
+															<AudioFile>CHAR_WP_GetHurt-003.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="465793966"/>
+																<MediaID ID="829392999"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
 													<ActiveSourceList>
-														<ActiveSource Name="Wings 4_3" ID="{FEF374AC-4201-4FBD-A776-AA5912BDB533}" Platform="Linked"/>
+														<ActiveSource Name="CHAR_WP_GetHurt-003" ID="{BDB2B959-AE98-4B82-A41D-72909A5113D7}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_WP_GetHurt-004" ID="{22742A3E-6C74-4C4C-8984-E1450BD175FE}" ShortID="896955916">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_WP_GetHurt-004" ID="{F916B18A-D098-4C05-8B65-878ABDD75D71}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.093013698630137"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_WP_GetHurt-004.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="418003436"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_WP_GetHurt-004" ID="{F916B18A-D098-4C05-8B65-878ABDD75D71}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_WP_GetHurt-005" ID="{97C0E677-A505-400E-AF10-359391EA78DF}" ShortID="584877925">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_WP_GetHurt-005" ID="{13AF60B9-1B08-4C1F-8E1B-1DC08039EAD1}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0809075342465754"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.110034246575342"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.598715753424657"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_WP_GetHurt-005.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="67926674"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_WP_GetHurt-005" ID="{13AF60B9-1B08-4C1F-8E1B-1DC08039EAD1}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_WP_GetHurt-006" ID="{AFD8D774-1624-4A33-ABEB-3B6CB7746944}" ShortID="14999571">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_WP_GetHurt-006" ID="{97C456AC-2206-4CC1-901F-2793127B9A50}">
+															<PropertyList>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.104537671232877"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.867979452054795"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_WP_GetHurt-006.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="129352998"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_WP_GetHurt-006" ID="{97C456AC-2206-4CC1-901F-2793127B9A50}" Platform="Linked"/>
+													</ActiveSourceList>
+												</Sound>
+												<Sound Name="CHAR_WP_GetHurt-008" ID="{705CCA57-E0EC-4A27-8E1E-2DD4CDC19366}" ShortID="861120331">
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="CHAR_WP_GetHurt-008" ID="{7E6DEBAC-F581-46CD-AAD4-3AA15222F101}">
+															<PropertyList>
+																<Property Name="FadeOutDuration" Type="Real64" Value="0.0711986301369862"/>
+																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																<Property Name="TrimBegin" Type="Real64" Value="0.101712328767123"/>
+																<Property Name="TrimEnd" Type="Real64" Value="0.966267123287671"/>
+															</PropertyList>
+															<Language>SFX</Language>
+															<AudioFile>CHAR_WP_GetHurt-008.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="618386500"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<ActiveSourceList>
+														<ActiveSource Name="CHAR_WP_GetHurt-008" ID="{7E6DEBAC-F581-46CD-AAD4-3AA15222F101}" Platform="Linked"/>
 													</ActiveSourceList>
 												</Sound>
 											</ChildrenList>
 										</RandomSequenceContainer>
 									</ChildrenList>
-								</BlendContainer>
-								<RandomSequenceContainer Name="Hit_Voice" ID="{B4A205EC-1974-4D20-9168-761FEFB12419}" ShortID="969236370">
-									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
-										<Property Name="Highpass" Type="int16">
-											<ValueList>
-												<Value>15</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>33</Value>
-											</ValueList>
-										</Property>
-										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
-										<Property Name="MaxSoundPerInstance" Type="int16">
-											<ValueList>
-												<Value>1</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Pitch" Type="int32">
-											<ValueList>
-												<Value>200</Value>
-											</ValueList>
-											<ModifierList>
-												<ModifierInfo>
-													<Modifier Name="" ID="{4B1D281A-88D4-4BDF-934A-3EC5DE169B58}">
-														<PropertyList>
-															<Property Name="Enabled" Type="bool" Value="True"/>
-															<Property Name="Max" Type="Real64" Value="100"/>
-															<Property Name="Min" Type="Real64" Value="-100"/>
-														</PropertyList>
-													</Modifier>
-												</ModifierInfo>
-											</ModifierList>
-										</Property>
-										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
-										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
-										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-7</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
-									<ReferenceList>
-										<Reference Name="Attenuation">
-											<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
-										</Reference>
-										<Reference Name="Conversion">
-											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-										</Reference>
-										<Reference Name="OutputBus">
-											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-										</Reference>
-									</ReferenceList>
-									<ChildrenList>
-										<Sound Name="CHAR_WP_GetHurt-001" ID="{D808A09D-17DE-4856-99E4-32A2142A9367}" ShortID="775090754">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_WP_GetHurt-001" ID="{8FFA93C5-5A3D-4898-ACD6-4BA478E2C364}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.094777397260274"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_WP_GetHurt-001.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="16452857"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_WP_GetHurt-001" ID="{8FFA93C5-5A3D-4898-ACD6-4BA478E2C364}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_WP_GetHurt-002" ID="{5F10F0AB-1EB1-436F-BCF4-C26BCAD6E33B}" ShortID="559297669">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_WP_GetHurt-002" ID="{0BB6911D-EA11-498F-9CE9-791D24A2523A}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.134092465753425"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_WP_GetHurt-002.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="872180024"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_WP_GetHurt-002" ID="{0BB6911D-EA11-498F-9CE9-791D24A2523A}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_WP_GetHurt-003" ID="{B8BF6FBA-5CF5-48AF-8F5A-BEECA31DA776}" ShortID="830443979">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_WP_GetHurt-003" ID="{BDB2B959-AE98-4B82-A41D-72909A5113D7}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.0965753424657534"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_WP_GetHurt-003.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="829392999"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_WP_GetHurt-003" ID="{BDB2B959-AE98-4B82-A41D-72909A5113D7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_WP_GetHurt-004" ID="{22742A3E-6C74-4C4C-8984-E1450BD175FE}" ShortID="896955916">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_WP_GetHurt-004" ID="{F916B18A-D098-4C05-8B65-878ABDD75D71}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.093013698630137"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_WP_GetHurt-004.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="418003436"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_WP_GetHurt-004" ID="{F916B18A-D098-4C05-8B65-878ABDD75D71}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_WP_GetHurt-005" ID="{97C0E677-A505-400E-AF10-359391EA78DF}" ShortID="584877925">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_WP_GetHurt-005" ID="{13AF60B9-1B08-4C1F-8E1B-1DC08039EAD1}">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.0809075342465754"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.110034246575342"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.598715753424657"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_WP_GetHurt-005.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="67926674"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_WP_GetHurt-005" ID="{13AF60B9-1B08-4C1F-8E1B-1DC08039EAD1}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_WP_GetHurt-006" ID="{AFD8D774-1624-4A33-ABEB-3B6CB7746944}" ShortID="14999571">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_WP_GetHurt-006" ID="{97C456AC-2206-4CC1-901F-2793127B9A50}">
-													<PropertyList>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.104537671232877"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.867979452054795"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_WP_GetHurt-006.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="129352998"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_WP_GetHurt-006" ID="{97C456AC-2206-4CC1-901F-2793127B9A50}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="CHAR_WP_GetHurt-008" ID="{705CCA57-E0EC-4A27-8E1E-2DD4CDC19366}" ShortID="861120331">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="CHAR_WP_GetHurt-008" ID="{7E6DEBAC-F581-46CD-AAD4-3AA15222F101}">
-													<PropertyList>
-														<Property Name="FadeOutDuration" Type="Real64" Value="0.0711986301369862"/>
-														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimBegin" Type="Real64" Value="0.101712328767123"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.966267123287671"/>
-													</PropertyList>
-													<Language>SFX</Language>
-													<AudioFile>CHAR_WP_GetHurt-008.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="618386500"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="CHAR_WP_GetHurt-008" ID="{7E6DEBAC-F581-46CD-AAD4-3AA15222F101}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-									</ChildrenList>
+									<Playlist>
+										<ItemRef Name="Hit_Voice" ID="{B4A205EC-1974-4D20-9168-761FEFB12419}"/>
+										<ItemRef Name="Wings" ID="{82AA4556-DB0A-44D8-97D8-0788C0FB022A}"/>
+									</Playlist>
 								</RandomSequenceContainer>
 							</ChildrenList>
-							<Playlist>
-								<ItemRef Name="Hit_Voice" ID="{B4A205EC-1974-4D20-9168-761FEFB12419}"/>
-								<ItemRef Name="Wings" ID="{82AA4556-DB0A-44D8-97D8-0788C0FB022A}"/>
-							</Playlist>
-						</RandomSequenceContainer>
+						</BlendContainer>
 					</ChildrenList>
-				</BlendContainer>
+				</ActorMixer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

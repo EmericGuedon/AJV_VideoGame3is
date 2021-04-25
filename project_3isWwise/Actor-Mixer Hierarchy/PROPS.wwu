@@ -2675,6 +2675,9 @@
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 						</Reference>
+						<Reference Name="UserAuxSend0">
+							<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<ActorMixer Name="Choppe" ID="{A98CA75A-088E-4A6D-B6ED-A608A7B682C4}" ShortID="776057419">
