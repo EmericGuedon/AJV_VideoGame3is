@@ -196,6 +196,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Props_Campfire_Stop" ID="{BEF32F5D-A73C-4AA5-A357-EBA86B57EDCD}">
+					<ChildrenList>
+						<Action Name="" ID="{3259C99D-AC6F-4263-9599-8BB50FAAFA43}" ShortID="739768418">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Out_Campfire" ID="{82249540-D255-46B0-91B1-ADA758A437DD}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
