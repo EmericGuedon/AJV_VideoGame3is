@@ -4,6 +4,9 @@
 		<WorkUnit Name="CrowM" ID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}" OwnerID="{B32F5193-1056-4B08-ABBA-D68C0A0E704B}" PersistMode="Nested">
 			<ChildrenList>
 				<ActorMixer Name="CrowM" ID="{16ED5AE4-D385-4C58-8425-EDD007470AAD}" ShortID="295284490">
+					<PropertyList>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
 							<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
@@ -3042,6 +3045,103 @@
 											</ChildrenList>
 											<ActiveSourceList>
 												<ActiveSource Name="CHAR_CrowM_BodyFall-005" ID="{FD3BD26F-3E4B-4FE9-94F9-8C86F97A6821}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</BlendContainer>
+						<BlendContainer Name="CrowM_Death" ID="{4FCD5B40-8723-4E48-B1AE-C03F88D5F397}" ShortID="868167858">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="CrowM_Death" ID="{AE48D18D-0316-4D9D-AF34-E261E72703D7}" ShortID="242107072">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CHAR_CrowM_Death-01" ID="{7E3F10E5-F7B5-4D19-9D87-5A4EF01FDFB3}" ShortID="351205624">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_CrowM_Death-01" ID="{C0BB6604-6190-4FBD-82C2-9ABCED3021BD}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_CrowM_Death-01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="900765359"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_CrowM_Death-01" ID="{C0BB6604-6190-4FBD-82C2-9ABCED3021BD}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_CrowM_Death-02" ID="{602AC828-0CF7-4D07-8B56-FF61B9260731}" ShortID="177178533">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_CrowM_Death-02" ID="{A9D23C06-D6E1-4059-A400-89319724282D}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_CrowM_Death-02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="376906498"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_CrowM_Death-02" ID="{A9D23C06-D6E1-4059-A400-89319724282D}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="CHAR_CrowM_Death-03" ID="{C9328635-E777-4500-8586-A52B526C9621}" ShortID="754939862">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="CHAR_CrowM_Death-03" ID="{B3CD1B31-1191-440E-B53A-AEEC6694D60D}">
+													<Language>SFX</Language>
+													<AudioFile>CHAR_CrowM_Death-03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="215348529"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="CHAR_CrowM_Death-03" ID="{B3CD1B31-1191-440E-B53A-AEEC6694D60D}" Platform="Linked"/>
 											</ActiveSourceList>
 										</Sound>
 									</ChildrenList>

@@ -290,6 +290,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="CrowM_Death" ID="{2C290055-4FEB-477F-B888-BA53BD331EE3}">
+							<ChildrenList>
+								<Action Name="" ID="{A4DBEF8A-E14A-40A7-A90C-A3707DF8FEF4}" ShortID="629685036">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CrowM_Death" ID="{4FCD5B40-8723-4E48-B1AE-C03F88D5F397}" WorkUnitID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
