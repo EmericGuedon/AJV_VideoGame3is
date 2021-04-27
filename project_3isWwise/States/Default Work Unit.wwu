@@ -6,6 +6,7 @@
 				<WorkUnit Name="CHAR" ID="{E719C4B4-A07D-41A0-A808-C269125A3065}" PersistMode="Reference"/>
 				<WorkUnit Name="PROPS" ID="{8C71115E-4C2F-4730-8705-F3BE09B38C90}" PersistMode="Reference"/>
 				<WorkUnit Name="AMB" ID="{6B067EE5-C7FC-43A7-952E-65C042187513}" PersistMode="Reference"/>
+				<WorkUnit Name="MUSIC" ID="{A4397D39-494F-48F8-B5FE-7C2F0AB9D08F}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

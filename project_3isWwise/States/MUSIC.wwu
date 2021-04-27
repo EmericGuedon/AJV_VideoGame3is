@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A4397D39-494F-48F8-B5FE-7C2F0AB9D08F}" SchemaVersion="97" RootDocumentID="{849B06D4-C469-4423-9783-1867B8BCCE84}">
+	<States>
+		<WorkUnit Name="MUSIC" ID="{A4397D39-494F-48F8-B5FE-7C2F0AB9D08F}" OwnerID="{849B06D4-C469-4423-9783-1867B8BCCE84}" PersistMode="Nested">
+			<ChildrenList>
+				<StateGroup Name="MusicFight_Scene2" ID="{8A399A40-431C-4139-B133-D0D644834516}">
+					<ChildrenList>
+						<State Name="None" ID="{A11DF09B-530A-41A9-842F-8FE80DD75BAA}"/>
+						<State Name="MusicAmb" ID="{C0123281-12B7-44B2-ADA5-DD7B417FFF78}"/>
+						<State Name="MusicFight" ID="{2263E857-7013-4A94-B6B0-D501E980A761}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
