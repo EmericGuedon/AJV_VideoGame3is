@@ -21,7 +21,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+							<ObjectRef Name="WP" ID="{473D245B-475D-4C23-91A1-B74C5694FE58}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -832,6 +832,9 @@
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="2"/>
 										<Property Name="Highpass" Type="int16">
+											<ValueList>
+												<Value>4</Value>
+											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
 													<Modifier Name="" ID="{E5C07B13-3DC0-417F-B89B-E36D6B020142}">
@@ -875,7 +878,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-17</Value>
+												<Value>-16</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -1603,7 +1606,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -4690,7 +4693,7 @@
 														<Property Name="FadeOutDuration" Type="Real64" Value="0.0893835616438356"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0137978362701473"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.43458904109589"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.206506849315068"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>WP_Hit_Hurt_1.wav</AudioFile>
@@ -4722,8 +4725,9 @@
 											<ChildrenList>
 												<AudioFileSource Name="WP_Hit_Hurt_2" ID="{673538F4-95EC-4833-8578-FE53FA800A73}">
 													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0349315068493151"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.401712328767122"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.209589041095889"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>WP_Hit_Hurt_2.wav</AudioFile>
@@ -4755,9 +4759,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="WP_Hit_Hurt_3" ID="{966FCC46-C518-4577-9AB6-5BE12E120094}">
 													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0436643835616438"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0145547945205479"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.430821917808215"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.203767123287667"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>WP_Hit_Hurt_3.wav</AudioFile>
@@ -4822,9 +4827,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="WP_Hit_Hurt_4-002" ID="{55AAFB33-1618-407D-B987-027775ADDD98}">
 													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0682648401826484"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0178082191780822"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.433333333333338"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.243378995433795"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>WP_Hit_Hurt_4-002.wav</AudioFile>
@@ -4890,9 +4896,10 @@
 											<ChildrenList>
 												<AudioFileSource Name="WP_Hit_Hurt_7" ID="{DB9A6A5D-ACF6-4FE1-98DD-469B2714F90A}">
 													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0587328767123288"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.0167808219178082"/>
-														<Property Name="TrimEnd" Type="Real64" Value="0.427910958904111"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.246118721461188"/>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>WP_Hit_Hurt_7.wav</AudioFile>
@@ -4907,6 +4914,11 @@
 										</Sound>
 										<Sound Name="WP_Hurt_Hit" ID="{C1470E84-40F0-468D-A155-4825DBEEDDE9}" ShortID="249394796">
 											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>2</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>7</Value>

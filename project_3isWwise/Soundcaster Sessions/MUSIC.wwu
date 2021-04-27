@@ -1,9 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{6F71BEED-2798-4F16-8319-CF38101005B7}" SchemaVersion="97" RootDocumentID="{BE95830D-1A78-40F9-991D-1DAA2DEBEFA1}">
+<WwiseDocument Type="WorkUnit" ID="{07B74E8E-8DA4-4B0C-8EDA-43F739416661}" SchemaVersion="97" RootDocumentID="{BE95830D-1A78-40F9-991D-1DAA2DEBEFA1}">
 	<SoundcasterSessions>
-		<WorkUnit Name="HUD" ID="{6F71BEED-2798-4F16-8319-CF38101005B7}" OwnerID="{BE95830D-1A78-40F9-991D-1DAA2DEBEFA1}" PersistMode="Nested">
+		<WorkUnit Name="MUSIC" ID="{07B74E8E-8DA4-4B0C-8EDA-43F739416661}" OwnerID="{BE95830D-1A78-40F9-991D-1DAA2DEBEFA1}" PersistMode="Nested">
 			<ChildrenList>
-				<SoundcasterSession Name="HUD" ID="{CC5D3366-733B-499F-AEFF-2E06DBE302AD}">
+				<SoundcasterSession Name="MUSIC" ID="{D44E9171-7CC5-4C5A-9292-F0E8C13487CF}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="MusicLvl1_Play" ID="{D13E9326-599C-480E-A036-0469A37E3B29}" WorkUnitID="{0C392AA6-037F-42C3-A703-8372F6380D65}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MusicLvl1_Stop" ID="{5F4A8A89-5EA5-493F-A3C7-B2EE434EC893}" WorkUnitID="{0C392AA6-037F-42C3-A703-8372F6380D65}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_Scene2" ID="{5926886F-7EB7-4EC6-8599-EFC1F5C31D1F}" WorkUnitID="{0C392AA6-037F-42C3-A703-8372F6380D65}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_Boss" ID="{6199AD46-2B21-44DD-8DB5-0297B484A676}" WorkUnitID="{0C392AA6-037F-42C3-A703-8372F6380D65}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Music_Death" ID="{E317982D-A187-4FB9-8511-610EFEE804F7}" WorkUnitID="{0C392AA6-037F-42C3-A703-8372F6380D65}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Zik" ID="{80EC949F-19CD-47F6-A09A-9EF02DA8D0DF}" WorkUnitID="{0C392AA6-037F-42C3-A703-8372F6380D65}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}"/>

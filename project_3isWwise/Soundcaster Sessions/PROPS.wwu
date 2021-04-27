@@ -1,6 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{54B1B5A8-4478-4D63-811B-BD9E2438D784}" SchemaVersion="97" RootDocumentID="{BE95830D-1A78-40F9-991D-1DAA2DEBEFA1}">
 	<SoundcasterSessions>
-		<WorkUnit Name="PROPS" ID="{54B1B5A8-4478-4D63-811B-BD9E2438D784}" OwnerID="{BE95830D-1A78-40F9-991D-1DAA2DEBEFA1}" PersistMode="Nested"/>
+		<WorkUnit Name="PROPS" ID="{54B1B5A8-4478-4D63-811B-BD9E2438D784}" OwnerID="{BE95830D-1A78-40F9-991D-1DAA2DEBEFA1}" PersistMode="Nested">
+			<ChildrenList>
+				<SoundcasterSession Name="PROPS_Lvl 01" ID="{C44D7ABE-0990-4E36-97DC-F695ADE5EC1E}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Barrel_1" ID="{8180357D-63F9-4F3A-91AF-DB8C30A4CD37}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Props_In_Out_Cave" ID="{A0A2925A-A456-4598-BF5F-2E8C8A46A86A}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Props_Stalactic" ID="{CC7AEA65-1A23-4D35-8EA1-A92FC8C91D67}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Props_Campfire" ID="{F0AAA3A6-2EA6-48BC-845B-5BC72AEAB040}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Porps_Bridge" ID="{FE798F09-D918-4832-9237-FBF4C1B9D06C}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Props_Bridge" ID="{60163BF3-90DA-401B-A795-F31A84E81F81}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Barrel" ID="{66979BA4-B0F9-4228-B3C0-C206996D8C28}"/>
+							<Value>1.31040480961924</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Box" ID="{750CAAB6-6336-45E6-9306-BC368E56FDA2}"/>
+							<Value>-1.5</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_SC" ID="{8ADB3CBD-BA87-4EBE-A774-F4937FAFAEF8}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{A11DF09B-530A-41A9-842F-8FE80DD75BAA}"/>
+						<CurrentStateRef Name="Phase2" ID="{7C8C2711-C3F0-4670-B98A-436720FB185D}"/>
+						<CurrentStateRef Name="None" ID="{B1CE15CB-05BD-4F39-9661-3E8EE2CFA6A8}"/>
+						<CurrentStateRef Name="None" ID="{5244ADD7-69E8-4519-9694-572624493ACE}"/>
+						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>
+						<CurrentSwitchRef Name="Snow" ID="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}"/>
+						<CurrentSwitchRef Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
+						<CurrentSwitchRef Name="WALK" ID="{CFC5BDF7-9EF6-491C-A14B-DA62EBDB7589}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="PROPS_Lvl_02" ID="{B41DEA74-C719-4564-A2CA-CFFB3120FBD3}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Barrel_1" ID="{8180357D-63F9-4F3A-91AF-DB8C30A4CD37}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Woodbox" ID="{F1D9D07B-C2FB-4D9D-97CC-314996B904AD}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Props_Brasero" ID="{C035CD65-E71B-4A04-A7F8-D162DD1DF4BD}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Props_Bench" ID="{EB9E6703-7F5E-452C-A71F-2CB5395B00FB}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Props_Ceramic" ID="{436BDDB3-1B0C-449D-9E9A-73D8268D2BE5}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Props_Choppe" ID="{AF620570-4D63-4ED4-A968-B94A828A4A5C}" WorkUnitID="{22E1028C-2FAC-40C2-860F-A99353AB343B}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Barrel" ID="{66979BA4-B0F9-4228-B3C0-C206996D8C28}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Box" ID="{750CAAB6-6336-45E6-9306-BC368E56FDA2}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_SC" ID="{8ADB3CBD-BA87-4EBE-A774-F4937FAFAEF8}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{A11DF09B-530A-41A9-842F-8FE80DD75BAA}"/>
+						<CurrentStateRef Name="Phase2" ID="{7C8C2711-C3F0-4670-B98A-436720FB185D}"/>
+						<CurrentStateRef Name="None" ID="{B1CE15CB-05BD-4F39-9661-3E8EE2CFA6A8}"/>
+						<CurrentStateRef Name="None" ID="{5244ADD7-69E8-4519-9694-572624493ACE}"/>
+						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>
+						<CurrentSwitchRef Name="Snow" ID="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}"/>
+						<CurrentSwitchRef Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
+						<CurrentSwitchRef Name="WALK" ID="{CFC5BDF7-9EF6-491C-A14B-DA62EBDB7589}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

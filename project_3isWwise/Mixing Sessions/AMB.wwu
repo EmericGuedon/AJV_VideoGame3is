@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{418AD7BF-FAD9-4606-B0FB-8EDA571E77E0}" SchemaVersion="97" RootDocumentID="{B892FB4C-091A-4F37-BA2C-0E63E9308AFC}">
+	<MixingSessions>
+		<WorkUnit Name="AMB" ID="{418AD7BF-FAD9-4606-B0FB-8EDA571E77E0}" OwnerID="{B892FB4C-091A-4F37-BA2C-0E63E9308AFC}" PersistMode="Nested"/>
+	</MixingSessions>
+</WwiseDocument>

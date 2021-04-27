@@ -3,8 +3,7 @@
 	<MixingSessions>
 		<WorkUnit Name="CHAR" ID="{6FD24A37-A7C9-4D1D-80F3-595982201283}" OwnerID="{B892FB4C-091A-4F37-BA2C-0E63E9308AFC}" PersistMode="Nested">
 			<ChildrenList>
-				<MixingSession Name="Char_Mix" ID="{0E9DF299-6266-4C50-B704-CB79A228659C}"/>
-				<MixingSession Name="Char_WP_Mix" ID="{F5D46B57-242C-447D-B744-CA9935B12E04}">
+				<MixingSession Name="Char_WP" ID="{F5D46B57-242C-447D-B744-CA9935B12E04}">
 					<ObjectList>
 						<ObjectRef Name="WP_Footstep" ID="{8E63F46C-FA42-4B99-80CA-A83F315394BB}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
 						<ObjectRef Name="Mob_Footstep_Materials" ID="{14FAD1FF-0A66-46E5-B6FA-1C15719A33D2}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
@@ -20,6 +19,15 @@
 						<ObjectRef Name="WP_Jumpland_Hard" ID="{50F50EAF-F08E-4B45-8D47-0B4062EF7E25}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
 						<ObjectRef Name="WP_Weapon_Shield" ID="{78EE7BBF-E35B-4913-A6FD-789AB4B71382}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
 						<ObjectRef Name="WP_Weapon_Sword" ID="{256BB137-5347-4133-AA65-A7EB596B04BF}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+					</ObjectList>
+				</MixingSession>
+				<MixingSession Name="Char_CrowM" ID="{359046B9-095F-44E2-A5E8-B52983B52641}"/>
+				<MixingSession Name="Char_Mob" ID="{12579A3C-65EF-4A2F-9E3C-CA36453819B3}">
+					<ObjectList>
+						<ObjectRef Name="Mob_Gear" ID="{7BA4DFF8-D53E-40E0-AFCD-998146BA0CE8}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+						<ObjectRef Name="Mob_Footstep_Materials" ID="{14FAD1FF-0A66-46E5-B6FA-1C15719A33D2}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+						<ObjectRef Name="Mob_Weapon_Sword" ID="{EEAE2744-A465-493C-AE69-5831DFE6F549}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
+						<ObjectRef Name="Mob_Krawl" ID="{B68D8BBC-0F27-4967-A096-6BAC4B11AEE6}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
 					</ObjectList>
 				</MixingSession>
 			</ChildrenList>

@@ -3,15 +3,39 @@
 	<SoundcasterSessions>
 		<WorkUnit Name="CHAR" ID="{37C587BC-DC20-48DC-9CA8-DE1963524B7B}" OwnerID="{BE95830D-1A78-40F9-991D-1DAA2DEBEFA1}" PersistMode="Nested">
 			<ChildrenList>
-				<SoundcasterSession Name="CHARACTER" ID="{68C66A41-3BBD-464F-BDEC-1DFDE8A746FF}">
+				<SoundcasterSession Name="CrowM" ID="{2F477EEB-270E-4749-8976-F51A5E026A38}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="WP_Hurt" ID="{5C01F67C-5A16-4CA6-8A06-6DDA35644F66}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<ObjectRef Name="CrowM_AttackImpact" ID="{98036396-9BCA-48A9-8C55-D2BE1CFE400A}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Footstep_WP" ID="{C436D326-7B8E-49D6-B4DA-E299868282B7}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<ObjectRef Name="CrowM_AttackWoosh" ID="{D600EAB1-CE67-462E-95ED-758D7D43DBF0}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
 							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Footstep_CrowM" ID="{4E95F54F-E9E9-41C6-A055-9C5115E7F17F}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="CrowM_Gear" ID="{190EA628-6B55-4B0F-85B0-9A0CFC36A2E7}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="CrowM_Hurt" ID="{0751B999-3F59-45ED-A7F2-C745A97D4347}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="CrowM_Parade" ID="{E28CF273-3E91-4893-BBC1-4BD6CD0A5E00}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="CrowM_Death" ID="{2C290055-4FEB-477F-B888-BA53BD331EE3}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="CrowM_BodyFall" ID="{14FABF52-06CC-481D-9FE7-A1D27BA9B31A}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="3" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -21,25 +45,151 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Barrel" ID="{66979BA4-B0F9-4228-B3C0-C206996D8C28}"/>
-							<Value>1.31040480961924</Value>
+							<Value>-0.0566037735849054</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Box" ID="{750CAAB6-6336-45E6-9306-BC368E56FDA2}"/>
 							<Value>-0.340659340659339</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_SC" ID="{8ADB3CBD-BA87-4EBE-A774-F4937FAFAEF8}"/>
+							<Value>0</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="None" ID="{A11DF09B-530A-41A9-842F-8FE80DD75BAA}"/>
 						<CurrentStateRef Name="Phase2" ID="{7C8C2711-C3F0-4670-B98A-436720FB185D}"/>
-						<CurrentStateRef Name="None" ID="{B1CE15CB-05BD-4F39-9661-3E8EE2CFA6A8}"/>
+						<CurrentStateRef Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>
 						<CurrentStateRef Name="None" ID="{5244ADD7-69E8-4519-9694-572624493ACE}"/>
 						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>
-						<CurrentSwitchRef Name="Snow" ID="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}"/>
+						<CurrentSwitchRef Name="Wood" ID="{29C275A9-1195-4AD2-A2DA-7AF118049731}"/>
 						<CurrentSwitchRef Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
-						<CurrentSwitchRef Name="WALK" ID="{CFC5BDF7-9EF6-491C-A14B-DA62EBDB7589}"/>
+						<CurrentSwitchRef Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="WP" ID="{2A01656E-7289-4DAF-B82B-EEE5386FE313}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Sword_WP" ID="{48016EFC-5E25-452C-B939-B5324AE640A9}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="WP_AttaqueC" ID="{E933B09F-64AC-441A-BBAC-B18DC8C85E1B}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Shield_Main" ID="{52632D14-B7F7-4246-AD30-0845DF5B49AB}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Footstep_WP" ID="{C436D326-7B8E-49D6-B4DA-E299868282B7}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Jump_WP" ID="{77131AB6-39C8-4256-801F-E5D8402973A6}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="JumpLand_WP" ID="{6CCED489-741F-49EB-8902-C185D03DD8C6}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="JumpLand_Hard_WP" ID="{DFF7601E-6089-4CFD-A7FE-16FBD774C3B4}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="WP_Hurt" ID="{5C01F67C-5A16-4CA6-8A06-6DDA35644F66}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="WP_Death" ID="{54B98669-E3DB-4873-A0AF-66DBF0144264}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Barrel" ID="{66979BA4-B0F9-4228-B3C0-C206996D8C28}"/>
+							<Value>-0.0566037735849054</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Box" ID="{750CAAB6-6336-45E6-9306-BC368E56FDA2}"/>
+							<Value>-0.340659340659339</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_SC" ID="{8ADB3CBD-BA87-4EBE-A774-F4937FAFAEF8}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{A11DF09B-530A-41A9-842F-8FE80DD75BAA}"/>
+						<CurrentStateRef Name="Phase2" ID="{7C8C2711-C3F0-4670-B98A-436720FB185D}"/>
+						<CurrentStateRef Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>
+						<CurrentStateRef Name="None" ID="{5244ADD7-69E8-4519-9694-572624493ACE}"/>
+						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>
+						<CurrentSwitchRef Name="Wood" ID="{29C275A9-1195-4AD2-A2DA-7AF118049731}"/>
+						<CurrentSwitchRef Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
+						<CurrentSwitchRef Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Mob" ID="{FB278B1B-D244-42D4-936D-0FC64FF226FB}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Footstep_Mob" ID="{9CFAFFD3-23E5-4916-84EF-80BFDC1CC2B4}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Sword_Mob" ID="{6FE79788-A30C-4130-9427-9D4DB60335F8}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Voice_Mob" ID="{48DC80BD-8764-4E83-8FEC-69273D3FB193}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="VoiceDeath_Mob" ID="{0022EA02-1E0A-4906-A69E-522EC3B5F79F}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Barrel" ID="{66979BA4-B0F9-4228-B3C0-C206996D8C28}"/>
+							<Value>-0.0566037735849054</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Box" ID="{750CAAB6-6336-45E6-9306-BC368E56FDA2}"/>
+							<Value>-0.340659340659339</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_SC" ID="{8ADB3CBD-BA87-4EBE-A774-F4937FAFAEF8}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{A11DF09B-530A-41A9-842F-8FE80DD75BAA}"/>
+						<CurrentStateRef Name="Phase2" ID="{7C8C2711-C3F0-4670-B98A-436720FB185D}"/>
+						<CurrentStateRef Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>
+						<CurrentStateRef Name="None" ID="{5244ADD7-69E8-4519-9694-572624493ACE}"/>
+						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>
+						<CurrentSwitchRef Name="Wood" ID="{29C275A9-1195-4AD2-A2DA-7AF118049731}"/>
+						<CurrentSwitchRef Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
+						<CurrentSwitchRef Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

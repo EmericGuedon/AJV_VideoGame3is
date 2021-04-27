@@ -35,6 +35,10 @@
 						<Property Name="GainBand2" Type="Real32" Value="-2.5"/>
 					</PropertyList>
 				</Effect>
+				<Effect Name="In_SC" ID="{D915114A-69DF-4B54-B9DE-1BFBCFA1A38C}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="RTPC_SC" ID="{8ADB3CBD-BA87-4EBE-A774-F4937FAFAEF8}"/>
+</PluginData>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>

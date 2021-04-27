@@ -28,7 +28,7 @@
 									<ObjectRef Name="Medium" ID="{AEB3F175-958B-45F2-A4C2-3FBD4F456568}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 								<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-									<ObjectRef Name="New_Wwise_Parametric_EQ" ID="{C8EC6DFA-12FE-4EB3-ADC2-85DDEACA3EF6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+									<ObjectRef Name="After_RVB" ID="{C8EC6DFA-12FE-4EB3-ADC2-85DDEACA3EF6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 							</ReferenceList>
 						</AuxBus>
@@ -36,7 +36,7 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-2</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -44,9 +44,43 @@
 								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<ObjectRef Name="Hall_Large_Dark" ID="{0F6A7D6D-131C-4650-9561-FC05F5C7A37B}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="After_RVB" ID="{C8EC6DFA-12FE-4EB3-ADC2-85DDEACA3EF6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
 							</ReferenceList>
 						</AuxBus>
 						<Bus Name="AMB" ID="{E5CBB7CA-EEC8-446B-82CE-691FDA6F7EF2}">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{EC7E9382-CF8D-4526-8AFC-100136225792}" ShortID="569892054">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="RTPC_SC" ID="{8ADB3CBD-BA87-4EBE-A774-F4937FAFAEF8}" WorkUnitID="{56745795-66B8-4965-952D-189AFAD4ABD6}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{BBEF5559-92C3-4E59-8C7B-85A5EFA03E15}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ReferenceList/>
 							<ChildrenList>
 								<Bus Name="AMB_Blizzard" ID="{D7CF2697-423E-4E07-964F-A157FA5FCB45}"/>
 								<Bus Name="AMB_Cave" ID="{2BAC5C46-7480-47BD-95B3-8E1366B5DA4D}"/>
@@ -54,6 +88,11 @@
 							</ChildrenList>
 						</Bus>
 						<Bus Name="CHAR" ID="{338DAE42-702C-4CFB-B030-6BD91AF5904B}">
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+									<ObjectRef Name="In_SC" ID="{D915114A-69DF-4B54-B9DE-1BFBCFA1A38C}" WorkUnitID="{85ABFDD9-D4CC-4FE6-AC34-950059152F36}"/>
+								</Reference>
+							</ReferenceList>
 							<ChildrenList>
 								<Bus Name="CrowM" ID="{9CB9EEA2-C920-4CA5-BE12-BAD7DEB0278F}">
 									<PropertyList>
@@ -92,7 +131,6 @@
 						</Bus>
 						<Bus Name="UI" ID="{125F3244-D990-464B-8BEE-FA51E6A47CA4}"/>
 						<Bus Name="HUD" ID="{9E4D3E6D-459C-4693-963B-44F474E6D244}"/>
-						<Bus Name="RFX" ID="{A0EF48FD-F12D-48C5-BCC2-E104939CC924}"/>
 						<AuxBus Name="Reverb_Blizzard" ID="{7D3CD3BC-8230-4DD2-A46C-109CAA4BC9D6}">
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
@@ -105,8 +143,53 @@
 								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 									<ObjectRef Name="Have_U_Ever_Been_Outside" ID="{FE29AE8D-FD86-4652-A95D-68D32F5760EC}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
+								<Reference Name="Effect1">
+									<Custom CreatedFrom="{C8EC6DFA-12FE-4EB3-ADC2-85DDEACA3EF6}">
+										<Effect Name="After_RVB (Custom)" ID="{B923706B-C8D1-4D3C-903C-E9B278E74BBE}" ShortID="349067327" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+												<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+												<Property Name="FrequencyBand1" Type="Real32" Value="250"/>
+												<Property Name="FrequencyBand3" Type="Real32" Value="8500"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
 							</ReferenceList>
 						</AuxBus>
+						<Bus Name="MUSIC" ID="{9E7CC739-2C7E-4E24-9A42-1FDA01EB78FA}">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{88E4B768-594E-4A95-9850-B6F8554644DD}" ShortID="567254961">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="RTPC_SC" ID="{8ADB3CBD-BA87-4EBE-A774-F4937FAFAEF8}" WorkUnitID="{56745795-66B8-4965-952D-189AFAD4ABD6}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{AE813D07-6A89-4AA7-BD5F-C20B4AD66D23}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>-0</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-6</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+						</Bus>
 					</ChildrenList>
 				</Bus>
 			</ChildrenList>

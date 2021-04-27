@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4C70B891-1CA0-4178-B21E-A9A3FFC3745B}" SchemaVersion="97" RootDocumentID="{B892FB4C-091A-4F37-BA2C-0E63E9308AFC}">
+	<MixingSessions>
+		<WorkUnit Name="PROPS" ID="{4C70B891-1CA0-4178-B21E-A9A3FFC3745B}" OwnerID="{B892FB4C-091A-4F37-BA2C-0E63E9308AFC}" PersistMode="Nested">
+			<ChildrenList>
+				<MixingSession Name="Props" ID="{A4760945-E7B8-47B4-8A1A-05B6896648EF}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</MixingSessions>
+</WwiseDocument>

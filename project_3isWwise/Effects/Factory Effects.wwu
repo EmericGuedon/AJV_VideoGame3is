@@ -674,7 +674,7 @@
 								</Effect>
 							</ChildrenList>
 						</Folder>
-						<Effect Name="New_Wwise_Parametric_EQ" ID="{C8EC6DFA-12FE-4EB3-ADC2-85DDEACA3EF6}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+						<Effect Name="After_RVB" ID="{C8EC6DFA-12FE-4EB3-ADC2-85DDEACA3EF6}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
 							<PropertyList>
 								<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
 								<Property Name="FilterTypeBand3" Type="int32" Value="0"/>

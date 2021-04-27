@@ -7,6 +7,7 @@
 				<WorkUnit Name="CHAR" ID="{37C587BC-DC20-48DC-9CA8-DE1963524B7B}" PersistMode="Reference"/>
 				<WorkUnit Name="PROPS" ID="{54B1B5A8-4478-4D63-811B-BD9E2438D784}" PersistMode="Reference"/>
 				<WorkUnit Name="HUD" ID="{6F71BEED-2798-4F16-8319-CF38101005B7}" PersistMode="Reference"/>
+				<WorkUnit Name="MUSIC" ID="{07B74E8E-8DA4-4B0C-8EDA-43F739416661}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

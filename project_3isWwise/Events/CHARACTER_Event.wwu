@@ -167,21 +167,10 @@
 						</Event>
 						<Event Name="Voice_Mob" ID="{48DC80BD-8764-4E83-8FEC-69273D3FB193}">
 							<ChildrenList>
-								<Action Name="" ID="{9A627559-99F7-4F71-BD47-EA993CAC8987}" ShortID="940094108">
+								<Action Name="" ID="{6CD8DE4D-4D1B-4995-A614-CDBC37DE991C}" ShortID="1025499376">
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Mob_Hit" ID="{27EE8FDF-59A0-478A-BAD4-1D2089816FE1}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
-										</Reference>
-									</ReferenceList>
-								</Action>
-							</ChildrenList>
-						</Event>
-						<Event Name="VoiceDetect_Mob" ID="{9F5F7B46-0A8E-4852-902B-1ACD2C51055C}">
-							<ChildrenList>
-								<Action Name="" ID="{DF5C8B94-EF9D-431C-8982-DC720F075A54}" ShortID="887055583">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="Mob_DetectSwitch" ID="{24CBD70F-C549-40C9-A185-699CC862816C}" WorkUnitID="{83C16F5F-DC4E-4231-986A-3654BB67CCF9}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

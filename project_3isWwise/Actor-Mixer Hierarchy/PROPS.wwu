@@ -66,7 +66,7 @@
 																<SegmentShape>Exp1</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>-0</XPos>
+																<XPos>0</XPos>
 																<YPos>26</YPos>
 																<Flags>0</Flags>
 																<SegmentShape>Log1</SegmentShape>
@@ -173,7 +173,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="PROPS_Barrel" ID="{19D89512-E9DE-48BF-A85C-9FDA5542B9D5}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+											<ObjectRef Name="PROPS_Barrel_In" ID="{7AA44CD4-B73F-4428-B1D2-5A480FEE5E59}" WorkUnitID="{F6917F68-C548-4311-907F-CBD7EEE8F8D1}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -608,7 +608,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="PROPS_Barrel" ID="{19D89512-E9DE-48BF-A85C-9FDA5542B9D5}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+											<ObjectRef Name="PROPS_Barrel_Out" ID="{19D89512-E9DE-48BF-A85C-9FDA5542B9D5}" WorkUnitID="{F6917F68-C548-4311-907F-CBD7EEE8F8D1}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -636,9 +636,10 @@
 														</ModifierInfo>
 													</ModifierList>
 												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
-														<Value>-180</Value>
+														<Value>-250</Value>
 													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
@@ -689,6 +690,16 @@
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{716DDC4E-0929-4F24-BDB3-60868FCB39D8}" ShortID="586441863" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+															<PropertyList>
+																<Property Name="FrequencyBand2" Type="Real32" Value="921"/>
+																<Property Name="GainBand2" Type="Real32" Value="-3.5"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
@@ -1171,21 +1182,31 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</BlendContainer>
-								<BlendContainer Name="In_Campfire" ID="{E754F1D9-AA6D-437E-8A1E-55817FF659D2}" ShortID="195542685">
+								<BlendContainer Name="In_Brasero" ID="{E754F1D9-AA6D-437E-8A1E-55817FF659D2}" ShortID="195542685">
 									<PropertyList>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>25</Value>
+											</ValueList>
+										</Property>
 										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="Pitch" Type="int32">
+											<ValueList>
+												<Value>-810</Value>
+											</ValueList>
+										</Property>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-7</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="PROPS_Outdoor" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+											<ObjectRef Name="PROPS_Brasero" ID="{AA18086D-C022-43E8-A0F1-07FE8DD57AE5}" WorkUnitID="{F6917F68-C548-4311-907F-CBD7EEE8F8D1}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1202,7 +1223,17 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>15</Value>
+													</ValueList>
+												</Property>
 												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-250</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-4</Value>
@@ -1211,7 +1242,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
-													<ObjectRef Name="PROPS_Outdoor" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+													<ObjectRef Name="PROPS_FireCamp" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{F6917F68-C548-4311-907F-CBD7EEE8F8D1}"/>
 												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1253,12 +1284,12 @@
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>5</Value>
+														<Value>9</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
-														<Value>-100</Value>
+														<Value>-400</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Volume" Type="Real64">
@@ -1269,7 +1300,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
-													<ObjectRef Name="PROPS_Outdoor" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+													<ObjectRef Name="PROPS_FireCamp" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{F6917F68-C548-4311-907F-CBD7EEE8F8D1}"/>
 												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1341,12 +1372,12 @@
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
-														<Value>-830</Value>
+														<Value>50</Value>
 													</ValueList>
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-8</Value>
+														<Value>-4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1834,7 +1865,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="PROPS_Bridge" ID="{106EF7F9-CECE-48DB-A48D-1C4DF510FB95}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+											<ObjectRef Name="PROPS_Bridge" ID="{106EF7F9-CECE-48DB-A48D-1C4DF510FB95}" WorkUnitID="{F6917F68-C548-4311-907F-CBD7EEE8F8D1}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1903,7 +1934,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
-													<ObjectRef Name="PROPS_Bridge" ID="{106EF7F9-CECE-48DB-A48D-1C4DF510FB95}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+													<ObjectRef Name="PROPS_Bridge" ID="{106EF7F9-CECE-48DB-A48D-1C4DF510FB95}" WorkUnitID="{F6917F68-C548-4311-907F-CBD7EEE8F8D1}"/>
 												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -2187,7 +2218,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
-													<ObjectRef Name="PROPS_Bridge" ID="{106EF7F9-CECE-48DB-A48D-1C4DF510FB95}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+													<ObjectRef Name="PROPS_Bridge" ID="{106EF7F9-CECE-48DB-A48D-1C4DF510FB95}" WorkUnitID="{F6917F68-C548-4311-907F-CBD7EEE8F8D1}"/>
 												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -2420,7 +2451,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
-													<ObjectRef Name="PROPS_Bridge" ID="{106EF7F9-CECE-48DB-A48D-1C4DF510FB95}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+													<ObjectRef Name="PROPS_Bridge" ID="{106EF7F9-CECE-48DB-A48D-1C4DF510FB95}" WorkUnitID="{F6917F68-C548-4311-907F-CBD7EEE8F8D1}"/>
 												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -2736,7 +2767,7 @@
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">
-											<ObjectRef Name="PROPS_Outdoor" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+											<ObjectRef Name="PROPS_FireCamp" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{F6917F68-C548-4311-907F-CBD7EEE8F8D1}"/>
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -2764,7 +2795,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
-													<ObjectRef Name="PROPS_Outdoor" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+													<ObjectRef Name="PROPS_FireCamp" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{F6917F68-C548-4311-907F-CBD7EEE8F8D1}"/>
 												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -2822,7 +2853,7 @@
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Attenuation">
-													<ObjectRef Name="PROPS_Outdoor" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+													<ObjectRef Name="PROPS_FireCamp" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{F6917F68-C548-4311-907F-CBD7EEE8F8D1}"/>
 												</Reference>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -2960,6 +2991,7 @@
 					<ChildrenList>
 						<ActorMixer Name="Choppe" ID="{A98CA75A-088E-4A6D-B6ED-A608A7B682C4}" ShortID="776057419">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
@@ -2967,6 +2999,7 @@
 										<Value>4</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
@@ -2974,6 +3007,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="PROPS_Fournitures" ID="{7B07417C-DA46-441B-B2C6-9CE71FB34FA0}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 								</Reference>
@@ -2990,7 +3026,6 @@
 												<Value>1</Value>
 											</ValueList>
 										</Property>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
 												<Value>480</Value>
@@ -3123,6 +3158,7 @@
 						</ActorMixer>
 						<ActorMixer Name="Plates" ID="{5C50ABF2-2EC2-417F-842F-ED487938D9EC}" ShortID="1042598207">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
@@ -3131,6 +3167,7 @@
 										<Value>4</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
@@ -3138,6 +3175,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="PROPS_Fournitures" ID="{7B07417C-DA46-441B-B2C6-9CE71FB34FA0}" WorkUnitID="{8CCF75DD-CF7A-4EC9-8515-F171F2BCAD05}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 								</Reference>
@@ -3465,7 +3505,7 @@
 										<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
-												<Value>1</Value>
+												<Value>2</Value>
 											</ValueList>
 										</Property>
 										<Property Name="Pitch" Type="int32">
@@ -3511,6 +3551,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Ceremic_Hit_1" ID="{76BD45B4-A87A-44B2-98CE-A7B29A10C04E}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.113447702625571"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.548940496575341"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Ceremic_Hit_1.wav</AudioFile>
 													<MediaIDList>
@@ -3533,6 +3578,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Ceremic_Hit_2" ID="{E5E3A24F-1E5B-4B64-B5F1-79A8313399D0}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0205464469178082"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.34928959760274"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Ceremic_Hit_2.wav</AudioFile>
 													<MediaIDList>
@@ -3555,6 +3605,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Ceremic_Hit_3" ID="{CFA57310-E99D-47B3-856C-ACED614A8683}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.099271439783105"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.419501890696348"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Ceremic_Hit_3.wav</AudioFile>
 													<MediaIDList>
@@ -3577,6 +3632,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Ceremic_Hit_4" ID="{9501B089-A84D-45A6-9AAD-B0DB6802499A}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0290978881278539"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.396458725742007"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Ceremic_Hit_4.wav</AudioFile>
 													<MediaIDList>
@@ -3599,6 +3659,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Ceremic_Hit_5" ID="{E5F571B5-F85C-4D1E-BE75-062A8AC87DB1}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0196579623287671"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.330909032534246"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Ceremic_Hit_5.wav</AudioFile>
 													<MediaIDList>
@@ -3621,6 +3686,11 @@
 											</ReferenceList>
 											<ChildrenList>
 												<AudioFileSource Name="Ceremic_Hit_6" ID="{E1EBBACD-61A1-4E7D-A092-B93C1C113D8E}">
+													<PropertyList>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="0.532267551369862"/>
+													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Ceremic_Hit_6.wav</AudioFile>
 													<MediaIDList>
@@ -3638,6 +3708,7 @@
 						</ActorMixer>
 						<ActorMixer Name="Bench" ID="{C433F524-D93A-445B-9D86-F3CEE6BFBEA3}" ShortID="141128730">
 							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 								<Property Name="MaxSoundPerInstance" Type="int16">
@@ -3645,6 +3716,7 @@
 										<Value>4</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
@@ -3652,6 +3724,9 @@
 								</Property>
 							</PropertyList>
 							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="PROPS_Barrel_In" ID="{7AA44CD4-B73F-4428-B1D2-5A480FEE5E59}" WorkUnitID="{F6917F68-C548-4311-907F-CBD7EEE8F8D1}"/>
+								</Reference>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 								</Reference>
@@ -3669,7 +3744,6 @@
 												<Value>1</Value>
 											</ValueList>
 										</Property>
-										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Pitch" Type="int32">
 											<ModifierList>
 												<ModifierInfo>

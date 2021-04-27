@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{328A6698-12C1-4136-BC22-AE6F1B44DAF8}" SchemaVersion="97" RootDocumentID="{B892FB4C-091A-4F37-BA2C-0E63E9308AFC}">
+	<MixingSessions>
+		<WorkUnit Name="LVL" ID="{328A6698-12C1-4136-BC22-AE6F1B44DAF8}" OwnerID="{B892FB4C-091A-4F37-BA2C-0E63E9308AFC}" PersistMode="Nested">
+			<ChildrenList>
+				<MixingSession Name="Lvl_Menu" ID="{D9E4E133-F1DC-42C2-ACB4-9D3F964D152C}"/>
+				<MixingSession Name="Lvl_01" ID="{DAAA5A8D-7040-4212-BCC7-88A141A57E7B}"/>
+				<MixingSession Name="Lvl_02_1" ID="{9C6F2441-321D-4A74-A420-B3EF59DBCE3C}"/>
+				<MixingSession Name="Lvl_02_2" ID="{50F8674E-2C4D-4AAD-A430-6EBB67EEBEAD}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</MixingSessions>
+</WwiseDocument>

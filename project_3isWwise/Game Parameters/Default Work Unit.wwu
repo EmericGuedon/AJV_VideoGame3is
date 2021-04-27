@@ -6,6 +6,7 @@
 				<WorkUnit Name="AMB" ID="{43C7FA72-612C-4866-85B7-9D5BC91C8CE6}" PersistMode="Reference"/>
 				<WorkUnit Name="PROPS" ID="{F96E4292-F729-45B2-BFE7-65F7F1B172B8}" PersistMode="Reference"/>
 				<WorkUnit Name="Music" ID="{88CFE284-76AE-4493-B43D-FE95A710F347}" PersistMode="Reference"/>
+				<WorkUnit Name="Mix" ID="{56745795-66B8-4965-952D-189AFAD4ABD6}" PersistMode="Reference"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

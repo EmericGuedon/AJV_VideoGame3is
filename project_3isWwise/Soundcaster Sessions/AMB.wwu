@@ -3,54 +3,88 @@
 	<SoundcasterSessions>
 		<WorkUnit Name="AMB" ID="{5FFAD657-A5A6-4017-8E2A-B9CB6C20ACDB}" OwnerID="{BE95830D-1A78-40F9-991D-1DAA2DEBEFA1}" PersistMode="Nested">
 			<ChildrenList>
-				<SoundcasterSession Name="AMB_CAVE" ID="{27954ECD-D400-41DE-BC78-1B5724ACE61D}">
-					<ModuleList>
-						<Module>
-							<ObjectRef Name="RFX_DustIce" ID="{CDC7851E-714F-4212-BA4C-72BD2FD957F0}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
-							<Position X="0" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="PROPS_IceImpact" ID="{45DD3812-5632-493B-8805-89E46FCC2F25}" WorkUnitID="{F5F5964A-B4E3-44D8-BA8D-08153C218EF2}"/>
-							<Position X="0" Y="1"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="RFX_Icestress" ID="{B27A8CFE-2BD4-44E9-B563-041CCC8E857A}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
-							<Position X="1" Y="0"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Roomtone_Cave" ID="{78175763-1106-4CB5-B8C5-7F6568704E1B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
-							<Position X="1" Y="1"/>
-						</Module>
-					</ModuleList>
+				<SoundcasterSession Name="AMB_Menu" ID="{4C4E00EB-DDDF-446D-A879-7E407461D7E8}">
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}"/>
 							<Value>0</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Barrel" ID="{66979BA4-B0F9-4228-B3C0-C206996D8C28}"/>
+							<Value>-0.0566037735849054</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Box" ID="{750CAAB6-6336-45E6-9306-BC368E56FDA2}"/>
+							<Value>-0.340659340659339</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_SC" ID="{8ADB3CBD-BA87-4EBE-A774-F4937FAFAEF8}"/>
+							<Value>0</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{A11DF09B-530A-41A9-842F-8FE80DD75BAA}"/>
+						<CurrentStateRef Name="Phase2" ID="{7C8C2711-C3F0-4670-B98A-436720FB185D}"/>
+						<CurrentStateRef Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>
+						<CurrentStateRef Name="None" ID="{5244ADD7-69E8-4519-9694-572624493ACE}"/>
 						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>
 						<CurrentSwitchRef Name="Wood" ID="{29C275A9-1195-4AD2-A2DA-7AF118049731}"/>
-						<CurrentSwitchRef Name="WALK" ID="{989D954C-D9ED-4FB6-8E34-F92980A30EFB}"/>
+						<CurrentSwitchRef Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
 						<CurrentSwitchRef Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
-				<SoundcasterSession Name="AMB_BLIZZARD" ID="{52F6A7CD-C0CA-4346-8347-430515B6BA87}">
+				<SoundcasterSession Name="AMB_Lvl_01" ID="{2B0046C4-9A36-4E9A-B16F-DC36F59C9F4D}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="OUT_Blizz" ID="{21227C1E-CD75-4313-AACF-8C77CFA028D0}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+							<ObjectRef Name="Play_Amb_Cave" ID="{E09D7DE3-D876-4B83-AF66-1F23B43A564F}" WorkUnitID="{48258AF7-02D1-4B74-8845-47E57A587A9D}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="Footstep_WP" ID="{C436D326-7B8E-49D6-B4DA-E299868282B7}" WorkUnitID="{DB73ED73-83A1-4429-A662-EDFE26A71C7D}"/>
+							<ObjectRef Name="Play_Amb_Blizzard" ID="{D3FCF7CC-16C9-4B02-95E3-C12103B2FF8D}" WorkUnitID="{48258AF7-02D1-4B74-8845-47E57A587A9D}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="WP_Footstep_Impact" ID="{2B6FF540-98A5-438E-9819-CF0CE9451F0A}" WorkUnitID="{D9E29F10-B325-49F7-8798-E7B967A17ACF}"/>
+							<ObjectRef Name="Stop_Amb_Cave" ID="{6B19DFA8-8420-4770-A0A6-14BC3ADDB48A}" WorkUnitID="{48258AF7-02D1-4B74-8845-47E57A587A9D}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Amb_Blizzard" ID="{9AE91943-AA29-4554-8855-8CE2363EAC64}" WorkUnitID="{48258AF7-02D1-4B74-8845-47E57A587A9D}"/>
+							<Position X="0" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RFX_Blizz_Wind" ID="{15CF7BA5-3793-4E0B-8DE1-9A2800EC9FDD}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RFX_DustIce" ID="{CDC7851E-714F-4212-BA4C-72BD2FD957F0}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
 							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RFX_Icestress" ID="{B27A8CFE-2BD4-44E9-B563-041CCC8E857A}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Roomtone_Cave" ID="{78175763-1106-4CB5-B8C5-7F6568704E1B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RFX_Blizz_Rock" ID="{B309E588-7269-48EF-88F2-EA129D5DC071}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RFX_Blizz_Snow" ID="{DD4E78F1-ADA3-4A87-9548-699EF2AB5F6E}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RFX_Blizz_Wind" ID="{FFC74739-F82D-446E-87A4-AC391F71FEC5}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Amb_Out_Blizzard_Loop" ID="{C7FE0197-98E9-4B49-869C-092D9870787B}" WorkUnitID="{8DFE644B-1285-42A1-B336-DD1CBCB5ABA5}"/>
+							<Position X="2" Y="3"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -62,46 +96,62 @@
 							<GameParameterRef Name="RTPC_Barrel" ID="{66979BA4-B0F9-4228-B3C0-C206996D8C28}"/>
 							<Value>-0.0566037735849054</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Box" ID="{750CAAB6-6336-45E6-9306-BC368E56FDA2}"/>
+							<Value>-0.340659340659339</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_SC" ID="{8ADB3CBD-BA87-4EBE-A774-F4937FAFAEF8}"/>
+							<Value>0</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{A11DF09B-530A-41A9-842F-8FE80DD75BAA}"/>
+						<CurrentStateRef Name="Phase2" ID="{7C8C2711-C3F0-4670-B98A-436720FB185D}"/>
 						<CurrentStateRef Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>
+						<CurrentStateRef Name="None" ID="{5244ADD7-69E8-4519-9694-572624493ACE}"/>
 						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>
 						<CurrentSwitchRef Name="Wood" ID="{29C275A9-1195-4AD2-A2DA-7AF118049731}"/>
 						<CurrentSwitchRef Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
 						<CurrentSwitchRef Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
-				<SoundcasterSession Name="AMB_DUNGEON" ID="{D607A957-077E-43EE-8BFF-77A4D7579D31}">
+				<SoundcasterSession Name="AMB_Lvl_02_1" ID="{8549F3D2-FCAA-4FFD-B5D3-F3F38D903BF0}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="RFX_WoodenCreak" ID="{FE50EC72-5885-47B6-8C4C-3809FA85E443}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+							<ObjectRef Name="Play_Amb_Dungeon" ID="{B5B29CE3-51BE-45B8-B982-D7AABB4FF55C}" WorkUnitID="{48258AF7-02D1-4B74-8845-47E57A587A9D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Amb_Dungeon" ID="{E1D9A6B7-CD2F-4921-A09C-E1A99DF41DFF}" WorkUnitID="{48258AF7-02D1-4B74-8845-47E57A587A9D}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="RFX_MetalSqueak" ID="{048BF9AA-6DF4-4C93-9605-1DCC15971AAC}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
-							<Position X="0" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="RFX_Dungeon" ID="{816341C2-9717-4BCE-8FD6-7D27D9DE981B}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+							<ObjectRef Name="RFX_Cage" ID="{BD8C806C-0013-400A-BFF7-8E9DC6C14990}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
 							<Position X="1" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="RFX_Cage" ID="{BD8C806C-0013-400A-BFF7-8E9DC6C14990}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+							<ObjectRef Name="RFX_Rats" ID="{AB281C3D-D9C2-49A2-A464-FCF1324A2FEC}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
 							<Position X="1" Y="1"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="RFX_Rats" ID="{AB281C3D-D9C2-49A2-A464-FCF1324A2FEC}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
-							<Position X="1" Y="2"/>
-						</Module>
-						<Module>
-							<ObjectRef Name="Roomton_Castle" ID="{9E3C5383-CC70-452C-9C9E-C081AEFDE9D5}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+							<ObjectRef Name="RFX_MetalCreak" ID="{83675808-F3E4-4E12-9719-6F1740A1B3D0}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
 							<Position X="2" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="RFX_MetalCreak" ID="{83675808-F3E4-4E12-9719-6F1740A1B3D0}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+							<ObjectRef Name="RFX_WoodenCreak" ID="{FE50EC72-5885-47B6-8C4C-3809FA85E443}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
 							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RFX_MetalSqueak" ID="{048BF9AA-6DF4-4C93-9605-1DCC15971AAC}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Roomton_Castle" ID="{9E3C5383-CC70-452C-9C9E-C081AEFDE9D5}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+							<Position X="3" Y="1"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -109,11 +159,101 @@
 							<GameParameterRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}"/>
 							<Value>0</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Barrel" ID="{66979BA4-B0F9-4228-B3C0-C206996D8C28}"/>
+							<Value>-0.0566037735849054</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Box" ID="{750CAAB6-6336-45E6-9306-BC368E56FDA2}"/>
+							<Value>-0.340659340659339</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_SC" ID="{8ADB3CBD-BA87-4EBE-A774-F4937FAFAEF8}"/>
+							<Value>0</Value>
+						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{A11DF09B-530A-41A9-842F-8FE80DD75BAA}"/>
+						<CurrentStateRef Name="Phase2" ID="{7C8C2711-C3F0-4670-B98A-436720FB185D}"/>
+						<CurrentStateRef Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>
+						<CurrentStateRef Name="None" ID="{5244ADD7-69E8-4519-9694-572624493ACE}"/>
+						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Snow" ID="{B4604121-4A1A-4A84-BAB4-E6C856FEB29B}"/>
-						<CurrentSwitchRef Name="RUN" ID="{27D4B2BD-628B-46BD-8452-6351AB298B87}"/>
+						<CurrentSwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>
+						<CurrentSwitchRef Name="Wood" ID="{29C275A9-1195-4AD2-A2DA-7AF118049731}"/>
+						<CurrentSwitchRef Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
+						<CurrentSwitchRef Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="AMB_Lvl_02_2" ID="{D01D851F-4EC7-4013-A85C-A20F6AF775F8}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Amb_Dungeon_Final" ID="{DBDE03D6-32BD-4955-A984-308F216B7B62}" WorkUnitID="{48258AF7-02D1-4B74-8845-47E57A587A9D}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_Amb_Dungeon_Final" ID="{42F55964-9CBA-4561-8E27-DA96688E6B81}" WorkUnitID="{48258AF7-02D1-4B74-8845-47E57A587A9D}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RFX_Cage" ID="{CDD0FFE5-4AE3-4EE0-83D1-4FE79DB02E02}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RFX_Wind" ID="{15C06632-F6E7-4C4C-948E-7FA017A6E973}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Roomton_Castle" ID="{0310EC82-2DEA-46FB-A862-123E012F4330}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RFX_MetalCreak" ID="{34A5CA0B-6F62-4C08-96BA-169CA6711F74}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RFX_MetalSqueak" ID="{E0D796B6-C985-41BC-A45D-3C7D9E8DA8F7}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RFX_Heavy_MetalChains" ID="{6E89BDE3-B485-4A24-8795-D0CEDD8EB587}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="RFX_Light_MetalChains" ID="{7C24D031-B43C-4256-B6A3-CB70D562905A}" WorkUnitID="{7D2688DC-677C-42AF-A175-436C8BF35476}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Amb_Dungeon" ID="{81D1C2F0-0328-420D-A4EC-89FB3B700ABB}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Barrel" ID="{66979BA4-B0F9-4228-B3C0-C206996D8C28}"/>
+							<Value>-0.0566037735849054</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_Box" ID="{750CAAB6-6336-45E6-9306-BC368E56FDA2}"/>
+							<Value>-0.340659340659339</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="RTPC_SC" ID="{8ADB3CBD-BA87-4EBE-A774-F4937FAFAEF8}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="None" ID="{A11DF09B-530A-41A9-842F-8FE80DD75BAA}"/>
+						<CurrentStateRef Name="Phase2" ID="{7C8C2711-C3F0-4670-B98A-436720FB185D}"/>
+						<CurrentStateRef Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>
+						<CurrentStateRef Name="None" ID="{5244ADD7-69E8-4519-9694-572624493ACE}"/>
+						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>
+						<CurrentSwitchRef Name="Wood" ID="{29C275A9-1195-4AD2-A2DA-7AF118049731}"/>
+						<CurrentSwitchRef Name="CROUCH" ID="{A8B0CA8B-3323-480A-B8AA-BB31B1A93437}"/>
 						<CurrentSwitchRef Name="RUN" ID="{5C9E66CB-CA62-45D0-BCFC-BDE765E27DBB}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

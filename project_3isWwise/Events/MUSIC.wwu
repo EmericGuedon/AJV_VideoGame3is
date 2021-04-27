@@ -29,21 +29,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Music_CrowM" ID="{906AD98F-2804-47AE-814A-7F18F7C76062}">
-					<ChildrenList>
-						<Action Name="" ID="{2F608243-6EFC-49BC-9A28-7C81F05D8891}" ShortID="609283649">
-							<PropertyList>
-								<Property Name="FadeInCurve" Type="int16" Value="5"/>
-								<Property Name="FadeTime" Type="Real64" Value="2"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="CrowMPhase1" ID="{A10D5E74-AC36-4CEA-A00B-368C871F6F74}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Event Name="MusicLvl1_Play" ID="{D13E9326-599C-480E-A036-0469A37E3B29}">
 					<ChildrenList>
 						<Action Name="" ID="{5F42D323-9B06-4E33-AE24-9E451208230D}" ShortID="426195664">
