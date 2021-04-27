@@ -6,6 +6,11 @@
 				<ActorMixer Name="CrowM" ID="{16ED5AE4-D385-4C58-8425-EDD007470AAD}" ShortID="295284490">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>5</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
