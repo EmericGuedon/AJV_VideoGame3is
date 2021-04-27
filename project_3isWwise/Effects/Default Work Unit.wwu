@@ -5,9 +5,10 @@
 			<ChildrenList>
 				<Effect Name="Disto_1" ID="{C34BF3FB-7F2A-45B5-A57A-66F831AD2D33}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
 					<PropertyList>
-						<Property Name="DistortionDrive" Type="Real32" Value="49"/>
+						<Property Name="DistortionDrive" Type="Real32" Value="51"/>
 						<Property Name="DistortionTone" Type="Real32" Value="26"/>
 						<Property Name="DistortionType" Type="int32" Value="3"/>
+						<Property Name="OutputLevel" Type="Real32" Value="2"/>
 						<Property Name="PostEQBand3Enable" Type="bool" Value="True"/>
 						<Property Name="PostEQBand3FilterType" Type="int32" Value="3"/>
 						<Property Name="PostEQBand3Frequency" Type="Real32" Value="2220"/>
@@ -20,7 +21,8 @@
 						<Property Name="PreEQBand2Gain" Type="Real32" Value="-24.5"/>
 						<Property Name="PreEQBand3Enable" Type="bool" Value="True"/>
 						<Property Name="PreEQBand3FilterType" Type="int32" Value="3"/>
-						<Property Name="PreEQBand3Frequency" Type="Real32" Value="4373"/>
+						<Property Name="PreEQBand3Frequency" Type="Real32" Value="993"/>
+						<Property Name="Rectification" Type="Real32" Value="82"/>
 					</PropertyList>
 				</Effect>
 				<Effect Name="EQ_Synth" ID="{35D1302E-4BDE-4003-A647-C0BFAF825EF7}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">

@@ -49,7 +49,7 @@
 										<RandomSequenceContainer Name="RFX_DustIce" ID="{CDC7851E-714F-4212-BA4C-72BD2FD957F0}" ShortID="791496116">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
 														<Value>2</Value>
@@ -103,7 +103,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-7</Value>
+														<Value>-5</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -339,10 +339,10 @@
 										<RandomSequenceContainer Name="RFX_Icestress" ID="{B27A8CFE-2BD4-44E9-B563-041CCC8E857A}" ShortID="295403218">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>10</Value>
+														<Value>5</Value>
 													</ValueList>
 												</Property>
 												<Property Name="InitialDelay" Type="Real64">
@@ -363,7 +363,7 @@
 												</Property>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>60</Value>
+														<Value>55</Value>
 													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
@@ -425,7 +425,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-6</Value>
+														<Value>-4</Value>
 													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
@@ -755,7 +755,7 @@
 								<RandomSequenceContainer Name="RFX_Blizz_Wind" ID="{15CF7BA5-3793-4E0B-8DE1-9A2800EC9FDD}" ShortID="547980693">
 									<PropertyList>
 										<Property Name="3DPosition" Type="int16" Value="2"/>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="Highpass" Type="int16">
 											<ValueList>
 												<Value>20</Value>
@@ -1469,7 +1469,7 @@
 										<RandomSequenceContainer Name="RFX_Blizz_Wind" ID="{FFC74739-F82D-446E-87A4-AC391F71FEC5}" ShortID="653724256">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
 														<Value>20</Value>
@@ -1769,7 +1769,7 @@
 										<RandomSequenceContainer Name="RFX_Blizz_Snow" ID="{DD4E78F1-ADA3-4A87-9548-699EF2AB5F6E}" ShortID="210179872">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="InitialDelay" Type="Real64">
 													<ValueList>
 														<Value>3.5</Value>

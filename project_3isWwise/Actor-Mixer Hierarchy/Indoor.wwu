@@ -42,7 +42,7 @@
 										<RandomSequenceContainer Name="RFX_MetalSqueak" ID="{048BF9AA-6DF4-4C93-9605-1DCC15971AAC}" ShortID="164363817">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
 														<Value>55</Value>
@@ -437,7 +437,7 @@
 										<RandomSequenceContainer Name="RFX_Cage" ID="{BD8C806C-0013-400A-BFF7-8E9DC6C14990}" ShortID="500456698">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="InitialDelay" Type="Real64">
 													<ValueList>
 														<Value>6</Value>
@@ -787,7 +787,7 @@
 										<RandomSequenceContainer Name="RFX_Rats" ID="{AB281C3D-D9C2-49A2-A464-FCF1324A2FEC}" ShortID="979719015">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="InitialDelay" Type="Real64">
 													<ValueList>
 														<Value>6.5</Value>
@@ -1180,7 +1180,7 @@
 										<RandomSequenceContainer Name="RFX_MetalCreak" ID="{83675808-F3E4-4E12-9719-6F1740A1B3D0}" ShortID="362142303">
 											<PropertyList>
 												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="InitialDelay" Type="Real64">
 													<ValueList>
 														<Value>6</Value>

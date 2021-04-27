@@ -38,6 +38,9 @@
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="IsGlobalLimit" Type="int16" Value="1"/>
 										<Property Name="Lowpass" Type="int16">
+											<ValueList>
+												<Value>24</Value>
+											</ValueList>
 											<RTPCList>
 												<RTPC Name="" ID="{E8FC974E-6393-4D56-AA51-343F8B84D9B7}" ShortID="527281228">
 													<ReferenceList>
@@ -52,19 +55,19 @@
 														<PointList>
 															<Point>
 																<XPos>-2.5</XPos>
-																<YPos>-24</YPos>
+																<YPos>-20</YPos>
 																<Flags>5</Flags>
 																<SegmentShape>Log1</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>-1.003145</XPos>
-																<YPos>14</YPos>
+																<XPos>-1.00315</XPos>
+																<YPos>20</YPos>
 																<Flags>0</Flags>
 																<SegmentShape>Exp1</SegmentShape>
 															</Point>
 															<Point>
-																<XPos>-0.00573333333333359</XPos>
-																<YPos>29</YPos>
+																<XPos>-0</XPos>
+																<YPos>26</YPos>
 																<Flags>0</Flags>
 																<SegmentShape>Log1</SegmentShape>
 															</Point>
@@ -76,7 +79,7 @@
 															</Point>
 															<Point>
 																<XPos>2.5</XPos>
-																<YPos>-24</YPos>
+																<YPos>-17</YPos>
 																<Flags>37</Flags>
 															</Point>
 														</PointList>
@@ -121,7 +124,7 @@
 										</Property>
 										<Property Name="MaxSoundPerInstance" Type="int16">
 											<ValueList>
-												<Value>6</Value>
+												<Value>10</Value>
 											</ValueList>
 										</Property>
 										<Property Name="MidiTransposition" Type="int32">
@@ -157,13 +160,14 @@
 												</RTPC>
 											</RTPCList>
 										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
+										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>True</Value>
+												<Value>-2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -174,6 +178,36 @@
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Compressor_(Custom)" ID="{4F04F59E-5516-4F09-87E0-83E27641E669}" ShortID="619779301" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+													<PropertyList>
+														<Property Name="AttackTime" Type="Real32" Value="0.92"/>
+														<Property Name="OutputGain" Type="Real32" Value="4"/>
+														<Property Name="Ratio" Type="Real32" Value="6.2"/>
+														<Property Name="ReleaseTime" Type="Real32" Value="0.83"/>
+														<Property Name="Threshold" Type="Real32" Value="-37"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise_Guitar_Distortion_(Custom)" ID="{43C49B53-E783-4345-A8AA-50326D28AC9C}" ShortID="877257830" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+													<PropertyList>
+														<Property Name="DistortionDrive" Type="Real32" Value="21"/>
+														<Property Name="DistortionType" Type="int32" Value="4"/>
+														<Property Name="PreEQBand1Enable" Type="bool" Value="True"/>
+														<Property Name="PreEQBand1Frequency" Type="Real32" Value="218"/>
+														<Property Name="PreEQBand1Gain" Type="Real32" Value="4.5"/>
+														<Property Name="PreEQBand2Enable" Type="bool" Value="True"/>
+														<Property Name="PreEQBand2FilterType" Type="int32" Value="1"/>
+														<Property Name="PreEQBand2Frequency" Type="Real32" Value="376"/>
+														<Property Name="PreEQBand2Gain" Type="Real32" Value="-3"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Outdoor" ID="{DFAB7B18-B62E-41B3-9B28-22262EAF0C75}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 										</Reference>
@@ -183,7 +217,7 @@
 											<PropertyList>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>12</Value>
+														<Value>2</Value>
 													</ValueList>
 													<ModifierList>
 														<ModifierInfo>
@@ -249,7 +283,7 @@
 												<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="5"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-5</Value>
+														<Value>-1</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -398,11 +432,6 @@
 										</RandomSequenceContainer>
 										<Sound Name="Loop_Wooden_Chunk" ID="{7DE1D4C9-3407-43D2-998C-5FE1D1D7A464}" ShortID="737871260">
 											<PropertyList>
-												<Property Name="Highpass" Type="int16">
-													<ValueList>
-														<Value>5</Value>
-													</ValueList>
-												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
@@ -421,12 +450,17 @@
 											<ChildrenList>
 												<AudioFileSource Name="Loop_Wooden_Chunk" ID="{02CE4A21-6C7A-429C-A083-023A3B587D5B}">
 													<PropertyList>
-														<Property Name="CrossfadeDuration" Type="Real64" Value="289.73"/>
-														<Property Name="LoopBegin" Type="Real64" Value="0.352742991424802"/>
-														<Property Name="LoopEnd" Type="Real64" Value="14.3794642974934"/>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="538.07"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0.487402130979597"/>
+														<Property Name="LoopEnd" Type="Real64" Value="14.0832141904728"/>
 														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 														<Property Name="TrimBegin" Type="Real64" Value="0.165996701846966"/>
 														<Property Name="TrimEnd" Type="Real64" Value="14.607709762533"/>
+														<Property Name="VolumeOffset" Type="Real64">
+															<ValueList>
+																<Value>3.7</Value>
+															</ValueList>
+														</Property>
 													</PropertyList>
 													<Language>SFX</Language>
 													<AudioFile>Loop_Wooden_Chunk.wav</AudioFile>
@@ -1137,6 +1171,217 @@
 										</RandomSequenceContainer>
 									</ChildrenList>
 								</BlendContainer>
+								<BlendContainer Name="In_Campfire" ID="{E754F1D9-AA6D-437E-8A1E-55817FF659D2}" ShortID="195542685">
+									<PropertyList>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
+										<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="OverridePositioning" Type="bool" Value="True"/>
+										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-4</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Attenuation">
+											<ObjectRef Name="PROPS_Outdoor" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+										</Reference>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Outdoor" ID="{DFAB7B18-B62E-41B3-9B28-22262EAF0C75}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+										<Reference Name="UserAuxSend0">
+											<ObjectRef Name="Reverb_Blizzard" ID="{7D3CD3BC-8230-4DD2-A46C-109CAA4BC9D6}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="CampFire_1" ID="{88D671B9-D9E5-476D-A4C8-A535B6257F47}" ShortID="801851782">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="PROPS_Outdoor" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Outdoor" ID="{DFAB7B18-B62E-41B3-9B28-22262EAF0C75}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+												<Reference Name="UserAuxSend0">
+													<ObjectRef Name="Reverb_Blizzard" ID="{7D3CD3BC-8230-4DD2-A46C-109CAA4BC9D6}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_CampFire" ID="{44DEC282-7CA2-4961-B984-2B123AD49A84}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="667.021"/>
+														<Property Name="LoopBegin" Type="Real64" Value="1.24005779109589"/>
+														<Property Name="LoopEnd" Type="Real64" Value="32.7995285744863"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>RFX_CampFire.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="287252065"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_CampFire" ID="{44DEC282-7CA2-4961-B984-2B123AD49A84}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Campfire_2" ID="{64DF5A5A-6F56-4C64-88AB-98F36EF9C52F}" ShortID="192905818">
+											<PropertyList>
+												<Property Name="3DSpatialization" Type="int16" Value="2"/>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>16</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>5</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-100</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-4</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Attenuation">
+													<ObjectRef Name="PROPS_Outdoor" ID="{E00B54C7-2223-4DA6-AFC8-6B00D6A92A77}" WorkUnitID="{5CCC64E8-E3FE-47FC-9F59-644FBBB26ACB}"/>
+												</Reference>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_Campfire_2" ID="{F1BC50E8-E246-4CF3-87C9-173C0FE287DA}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="2516.746"/>
+														<Property Name="LoopBegin" Type="Real64" Value="2.26145945704909"/>
+														<Property Name="LoopEnd" Type="Real64" Value="43.7475432898116"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>RFX_Campfire_2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1041692345"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_Campfire_2" ID="{F1BC50E8-E246-4CF3-87C9-173C0FE287DA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Campfire_3" ID="{7FC52201-A624-4F93-AFAB-AD436ECAE358}" ShortID="510558299">
+											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>15</Value>
+													</ValueList>
+												</Property>
+												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>34</Value>
+													</ValueList>
+												</Property>
+												<Property Name="MidiTransposition" Type="int32">
+													<RTPCList>
+														<RTPC Name="" ID="{FAC3EEAB-2968-45D3-B3C2-D52942192DB2}" ShortID="323632916">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="LFO Bridge" ID="{9AEB0600-99CF-4FFE-A86F-4EC90593241B}" WorkUnitID="{8448C00A-1B51-4C29-BC97-5FB6BDA98398}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{DB3BEF3D-7C64-474F-93A9-6B238248FB72}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="65537"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>0</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
+												<Property Name="Pitch" Type="int32">
+													<ValueList>
+														<Value>-830</Value>
+													</ValueList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>-8</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="Effect0" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+													<ObjectRef Name="Disto_1" ID="{C34BF3FB-7F2A-45B5-A57A-66F831AD2D33}" WorkUnitID="{85ABFDD9-D4CC-4FE6-AC34-950059152F36}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="RFX_Camprfire_3" ID="{D4DAB187-3DEF-4290-943C-38C90C967355}">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="1845.41"/>
+														<Property Name="LoopBegin" Type="Real64" Value="1.40961151541096"/>
+														<Property Name="LoopEnd" Type="Real64" Value="29.4452183219178"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>RFX_Camprfire_3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="321851169"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="RFX_Camprfire_3" ID="{D4DAB187-3DEF-4290-943C-38C90C967355}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</BlendContainer>
 							</ChildrenList>
 						</ActorMixer>
 					</ChildrenList>
@@ -1177,7 +1422,7 @@
 										</Property>
 										<Property Name="Lowpass" Type="int16">
 											<ValueList>
-												<Value>34</Value>
+												<Value>59</Value>
 											</ValueList>
 										</Property>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
@@ -1188,7 +1433,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-6</Value>
+												<Value>-4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -1217,7 +1462,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-5</Value>
+														<Value>2</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1256,11 +1501,6 @@
 														<Value>-300</Value>
 													</ValueList>
 												</Property>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-8</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
@@ -1293,7 +1533,6 @@
 								</BlendContainer>
 								<RandomSequenceContainer Name="PROPS_IceImpact" ID="{45DD3812-5632-493B-8805-89E46FCC2F25}" ShortID="61432816">
 									<PropertyList>
-										<Property Name="3DPosition" Type="int16" Value="2"/>
 										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="InitialDelay" Type="Real64">
 											<ModifierList>
@@ -1361,7 +1600,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="2"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-5</Value>
+												<Value>-4</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -1527,12 +1766,12 @@
 								</RandomSequenceContainer>
 								<Sound Name="In_Out_Loop" ID="{78190936-7C45-4236-9507-415634221714}" ShortID="635717417">
 									<PropertyList>
-										<Property Name="3DSpatialization" Type="int16" Value="2"/>
+										<Property Name="3DSpatialization" Type="int16" Value="1"/>
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-15</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2491,7 +2730,7 @@
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-4</Value>
+												<Value>-6</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -2511,6 +2750,11 @@
 											<PropertyList>
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+												<Property Name="Lowpass" Type="int16">
+													<ValueList>
+														<Value>16</Value>
+													</ValueList>
+												</Property>
 												<Property Name="OverrideUserAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
@@ -2556,7 +2800,7 @@
 												<Property Name="3DSpatialization" Type="int16" Value="2"/>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>16</Value>
+														<Value>20</Value>
 													</ValueList>
 												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
@@ -2610,13 +2854,13 @@
 											<PropertyList>
 												<Property Name="Highpass" Type="int16">
 													<ValueList>
-														<Value>15</Value>
+														<Value>6</Value>
 													</ValueList>
 												</Property>
 												<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>34</Value>
+														<Value>53</Value>
 													</ValueList>
 												</Property>
 												<Property Name="MidiTransposition" Type="int32">
@@ -2655,7 +2899,7 @@
 												</Property>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-8</Value>
+														<Value>-4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
