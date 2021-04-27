@@ -16,7 +16,7 @@ public class DetectEnemy : MonoBehaviour
     bool detect = false;
     float resetTime = 0;
 
-    void Start()
+    public void Start()
     {
         AkSoundEngine.RegisterGameObj(gameObject);
         rb = GetComponent<Rigidbody>();

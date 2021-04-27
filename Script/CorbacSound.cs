@@ -6,57 +6,79 @@ public class CorbacSound : MonoBehaviour
 {
     public bool Debug_Enabled = false;
 
-    public AK.Wwise.Event FootstepWalk;
+    //public AK.Wwise.Event FootstepWalk;
     public float ThresholdWalk;
 
-    public AK.Wwise.Event SwordHit;
-    public AK.Wwise.Event SwordWoosh;
-    public AK.Wwise.Event Shield;
-    public AK.Wwise.Event HitVoice;
-    public AK.Wwise.Event DeathVoice;
+    //public AK.Wwise.Event SwordWoosh;
+    //public AK.Wwise.Event Shield;
+    //public AK.Wwise.Event HitVoice;
+    //public AK.Wwise.Event DeathVoice;
+    //public AK.Wwise.Event MobVoice;
+    //public AK.Wwise.Event MobHit;
+    //public AK.Wwise.Event SwordHit;
+    //public AK.Wwise.Event Char_Swordhit;
+
 
     void Start()
     {
         AkSoundEngine.RegisterGameObj(gameObject);
     }
 
-    public void Mob_Walk(AnimationEvent cb)
+    private void Mob_Walk(AnimationEvent cb)
     {
         if (cb.animatorClipInfo.weight > ThresholdWalk)
         {
-            Debug.Log("FT_Walk");
-            FootstepWalk.Post(gameObject);
+            AkSoundEngine.PostEvent("Footstep_Mob", gameObject);
         }
     }
 
-    public void Mob_SwordWhoosh()
+    private void Mob_SwordWhoosh()
     {
-        SwordWoosh.Post(gameObject);
+        AkSoundEngine.SetState("Sword_Corbac", "None");
+        AkSoundEngine.PostEvent("Sword_Mob", gameObject);
     }
 
-    public void Mob_SwordHit()
+    private void Mob_Hit_Shield()
     {
-        AkSoundEngine.SetState("Sword_Materials", "Dry");
-        SwordHit.Post(gameObject);
+        AkSoundEngine.SetState("Sword_Corbac", "Dry");
+        AkSoundEngine.PostEvent("Shield_Main", gameObject);
     }
 
-    public void Mob_Shield()
+    private void Mob_Shield()
     {
-        Shield.Post(gameObject);
-        AkSoundEngine.SetState("Sword_Materials", "Dry");
-        SwordHit.Post(gameObject);
+        AkSoundEngine.SetState("Sword_WP", "Dry");
     }
 
-    public void Mob_Hit()
+    public void Char_SwordHit()
     {
-        HitVoice.Post(gameObject);
-        AkSoundEngine.SetState("Sword_Materials", "Blood_Soft");
-        SwordHit.Post(gameObject);
+        AkSoundEngine.PostEvent("Voice_Mob", gameObject);
+        AkSoundEngine.SetState("Sword_WP", "Blood_Soft");
+        AkSoundEngine.PostEvent("Sword_WP", gameObject);
     }
 
-    public void Mob_Death()
+    private void Mob_Death()
     {
-        DeathVoice.Post(gameObject);
+        AkSoundEngine.PostEvent("VoiceDeath_Mob", gameObject);
+        AkSoundEngine.SetState("Sword_WP", "Blood_Hard");
+        AkSoundEngine.PostEvent("Sword_WP", gameObject);
     }
 
+    private void Mob_Voice()
+    {
+        AkSoundEngine.PostEvent("Voice_Mob", gameObject);
+    }
+    private void Mob_Hit()
+    {
+        AkSoundEngine.PostEvent("Mob_Hit", gameObject);
+    }
+
+    private void Mob_BodyFall()
+    {
+        AkSoundEngine.PostEvent("BodyFall",gameObject);
+    }
+
+    private void Mob_Land()
+    {
+        AkSoundEngine.PostEvent("JumpLand_WP", gameObject);
+    }
 }

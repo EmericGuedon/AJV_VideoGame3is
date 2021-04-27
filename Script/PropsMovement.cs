@@ -20,6 +20,13 @@ public class PropsMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AkSoundEngine.SetRTPCValue(RTPC_Name, rb.velocity.z, gameObject);
+        float magnitude = rb.velocity.magnitude;
+        if(magnitude > 0)
+        {
+            AkSoundEngine.SetRTPCValue(RTPC_Name, rb.velocity.magnitude, gameObject);
+        }
+        //AkSoundEngine.SetRTPCValue(RTPC_Name, rb.velocity.magnitude, gameObject);
+        //AkSoundEngine.SetRTPCValue(RTPC_Name, rb.velocity.y, gameObject);
+        //AkSoundEngine.SetRTPCValue(RTPC_Name, rb.velocity.x, gameObject);
     }
 }

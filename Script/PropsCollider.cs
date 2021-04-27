@@ -5,15 +5,15 @@ using UnityEngine;
 public class PropsCollider : MonoBehaviour
 {
     
-    public string EventName;
+    public AK.Wwise.Event EventName;
 
     void Start()
-    {      
-       
+    {
+        //AkSoundEngine.RegisterGameObj(gameObject);
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
-        AkSoundEngine.PostEvent(EventName, gameObject);
+        EventName.Post(gameObject);
     }
 }
