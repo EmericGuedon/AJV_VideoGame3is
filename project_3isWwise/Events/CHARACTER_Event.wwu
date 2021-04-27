@@ -288,6 +288,13 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{F8F92676-7F88-405E-A161-882A3CF169BB}" ShortID="367111520">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="CrowM_ArmorSound" ID="{78C76E42-2943-4E58-AA77-3A0433F351B8}" WorkUnitID="{F6045C5E-AE69-4A67-9E31-67672BEB23F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="CrowM_Death" ID="{2C290055-4FEB-477F-B888-BA53BD331EE3}">

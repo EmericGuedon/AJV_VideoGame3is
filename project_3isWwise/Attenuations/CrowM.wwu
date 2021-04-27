@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Attenuation Name="CrowM" ID="{2C415989-8A7A-4FC5-8C60-011E8F7E4EDE}" ShortID="378418358">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="18"/>
+						<Property Name="RadiusMax" Type="Real64" Value="20"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -21,13 +21,13 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>4.49307</XPos>
+											<XPos>8.28383333333333</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>18</XPos>
+											<XPos>20</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -48,13 +48,13 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>6.018492</XPos>
+											<XPos>6.68721333333333</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>18</XPos>
+											<XPos>20</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -71,17 +71,17 @@
 									<PointList>
 										<Point>
 											<XPos>0</XPos>
-											<YPos>-12</YPos>
+											<YPos>-7.24446</YPos>
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>4.49307</XPos>
-											<YPos>-12</YPos>
+											<XPos>11.04246</XPos>
+											<YPos>-6.96724</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>18</XPos>
+											<XPos>20</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -103,13 +103,13 @@
 											<SegmentShape>Log1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>4.104774</XPos>
-											<YPos>13</YPos>
+											<XPos>9.98406</XPos>
+											<YPos>10</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>Exp1</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>18</XPos>
+											<XPos>20</XPos>
 											<YPos>36</YPos>
 											<Flags>37</Flags>
 										</Point>

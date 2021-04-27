@@ -5,12 +5,7 @@
 			<ChildrenList>
 				<ActorMixer Name="CrowM" ID="{16ED5AE4-D385-4C58-8425-EDD007470AAD}" ShortID="295284490">
 					<PropertyList>
-						<Property Name="3DSpatialization" Type="int16" Value="1"/>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>5</Value>
-							</ValueList>
-						</Property>
+						<Property Name="3DSpatialization" Type="int16" Value="2"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Attenuation">
@@ -729,7 +724,7 @@
 													<PropertyList>
 														<Property Name="Highpass" Type="int16">
 															<ValueList>
-																<Value>10</Value>
+																<Value>2</Value>
 															</ValueList>
 														</Property>
 														<Property Name="Pitch" Type="int32">
@@ -994,11 +989,14 @@
 													<PropertyList>
 														<Property Name="Highpass" Type="int16">
 															<ValueList>
-																<Value>15</Value>
+																<Value>6</Value>
 															</ValueList>
 														</Property>
 														<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-3</Value>
+															</ValueList>
 															<ModifierList>
 																<ModifierInfo>
 																	<Modifier Name="" ID="{5A590EF4-F4F6-4A45-8FF9-989E24D86099}">
@@ -1162,14 +1160,30 @@
 													<PropertyList>
 														<Property Name="Highpass" Type="int16">
 															<ValueList>
-																<Value>25</Value>
+																<Value>9</Value>
 															</ValueList>
 														</Property>
 														<Property Name="InitialDelay" Type="Real64">
 															<ValueList>
-																<Value>0.15</Value>
+																<Value>0.1</Value>
+															</ValueList>
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{7837D6B0-3FA5-41DF-AA6B-E442DE1767C3}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Min" Type="Real64" Value="-0.05"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="Lowpass" Type="int16">
+															<ValueList>
+																<Value>3</Value>
 															</ValueList>
 														</Property>
+														<Property Name="OverrideEffect" Type="bool" Value="True"/>
 														<Property Name="Pitch" Type="int32">
 															<ValueList>
 																<Value>-100</Value>
@@ -1207,6 +1221,17 @@
 														<Reference Name="Conversion">
 															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 														</Reference>
+														<Reference Name="Effect0">
+															<Custom>
+																<Effect Name="Wwise_Guitar_Distortion_(Custom)" ID="{1919400A-AB89-43D6-B9CB-446E80E94149}" ShortID="563166924" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+																	<PropertyList>
+																		<Property Name="DistortionTone" Type="Real32" Value="59"/>
+																		<Property Name="DistortionType" Type="int32" Value="3"/>
+																		<Property Name="Rectification" Type="Real32" Value="32"/>
+																	</PropertyList>
+																</Effect>
+															</Custom>
+														</Reference>
 														<Reference Name="OutputBus">
 															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 														</Reference>
@@ -1224,14 +1249,15 @@
 															<ChildrenList>
 																<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-001" ID="{206420FA-8A6D-4006-A84C-A68EF8FD579C}">
 																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.00719761163959477"/>
 																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="0.0676489726027397"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0811491024009307"/>
 																		<Property Name="TrimEnd" Type="Real64" Value="1.08614183789954"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-001.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="513382808"/>
+																		<MediaID ID="652321896"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
@@ -1251,14 +1277,15 @@
 															<ChildrenList>
 																<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-002" ID="{D3F7D008-7B51-4584-9AC7-A9AC76062F74}">
 																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0225496575342466"/>
 																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="0.0375827625570776"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0563741438356164"/>
 																		<Property Name="TrimEnd" Type="Real64" Value="0.977151826484018"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-002.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="904909175"/>
+																		<MediaID ID="28480208"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
@@ -1278,14 +1305,15 @@
 															<ChildrenList>
 																<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-003" ID="{9772F9EE-9CBE-455D-BEB3-4716EC09FC48}">
 																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0187913812785388"/>
 																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="0.0826820776255708"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.105231735159817"/>
 																		<Property Name="TrimEnd" Type="Real64" Value="1.02225114155251"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-003.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="399809754"/>
+																		<MediaID ID="50867806"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
@@ -1305,14 +1333,15 @@
 															<ChildrenList>
 																<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-004" ID="{E631980F-9096-4717-8386-324E73C4BDA2}">
 																	<PropertyList>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0225496575342466"/>
 																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
-																		<Property Name="TrimBegin" Type="Real64" Value="0.0826820776255708"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.112748287671233"/>
 																		<Property Name="TrimEnd" Type="Real64" Value="1.04480079908676"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-004.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="171528945"/>
+																		<MediaID ID="128432398"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
@@ -1332,14 +1361,15 @@
 															<ChildrenList>
 																<AudioFileSource Name="CHAR_CrowM_Footsteps_Metal_Fast-005" ID="{119EEE5A-7CF6-4EF0-B65A-281BEB310D7A}">
 																	<PropertyList>
-																		<Property Name="LoopBegin" Type="Real64" Value="0"/>
+																		<Property Name="FadeInDuration" Type="Real64" Value="0.0263079337899543"/>
 																		<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																		<Property Name="TrimBegin" Type="Real64" Value="0.0450993150684932"/>
 																		<Property Name="TrimEnd" Type="Real64" Value="1.04855907534247"/>
 																	</PropertyList>
 																	<Language>SFX</Language>
 																	<AudioFile>CHAR_CrowM_Footsteps_Metal_Fast-005.wav</AudioFile>
 																	<MediaIDList>
-																		<MediaID ID="138116994"/>
+																		<MediaID ID="385570863"/>
 																	</MediaIDList>
 																</AudioFileSource>
 															</ChildrenList>
@@ -1412,6 +1442,11 @@
 											</ModifierList>
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -1423,6 +1458,13 @@
 									</ReferenceList>
 									<ChildrenList>
 										<Sound Name="Char_CrowM_Hit_Whoosh_Claw-001" ID="{E530FB3D-A4B0-48DA-AC58-688388B7006D}" ShortID="853255133">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1450,6 +1492,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Char_CrowM_Hit_Whoosh_Claw-002" ID="{60494A8D-7344-4464-B06E-06FD775AE967}" ShortID="212391972">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1477,6 +1526,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Char_CrowM_Hit_Whoosh_Claw-003" ID="{8E2C9A62-108A-4174-AF28-F20F4B62F7B4}" ShortID="992532166">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1504,6 +1560,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Char_CrowM_Hit_Whoosh_Claw-004" ID="{B5503291-CD26-4EFA-802A-76B76BE4148F}" ShortID="82845734">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1532,6 +1595,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Char_CrowM_Hit_Whoosh_Claw-005" ID="{847C1B72-1475-4879-845C-EA5B9FC17D69}" ShortID="656799948">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1560,6 +1630,13 @@
 											</ActiveSourceList>
 										</Sound>
 										<Sound Name="Char_CrowM_Hit_Whoosh_Claw-006" ID="{6147B790-25C4-49D0-8847-239847CBD1EA}" ShortID="1006359887">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ValueList>
+														<Value>3</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1590,13 +1667,6 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<BlendContainer Name="CrowM_Impact" ID="{AD2D6D9F-44AB-40C4-B061-CFDFF9A3402F}" ShortID="978353114">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1608,6 +1678,11 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="CrowM_ImpactAttack" ID="{F925AAF7-F47C-43ED-8114-84529085358B}" ShortID="272262077">
 											<PropertyList>
+												<Property Name="Highpass" Type="int16">
+													<ValueList>
+														<Value>6</Value>
+													</ValueList>
+												</Property>
 												<Property Name="Pitch" Type="int32">
 													<ModifierList>
 														<ModifierInfo>
@@ -1650,7 +1725,7 @@
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.943513698630137"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.0245068493150685"/>
-																<Property Name="TrimEnd" Type="Real64" Value="1.11506164383561"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.20561643835616"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_CrowM_Hit_Massive_Attack -001.wav</AudioFile>
@@ -1678,7 +1753,7 @@
 																<Property Name="FadeOutDuration" Type="Real64" Value="1.05109474885845"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.0622358732876712"/>
-																<Property Name="TrimEnd" Type="Real64" Value="1.26546275684932"/>
+																<Property Name="TrimEnd" Type="Real64" Value="1.5904723173516"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_CrowM_Hit_Massive_Attack -002.wav</AudioFile>
@@ -1706,7 +1781,7 @@
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.942365938926941"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.14600035673516"/>
-																<Property Name="TrimEnd" Type="Real64" Value="1.20782113299087"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.24973276969178"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_CrowM_Hit_Massive_Attack -003.wav</AudioFile>
@@ -1734,7 +1809,7 @@
 																<Property Name="FadeOutDuration" Type="Real64" Value="1.03092080479452"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.124020547945205"/>
-																<Property Name="TrimEnd" Type="Real64" Value="1.51925171232877"/>
+																<Property Name="TrimEnd" Type="Real64" Value="3.02300085616439"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_CrowM_Hit_Massive_Attack -004.wav</AudioFile>
@@ -1762,7 +1837,7 @@
 																<Property Name="FadeOutDuration" Type="Real64" Value="0.713664383561643"/>
 																<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
 																<Property Name="TrimBegin" Type="Real64" Value="0.203904109589041"/>
-																<Property Name="TrimEnd" Type="Real64" Value="1.36458904109589"/>
+																<Property Name="TrimEnd" Type="Real64" Value="2.65859589041096"/>
 															</PropertyList>
 															<Language>SFX</Language>
 															<AudioFile>CHAR_CrowM_Hit_Massive_Attack -005.wav</AudioFile>
@@ -1779,6 +1854,7 @@
 										</RandomSequenceContainer>
 										<Sound Name="Sub-01" ID="{2306C9BD-32DF-4923-9826-AACA532612EA}" ShortID="369772482">
 											<PropertyList>
+												<Property Name="OverrideEffect" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
 														<Value>-6</Value>
@@ -1788,6 +1864,26 @@
 											<ReferenceList>
 												<Reference Name="Conversion">
 													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+												</Reference>
+												<Reference Name="Effect0">
+													<Custom>
+														<Effect Name="Wwise_RoomVerb_(Custom)" ID="{C936C34A-2D28-46EF-A2C6-F20400F9263E}" ShortID="735243529" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+															<PropertyList>
+																<Property Name="DecayTime" Type="Real32" Value="3.1"/>
+																<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+																<Property Name="ERLevel" Type="Real32" Value="-96"/>
+																<Property Name="EnableToneControls" Type="bool" Value="True"/>
+																<Property Name="Filter1Freq" Type="Real32" Value="50"/>
+																<Property Name="Filter1Gain" Type="Real32" Value="-24"/>
+																<Property Name="Filter1InsertPos" Type="int32" Value="2"/>
+																<Property Name="HFDamping" Type="Real32" Value="5.95"/>
+																<Property Name="PreDelay" Type="Real32" Value="4"/>
+																<Property Name="Quality" Type="int32" Value="12"/>
+																<Property Name="ReverbLevel" Type="Real32" Value="-9"/>
+																<Property Name="StereoWidth" Type="Real32" Value="0"/>
+															</PropertyList>
+														</Effect>
+													</Custom>
 												</Reference>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="CrowM" ID="{9CB9EEA2-C920-4CA5-BE12-BAD7DEB0278F}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
@@ -2894,9 +2990,22 @@
 							</ChildrenList>
 						</BlendContainer>
 						<BlendContainer Name="CrowM_BodyFall" ID="{E745A889-D13E-4947-AFA3-E88C3AF4E3A3}" ShortID="281318375">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Guitar_Distortion_(Custom)" ID="{8EDD042E-54E5-4920-BCA8-0CD1D9BEE45A}" ShortID="530473501" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+											<PropertyList>
+												<Property Name="DistortionDrive" Type="Real32" Value="12"/>
+												<Property Name="DistortionType" Type="int32" Value="4"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
@@ -2926,7 +3035,7 @@
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-17</Value>
+												<Value>-10</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -4317,6 +4426,11 @@
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-10</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Weight" Type="Real64">
 									<ValueList>
 										<Value>60</Value>
