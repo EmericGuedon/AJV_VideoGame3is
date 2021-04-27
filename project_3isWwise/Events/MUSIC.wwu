@@ -38,7 +38,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="CrowMMusic" ID="{A10D5E74-AC36-4CEA-A00B-368C871F6F74}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
+									<ObjectRef Name="CrowMPhase1" ID="{A10D5E74-AC36-4CEA-A00B-368C871F6F74}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
@@ -78,11 +78,25 @@
 					<ChildrenList>
 						<Action Name="" ID="{30DD61D0-B8DD-4E57-903B-FF94281F54FB}" ShortID="802311837">
 							<PropertyList>
-								<Property Name="Delay" Type="Real64" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="2"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="MusicBoss" ID="{641B4140-2A03-4AF1-A1B5-9A80630F6422}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
+									<ObjectRef Name="Switch_Boss" ID="{593AF574-D603-445F-B33D-AF2813C001E3}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7F5563BC-F7BC-49A1-AB19-74C4B459AE11}" ShortID="592709320">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="FightAmb_01" ID="{2AE8172E-06F5-44D5-BC33-7728C94C557A}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{237BB137-188D-41BA-900A-051C4EE03A6C}" ShortID="324640884">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MusicFight_Drums_01" ID="{5B990DEA-454C-4482-9D5D-B4E356C45EFB}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

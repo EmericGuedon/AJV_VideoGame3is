@@ -10,6 +10,13 @@
 						<State Name="MusicFight" ID="{2263E857-7013-4A94-B6B0-D501E980A761}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="MusicBoss_Scene3" ID="{3FADB9DA-BE30-4172-B963-01C7B400E2DE}">
+					<ChildrenList>
+						<State Name="None" ID="{B839691F-EC5A-428E-8240-D0C0751A7BC8}"/>
+						<State Name="Phase1" ID="{A5699D45-CAEE-481A-83F6-5786006C6158}"/>
+						<State Name="Phase2" ID="{7C8C2711-C3F0-4670-B98A-436720FB185D}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
