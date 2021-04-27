@@ -62,14 +62,6 @@
 							<GameParameterRef Name="RTPC_Barrel" ID="{66979BA4-B0F9-4228-B3C0-C206996D8C28}"/>
 							<Value>-0.0566037735849054</Value>
 						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="FightDrums" ID="{01B12555-19EB-42F1-A778-73ABAA71AD67}"/>
-							<Value>50.187265917603</Value>
-						</RTPCValue>
-						<RTPCValue>
-							<GameParameterRef Name="FightStrings" ID="{9FA0B117-5263-4ACD-BA1B-F4235312A472}"/>
-							<Value>0</Value>
-						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>

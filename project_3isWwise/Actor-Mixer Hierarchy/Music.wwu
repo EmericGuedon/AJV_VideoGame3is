@@ -48,6 +48,33 @@
 						<ActiveSource Name="Hymne_MasterV2" ID="{7A28EE5B-9449-4BD6-A525-DD426C150CB6}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Death Sound" ID="{AF16078A-B042-4A5B-B91A-CA5A8E25E2C5}" ShortID="1021001448">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="DeathSound" ID="{5B01A3F8-14A8-4E57-A9CA-4F406C13FE94}">
+							<PropertyList>
+								<Property Name="FadeOutDuration" Type="Real64" Value="1.40042986586758"/>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+								<Property Name="TrimEnd" Type="Real64" Value="7.84240724885842"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>DeathSound.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="63020490"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="DeathSound" ID="{5B01A3F8-14A8-4E57-A9CA-4F406C13FE94}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
