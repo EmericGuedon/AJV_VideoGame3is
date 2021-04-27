@@ -42,6 +42,16 @@ namespace Invector
                     onChangeHealth.Invoke(_currentHealth);
                 }
 
+                if (!_isDead && _currentHealth <= 50)
+                {
+                    
+                    if (other.CompareTag("Boss"))
+                    {
+                        AkSoundEngine.SetState("MusicBoss_Scene3", "Phase2");
+                    }
+                }
+
+
                 if (!_isDead && _currentHealth <= 0)
                 {
                     _isDead = true;
