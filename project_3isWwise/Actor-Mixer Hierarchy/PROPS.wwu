@@ -54,20 +54,20 @@
 												<Property Name="3DSpatialization" Type="int16" Value="1"/>
 												<Property Name="Lowpass" Type="int16">
 													<ValueList>
-														<Value>25</Value>
+														<Value>19</Value>
 													</ValueList>
 												</Property>
 												<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Pitch" Type="int32">
 													<ValueList>
-														<Value>-810</Value>
+														<Value>-760</Value>
 													</ValueList>
 												</Property>
 												<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-8</Value>
+														<Value>-3</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -1956,7 +1956,7 @@
 												<Property Name="OverridePositioning" Type="bool" Value="True"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-11</Value>
+														<Value>-13</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -3159,15 +3159,11 @@
 												<Value>6</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3177,6 +3173,16 @@
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Guitar_Distortion_(Custom)" ID="{BADD4B0F-A608-460E-9B69-ECA149FA0A76}" ShortID="1067210230" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+													<PropertyList>
+														<Property Name="DistortionDrive" Type="Real32" Value="42"/>
+														<Property Name="DistortionType" Type="int32" Value="4"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
@@ -3332,15 +3338,11 @@
 												<Value>6</Value>
 											</ValueList>
 										</Property>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
 										<Property Name="UseMaxSoundPerInstance" Type="bool">
 											<ValueList>
 												<Value>True</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-5</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3350,6 +3352,16 @@
 										</Reference>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Guitar_Distortion_(Custom)" ID="{385A3329-3284-446D-B314-84BCF8629C6F}" ShortID="717294531" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+													<PropertyList>
+														<Property Name="DistortionDrive" Type="Real32" Value="34"/>
+														<Property Name="DistortionType" Type="int32" Value="4"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
@@ -3886,12 +3898,8 @@
 											</ValueList>
 										</Property>
 										<Property Name="OverrideConversion" Type="bool" Value="True"/>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
 										<Property Name="OverridePositioning" Type="bool" Value="True"/>
-										<Property Name="UseMaxSoundPerInstance" Type="bool">
-											<ValueList>
-												<Value>True</Value>
-											</ValueList>
-										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
 												<Value>-7</Value>
@@ -3905,6 +3913,17 @@
 										<Reference Name="Conversion">
 											<ObjectRef Name="PROPS" ID="{5C1CBA69-27D7-4040-9E14-CC0410654043}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Guitar_Distortion_(Custom)" ID="{E1FFBE5B-42E4-4105-B9FD-072C65B9A945}" ShortID="668123783" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+													<PropertyList>
+														<Property Name="DistortionDrive" Type="Real32" Value="18"/>
+														<Property Name="DistortionType" Type="int32" Value="4"/>
+														<Property Name="OutputLevel" Type="Real32" Value="-5.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 										</Reference>
@@ -3912,7 +3931,6 @@
 									<ChildrenList>
 										<RandomSequenceContainer Name="Bench_Impact" ID="{BC7503BD-9D8F-4081-B32A-EA5EA78CFACD}" ShortID="777497490">
 											<PropertyList>
-												<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
 												<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
 												<Property Name="MaxSoundPerInstance" Type="int16">
 													<ValueList>
@@ -3930,11 +3948,6 @@
 															</Modifier>
 														</ModifierInfo>
 													</ModifierList>
-												</Property>
-												<Property Name="UseMaxSoundPerInstance" Type="bool">
-													<ValueList>
-														<Value>True</Value>
-													</ValueList>
 												</Property>
 											</PropertyList>
 											<ReferenceList>
