@@ -131,7 +131,7 @@
 				</Attenuation>
 				<Attenuation Name="PROPS_Cave" ID="{9FD9D8FC-A803-4843-9FB2-7FEA8AB11B4D}" ShortID="418925068">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="18"/>
+						<Property Name="RadiusMax" Type="Real64" Value="23"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -148,19 +148,19 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>5.00158</XPos>
+											<XPos>6.39090777777778</XPos>
 											<YPos>-2.46026</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12.54499</XPos>
+											<XPos>16.0297094444444</XPos>
 											<YPos>-11.4047</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>18</XPos>
+											<XPos>23</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -185,13 +185,13 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>17.9982</XPos>
+											<XPos>22.9977</XPos>
 											<YPos>-2.67122</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>18</XPos>
+											<XPos>23</XPos>
 											<YPos>-2.73441</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -213,19 +213,19 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>4.97222</XPos>
+											<XPos>6.35339222222222</XPos>
 											<YPos>25</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>11.79804</XPos>
-											<YPos>51</YPos>
+											<XPos>15.1113194444444</XPos>
+											<YPos>34</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>18</XPos>
+											<XPos>23</XPos>
 											<YPos>50</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -246,7 +246,7 @@
 				</Attenuation>
 				<Attenuation Name="CAVE_In_Out" ID="{0025EE3E-A613-4129-84CD-6F02998876C4}" ShortID="864725194">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="25"/>
+						<Property Name="RadiusMax" Type="Real64" Value="22"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -263,13 +263,13 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>15.01015</XPos>
+											<XPos>13.208932</XPos>
 											<YPos>-8.56147</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>25</XPos>
+											<XPos>22</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -291,13 +291,13 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12.4997125</XPos>
+											<XPos>10.999747</XPos>
 											<YPos>-5.75176</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>25</XPos>
+											<XPos>22</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -319,13 +319,13 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>14.93299</XPos>
+											<XPos>13.1410312</XPos>
 											<YPos>-12.16294</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>25</XPos>
+											<XPos>22</XPos>
 											<YPos>-6.25538</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -347,13 +347,13 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>9.98007</XPos>
+											<XPos>8.7824616</XPos>
 											<YPos>39</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>25</XPos>
+											<XPos>22</XPos>
 											<YPos>76</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -378,13 +378,13 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>3.0956125</XPos>
+											<XPos>2.724139</XPos>
 											<YPos>36.5</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>25</XPos>
+											<XPos>22</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>

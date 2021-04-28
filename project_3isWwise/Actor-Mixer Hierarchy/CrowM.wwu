@@ -1411,6 +1411,7 @@
 						</BlendContainer>
 						<BlendContainer Name="CrowM_Attack" ID="{F40FF719-59E9-4365-856E-6C7A00EAAE8B}" ShortID="50448033">
 							<PropertyList>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-6</Value>
@@ -1422,7 +1423,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+									<ObjectRef Name="Fight" ID="{3111AED9-490A-4B7D-9F6F-FF6A0389D941}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -3770,6 +3771,7 @@
 						<BlendContainer Name="CrowM_Parade" ID="{8AA4467D-8EA9-4539-A062-F8870F739A54}" ShortID="52339609">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Attenuation">
@@ -3779,7 +3781,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="CrowM" ID="{9CB9EEA2-C920-4CA5-BE12-BAD7DEB0278F}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+									<ObjectRef Name="Fight" ID="{3111AED9-490A-4B7D-9F6F-FF6A0389D941}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 								</Reference>
 								<Reference Name="UserAuxSend0">
 									<ObjectRef Name="reverb_dungeon" ID="{45C36B89-8FA7-4696-A62E-538452CEA79A}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>

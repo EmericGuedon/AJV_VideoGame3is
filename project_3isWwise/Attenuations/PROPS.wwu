@@ -533,7 +533,7 @@
 				</Attenuation>
 				<Attenuation Name="PROPS_Barrel_In" ID="{7AA44CD4-B73F-4428-B1D2-5A480FEE5E59}" ShortID="113664723">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="12"/>
+						<Property Name="RadiusMax" Type="Real64" Value="8"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
@@ -550,19 +550,19 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>2.47435</XPos>
+											<XPos>1.64956666666667</XPos>
 											<YPos>0</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>9.36677</XPos>
+											<XPos>6.24451333333333</XPos>
 											<YPos>-5.86234</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12</XPos>
+											<XPos>8</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -584,7 +584,7 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12</XPos>
+											<XPos>8</XPos>
 											<YPos>-0.65834</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -593,7 +593,26 @@
 							</CurveUsageInfo>
 						</VolumeWetGameUsage>
 						<VolumeWetUserUsage>
-							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+								<Curve Name="VolumeWetUser" ID="{61CB3EC4-685A-480C-89AA-EF4F3CB423A5}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="3"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>-15.08697</YPos>
+											<Flags>5</Flags>
+											<SegmentShape>SCurve</SegmentShape>
+										</Point>
+										<Point>
+											<XPos>8</XPos>
+											<YPos>-2.45809</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</CurveUsageInfo>
 						</VolumeWetUserUsage>
 						<LowPassFilterUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
@@ -609,13 +628,13 @@
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>8.415</XPos>
+											<XPos>5.61</XPos>
 											<YPos>51</YPos>
 											<Flags>0</Flags>
 											<SegmentShape>SCurve</SegmentShape>
 										</Point>
 										<Point>
-											<XPos>12</XPos>
+											<XPos>8</XPos>
 											<YPos>79</YPos>
 											<Flags>37</Flags>
 										</Point>
@@ -639,7 +658,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>12</XPos>
+											<XPos>8</XPos>
 											<YPos>0</YPos>
 											<Flags>37</Flags>
 										</Point>

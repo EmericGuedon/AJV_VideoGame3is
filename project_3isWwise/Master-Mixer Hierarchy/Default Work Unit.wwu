@@ -14,7 +14,7 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-8</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OutputBusHighpass" Type="int16">
@@ -36,7 +36,7 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-8</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -66,12 +66,13 @@
 												<PointList>
 													<Point>
 														<XPos>-48</XPos>
-														<YPos>-200</YPos>
+														<YPos>-0</YPos>
 														<Flags>5</Flags>
+														<SegmentShape>Log1</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>0</YPos>
+														<YPos>-19.03158</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -88,11 +89,7 @@
 							</ChildrenList>
 						</Bus>
 						<Bus Name="CHAR" ID="{338DAE42-702C-4CFB-B030-6BD91AF5904B}">
-							<ReferenceList>
-								<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
-									<ObjectRef Name="In_SC" ID="{D915114A-69DF-4B54-B9DE-1BFBCFA1A38C}" WorkUnitID="{85ABFDD9-D4CC-4FE6-AC34-950059152F36}"/>
-								</Reference>
-							</ReferenceList>
+							<ReferenceList/>
 							<ChildrenList>
 								<Bus Name="CrowM" ID="{9CB9EEA2-C920-4CA5-BE12-BAD7DEB0278F}">
 									<PropertyList>
@@ -120,6 +117,18 @@
 											</ValueList>
 										</Property>
 									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<ObjectRef Name="In_SC" ID="{D915114A-69DF-4B54-B9DE-1BFBCFA1A38C}" WorkUnitID="{85ABFDD9-D4CC-4FE6-AC34-950059152F36}"/>
+										</Reference>
+									</ReferenceList>
+								</Bus>
+								<Bus Name="Fight" ID="{3111AED9-490A-4B7D-9F6F-FF6A0389D941}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<ObjectRef Name="In_SC" ID="{D915114A-69DF-4B54-B9DE-1BFBCFA1A38C}" WorkUnitID="{85ABFDD9-D4CC-4FE6-AC34-950059152F36}"/>
+										</Reference>
+									</ReferenceList>
 								</Bus>
 							</ChildrenList>
 						</Bus>
@@ -135,7 +144,7 @@
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-9</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -158,37 +167,47 @@
 							</ReferenceList>
 						</AuxBus>
 						<Bus Name="MUSIC" ID="{9E7CC739-2C7E-4E24-9A42-1FDA01EB78FA}">
-							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<RTPCList>
-										<RTPC Name="" ID="{88E4B768-594E-4A95-9850-B6F8554644DD}" ShortID="567254961">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="RTPC_SC" ID="{8ADB3CBD-BA87-4EBE-A774-F4937FAFAEF8}" WorkUnitID="{56745795-66B8-4965-952D-189AFAD4ABD6}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{AE813D07-6A89-4AA7-BD5F-C20B4AD66D23}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>-48</XPos>
-														<YPos>-0</YPos>
-														<Flags>5</Flags>
-														<SegmentShape>Log1</SegmentShape>
-													</Point>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>-6</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
-							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{169DDC63-AAC5-46FC-AB56-897EA2B17E53}" ShortID="677162403" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FrequencyBand2" Type="Real32" Value="900"/>
+												<Property Name="GainBand2" Type="Real32">
+													<RTPCList>
+														<RTPC Name="" ID="{E8F5D18D-963F-4BBA-8F51-79E9814AA171}" ShortID="78198616">
+															<ReferenceList>
+																<Reference Name="ControlInput">
+																	<ObjectRef Name="RTPC_SC" ID="{8ADB3CBD-BA87-4EBE-A774-F4937FAFAEF8}" WorkUnitID="{56745795-66B8-4965-952D-189AFAD4ABD6}"/>
+																</Reference>
+															</ReferenceList>
+															<Curve Name="" ID="{9185D50A-D6F0-4C6E-98D5-FAD88F3D2592}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-48</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>5</Flags>
+																		<SegmentShape>Log1</SegmentShape>
+																	</Point>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-14.32891</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</RTPC>
+													</RTPCList>
+												</Property>
+												<Property Name="QFactorBand2" Type="Real32" Value="0.6"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
 						</Bus>
 					</ChildrenList>
 				</Bus>

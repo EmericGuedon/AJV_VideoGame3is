@@ -1062,15 +1062,26 @@
 					<ChildrenList>
 						<BlendContainer Name="OUT_Blizz" ID="{21227C1E-CD75-4313-AACF-8C77CFA028D0}" ShortID="380995227">
 							<PropertyList>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-6</Value>
-									</ValueList>
-								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Parametric_EQ_(Custom)" ID="{2A5EC5DF-BF45-4B64-8EF4-D30562A13AC6}" ShortID="879349923" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+											<PropertyList>
+												<Property Name="FrequencyBand1" Type="Real32" Value="390"/>
+												<Property Name="FrequencyBand2" Type="Real32" Value="5809"/>
+												<Property Name="FrequencyBand3" Type="Real32" Value="3799"/>
+												<Property Name="GainBand1" Type="Real32" Value="-2"/>
+												<Property Name="GainBand2" Type="Real32" Value="-1"/>
+												<Property Name="GainBand3" Type="Real32" Value="4"/>
+												<Property Name="QFactorBand2" Type="Real32" Value="0.5"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
@@ -1085,6 +1096,11 @@
 													<Modifier Name="" ID="{2607D5D5-70E0-4E34-9AE3-10C4893E82CE}"/>
 												</ModifierInfo>
 											</ModifierList>
+										</Property>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
 										</Property>
 									</PropertyList>
 									<ReferenceList>
@@ -2198,7 +2214,7 @@
 										</Property>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-9</Value>
+												<Value>-12</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>

@@ -1649,6 +1649,7 @@
 						<BlendContainer Name="Mob_Weapon_Sword" ID="{EEAE2744-A465-493C-AE69-5831DFE6F549}" ShortID="54189244">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
@@ -1664,7 +1665,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+									<ObjectRef Name="Fight" ID="{3111AED9-490A-4B7D-9F6F-FF6A0389D941}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2761,6 +2762,7 @@
 						<BlendContainer Name="Mob_Hurt" ID="{DB27EB16-38C7-45D3-9119-23979CE0CC93}" ShortID="799585322">
 							<PropertyList>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="OverrideOutput" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -2770,9 +2772,9 @@
 									<Custom>
 										<Effect Name="Wwise_Delay_(Custom)" ID="{22CEEEF6-DAC1-44E3-B137-464442599D0B}" ShortID="357645614" PluginName="Wwise Delay" CompanyID="0" PluginID="106" PluginType="3">
 											<PropertyList>
-												<Property Name="DelayTime" Type="Real32" Value="0.03"/>
+												<Property Name="DelayTime" Type="Real32" Value="0.05"/>
 												<Property Name="Feedback" Type="Real32" Value="12"/>
-												<Property Name="WetDryMix" Type="Real32" Value="33"/>
+												<Property Name="WetDryMix" Type="Real32" Value="24"/>
 											</PropertyList>
 										</Effect>
 									</Custom>
@@ -2803,7 +2805,7 @@
 									</Custom>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+									<ObjectRef Name="Fight" ID="{3111AED9-490A-4B7D-9F6F-FF6A0389D941}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -2861,7 +2863,7 @@
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-10</Value>
+												<Value>-4</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -3148,7 +3150,7 @@
 										</Property>
 										<Property Name="Pitch" Type="int32">
 											<ValueList>
-												<Value>-200</Value>
+												<Value>-100</Value>
 											</ValueList>
 											<ModifierList>
 												<ModifierInfo>
@@ -3166,7 +3168,7 @@
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-3</Value>
+												<Value>2</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
@@ -3396,6 +3398,11 @@
 										</Property>
 										<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="3"/>
 										<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>1</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Attenuation">

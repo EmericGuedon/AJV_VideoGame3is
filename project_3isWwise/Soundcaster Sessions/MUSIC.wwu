@@ -37,7 +37,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Barrel" ID="{66979BA4-B0F9-4228-B3C0-C206996D8C28}"/>
-							<Value>1.31040480961924</Value>
+							<Value>0</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_Box" ID="{750CAAB6-6336-45E6-9306-BC368E56FDA2}"/>
@@ -45,15 +45,15 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="RTPC_SC" ID="{8ADB3CBD-BA87-4EBE-A774-F4937FAFAEF8}"/>
-							<Value>0</Value>
+							<Value>-48</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{A11DF09B-530A-41A9-842F-8FE80DD75BAA}"/>
+						<CurrentStateRef Name="MusicFight" ID="{2263E857-7013-4A94-B6B0-D501E980A761}"/>
 						<CurrentStateRef Name="Phase2" ID="{7C8C2711-C3F0-4670-B98A-436720FB185D}"/>
 						<CurrentStateRef Name="None" ID="{B1CE15CB-05BD-4F39-9661-3E8EE2CFA6A8}"/>
 						<CurrentStateRef Name="None" ID="{5244ADD7-69E8-4519-9694-572624493ACE}"/>
-						<CurrentStateRef Name="None" ID="{A6736EBB-5DEB-4A41-87D5-A542A3B25CA1}"/>
+						<CurrentStateRef Name="Dry" ID="{7B06EE73-6C48-4201-8697-C266B1BEDDDE}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Detect" ID="{619CF11B-29B3-4867-AF9F-ADAFEBBE776B}"/>

@@ -27,6 +27,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<BlendContainer Name="RFX_Dungeon" ID="{816341C2-9717-4BCE-8FD6-7D27D9DE981B}" ShortID="68448586">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-2</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -2017,7 +2024,7 @@
 										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 										<Property Name="Volume" Type="Real64">
 											<ValueList>
-												<Value>-12</Value>
+												<Value>-13</Value>
 											</ValueList>
 										</Property>
 									</PropertyList>
