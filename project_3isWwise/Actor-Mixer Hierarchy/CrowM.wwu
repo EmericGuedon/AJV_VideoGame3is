@@ -1668,9 +1668,31 @@
 									</ChildrenList>
 								</RandomSequenceContainer>
 								<BlendContainer Name="CrowM_Impact" ID="{AD2D6D9F-44AB-40C4-B061-CFDFF9A3402F}" ShortID="978353114">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+										</Reference>
+										<Reference Name="Effect0">
+											<Custom>
+												<Effect Name="Wwise_Guitar_Distortion_(Custom)" ID="{12997491-3B11-4679-B59B-76F9E6B11BC7}" ShortID="443717946" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+													<PropertyList>
+														<Property Name="DistortionDrive" Type="Real32" Value="17"/>
+														<Property Name="DistortionType" Type="int32" Value="4"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
+										</Reference>
+										<Reference Name="Effect1">
+											<Custom>
+												<Effect Name="Wwise_Peak_Limiter_(Custom)" ID="{4C440326-CC35-452E-A468-01AB4826AC91}" ShortID="971791254" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+													<PropertyList>
+														<Property Name="Threshold" Type="Real32" Value="-1.5"/>
+													</PropertyList>
+												</Effect>
+											</Custom>
 										</Reference>
 										<Reference Name="OutputBus">
 											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
@@ -1856,11 +1878,6 @@
 										<Sound Name="Sub-01" ID="{2306C9BD-32DF-4923-9826-AACA532612EA}" ShortID="369772482">
 											<PropertyList>
 												<Property Name="OverrideEffect" Type="bool" Value="True"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-6</Value>
-													</ValueList>
-												</Property>
 											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Conversion">

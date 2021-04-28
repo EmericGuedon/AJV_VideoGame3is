@@ -47,6 +47,13 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="HUD" ID="{6595E8DC-B926-4765-91C9-B1F4D8F43F74}">
+					<ObjectInclusionList>
+						<ObjectRef Name="HUD" ID="{9CE4DE4F-75E1-46FB-84D6-DE2DE4FD4BD6}" WorkUnitID="{9CE4DE4F-75E1-46FB-84D6-DE2DE4FD4BD6}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

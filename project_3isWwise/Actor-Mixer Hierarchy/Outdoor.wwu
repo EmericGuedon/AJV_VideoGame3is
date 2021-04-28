@@ -24,6 +24,13 @@
 					</ReferenceList>
 					<ChildrenList>
 						<BlendContainer Name="OUT_Cave" ID="{FDA60D38-304B-453C-823C-85910DA509E0}" ShortID="671729129">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>2</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
@@ -1063,6 +1070,11 @@
 						<BlendContainer Name="OUT_Blizz" ID="{21227C1E-CD75-4313-AACF-8C77CFA028D0}" ShortID="380995227">
 							<PropertyList>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>3</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -1773,11 +1785,7 @@
 													</CustomState>
 													<CustomState>
 														<StateRef Name="Mid" ID="{4CFCC9A7-265B-45FD-AAC0-4311A6DA0B62}"/>
-														<CustomState Name="" ID="{72FDFBFE-48FB-464D-BBA4-A3A1302430A1}" ShortID="973805470">
-															<PropertyList>
-																<Property Name="Lowpass" Type="int16" Value="28"/>
-															</PropertyList>
-														</CustomState>
+														<CustomState Name="" ID="{72FDFBFE-48FB-464D-BBA4-A3A1302430A1}" ShortID="973805470"/>
 													</CustomState>
 												</CustomStateList>
 											</StateInfo>
@@ -2253,7 +2261,7 @@
 												<StateRef Name="Hard" ID="{903C52C0-3A94-43FE-9499-6AE8F26B7D67}"/>
 												<CustomState Name="" ID="{E9B8A3D8-479E-42EF-9D19-5B87FE5D240F}" ShortID="37969431">
 													<PropertyList>
-														<Property Name="Pitch" Type="int32" Value="100"/>
+														<Property Name="Pitch" Type="int32" Value="200"/>
 														<Property Name="Volume" Type="Real64" Value="2"/>
 													</PropertyList>
 												</CustomState>
@@ -2262,7 +2270,7 @@
 												<StateRef Name="Soft" ID="{F936B8CB-50C0-4592-A28A-31F3B220EEA1}"/>
 												<CustomState Name="" ID="{CB79292B-C6EA-465F-85FE-10881DDC5D2B}" ShortID="543412228">
 													<PropertyList>
-														<Property Name="Lowpass" Type="int16" Value="24"/>
+														<Property Name="Lowpass" Type="int16" Value="18"/>
 														<Property Name="Pitch" Type="int32" Value="-300"/>
 														<Property Name="Volume" Type="Real64" Value="-2"/>
 													</PropertyList>
@@ -2272,7 +2280,7 @@
 												<StateRef Name="Mid" ID="{4CFCC9A7-265B-45FD-AAC0-4311A6DA0B62}"/>
 												<CustomState Name="" ID="{F5D76BB9-6732-409B-85F5-0A7FB46DD00D}" ShortID="355989634">
 													<PropertyList>
-														<Property Name="Lowpass" Type="int16" Value="14"/>
+														<Property Name="Lowpass" Type="int16" Value="12"/>
 														<Property Name="Pitch" Type="int32" Value="-200"/>
 													</PropertyList>
 												</CustomState>

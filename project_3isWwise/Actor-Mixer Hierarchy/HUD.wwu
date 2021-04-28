@@ -10,10 +10,10 @@
 				<ActorMixer Name="HUD" ID="{EDEC4591-CFAA-4F92-8FE1-515F885D15EC}" ShortID="154541980">
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+							<ObjectRef Name="UI" ID="{80D4C370-D86D-429A-954C-F3AF5BBA7262}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+							<ObjectRef Name="HUD" ID="{9E4D3E6D-459C-4693-963B-44F474E6D244}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -238,6 +238,36 @@
 								<ItemRef Name="HUD_HealthRepair_Bop" ID="{501F6165-D420-4FE8-99AC-187193432D34}"/>
 							</Playlist>
 						</RandomSequenceContainer>
+						<Sound Name="Death Sound" ID="{AF16078A-B042-4A5B-B91A-CA5A8E25E2C5}" ShortID="1021001448">
+							<PropertyList>
+								<Property Name="OverrideConversion" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="MUSIC" ID="{55E18DBE-8F2B-4769-B99F-A4325C4A03F1}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="DeathSound" ID="{5B01A3F8-14A8-4E57-A9CA-4F406C13FE94}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.648620148401826"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="7.76870041381276"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>DeathSound.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="63020490"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="DeathSound" ID="{5B01A3F8-14A8-4E57-A9CA-4F406C13FE94}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
 					</ChildrenList>
 				</ActorMixer>
 			</ChildrenList>

@@ -13,7 +13,7 @@
 							<ObjectRef Name="UI" ID="{80D4C370-D86D-429A-954C-F3AF5BBA7262}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
+							<ObjectRef Name="UI" ID="{125F3244-D990-464B-8BEE-FA51E6A47CA4}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>

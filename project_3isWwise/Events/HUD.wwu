@@ -42,7 +42,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Death Sound" ID="{AF16078A-B042-4A5B-B91A-CA5A8E25E2C5}" WorkUnitID="{17EB0432-8EC2-4967-A03A-D7B9FB7C4FE2}"/>
+									<ObjectRef Name="Death Sound" ID="{AF16078A-B042-4A5B-B91A-CA5A8E25E2C5}" WorkUnitID="{DC2BCF3F-1819-468E-A4AE-9AD2071DAD32}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

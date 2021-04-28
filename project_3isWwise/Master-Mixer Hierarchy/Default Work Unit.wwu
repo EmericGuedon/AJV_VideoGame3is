@@ -4,6 +4,13 @@
 		<WorkUnit Name="Default Work Unit" ID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1.5</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{4B289AE2-7E0A-4A52-AB05-238F0F7A94F4}" WorkUnitID="{688FA4C4-9143-4300-9801-F8BCD7DAF8DF}"/>
@@ -72,7 +79,7 @@
 													</Point>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-19.03158</YPos>
+														<YPos>-6.25308</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>
@@ -137,7 +144,19 @@
 							</ChildrenList>
 						</Bus>
 						<Bus Name="UI" ID="{125F3244-D990-464B-8BEE-FA51E6A47CA4}"/>
-						<Bus Name="HUD" ID="{9E4D3E6D-459C-4693-963B-44F474E6D244}"/>
+						<Bus Name="HUD" ID="{9E4D3E6D-459C-4693-963B-44F474E6D244}">
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="MUSIC" ID="{9E7CC739-2C7E-4E24-9A42-1FDA01EB78FA}"/>
+									<DuckingParam>
+										<Volume>-96</Volume>
+										<FadeInTime>0.200000002980232</FadeInTime>
+										<FadeOutTime>2</FadeOutTime>
+										<FadeCurve>FadeSCurve</FadeCurve>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
 						<AuxBus Name="Reverb_Blizzard" ID="{7D3CD3BC-8230-4DD2-A46C-109CAA4BC9D6}">
 							<PropertyList>
 								<Property Name="BusVolume" Type="Real64">
