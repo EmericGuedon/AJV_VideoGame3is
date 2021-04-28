@@ -12,7 +12,7 @@
 							<ObjectRef Name="CrowM" ID="{2C415989-8A7A-4FC5-8C60-011E8F7E4EDE}" WorkUnitID="{4EF35320-3153-49E2-919F-453155B600F5}"/>
 						</Reference>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+							<ObjectRef Name="CHAR" ID="{AE1F9EEA-414E-4415-971E-1492B57A2E5F}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="CrowM" ID="{9CB9EEA2-C920-4CA5-BE12-BAD7DEB0278F}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>

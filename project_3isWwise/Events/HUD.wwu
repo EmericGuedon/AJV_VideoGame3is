@@ -34,6 +34,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Music_Death" ID="{E317982D-A187-4FB9-8511-610EFEE804F7}">
+					<ChildrenList>
+						<Action Name="" ID="{F47419DA-482D-4162-A9B4-D1C4F00A798E}" ShortID="952840816">
+							<PropertyList>
+								<Property Name="Delay" Type="Real64" Value="1.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Death Sound" ID="{AF16078A-B042-4A5B-B91A-CA5A8E25E2C5}" WorkUnitID="{17EB0432-8EC2-4967-A03A-D7B9FB7C4FE2}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

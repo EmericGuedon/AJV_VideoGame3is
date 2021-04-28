@@ -18,7 +18,7 @@
 							<ObjectRef Name="Mob_CHAR" ID="{D16B3183-E76D-454D-8E42-2210CC863013}" WorkUnitID="{20982C2F-770E-499F-B442-23010BF3C852}"/>
 						</Reference>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+							<ObjectRef Name="CHAR" ID="{AE1F9EEA-414E-4415-971E-1492B57A2E5F}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="WP" ID="{473D245B-475D-4C23-91A1-B74C5694FE58}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
@@ -2221,7 +2221,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Dry-001.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="871447747"/>
+																<MediaID ID="245807299"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2248,7 +2248,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Dry-002.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="246973735"/>
+																<MediaID ID="716193414"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2275,7 +2275,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Dry-003.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="224498148"/>
+																<MediaID ID="190330162"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2302,7 +2302,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Dry-004.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="54184917"/>
+																<MediaID ID="984455856"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2329,7 +2329,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Dry-005.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="803178818"/>
+																<MediaID ID="471655816"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2368,7 +2368,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Hard-001.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="612866988"/>
+																<MediaID ID="59846832"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2394,7 +2394,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Hard-002.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="368883417"/>
+																<MediaID ID="361563839"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2421,7 +2421,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Hard-003.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="798918979"/>
+																<MediaID ID="871174720"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2447,7 +2447,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Hard-004.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="1001571240"/>
+																<MediaID ID="774989398"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2474,7 +2474,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Hard-005.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="140867875"/>
+																<MediaID ID="104915686"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2501,7 +2501,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Hard-006.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="659107968"/>
+																<MediaID ID="679766332"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2561,7 +2561,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Soft-001.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="1055313706"/>
+																<MediaID ID="814678448"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2588,7 +2588,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Soft-002.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="753191400"/>
+																<MediaID ID="22669248"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2615,7 +2615,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Soft-003.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="800431890"/>
+																<MediaID ID="700247922"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2642,7 +2642,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Soft-004.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="1020558999"/>
+																<MediaID ID="532757446"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2669,7 +2669,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Soft-005.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="603034516"/>
+																<MediaID ID="524473309"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2696,7 +2696,7 @@
 															<Language>SFX</Language>
 															<AudioFile>CHAR_Weapon_Sword_Hit_Blood_Soft-006.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="838565379"/>
+																<MediaID ID="502728438"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2801,7 +2801,7 @@
 													<Language>SFX</Language>
 													<AudioFile>CHAR_Sword_Whoosh-001.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="883979082"/>
+														<MediaID ID="492408563"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2837,7 +2837,7 @@
 													<Language>SFX</Language>
 													<AudioFile>CHAR_Sword_Whoosh-002.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="154508326"/>
+														<MediaID ID="487506863"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2873,7 +2873,7 @@
 													<Language>SFX</Language>
 													<AudioFile>CHAR_Sword_Whoosh-003.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="1072964109"/>
+														<MediaID ID="464527866"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2901,7 +2901,7 @@
 													<Language>SFX</Language>
 													<AudioFile>CHAR_Sword_Whoosh-004.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="716160252"/>
+														<MediaID ID="987855533"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2930,7 +2930,7 @@
 													<Language>SFX</Language>
 													<AudioFile>CHAR_Sword_Whoosh-005.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="809443356"/>
+														<MediaID ID="1006317705"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -3939,7 +3939,7 @@
 													<Language>SFX</Language>
 													<AudioFile>Gear_Whoosh_1.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="913485185"/>
+														<MediaID ID="638779318"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -3974,7 +3974,7 @@
 													<Language>SFX</Language>
 													<AudioFile>Gear_Whoosh_2.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="726815751"/>
+														<MediaID ID="751246078"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -4008,7 +4008,7 @@
 													<Language>SFX</Language>
 													<AudioFile>Gear_Whoosh_4.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="942572881"/>
+														<MediaID ID="649170262"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -4043,7 +4043,7 @@
 													<Language>SFX</Language>
 													<AudioFile>Gear_Whoosh_3.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="50443736"/>
+														<MediaID ID="83844959"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -4077,7 +4077,7 @@
 													<Language>SFX</Language>
 													<AudioFile>Gear_Whoosh_6.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="978774835"/>
+														<MediaID ID="686446963"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -4111,7 +4111,7 @@
 													<Language>SFX</Language>
 													<AudioFile>Gear_Whoosh_5.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="292773094"/>
+														<MediaID ID="949742097"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>

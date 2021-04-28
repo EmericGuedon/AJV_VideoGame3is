@@ -66,7 +66,7 @@
 												<PointList>
 													<Point>
 														<XPos>-48</XPos>
-														<YPos>-0</YPos>
+														<YPos>0</YPos>
 														<Flags>5</Flags>
 														<SegmentShape>Log1</SegmentShape>
 													</Point>
@@ -81,7 +81,6 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
-							<ReferenceList/>
 							<ChildrenList>
 								<Bus Name="AMB_Blizzard" ID="{D7CF2697-423E-4E07-964F-A157FA5FCB45}"/>
 								<Bus Name="AMB_Cave" ID="{2BAC5C46-7480-47BD-95B3-8E1366B5DA4D}"/>
@@ -89,7 +88,6 @@
 							</ChildrenList>
 						</Bus>
 						<Bus Name="CHAR" ID="{338DAE42-702C-4CFB-B030-6BD91AF5904B}">
-							<ReferenceList/>
 							<ChildrenList>
 								<Bus Name="CrowM" ID="{9CB9EEA2-C920-4CA5-BE12-BAD7DEB0278F}">
 									<PropertyList>
@@ -188,13 +186,13 @@
 																<PointList>
 																	<Point>
 																		<XPos>-48</XPos>
-																		<YPos>-0</YPos>
+																		<YPos>0</YPos>
 																		<Flags>5</Flags>
 																		<SegmentShape>Log1</SegmentShape>
 																	</Point>
 																	<Point>
 																		<XPos>0</XPos>
-																		<YPos>-14.32891</YPos>
+																		<YPos>-12.58857</YPos>
 																		<Flags>37</Flags>
 																	</Point>
 																</PointList>

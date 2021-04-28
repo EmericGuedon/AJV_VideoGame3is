@@ -133,7 +133,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+									<ObjectRef Name="MUSIC" ID="{55E18DBE-8F2B-4769-B99F-A4325C4A03F1}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="MUSIC" ID="{9E7CC739-2C7E-4E24-9A42-1FDA01EB78FA}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
@@ -191,7 +191,7 @@
 															<Language>SFX</Language>
 															<AudioFile>Cloche.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="666307218"/>
+																<MediaID ID="708750438"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -241,7 +241,7 @@
 															<Language>SFX</Language>
 															<AudioFile>ViolonsWar.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="954299778"/>
+																<MediaID ID="211473247"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -288,7 +288,7 @@
 															<Language>SFX</Language>
 															<AudioFile>DrumWar1+2+3.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="511155132"/>
+																<MediaID ID="170178157"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -359,7 +359,7 @@
 															<Language>SFX</Language>
 															<AudioFile>Cloche.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="666307218"/>
+																<MediaID ID="708750438"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -397,7 +397,7 @@
 															<Language>SFX</Language>
 															<AudioFile>DrumWar1+2+4.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="40934758"/>
+																<MediaID ID="707314567"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -454,7 +454,7 @@
 															<Language>SFX</Language>
 															<AudioFile>ViolonsWar2.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="556486614"/>
+																<MediaID ID="349451804"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -516,7 +516,7 @@
 															<Language>SFX</Language>
 															<AudioFile>Cloche.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="666307218"/>
+																<MediaID ID="708750438"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -564,7 +564,7 @@
 															<Language>SFX</Language>
 															<AudioFile>ViolonsWar2.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="556486614"/>
+																<MediaID ID="349451804"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -605,7 +605,7 @@
 															<Language>SFX</Language>
 															<AudioFile>ViolonsWar.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="954299778"/>
+																<MediaID ID="211473247"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -643,7 +643,7 @@
 															<Language>SFX</Language>
 															<AudioFile>DrumWar2+3+4.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="1053377292"/>
+																<MediaID ID="175310056"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -776,7 +776,7 @@
 															<Language>SFX</Language>
 															<AudioFile>Cloche.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="666307218"/>
+																<MediaID ID="708750438"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -913,7 +913,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+									<ObjectRef Name="MUSIC" ID="{55E18DBE-8F2B-4769-B99F-A4325C4A03F1}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="MUSIC" ID="{9E7CC739-2C7E-4E24-9A42-1FDA01EB78FA}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
@@ -944,7 +944,7 @@
 													<Language>SFX</Language>
 													<AudioFile>PadDeFondConstant.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="217060440"/>
+														<MediaID ID="893081064"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1040,7 +1040,7 @@
 													<Language>SFX</Language>
 													<AudioFile>VioloncelleWar.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="240969327"/>
+														<MediaID ID="16049835"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1105,7 +1105,7 @@
 													<Language>SFX</Language>
 													<AudioFile>FrozenStrings.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="410206174"/>
+														<MediaID ID="966384618"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1150,7 +1150,7 @@
 													<Language>SFX</Language>
 													<AudioFile>Choeur.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="535653481"/>
+														<MediaID ID="182343103"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1233,7 +1233,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+									<ObjectRef Name="MUSIC" ID="{55E18DBE-8F2B-4769-B99F-A4325C4A03F1}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="MUSIC" ID="{9E7CC739-2C7E-4E24-9A42-1FDA01EB78FA}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
@@ -1264,7 +1264,7 @@
 													<Language>SFX</Language>
 													<AudioFile>PadDeFondConstant.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="217060440"/>
+														<MediaID ID="893081064"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1360,7 +1360,7 @@
 													<Language>SFX</Language>
 													<AudioFile>VioloncelleWar.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="240969327"/>
+														<MediaID ID="16049835"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1425,7 +1425,7 @@
 													<Language>SFX</Language>
 													<AudioFile>FrozenStrings.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="410206174"/>
+														<MediaID ID="966384618"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1470,7 +1470,7 @@
 													<Language>SFX</Language>
 													<AudioFile>Choeur.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="535653481"/>
+														<MediaID ID="182343103"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1549,7 +1549,7 @@
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+									<ObjectRef Name="MUSIC" ID="{55E18DBE-8F2B-4769-B99F-A4325C4A03F1}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="MUSIC" ID="{9E7CC739-2C7E-4E24-9A42-1FDA01EB78FA}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
@@ -1592,7 +1592,7 @@
 													<Language>SFX</Language>
 													<AudioFile>ViolonsWar.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="954299778"/>
+														<MediaID ID="211473247"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1639,7 +1639,7 @@
 													<Language>SFX</Language>
 													<AudioFile>DrumWar1+2+3.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="511155132"/>
+														<MediaID ID="170178157"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1710,7 +1710,7 @@
 													<Language>SFX</Language>
 													<AudioFile>DrumWar1+2+4.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="40934758"/>
+														<MediaID ID="707314567"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1767,7 +1767,7 @@
 													<Language>SFX</Language>
 													<AudioFile>ViolonsWar2.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="556486614"/>
+														<MediaID ID="349451804"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1829,7 +1829,7 @@
 													<Language>SFX</Language>
 													<AudioFile>Cloche.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="666307218"/>
+														<MediaID ID="708750438"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1877,7 +1877,7 @@
 													<Language>SFX</Language>
 													<AudioFile>ViolonsWar2.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="556486614"/>
+														<MediaID ID="349451804"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1918,7 +1918,7 @@
 													<Language>SFX</Language>
 													<AudioFile>ViolonsWar.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="954299778"/>
+														<MediaID ID="211473247"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -1956,7 +1956,7 @@
 													<Language>SFX</Language>
 													<AudioFile>DrumWar2+3+4.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="1053377292"/>
+														<MediaID ID="175310056"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -2056,13 +2056,13 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-5</Value>
+										<Value>-3.5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
+									<ObjectRef Name="MUSIC" ID="{55E18DBE-8F2B-4769-B99F-A4325C4A03F1}" WorkUnitID="{9170BBBC-238B-477F-8E74-3C8F3C561A44}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="MUSIC" ID="{9E7CC739-2C7E-4E24-9A42-1FDA01EB78FA}" WorkUnitID="{AE96200D-0957-4E5D-A031-DE5C867EAEDD}"/>
@@ -2227,7 +2227,7 @@
 															<Language>SFX</Language>
 															<AudioFile>Cloche.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="666307218"/>
+																<MediaID ID="708750438"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2422,7 +2422,7 @@
 															<Language>SFX</Language>
 															<AudioFile>Cloche.wav</AudioFile>
 															<MediaIDList>
-																<MediaID ID="666307218"/>
+																<MediaID ID="708750438"/>
 															</MediaIDList>
 														</AudioFileSource>
 													</ChildrenList>
@@ -2693,6 +2693,14 @@
 									</Path>
 									<AudioNodeInfo>
 										<AudioNodeRef Name="CrowMPhase1" ID="{A10D5E74-AC36-4CEA-A00B-368C871F6F74}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="None" ID="{B839691F-EC5A-428E-8240-D0C0751A7BC8}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="CrowMPhase2" ID="{15683132-3C64-4503-B720-BC900389DE42}" WorkUnitID="{0711E0BC-A5EE-41FA-9E7D-0BF4BD7FFAE9}" Platform="Linked"/>
 									</AudioNodeInfo>
 								</Entry>
 								<Entry>
